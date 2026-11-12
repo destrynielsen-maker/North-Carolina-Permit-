@@ -1,0 +1,7252 @@
+{
+  "method": "Ranked by issued permit candidates in last 90 days, then 30 days, then all screened permits; never unique projects",
+  "as_of_utc_date": "2026-11-12",
+  "builders": [
+    {
+      "builder": "CLAYTON PROPERTIES GROUP INC (LIC# 81396)",
+      "aliases": [
+        "CLAYTON PROPERTIES GROUP INC (LIC# 81396)"
+      ],
+      "permit_count": 196,
+      "valuation": 58005662.62,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 2,
+        "Multifamily": 140,
+        "Single Family": 54
+      },
+      "last_issued_date": "2026-10-27",
+      "issued_last_30_days": 21,
+      "issued_last_90_days": 67,
+      "average_valuation": 295947.26,
+      "rank": 1
+    },
+    {
+      "builder": "Meritage Homes of the Carolinas, Inc.",
+      "aliases": [
+        "Meritage Homes of the Carolinas, Inc."
+      ],
+      "permit_count": 109,
+      "valuation": 43500581.93,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 48,
+        "Single Family": 61
+      },
+      "last_issued_date": "2026-11-10",
+      "issued_last_30_days": 36,
+      "issued_last_90_days": 62,
+      "average_valuation": 399087.91,
+      "rank": 2
+    },
+    {
+      "builder": "D R HORTON, INC",
+      "aliases": [
+        "D R HORTON, INC"
+      ],
+      "permit_count": 188,
+      "valuation": 36270080.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Multifamily": 45,
+        "Single Family": 142
+      },
+      "last_issued_date": "2026-11-09",
+      "issued_last_30_days": 24,
+      "issued_last_90_days": 46,
+      "average_valuation": 192925.96,
+      "rank": 3
+    },
+    {
+      "builder": "STANLEY MARTIN HOMES LLC",
+      "aliases": [
+        "STANLEY MARTIN HOMES LLC",
+        "Stanley Martin Homes, LLC"
+      ],
+      "permit_count": 116,
+      "valuation": 30139560.46,
+      "jurisdictions": [
+        "Greensboro",
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 104,
+        "Single Family": 12
+      },
+      "last_issued_date": "2026-10-29",
+      "issued_last_30_days": 10,
+      "issued_last_90_days": 42,
+      "average_valuation": 259823.8,
+      "rank": 4
+    },
+    {
+      "builder": "TRUE HOMES, LLC",
+      "aliases": [
+        "TRUE HOMES, LLC"
+      ],
+      "permit_count": 145,
+      "valuation": 28985775.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 62,
+        "Single Family": 83
+      },
+      "last_issued_date": "2026-11-06",
+      "issued_last_30_days": 18,
+      "issued_last_90_days": 38,
+      "average_valuation": 199901.9,
+      "rank": 5
+    },
+    {
+      "builder": "D.R. Horton, Inc. T/A Emerald Homes",
+      "aliases": [
+        "D.R. Horton, Inc. T/A Emerald Homes"
+      ],
+      "permit_count": 60,
+      "valuation": 15962868.45,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 60
+      },
+      "last_issued_date": "2026-10-29",
+      "issued_last_30_days": 6,
+      "issued_last_90_days": 38,
+      "average_valuation": 266047.81,
+      "rank": 6
+    },
+    {
+      "builder": "KB Home Raleigh-Durham Inc.",
+      "aliases": [
+        "KB Home Raleigh-Durham Inc."
+      ],
+      "permit_count": 45,
+      "valuation": 13405412.67,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 21,
+        "Single Family": 24
+      },
+      "last_issued_date": "2026-10-29",
+      "issued_last_30_days": 7,
+      "issued_last_90_days": 21,
+      "average_valuation": 297898.06,
+      "rank": 7
+    },
+    {
+      "builder": "LENNAR CAROLINAS, LLC",
+      "aliases": [
+        "LENNAR CAROLINAS, LLC"
+      ],
+      "permit_count": 58,
+      "valuation": 19989889.41,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 43,
+        "Single Family": 15
+      },
+      "last_issued_date": "2026-11-05",
+      "issued_last_30_days": 6,
+      "issued_last_90_days": 20,
+      "average_valuation": 344653.27,
+      "rank": 8
+    },
+    {
+      "builder": "Center Park Builder Services NC, LLC",
+      "aliases": [
+        "Center Park Builder Services NC, LLC"
+      ],
+      "permit_count": 16,
+      "valuation": 5237120.13,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 16
+      },
+      "last_issued_date": "2026-11-10",
+      "issued_last_30_days": 16,
+      "issued_last_90_days": 16,
+      "average_valuation": 327320.01,
+      "rank": 9
+    },
+    {
+      "builder": "CLAYTON PROPERTIES INC",
+      "aliases": [
+        "CLAYTON PROPERTIES INC"
+      ],
+      "permit_count": 16,
+      "valuation": 2854825.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 16
+      },
+      "last_issued_date": "2026-10-21",
+      "issued_last_30_days": 9,
+      "issued_last_90_days": 16,
+      "average_valuation": 178426.56,
+      "rank": 10
+    },
+    {
+      "builder": "Havenn Homes, LLC",
+      "aliases": [
+        "Havenn Homes, LLC"
+      ],
+      "permit_count": 15,
+      "valuation": 3913528.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 15
+      },
+      "last_issued_date": "2026-10-21",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 15,
+      "average_valuation": 260901.92,
+      "rank": 11
+    },
+    {
+      "builder": "HAGOOD HOMES INC (B) (LIC# 36868)",
+      "aliases": [
+        "HAGOOD HOMES INC (B) (LIC# 36868)"
+      ],
+      "permit_count": 14,
+      "valuation": 3316640.88,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 14
+      },
+      "last_issued_date": "2026-10-21",
+      "issued_last_30_days": 14,
+      "issued_last_90_days": 14,
+      "average_valuation": 236902.92,
+      "rank": 12
+    },
+    {
+      "builder": "TM BTR OF CAROLINAS, LLC",
+      "aliases": [
+        "TM BTR OF CAROLINAS, LLC",
+        "TM BTR of Carolinas, LLC"
+      ],
+      "permit_count": 14,
+      "valuation": 4798368.96,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 14
+      },
+      "last_issued_date": "2026-11-06",
+      "issued_last_30_days": 7,
+      "issued_last_90_days": 14,
+      "average_valuation": 342740.64,
+      "rank": 13
+    },
+    {
+      "builder": "Front Street Construction Services, LLC",
+      "aliases": [
+        "Front Street Construction Services, LLC"
+      ],
+      "permit_count": 39,
+      "valuation": 20010790.96,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 16,
+        "Single Family": 23
+      },
+      "last_issued_date": "2026-11-09",
+      "issued_last_30_days": 4,
+      "issued_last_90_days": 14,
+      "average_valuation": 513097.2,
+      "rank": 14
+    },
+    {
+      "builder": "TRUSST BUILDER GROUP LLC (B) (LIC# 73371)",
+      "aliases": [
+        "TRUSST BUILDER GROUP LLC (B) (LIC# 73371)"
+      ],
+      "permit_count": 41,
+      "valuation": 15894002.19,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 11,
+        "Single Family": 30
+      },
+      "last_issued_date": "2026-10-20",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 13,
+      "average_valuation": 387658.59,
+      "rank": 15
+    },
+    {
+      "builder": "KEYSTONE GROUP, INC",
+      "aliases": [
+        "KEYSTONE GROUP, INC"
+      ],
+      "permit_count": 23,
+      "valuation": 35231075.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 7,
+        "Single Family": 16
+      },
+      "last_issued_date": "2026-10-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 13,
+      "average_valuation": 1531785.87,
+      "rank": 16
+    },
+    {
+      "builder": "PULTE HOME CORP.",
+      "aliases": [
+        "PULTE HOME CORP."
+      ],
+      "permit_count": 43,
+      "valuation": 8959085.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Multifamily": 38,
+        "Single Family": 4
+      },
+      "last_issued_date": "2026-09-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 12,
+      "average_valuation": 208350.81,
+      "rank": 17
+    },
+    {
+      "builder": "HALLMARK BUILDING CORPORATION, T/A (B) (LIC#67549)",
+      "aliases": [
+        "HALLMARK BUILDING CORPORATION, T/A (B) (LIC#67549)"
+      ],
+      "permit_count": 16,
+      "valuation": 4643429.58,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 3,
+        "Single Family": 13
+      },
+      "last_issued_date": "2026-11-02",
+      "issued_last_30_days": 11,
+      "issued_last_90_days": 11,
+      "average_valuation": 290214.35,
+      "rank": 18
+    },
+    {
+      "builder": "BLUE RIDGE GENERAL CONTRACTORS",
+      "aliases": [
+        "BLUE RIDGE GENERAL CONTRACTORS"
+      ],
+      "permit_count": 11,
+      "valuation": 37121749.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 11
+      },
+      "last_issued_date": "2026-11-02",
+      "issued_last_30_days": 10,
+      "issued_last_90_days": 11,
+      "average_valuation": 3374704.45,
+      "rank": 19
+    },
+    {
+      "builder": "NEW LEAF BUILDERS OF NC LLC (B) (LIC# 86840)",
+      "aliases": [
+        "NEW LEAF BUILDERS OF NC LLC (B) (LIC# 86840)"
+      ],
+      "permit_count": 36,
+      "valuation": 9356121.28,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 36
+      },
+      "last_issued_date": "2026-11-09",
+      "issued_last_30_days": 7,
+      "issued_last_90_days": 11,
+      "average_valuation": 259892.26,
+      "rank": 20
+    },
+    {
+      "builder": "PULTE HOME COMPANY LLC (B) (LIC# 19311)",
+      "aliases": [
+        "PULTE HOME COMPANY LLC (B) (LIC# 19311)"
+      ],
+      "permit_count": 76,
+      "valuation": 21739499.74,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Multifamily": 19,
+        "Single Family": 56
+      },
+      "last_issued_date": "2026-10-22",
+      "issued_last_30_days": 3,
+      "issued_last_90_days": 10,
+      "average_valuation": 286046.05,
+      "rank": 21
+    },
+    {
+      "builder": "FACT Construction Company",
+      "aliases": [
+        "FACT Construction Company"
+      ],
+      "permit_count": 10,
+      "valuation": 5496874.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 10
+      },
+      "last_issued_date": "2026-09-24",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 10,
+      "average_valuation": 549687.48,
+      "rank": 22
+    },
+    {
+      "builder": "WINDSOR CONTRACTING, LLC",
+      "aliases": [
+        "WINDSOR CONTRACTING, LLC"
+      ],
+      "permit_count": 10,
+      "valuation": 24266181.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Multifamily": 6,
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-10-27",
+      "issued_last_30_days": 9,
+      "issued_last_90_days": 9,
+      "average_valuation": 2426618.1,
+      "rank": 23
+    },
+    {
+      "builder": "WILLIAMS REALTY & BUILDING COMPANY INC.",
+      "aliases": [
+        "WILLIAMS REALTY & BUILDING COMPANY INC."
+      ],
+      "permit_count": 10,
+      "valuation": 5625535.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 9,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-11-09",
+      "issued_last_30_days": 6,
+      "issued_last_90_days": 9,
+      "average_valuation": 562553.52,
+      "rank": 24
+    },
+    {
+      "builder": "Concept 8, LLC",
+      "aliases": [
+        "Concept 8, LLC"
+      ],
+      "permit_count": 12,
+      "valuation": 3846014.66,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 12
+      },
+      "last_issued_date": "2026-11-02",
+      "issued_last_30_days": 8,
+      "issued_last_90_days": 8,
+      "average_valuation": 320501.22,
+      "rank": 25
+    },
+    {
+      "builder": "BEAZER HOMES CORP, T/A",
+      "aliases": [
+        "BEAZER HOMES CORP, T/A"
+      ],
+      "permit_count": 9,
+      "valuation": 3383772.63,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 8,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-21",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 8,
+      "average_valuation": 375974.74,
+      "rank": 26
+    },
+    {
+      "builder": "EASTWOOD CONSTRUCTION CO, INC",
+      "aliases": [
+        "EASTWOOD CONSTRUCTION CO, INC"
+      ],
+      "permit_count": 46,
+      "valuation": 10247871.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 4,
+        "Single Family": 42
+      },
+      "last_issued_date": "2026-09-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 8,
+      "average_valuation": 222779.8,
+      "rank": 27
+    },
+    {
+      "builder": "SOURCE CONSTRUCTION LLC (B) (LIC# 100275)",
+      "aliases": [
+        "SOURCE CONSTRUCTION LLC (B) (LIC# 100275)"
+      ],
+      "permit_count": 10,
+      "valuation": 4347143.92,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Multifamily": 5,
+        "Single Family": 4
+      },
+      "last_issued_date": "2026-09-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 8,
+      "average_valuation": 434714.39,
+      "rank": 28
+    },
+    {
+      "builder": "Legacy Custom Homes NC, Inc",
+      "aliases": [
+        "Legacy Custom Homes NC, Inc"
+      ],
+      "permit_count": 7,
+      "valuation": 3691396.83,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 4,
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-10-27",
+      "issued_last_30_days": 5,
+      "issued_last_90_days": 7,
+      "average_valuation": 527342.4,
+      "rank": 29
+    },
+    {
+      "builder": "CHARTER BUILDING GROUP INC (B) (LIC# 67679)",
+      "aliases": [
+        "CHARTER BUILDING GROUP INC (B) (LIC# 67679)"
+      ],
+      "permit_count": 19,
+      "valuation": 8555967.33,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 19
+      },
+      "last_issued_date": "2026-10-29",
+      "issued_last_30_days": 3,
+      "issued_last_90_days": 6,
+      "average_valuation": 450314.07,
+      "rank": 30
+    },
+    {
+      "builder": "ICG HOMES, LLC",
+      "aliases": [
+        "ICG HOMES, LLC"
+      ],
+      "permit_count": 7,
+      "valuation": 6587714.23,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 7
+      },
+      "last_issued_date": "2026-10-28",
+      "issued_last_30_days": 3,
+      "issued_last_90_days": 6,
+      "average_valuation": 941102.03,
+      "rank": 31
+    },
+    {
+      "builder": "COLEMAN FINE HOMES LLC (LIC# 79419)",
+      "aliases": [
+        "COLEMAN FINE HOMES LLC (LIC# 79419)"
+      ],
+      "permit_count": 9,
+      "valuation": 4567329.48,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 9
+      },
+      "last_issued_date": "2026-11-02",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 6,
+      "average_valuation": 507481.05,
+      "rank": 32
+    },
+    {
+      "builder": "MURDOCK GANNON CONSTRUCTION, I",
+      "aliases": [
+        "MURDOCK GANNON CONSTRUCTION, I"
+      ],
+      "permit_count": 8,
+      "valuation": 5160166.18,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 2,
+        "Single Family": 6
+      },
+      "last_issued_date": "2026-10-14",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 6,
+      "average_valuation": 645020.77,
+      "rank": 33
+    },
+    {
+      "builder": "Toll Brothers",
+      "aliases": [
+        "Toll Brothers"
+      ],
+      "permit_count": 22,
+      "valuation": 9215941.63,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 22
+      },
+      "last_issued_date": "2026-10-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 6,
+      "average_valuation": 418906.44,
+      "rank": 34
+    },
+    {
+      "builder": "SMITH DOUGLAS HOMES",
+      "aliases": [
+        "SMITH DOUGLAS HOMES"
+      ],
+      "permit_count": 10,
+      "valuation": 3066588.34,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 10
+      },
+      "last_issued_date": "2026-09-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 6,
+      "average_valuation": 306658.83,
+      "rank": 35
+    },
+    {
+      "builder": "ROYAL HOMES OF NC",
+      "aliases": [
+        "ROYAL HOMES OF NC"
+      ],
+      "permit_count": 35,
+      "valuation": 9402063.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 35
+      },
+      "last_issued_date": "2026-10-27",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 5,
+      "average_valuation": 268630.37,
+      "rank": 36
+    },
+    {
+      "builder": "GARMAN HOMES, LLC",
+      "aliases": [
+        "GARMAN HOMES, LLC"
+      ],
+      "permit_count": 17,
+      "valuation": 4328700.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 17
+      },
+      "last_issued_date": "2026-10-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 5,
+      "average_valuation": 254629.41,
+      "rank": 37
+    },
+    {
+      "builder": "Taylor Morrison of Carolina",
+      "aliases": [
+        "Taylor Morrison of Carolina"
+      ],
+      "permit_count": 15,
+      "valuation": 4576160.54,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 15
+      },
+      "last_issued_date": "2026-09-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 5,
+      "average_valuation": 305077.37,
+      "rank": 38
+    },
+    {
+      "builder": "P4 CONSTRUCTION, LLC",
+      "aliases": [
+        "P4 CONSTRUCTION, LLC"
+      ],
+      "permit_count": 8,
+      "valuation": 1051200.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 8
+      },
+      "last_issued_date": "2026-08-28",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 5,
+      "average_valuation": 131400.0,
+      "rank": 39
+    },
+    {
+      "builder": "MICHAEL CHRISTIAN HOMES LLC (B) (LIC# 85071)",
+      "aliases": [
+        "MICHAEL CHRISTIAN HOMES LLC (B) (LIC# 85071)"
+      ],
+      "permit_count": 15,
+      "valuation": 8117785.16,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 15
+      },
+      "last_issued_date": "2026-11-10",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 4,
+      "average_valuation": 541185.68,
+      "rank": 40
+    },
+    {
+      "builder": "HOMES BY DICKERSON INC",
+      "aliases": [
+        "HOMES BY DICKERSON INC"
+      ],
+      "permit_count": 8,
+      "valuation": 6102480.58,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 8
+      },
+      "last_issued_date": "2026-10-22",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 4,
+      "average_valuation": 762810.07,
+      "rank": 41
+    },
+    {
+      "builder": "McMurphy Homes",
+      "aliases": [
+        "McMurphy Homes"
+      ],
+      "permit_count": 4,
+      "valuation": 833799.5,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 4
+      },
+      "last_issued_date": "2026-11-02",
+      "issued_last_30_days": 3,
+      "issued_last_90_days": 3,
+      "average_valuation": 208449.88,
+      "rank": 42
+    },
+    {
+      "builder": "*** OWNER ***",
+      "aliases": [
+        "*** OWNER ***"
+      ],
+      "permit_count": 8,
+      "valuation": 1129096.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 2,
+        "Single Family": 6
+      },
+      "last_issued_date": "2026-10-16",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 3,
+      "average_valuation": 141137.0,
+      "rank": 43
+    },
+    {
+      "builder": "Blue Heel Construction",
+      "aliases": [
+        "Blue Heel Construction"
+      ],
+      "permit_count": 5,
+      "valuation": 2788345.21,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 5
+      },
+      "last_issued_date": "2026-11-04",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 3,
+      "average_valuation": 557669.04,
+      "rank": 44
+    },
+    {
+      "builder": "JOHNSON CUSTOM BUILDERS LLC (LIC#82124)",
+      "aliases": [
+        "JOHNSON CUSTOM BUILDERS LLC (LIC#82124)"
+      ],
+      "permit_count": 5,
+      "valuation": 1143927.88,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 5
+      },
+      "last_issued_date": "2026-10-29",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 3,
+      "average_valuation": 228785.58,
+      "rank": 45
+    },
+    {
+      "builder": "D STONE BUILDERS, INC",
+      "aliases": [
+        "D STONE BUILDERS, INC"
+      ],
+      "permit_count": 9,
+      "valuation": 5412000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 7,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-10-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 3,
+      "average_valuation": 601333.33,
+      "rank": 46
+    },
+    {
+      "builder": "Eastwood Construction Partners, LLC",
+      "aliases": [
+        "Eastwood Construction Partners, LLC"
+      ],
+      "permit_count": 3,
+      "valuation": 922040.13,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 3
+      },
+      "last_issued_date": "2026-10-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 3,
+      "average_valuation": 307346.71,
+      "rank": 47
+    },
+    {
+      "builder": "PARC CONSTRUCTION LLC",
+      "aliases": [
+        "PARC CONSTRUCTION LLC"
+      ],
+      "permit_count": 3,
+      "valuation": 9194480.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 3
+      },
+      "last_issued_date": "2026-09-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 3,
+      "average_valuation": 3064826.67,
+      "rank": 48
+    },
+    {
+      "builder": "PREMIER GENERAL CONTR LLP",
+      "aliases": [
+        "PREMIER GENERAL CONTR LLP"
+      ],
+      "permit_count": 3,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-08-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 3,
+      "average_valuation": 0.0,
+      "rank": 49
+    },
+    {
+      "builder": "KEN HARVEY HOMES, L.L.C.",
+      "aliases": [
+        "KEN HARVEY HOMES, L.L.C."
+      ],
+      "permit_count": 2,
+      "valuation": 1578702.84,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-10-29",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 2,
+      "average_valuation": 789351.42,
+      "rank": 50
+    },
+    {
+      "builder": "STEVE SYPHER DESIGNS INC",
+      "aliases": [
+        "STEVE SYPHER DESIGNS INC"
+      ],
+      "permit_count": 2,
+      "valuation": 1102927.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-11-10",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 2,
+      "average_valuation": 551463.6,
+      "rank": 51
+    },
+    {
+      "builder": "TRI Pointe Homes Holdings, Inc",
+      "aliases": [
+        "TRI Pointe Homes Holdings, Inc"
+      ],
+      "permit_count": 2,
+      "valuation": 895224.99,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-10-20",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 2,
+      "average_valuation": 447612.49,
+      "rank": 52
+    },
+    {
+      "builder": "ALARIS HOMES",
+      "aliases": [
+        "ALARIS HOMES"
+      ],
+      "permit_count": 18,
+      "valuation": 4240849.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 18
+      },
+      "last_issued_date": "2026-10-30",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 2,
+      "average_valuation": 235602.72,
+      "rank": 53
+    },
+    {
+      "builder": "HERRINGTON CLASSIC HOMES LLC T/A (B) (LIC# 68106)",
+      "aliases": [
+        "HERRINGTON CLASSIC HOMES LLC T/A (B) (LIC# 68106)"
+      ],
+      "permit_count": 18,
+      "valuation": 4180101.29,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 13,
+        "Single Family": 5
+      },
+      "last_issued_date": "2026-11-05",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 2,
+      "average_valuation": 232227.85,
+      "rank": 54
+    },
+    {
+      "builder": "PBC BUILDING CORPORATION (B) (LIC# 100860)",
+      "aliases": [
+        "PBC BUILDING CORPORATION (B) (LIC# 100860)"
+      ],
+      "permit_count": 10,
+      "valuation": 10023253.49,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Multifamily": 1,
+        "Single Family": 8
+      },
+      "last_issued_date": "2026-11-02",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 2,
+      "average_valuation": 1002325.35,
+      "rank": 55
+    },
+    {
+      "builder": "COLLINS & GALYON GEN CONTRS",
+      "aliases": [
+        "COLLINS & GALYON GEN CONTRS"
+      ],
+      "permit_count": 6,
+      "valuation": 7920000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 6
+      },
+      "last_issued_date": "2026-11-03",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 2,
+      "average_valuation": 1320000.0,
+      "rank": 56
+    },
+    {
+      "builder": "DJF BUILDERS, INC.",
+      "aliases": [
+        "DJF BUILDERS, INC."
+      ],
+      "permit_count": 5,
+      "valuation": 5017073.87,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 5
+      },
+      "last_issued_date": "2026-10-15",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 2,
+      "average_valuation": 1003414.77,
+      "rank": 57
+    },
+    {
+      "builder": "FEP CONSTRUCTION LLC",
+      "aliases": [
+        "FEP CONSTRUCTION LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 1040835.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-10-20",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 2,
+      "average_valuation": 520417.6,
+      "rank": 58
+    },
+    {
+      "builder": "CAPE FEAR HABITAT FOR HUMANITY INC (B) (LIC# 46532)",
+      "aliases": [
+        "CAPE FEAR HABITAT FOR HUMANITY INC (B) (LIC# 46532)"
+      ],
+      "permit_count": 7,
+      "valuation": 1081944.9,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 7
+      },
+      "last_issued_date": "2026-10-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 2,
+      "average_valuation": 154563.56,
+      "rank": 59
+    },
+    {
+      "builder": "H H HUNT OF NC, INC",
+      "aliases": [
+        "H H HUNT OF NC, INC"
+      ],
+      "permit_count": 4,
+      "valuation": 8794220.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 4
+      },
+      "last_issued_date": "2026-09-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 2,
+      "average_valuation": 2198555.0,
+      "rank": 60
+    },
+    {
+      "builder": "Annex Construction, LLC",
+      "aliases": [
+        "Annex Construction, LLC"
+      ],
+      "permit_count": 3,
+      "valuation": 5230334.5,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-10-01",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 2,
+      "average_valuation": 1743444.83,
+      "rank": 61
+    },
+    {
+      "builder": "Hicaps",
+      "aliases": [
+        "Hicaps"
+      ],
+      "permit_count": 2,
+      "valuation": 764435.9,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-19",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 2,
+      "average_valuation": 382217.95,
+      "rank": 62
+    },
+    {
+      "builder": "NEW SOUTH CONSTRUCTION LLC",
+      "aliases": [
+        "NEW SOUTH CONSTRUCTION LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 46146347.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-10-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 2,
+      "average_valuation": 23073173.5,
+      "rank": 63
+    },
+    {
+      "builder": "ROYALCREST BUILDERS, LLC",
+      "aliases": [
+        "ROYALCREST BUILDERS, LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 400000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-09-02",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 2,
+      "average_valuation": 200000.0,
+      "rank": 64
+    },
+    {
+      "builder": "LAT BUILDERS",
+      "aliases": [
+        "LAT BUILDERS"
+      ],
+      "permit_count": 13,
+      "valuation": 1780000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 13
+      },
+      "last_issued_date": "2026-10-16",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 136923.08,
+      "rank": 65
+    },
+    {
+      "builder": "CLANCY & THEYS CONSTRUCTION CO (LIC# 02077)",
+      "aliases": [
+        "CLANCY & THEYS CONSTRUCTION CO (LIC# 02077)"
+      ],
+      "permit_count": 8,
+      "valuation": 30000642.96,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Multifamily": 7
+      },
+      "last_issued_date": "2026-11-05",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 3750080.37,
+      "rank": 66
+    },
+    {
+      "builder": "TILYOU HOMES LLC (B) (LIC# 86593)",
+      "aliases": [
+        "TILYOU HOMES LLC (B) (LIC# 86593)"
+      ],
+      "permit_count": 8,
+      "valuation": 4380498.22,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 8
+      },
+      "last_issued_date": "2026-10-22",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 547562.28,
+      "rank": 67
+    },
+    {
+      "builder": "ROLINA HOMES NC LLC (LIC# 86936)",
+      "aliases": [
+        "ROLINA HOMES NC LLC (LIC# 86936)"
+      ],
+      "permit_count": 6,
+      "valuation": 1373882.53,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 6
+      },
+      "last_issued_date": "2026-11-04",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 228980.42,
+      "rank": 68
+    },
+    {
+      "builder": "CCH RDU, LLC",
+      "aliases": [
+        "CCH RDU, LLC"
+      ],
+      "permit_count": 4,
+      "valuation": 2795893.44,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 4
+      },
+      "last_issued_date": "2026-10-22",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 698973.36,
+      "rank": 69
+    },
+    {
+      "builder": "VENTURE HOMES CONSTRUCTION LLC (B) (LIC# 81685)",
+      "aliases": [
+        "VENTURE HOMES CONSTRUCTION LLC (B) (LIC# 81685)"
+      ],
+      "permit_count": 4,
+      "valuation": 1945074.44,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 4
+      },
+      "last_issued_date": "2026-10-15",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 486268.61,
+      "rank": 70
+    },
+    {
+      "builder": "OakTowne Builders",
+      "aliases": [
+        "OakTowne Builders"
+      ],
+      "permit_count": 3,
+      "valuation": 2730969.78,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-11-09",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 910323.26,
+      "rank": 71
+    },
+    {
+      "builder": "RALEIGH CUSTOM HOMES",
+      "aliases": [
+        "RALEIGH CUSTOM HOMES"
+      ],
+      "permit_count": 3,
+      "valuation": 3117602.55,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-10-28",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 1039200.85,
+      "rank": 72
+    },
+    {
+      "builder": "CAMBRIDGE CLASSIC HOMES LLC",
+      "aliases": [
+        "CAMBRIDGE CLASSIC HOMES LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 1789260.4,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-10-21",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 894630.2,
+      "rank": 73
+    },
+    {
+      "builder": "DELANEYS COASTAL CONSTRUCTION LLC (LIC# 86286)",
+      "aliases": [
+        "DELANEYS COASTAL CONSTRUCTION LLC (LIC# 86286)"
+      ],
+      "permit_count": 2,
+      "valuation": 733318.21,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-10-23",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 366659.1,
+      "rank": 74
+    },
+    {
+      "builder": "DENNIS MOELLER CUSTOM HOMES INC (LIC# 42807)",
+      "aliases": [
+        "DENNIS MOELLER CUSTOM HOMES INC (LIC# 42807)"
+      ],
+      "permit_count": 2,
+      "valuation": 1113156.97,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-10-20",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 556578.48,
+      "rank": 75
+    },
+    {
+      "builder": "ENVIRONMENTS UNLIMITED INC (B) (LIC# 68071)",
+      "aliases": [
+        "ENVIRONMENTS UNLIMITED INC (B) (LIC# 68071)"
+      ],
+      "permit_count": 2,
+      "valuation": 3539455.5,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 2
+      },
+      "last_issued_date": "2026-11-10",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 1769727.75,
+      "rank": 76
+    },
+    {
+      "builder": "RHNC BUILDERS LLC",
+      "aliases": [
+        "RHNC BUILDERS LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 34150000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-10-21",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 17075000.0,
+      "rank": 77
+    },
+    {
+      "builder": "SHELTER ROCK BUILDERS LLC (LIC# 87938)",
+      "aliases": [
+        "SHELTER ROCK BUILDERS LLC (LIC# 87938)"
+      ],
+      "permit_count": 2,
+      "valuation": 412705.18,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 1,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-13",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 206352.59,
+      "rank": 78
+    },
+    {
+      "builder": "Upright Builders, Inc.",
+      "aliases": [
+        "Upright Builders, Inc."
+      ],
+      "permit_count": 2,
+      "valuation": 2127520.57,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-10-27",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 1063760.28,
+      "rank": 79
+    },
+    {
+      "builder": "A & M CONSTRUCTION SERVICES",
+      "aliases": [
+        "A & M CONSTRUCTION SERVICES"
+      ],
+      "permit_count": 1,
+      "valuation": 3200000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-11-10",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 3200000.0,
+      "rank": 80
+    },
+    {
+      "builder": "Abode Contracting LLC",
+      "aliases": [
+        "Abode Contracting LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 1145499.63,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-11-09",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 1145499.63,
+      "rank": 81
+    },
+    {
+      "builder": "ALLURE HOMES, LLC",
+      "aliases": [
+        "ALLURE HOMES, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 774248.64,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-11-10",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 774248.64,
+      "rank": 82
+    },
+    {
+      "builder": "BEAUTIFUL INVESTMENTS",
+      "aliases": [
+        "BEAUTIFUL INVESTMENTS"
+      ],
+      "permit_count": 1,
+      "valuation": 93000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-15",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 93000.0,
+      "rank": 83
+    },
+    {
+      "builder": "Bliss homes",
+      "aliases": [
+        "Bliss homes"
+      ],
+      "permit_count": 1,
+      "valuation": 800702.52,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-20",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 800702.52,
+      "rank": 84
+    },
+    {
+      "builder": "CIVIL WORKS CONTRACTING LLC (B) (LIC# 71885)",
+      "aliases": [
+        "CIVIL WORKS CONTRACTING LLC (B) (LIC# 71885)"
+      ],
+      "permit_count": 1,
+      "valuation": 296380.8,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-10-21",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 296380.8,
+      "rank": 85
+    },
+    {
+      "builder": "CLEAR CONSTRUCTION GROUP LLC",
+      "aliases": [
+        "CLEAR CONSTRUCTION GROUP LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 454860.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-11-03",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 454860.0,
+      "rank": 86
+    },
+    {
+      "builder": "Consigli Construction",
+      "aliases": [
+        "Consigli Construction"
+      ],
+      "permit_count": 1,
+      "valuation": 115241263.5,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-10-29",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 115241263.5,
+      "rank": 87
+    },
+    {
+      "builder": "East Coast Construction",
+      "aliases": [
+        "East Coast Construction"
+      ],
+      "permit_count": 1,
+      "valuation": 853923.51,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-29",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 853923.51,
+      "rank": 88
+    },
+    {
+      "builder": "HJB CONSTRUCTION, INC",
+      "aliases": [
+        "HJB CONSTRUCTION, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 1151419.61,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-10-22",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 1151419.61,
+      "rank": 89
+    },
+    {
+      "builder": "JOHLCO",
+      "aliases": [
+        "JOHLCO"
+      ],
+      "permit_count": 1,
+      "valuation": 477661.44,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-10-20",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 477661.44,
+      "rank": 90
+    },
+    {
+      "builder": "LINDLEY PARK CONTRACTING",
+      "aliases": [
+        "LINDLEY PARK CONTRACTING"
+      ],
+      "permit_count": 1,
+      "valuation": 144000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-26",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 144000.0,
+      "rank": 91
+    },
+    {
+      "builder": "McCrory Construction",
+      "aliases": [
+        "McCrory Construction"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-10-16",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 0.0,
+      "rank": 92
+    },
+    {
+      "builder": "Oakmere Development Group",
+      "aliases": [
+        "Oakmere Development Group"
+      ],
+      "permit_count": 1,
+      "valuation": 591474.18,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-10-16",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 591474.18,
+      "rank": 93
+    },
+    {
+      "builder": "ST. CLAIR CONSTRUCTION GROUP,",
+      "aliases": [
+        "ST. CLAIR CONSTRUCTION GROUP,"
+      ],
+      "permit_count": 1,
+      "valuation": 1456129.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-29",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 1456129.6,
+      "rank": 94
+    },
+    {
+      "builder": "TMA Enterprise, LLC",
+      "aliases": [
+        "TMA Enterprise, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 452004.63,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-26",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 452004.63,
+      "rank": 95
+    },
+    {
+      "builder": "URBAN BUILDING SOLUTIONS LLC",
+      "aliases": [
+        "URBAN BUILDING SOLUTIONS LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 1019591.76,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-28",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 1019591.76,
+      "rank": 96
+    },
+    {
+      "builder": "VERICON CONSTRUCTION",
+      "aliases": [
+        "VERICON CONSTRUCTION"
+      ],
+      "permit_count": 1,
+      "valuation": 595790.54,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-10-13",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 595790.54,
+      "rank": 97
+    },
+    {
+      "builder": "Woda Construction",
+      "aliases": [
+        "Woda Construction"
+      ],
+      "permit_count": 1,
+      "valuation": 19000.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-26",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 19000.0,
+      "rank": 98
+    },
+    {
+      "builder": "HONDON LLC",
+      "aliases": [
+        "HONDON LLC"
+      ],
+      "permit_count": 18,
+      "valuation": 2459475.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 18
+      },
+      "last_issued_date": "2026-10-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 136637.5,
+      "rank": 99
+    },
+    {
+      "builder": "HABITAT FOR HUMANITY OF WAKE COUNTY",
+      "aliases": [
+        "HABITAT FOR HUMANITY OF WAKE COUNTY"
+      ],
+      "permit_count": 7,
+      "valuation": 1127796.46,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 5,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-09-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 161113.78,
+      "rank": 100
+    },
+    {
+      "builder": "HAROLD K JORDAN AND CO INC (B) (LIC# 26431)",
+      "aliases": [
+        "HAROLD K JORDAN AND CO INC (B) (LIC# 26431)"
+      ],
+      "permit_count": 7,
+      "valuation": 22124440.53,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 5,
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-09-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 3160634.36,
+      "rank": 101
+    },
+    {
+      "builder": "Meritage Homes",
+      "aliases": [
+        "Meritage Homes"
+      ],
+      "permit_count": 6,
+      "valuation": 2686260.36,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 6
+      },
+      "last_issued_date": "2026-09-16",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 447710.06,
+      "rank": 102
+    },
+    {
+      "builder": "KIRK PIGFORD HOMES LLC (B) (LIC# 66732)",
+      "aliases": [
+        "KIRK PIGFORD HOMES LLC (B) (LIC# 66732)"
+      ],
+      "permit_count": 5,
+      "valuation": 2343772.79,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 5
+      },
+      "last_issued_date": "2026-09-02",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 468754.56,
+      "rank": 103
+    },
+    {
+      "builder": "VAHUE CUSTOM HOMES INC (B) (LIC# 83504)",
+      "aliases": [
+        "VAHUE CUSTOM HOMES INC (B) (LIC# 83504)"
+      ],
+      "permit_count": 5,
+      "valuation": 2554095.82,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 5
+      },
+      "last_issued_date": "2026-08-24",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 510819.16,
+      "rank": 104
+    },
+    {
+      "builder": "AWK INC - KENT HOMES & ASSOCIATES (LIC# 36337)",
+      "aliases": [
+        "AWK INC - KENT HOMES & ASSOCIATES (LIC# 36337)"
+      ],
+      "permit_count": 4,
+      "valuation": 2137971.65,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 4
+      },
+      "last_issued_date": "2026-10-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 534492.91,
+      "rank": 105
+    },
+    {
+      "builder": "HOLLADAY CONSTRUCTION",
+      "aliases": [
+        "HOLLADAY CONSTRUCTION"
+      ],
+      "permit_count": 4,
+      "valuation": 732000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 2,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-09-01",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 183000.0,
+      "rank": 106
+    },
+    {
+      "builder": "Ravenscape Construction, LLC",
+      "aliases": [
+        "Ravenscape Construction, LLC"
+      ],
+      "permit_count": 4,
+      "valuation": 2459132.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1,
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-09-24",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 614783.0,
+      "rank": 107
+    },
+    {
+      "builder": "WOLFE CONSTRUCTION, INC",
+      "aliases": [
+        "WOLFE CONSTRUCTION, INC"
+      ],
+      "permit_count": 4,
+      "valuation": 6600000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 4
+      },
+      "last_issued_date": "2026-09-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 1650000.0,
+      "rank": 108
+    },
+    {
+      "builder": "Caruso Homes",
+      "aliases": [
+        "Caruso Homes"
+      ],
+      "permit_count": 3,
+      "valuation": 1619671.96,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-09-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 539890.65,
+      "rank": 109
+    },
+    {
+      "builder": "ROCK CREEK BUILDERS INC",
+      "aliases": [
+        "ROCK CREEK BUILDERS INC"
+      ],
+      "permit_count": 3,
+      "valuation": 2634406.07,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-10-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 878135.36,
+      "rank": 110
+    },
+    {
+      "builder": "WALRAVEN SIGNATURE HOMES, LLC",
+      "aliases": [
+        "WALRAVEN SIGNATURE HOMES, LLC"
+      ],
+      "permit_count": 3,
+      "valuation": 3143000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-10-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 1047666.67,
+      "rank": 111
+    },
+    {
+      "builder": "WELLS CONSTRUCTION CORP",
+      "aliases": [
+        "WELLS CONSTRUCTION CORP",
+        "WELLS CONSTRUCTION CORP (LIC# 60812)"
+      ],
+      "permit_count": 3,
+      "valuation": 1289510.68,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-09-04",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 429836.89,
+      "rank": 112
+    },
+    {
+      "builder": "Hamel Builders Inc",
+      "aliases": [
+        "Hamel Builders Inc",
+        "HAMEL BUILDERS' INC"
+      ],
+      "permit_count": 2,
+      "valuation": 7926314.0,
+      "jurisdictions": [
+        "Greensboro",
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 3963157.0,
+      "rank": 113
+    },
+    {
+      "builder": "LOYD BUILDERS, LLC",
+      "aliases": [
+        "LOYD BUILDERS, LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 2720821.64,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-09-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 1360410.82,
+      "rank": 114
+    },
+    {
+      "builder": "REDEEMING DEVELOPMENT GROUP LLC.",
+      "aliases": [
+        "REDEEMING DEVELOPMENT GROUP LLC."
+      ],
+      "permit_count": 2,
+      "valuation": 1111647.31,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-09-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 555823.66,
+      "rank": 115
+    },
+    {
+      "builder": "SEXTON CONSTRUCTION COASTAL LLC (B) (LIC# 74848)",
+      "aliases": [
+        "SEXTON CONSTRUCTION COASTAL LLC (B) (LIC# 74848)"
+      ],
+      "permit_count": 2,
+      "valuation": 2512470.48,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 2
+      },
+      "last_issued_date": "2026-08-26",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 1256235.24,
+      "rank": 116
+    },
+    {
+      "builder": "THE HASKELL COMPANY",
+      "aliases": [
+        "THE HASKELL COMPANY"
+      ],
+      "permit_count": 2,
+      "valuation": 9064000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 2
+      },
+      "last_issued_date": "2026-08-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 4532000.0,
+      "rank": 117
+    },
+    {
+      "builder": "W.M. Jordan Company, Inc.",
+      "aliases": [
+        "W.M. Jordan Company, Inc."
+      ],
+      "permit_count": 2,
+      "valuation": 60064242.74,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-08-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 30032121.37,
+      "rank": 118
+    },
+    {
+      "builder": "16 POINTE PROPERTIES LLC (B) (LIC# 64649)",
+      "aliases": [
+        "16 POINTE PROPERTIES LLC (B) (LIC# 64649)"
+      ],
+      "permit_count": 1,
+      "valuation": 739604.74,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 739604.74,
+      "rank": 119
+    },
+    {
+      "builder": "B Elliott Enterprise Inc",
+      "aliases": [
+        "B Elliott Enterprise Inc"
+      ],
+      "permit_count": 1,
+      "valuation": 943942.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 943942.8,
+      "rank": 120
+    },
+    {
+      "builder": "BAER CONSTRUCTION GROUP LLC (LIC# 107384)",
+      "aliases": [
+        "BAER CONSTRUCTION GROUP LLC (LIC# 107384)"
+      ],
+      "permit_count": 1,
+      "valuation": 506940.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-08-19",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 506940.0,
+      "rank": 121
+    },
+    {
+      "builder": "BLACKSTONE RENOVATIONS, LLC",
+      "aliases": [
+        "BLACKSTONE RENOVATIONS, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 140000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 140000.0,
+      "rank": 122
+    },
+    {
+      "builder": "Boney Building & Realty Company",
+      "aliases": [
+        "Boney Building & Realty Company"
+      ],
+      "permit_count": 1,
+      "valuation": 907399.68,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-10",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 907399.68,
+      "rank": 123
+    },
+    {
+      "builder": "Candito Construction",
+      "aliases": [
+        "Candito Construction"
+      ],
+      "permit_count": 1,
+      "valuation": 696413.25,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-09-10",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 696413.25,
+      "rank": 124
+    },
+    {
+      "builder": "Capstone Builders, LLC",
+      "aliases": [
+        "Capstone Builders, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 928203.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 928203.2,
+      "rank": 125
+    },
+    {
+      "builder": "CDI BUILDERS II, INC",
+      "aliases": [
+        "CDI BUILDERS II, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 530000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-01",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 530000.0,
+      "rank": 126
+    },
+    {
+      "builder": "Champion Custom Homes",
+      "aliases": [
+        "Champion Custom Homes"
+      ],
+      "permit_count": 1,
+      "valuation": 398544.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-09-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 398544.0,
+      "rank": 127
+    },
+    {
+      "builder": "COMER SHUFORD LLC",
+      "aliases": [
+        "COMER SHUFORD LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 125000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-21",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 125000.0,
+      "rank": 128
+    },
+    {
+      "builder": "DONE RIGHT THE FIRST TIME CONTRACTORS",
+      "aliases": [
+        "DONE RIGHT THE FIRST TIME CONTRACTORS"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 0.0,
+      "rank": 129
+    },
+    {
+      "builder": "DRB Group - North Carolina, LLC",
+      "aliases": [
+        "DRB Group - North Carolina, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 1300057.92,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-10-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 1300057.92,
+      "rank": 130
+    },
+    {
+      "builder": "DUNBAR & SMITH, INC",
+      "aliases": [
+        "DUNBAR & SMITH, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 2331500.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-09-29",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 2331500.0,
+      "rank": 131
+    },
+    {
+      "builder": "Eastwood Homes of Raleigh, LLC DBA IBEX HC",
+      "aliases": [
+        "Eastwood Homes of Raleigh, LLC DBA IBEX HC"
+      ],
+      "permit_count": 1,
+      "valuation": 369709.89,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-10-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 369709.89,
+      "rank": 132
+    },
+    {
+      "builder": "Family Building Company II LLC",
+      "aliases": [
+        "Family Building Company II LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 175446.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 175446.0,
+      "rank": 133
+    },
+    {
+      "builder": "FOGLEMAN & ASSOCIATES OF NC IN",
+      "aliases": [
+        "FOGLEMAN & ASSOCIATES OF NC IN"
+      ],
+      "permit_count": 1,
+      "valuation": 615000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-28",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 615000.0,
+      "rank": 134
+    },
+    {
+      "builder": "Good Neighbor Fence Co",
+      "aliases": [
+        "Good Neighbor Fence Co"
+      ],
+      "permit_count": 1,
+      "valuation": 406919.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-29",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 406919.2,
+      "rank": 135
+    },
+    {
+      "builder": "GRANDER CONSTRUCTION GROUP LLC(#105199)",
+      "aliases": [
+        "GRANDER CONSTRUCTION GROUP LLC(#105199)"
+      ],
+      "permit_count": 1,
+      "valuation": 532149.25,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-02",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 532149.25,
+      "rank": 136
+    },
+    {
+      "builder": "GUPTON BUILT LLC",
+      "aliases": [
+        "GUPTON BUILT LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 540200.4,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 540200.4,
+      "rank": 137
+    },
+    {
+      "builder": "Irima General Contracting LLC",
+      "aliases": [
+        "Irima General Contracting LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 243025.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 243025.2,
+      "rank": 138
+    },
+    {
+      "builder": "JAMES R VANNOY & SONS CONST CO INC (LIC#03810)",
+      "aliases": [
+        "JAMES R VANNOY & SONS CONST CO INC (LIC#03810)"
+      ],
+      "permit_count": 1,
+      "valuation": 26813700.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-10-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 26813700.0,
+      "rank": 139
+    },
+    {
+      "builder": "John C. Sanders & Company",
+      "aliases": [
+        "John C. Sanders & Company"
+      ],
+      "permit_count": 1,
+      "valuation": 1101270.06,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-02",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 1101270.06,
+      "rank": 140
+    },
+    {
+      "builder": "K J CONSTRUCTION",
+      "aliases": [
+        "K J CONSTRUCTION"
+      ],
+      "permit_count": 1,
+      "valuation": 842981.7,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-24",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 842981.7,
+      "rank": 141
+    },
+    {
+      "builder": "KBY GROUP INC",
+      "aliases": [
+        "KBY GROUP INC"
+      ],
+      "permit_count": 1,
+      "valuation": 131250.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 131250.0,
+      "rank": 142
+    },
+    {
+      "builder": "Kearey Builders, Inc.",
+      "aliases": [
+        "Kearey Builders, Inc."
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-24",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 0.0,
+      "rank": 143
+    },
+    {
+      "builder": "KING HOMES INC (LIC# 60541)",
+      "aliases": [
+        "KING HOMES INC (LIC# 60541)"
+      ],
+      "permit_count": 1,
+      "valuation": 154075.13,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 154075.13,
+      "rank": 144
+    },
+    {
+      "builder": "LANDMARK MANAGEMENT PARTNERS,",
+      "aliases": [
+        "LANDMARK MANAGEMENT PARTNERS,"
+      ],
+      "permit_count": 1,
+      "valuation": 646137.85,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 646137.85,
+      "rank": 145
+    },
+    {
+      "builder": "LIGHTNING LABOR CONSTRUCTION SERVICES LLC (LIC #100531)",
+      "aliases": [
+        "LIGHTNING LABOR CONSTRUCTION SERVICES LLC (LIC #100531)"
+      ],
+      "permit_count": 1,
+      "valuation": 231609.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 231609.0,
+      "rank": 146
+    },
+    {
+      "builder": "LYNNDALE, INC. ((GC) LIC # 11727)",
+      "aliases": [
+        "LYNNDALE, INC. ((GC) LIC # 11727)"
+      ],
+      "permit_count": 1,
+      "valuation": 973632.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-08-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 973632.0,
+      "rank": 147
+    },
+    {
+      "builder": "MITCHELL HOMES, INC. (LIC# 76127)",
+      "aliases": [
+        "MITCHELL HOMES, INC. (LIC# 76127)"
+      ],
+      "permit_count": 1,
+      "valuation": 247380.47,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-14",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 247380.47,
+      "rank": 148
+    },
+    {
+      "builder": "MONTEREY BAY CONSTRUCTION RALEIGH LLC",
+      "aliases": [
+        "MONTEREY BAY CONSTRUCTION RALEIGH LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 705207.36,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-05",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 705207.36,
+      "rank": 149
+    },
+    {
+      "builder": "Murdock & Gannon Construction, Inc.",
+      "aliases": [
+        "Murdock & Gannon Construction, Inc."
+      ],
+      "permit_count": 1,
+      "valuation": 446773.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 446773.6,
+      "rank": 150
+    },
+    {
+      "builder": "N C A OF THE CAROLINAS",
+      "aliases": [
+        "N C A OF THE CAROLINAS"
+      ],
+      "permit_count": 1,
+      "valuation": 647649.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 647649.0,
+      "rank": 151
+    },
+    {
+      "builder": "NCDP LLC",
+      "aliases": [
+        "NCDP LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 256975.7,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-19",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 256975.7,
+      "rank": 152
+    },
+    {
+      "builder": "OLD FORT LLC (GC) (LIC# 52105)",
+      "aliases": [
+        "OLD FORT LLC (GC) (LIC# 52105)"
+      ],
+      "permit_count": 1,
+      "valuation": 923678.75,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-14",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 923678.75,
+      "rank": 153
+    },
+    {
+      "builder": "RENLEY CONSTRUCTION LLC",
+      "aliases": [
+        "RENLEY CONSTRUCTION LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 5000000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-10-02",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 5000000.0,
+      "rank": 154
+    },
+    {
+      "builder": "ROBERT HIGH DEVELOPMENT LLC (B) (LIC# 70647)",
+      "aliases": [
+        "ROBERT HIGH DEVELOPMENT LLC (B) (LIC# 70647)"
+      ],
+      "permit_count": 1,
+      "valuation": 3434560.75,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-09-30",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 3434560.75,
+      "rank": 155
+    },
+    {
+      "builder": "RONALD JAMES BARNELLO II (B) (LIC# 87739)",
+      "aliases": [
+        "RONALD JAMES BARNELLO II (B) (LIC# 87739)"
+      ],
+      "permit_count": 1,
+      "valuation": 552552.9,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 552552.9,
+      "rank": 156
+    },
+    {
+      "builder": "Sambrick",
+      "aliases": [
+        "Sambrick"
+      ],
+      "permit_count": 1,
+      "valuation": 4804521.96,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-09-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 4804521.96,
+      "rank": 157
+    },
+    {
+      "builder": "SEPTEMBER SIGNS & GRAPHICS LLC (LIC# 82749)",
+      "aliases": [
+        "SEPTEMBER SIGNS & GRAPHICS LLC (LIC# 82749)"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-10-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 0.0,
+      "rank": 158
+    },
+    {
+      "builder": "SHIPSHAPE BUILDING LLC (LIC# 87646)",
+      "aliases": [
+        "SHIPSHAPE BUILDING LLC (LIC# 87646)"
+      ],
+      "permit_count": 1,
+      "valuation": 97524.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-09-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 97524.0,
+      "rank": 159
+    },
+    {
+      "builder": "SHORELINE HOME BUILDERS LLC (LIC# 106052)",
+      "aliases": [
+        "SHORELINE HOME BUILDERS LLC (LIC# 106052)"
+      ],
+      "permit_count": 1,
+      "valuation": 547038.4,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-21",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 547038.4,
+      "rank": 160
+    },
+    {
+      "builder": "Solid Rock Renovations LLC",
+      "aliases": [
+        "Solid Rock Renovations LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 1258770.48,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-02",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 1258770.48,
+      "rank": 161
+    },
+    {
+      "builder": "Speight Built LLC",
+      "aliases": [
+        "Speight Built LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 648211.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-29",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 648211.6,
+      "rank": 162
+    },
+    {
+      "builder": "WALT CONSTRUCTION, INC",
+      "aliases": [
+        "WALT CONSTRUCTION, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-09-28",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 0.0,
+      "rank": 163
+    },
+    {
+      "builder": "Williams Realty and Building Company Inc.",
+      "aliases": [
+        "Williams Realty and Building Company Inc."
+      ],
+      "permit_count": 1,
+      "valuation": 553629.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-08-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 553629.6,
+      "rank": 164
+    },
+    {
+      "builder": "WJH, LLC",
+      "aliases": [
+        "WJH, LLC"
+      ],
+      "permit_count": 27,
+      "valuation": 3816430.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 27
+      },
+      "last_issued_date": "2026-07-29",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 141349.26,
+      "rank": 165
+    },
+    {
+      "builder": "ROBUCK HOMES TRIANGLE LLC",
+      "aliases": [
+        "ROBUCK HOMES TRIANGLE LLC",
+        "ROBUCK HOMES TRIANGLE LLC (B) (LIC# 57083)"
+      ],
+      "permit_count": 21,
+      "valuation": 7982051.61,
+      "jurisdictions": [
+        "New Hanover County",
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 2,
+        "Single Family": 19
+      },
+      "last_issued_date": "2026-08-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 380097.7,
+      "rank": 166
+    },
+    {
+      "builder": "HARDISON HOMES LLC (LIC# 72498)",
+      "aliases": [
+        "HARDISON HOMES LLC (LIC# 72498)"
+      ],
+      "permit_count": 18,
+      "valuation": 5592144.16,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 18
+      },
+      "last_issued_date": "2025-12-30",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 310674.68,
+      "rank": 167
+    },
+    {
+      "builder": "M I HOMES OF RALEIGH",
+      "aliases": [
+        "M I HOMES OF RALEIGH"
+      ],
+      "permit_count": 14,
+      "valuation": 4252002.4,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 14
+      },
+      "last_issued_date": "2026-07-16",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 303714.46,
+      "rank": 168
+    },
+    {
+      "builder": "RAM HOMES, INC",
+      "aliases": [
+        "RAM HOMES, INC"
+      ],
+      "permit_count": 13,
+      "valuation": 2046420.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 13
+      },
+      "last_issued_date": "2026-06-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 157416.92,
+      "rank": 169
+    },
+    {
+      "builder": "Smoot Custom Homes, LLC",
+      "aliases": [
+        "Smoot Custom Homes, LLC"
+      ],
+      "permit_count": 12,
+      "valuation": 2064631.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 12
+      },
+      "last_issued_date": "2026-07-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 172052.6,
+      "rank": 170
+    },
+    {
+      "builder": "LEGACY CUSTOM HOMES",
+      "aliases": [
+        "LEGACY CUSTOM HOMES"
+      ],
+      "permit_count": 10,
+      "valuation": 3611287.28,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 9,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-24",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 361128.73,
+      "rank": 171
+    },
+    {
+      "builder": "PENN CONSTRUCTION LLC",
+      "aliases": [
+        "PENN CONSTRUCTION LLC"
+      ],
+      "permit_count": 10,
+      "valuation": 5059275.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 4,
+        "Single Family": 6
+      },
+      "last_issued_date": "2026-07-24",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 505927.5,
+      "rank": 172
+    },
+    {
+      "builder": "CONTR - CHOATE CONSTRUCTION CO.",
+      "aliases": [
+        "CONTR - CHOATE CONSTRUCTION CO."
+      ],
+      "permit_count": 9,
+      "valuation": 14130616.9,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Multifamily": 8
+      },
+      "last_issued_date": "2026-05-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1570068.54,
+      "rank": 173
+    },
+    {
+      "builder": "Haven Build",
+      "aliases": [
+        "Haven Build"
+      ],
+      "permit_count": 9,
+      "valuation": 1527174.4,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 9
+      },
+      "last_issued_date": "2026-06-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 169686.04,
+      "rank": 174
+    },
+    {
+      "builder": "LEWIS COASTAL HOMES AND RENOVATIONS LLC (B) (LIC# 87899)",
+      "aliases": [
+        "LEWIS COASTAL HOMES AND RENOVATIONS LLC (B) (LIC# 87899)"
+      ],
+      "permit_count": 9,
+      "valuation": 2465202.08,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 9
+      },
+      "last_issued_date": "2026-08-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 273911.34,
+      "rank": 175
+    },
+    {
+      "builder": "MAWA, LLC",
+      "aliases": [
+        "MAWA, LLC"
+      ],
+      "permit_count": 9,
+      "valuation": 1440000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 9
+      },
+      "last_issued_date": "2026-02-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 160000.0,
+      "rank": 176
+    },
+    {
+      "builder": "HABITAT FOR HUMANITY",
+      "aliases": [
+        "HABITAT FOR HUMANITY"
+      ],
+      "permit_count": 8,
+      "valuation": 1503250.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 8
+      },
+      "last_issued_date": "2026-08-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 187906.25,
+      "rank": 177
+    },
+    {
+      "builder": "HARDISON BUILDING INC (B) (LIC# 38799)",
+      "aliases": [
+        "HARDISON BUILDING INC (B) (LIC# 38799)"
+      ],
+      "permit_count": 8,
+      "valuation": 4017253.89,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 8
+      },
+      "last_issued_date": "2026-07-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 502156.74,
+      "rank": 178
+    },
+    {
+      "builder": "COMET BUILDERS, LLC",
+      "aliases": [
+        "COMET BUILDERS, LLC"
+      ],
+      "permit_count": 7,
+      "valuation": 21500000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 7
+      },
+      "last_issued_date": "2026-07-14",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 3071428.57,
+      "rank": 179
+    },
+    {
+      "builder": "GWATHMEY RESIDENTIAL GROUP LLC (B) (LIC# 77174)",
+      "aliases": [
+        "GWATHMEY RESIDENTIAL GROUP LLC (B) (LIC# 77174)"
+      ],
+      "permit_count": 7,
+      "valuation": 896326.83,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 7
+      },
+      "last_issued_date": "2026-07-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 128046.69,
+      "rank": 180
+    },
+    {
+      "builder": "SBM HOMES LLC",
+      "aliases": [
+        "SBM HOMES LLC"
+      ],
+      "permit_count": 7,
+      "valuation": 2037772.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 7
+      },
+      "last_issued_date": "2026-08-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 291110.4,
+      "rank": 181
+    },
+    {
+      "builder": "BRIDGEWATER BUILDERS, INC. (LIC# 106967)",
+      "aliases": [
+        "BRIDGEWATER BUILDERS, INC. (LIC# 106967)"
+      ],
+      "permit_count": 6,
+      "valuation": 1975624.77,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 3,
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-04-21",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 329270.79,
+      "rank": 182
+    },
+    {
+      "builder": "TRUE HOME LLC AKA TRIBUTE HOMES TRUE HOMES LLC T/A (B) (LIC#67353)",
+      "aliases": [
+        "TRUE HOME LLC AKA TRIBUTE HOMES TRUE HOMES LLC T/A (B) (LIC#67353)"
+      ],
+      "permit_count": 6,
+      "valuation": 1322046.23,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 4,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-06-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 220341.04,
+      "rank": 183
+    },
+    {
+      "builder": "GRANVILLE HOMES LLC",
+      "aliases": [
+        "GRANVILLE HOMES LLC"
+      ],
+      "permit_count": 5,
+      "valuation": 3696100.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 5
+      },
+      "last_issued_date": "2026-04-30",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 739220.0,
+      "rank": 184
+    },
+    {
+      "builder": "IRONWOOD LLC (B) (LIC# 79479)",
+      "aliases": [
+        "IRONWOOD LLC (B) (LIC# 79479)"
+      ],
+      "permit_count": 5,
+      "valuation": 1418660.27,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 4,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-04-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 283732.05,
+      "rank": 185
+    },
+    {
+      "builder": "RICHARD WALLACE BUILDER INC (B) (LIC# 29206)",
+      "aliases": [
+        "RICHARD WALLACE BUILDER INC (B) (LIC# 29206)"
+      ],
+      "permit_count": 5,
+      "valuation": 2347963.81,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 5
+      },
+      "last_issued_date": "2026-04-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 469592.76,
+      "rank": 186
+    },
+    {
+      "builder": "STEVENS FINE HOMES  T/A STEVENS BUILDING COMPANY (B) (LIC# 31626)",
+      "aliases": [
+        "STEVENS FINE HOMES  T/A STEVENS BUILDING COMPANY (B) (LIC# 31626)"
+      ],
+      "permit_count": 5,
+      "valuation": 1495311.82,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 5
+      },
+      "last_issued_date": "2026-07-29",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 299062.36,
+      "rank": 187
+    },
+    {
+      "builder": "TRINITY CONSTRUCTION & DEVELOP",
+      "aliases": [
+        "TRINITY CONSTRUCTION & DEVELOP"
+      ],
+      "permit_count": 5,
+      "valuation": 1960000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 3,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-04-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 392000.0,
+      "rank": 188
+    },
+    {
+      "builder": "A & M Ventures, Inc. T/A Habitech Builders",
+      "aliases": [
+        "A & M Ventures, Inc. T/A Habitech Builders"
+      ],
+      "permit_count": 4,
+      "valuation": 2773924.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 4
+      },
+      "last_issued_date": "2026-07-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 693481.0,
+      "rank": 189
+    },
+    {
+      "builder": "Cardinal Civil Contracting",
+      "aliases": [
+        "Cardinal Civil Contracting"
+      ],
+      "permit_count": 4,
+      "valuation": 14467932.68,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 4
+      },
+      "last_issued_date": "2026-05-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 3616983.17,
+      "rank": 190
+    },
+    {
+      "builder": "DANIEL KERR TOLLENS (B) (LIC# 104094)",
+      "aliases": [
+        "DANIEL KERR TOLLENS (B) (LIC# 104094)"
+      ],
+      "permit_count": 4,
+      "valuation": 1625123.15,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 4
+      },
+      "last_issued_date": "2026-03-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 406280.79,
+      "rank": 191
+    },
+    {
+      "builder": "Kaye House",
+      "aliases": [
+        "Kaye House"
+      ],
+      "permit_count": 4,
+      "valuation": 1384796.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 4
+      },
+      "last_issued_date": "2026-05-19",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 346199.0,
+      "rank": 192
+    },
+    {
+      "builder": "LEWIS3JS LLC",
+      "aliases": [
+        "LEWIS3JS LLC"
+      ],
+      "permit_count": 4,
+      "valuation": 490500.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 2,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-07-01",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 122625.0,
+      "rank": 193
+    },
+    {
+      "builder": "WIMCO CORP (B) LIC# 03478)",
+      "aliases": [
+        "WIMCO CORP (B) LIC# 03478)"
+      ],
+      "permit_count": 4,
+      "valuation": 1743084.22,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 4
+      },
+      "last_issued_date": "2026-06-19",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 435771.05,
+      "rank": 194
+    },
+    {
+      "builder": "BLUE OCEAN DEV LLC",
+      "aliases": [
+        "BLUE OCEAN DEV LLC"
+      ],
+      "permit_count": 3,
+      "valuation": 480000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 2,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-07",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 160000.0,
+      "rank": 195
+    },
+    {
+      "builder": "COPPER BUILDERS LLC (LIC# 73657)",
+      "aliases": [
+        "COPPER BUILDERS LLC (LIC# 73657)"
+      ],
+      "permit_count": 3,
+      "valuation": 1614204.44,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-03-10",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 538068.15,
+      "rank": 196
+    },
+    {
+      "builder": "HOME LIFE INC (GC) (LIC # 38767)",
+      "aliases": [
+        "HOME LIFE INC (GC) (LIC # 38767)"
+      ],
+      "permit_count": 3,
+      "valuation": 1037718.61,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-07-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 345906.2,
+      "rank": 197
+    },
+    {
+      "builder": "JOHNSON CONSTRUCTION MGMT, INC",
+      "aliases": [
+        "JOHNSON CONSTRUCTION MGMT, INC"
+      ],
+      "permit_count": 3,
+      "valuation": 435000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-06-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 145000.0,
+      "rank": 198
+    },
+    {
+      "builder": "MONTEITH CONSTRUCTION CORP (B) (LIC# 43319)",
+      "aliases": [
+        "MONTEITH CONSTRUCTION CORP (B) (LIC# 43319)"
+      ],
+      "permit_count": 3,
+      "valuation": 13238333.53,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 3
+      },
+      "last_issued_date": "2026-06-26",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 4412777.84,
+      "rank": 199
+    },
+    {
+      "builder": "NINTH CONSTRUCTION INC",
+      "aliases": [
+        "NINTH CONSTRUCTION INC"
+      ],
+      "permit_count": 3,
+      "valuation": 390000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-05-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 130000.0,
+      "rank": 200
+    },
+    {
+      "builder": "RETE CONSTRUCTION INC (B) (LIC# 83556)",
+      "aliases": [
+        "RETE CONSTRUCTION INC (B) (LIC# 83556)"
+      ],
+      "permit_count": 3,
+      "valuation": 542957.67,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-08-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 180985.89,
+      "rank": 201
+    },
+    {
+      "builder": "SPIRE BUILDERS LLC",
+      "aliases": [
+        "SPIRE BUILDERS LLC"
+      ],
+      "permit_count": 3,
+      "valuation": 883700.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-02-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 294566.67,
+      "rank": 202
+    },
+    {
+      "builder": "TA SQUARED",
+      "aliases": [
+        "TA SQUARED"
+      ],
+      "permit_count": 3,
+      "valuation": 500000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 3
+      },
+      "last_issued_date": "2026-07-14",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 166666.67,
+      "rank": 203
+    },
+    {
+      "builder": "W.C. CONSTRUCTION COMPANY, LLC",
+      "aliases": [
+        "W.C. CONSTRUCTION COMPANY, LLC"
+      ],
+      "permit_count": 3,
+      "valuation": 6234552.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 3
+      },
+      "last_issued_date": "2026-07-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 2078184.0,
+      "rank": 204
+    },
+    {
+      "builder": "ADRIAN BUILT HOMES LLC",
+      "aliases": [
+        "ADRIAN BUILT HOMES LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 278055.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-05-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 139027.5,
+      "rank": 205
+    },
+    {
+      "builder": "AIRLIE HOMES LLC (LIC# 75624)",
+      "aliases": [
+        "AIRLIE HOMES LLC (LIC# 75624)"
+      ],
+      "permit_count": 2,
+      "valuation": 1177345.75,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-07-21",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 588672.88,
+      "rank": 206
+    },
+    {
+      "builder": "AMERICAS HOME PLACE OF WILMINGTON LLC (LIC# 88113",
+      "aliases": [
+        "AMERICAS HOME PLACE OF WILMINGTON LLC (LIC# 88113"
+      ],
+      "permit_count": 2,
+      "valuation": 611227.18,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-04-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 305613.59,
+      "rank": 207
+    },
+    {
+      "builder": "BELL CUSTOM HOMES LLC (LIC# 76096)",
+      "aliases": [
+        "BELL CUSTOM HOMES LLC (LIC# 76096)"
+      ],
+      "permit_count": 2,
+      "valuation": 1121318.43,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-02-04",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 560659.21,
+      "rank": 208
+    },
+    {
+      "builder": "C HERMAN CONSTRUCTION, LLC",
+      "aliases": [
+        "C HERMAN CONSTRUCTION, LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 13168184.82,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 6584092.41,
+      "rank": 209
+    },
+    {
+      "builder": "DELTA DEVELOPMENT GROUP, LLC",
+      "aliases": [
+        "DELTA DEVELOPMENT GROUP, LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 280000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-03-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 140000.0,
+      "rank": 210
+    },
+    {
+      "builder": "Dixon/Kirby & Company, Inc.",
+      "aliases": [
+        "Dixon/Kirby & Company, Inc."
+      ],
+      "permit_count": 2,
+      "valuation": 1874600.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-07-16",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 937300.4,
+      "rank": 211
+    },
+    {
+      "builder": "DR HORTON INC T/A EMERALD HOMES (B) (LIC# 29676)",
+      "aliases": [
+        "DR HORTON INC T/A EMERALD HOMES (B) (LIC# 29676)"
+      ],
+      "permit_count": 2,
+      "valuation": 578912.21,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-01-07",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 289456.1,
+      "rank": 212
+    },
+    {
+      "builder": "DSW HOMES LLC (B) (LIC# 77881)",
+      "aliases": [
+        "DSW HOMES LLC (B) (LIC# 77881)"
+      ],
+      "permit_count": 2,
+      "valuation": 275945.58,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-04-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 137972.79,
+      "rank": 213
+    },
+    {
+      "builder": "EASTERN HOME AND PROPERTY LLC (LIC# 81476)",
+      "aliases": [
+        "EASTERN HOME AND PROPERTY LLC (LIC# 81476)"
+      ],
+      "permit_count": 2,
+      "valuation": 595566.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-07-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 297783.0,
+      "rank": 214
+    },
+    {
+      "builder": "FOURTH ELM CONSTRUCTION, LLC",
+      "aliases": [
+        "FOURTH ELM CONSTRUCTION, LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 9507010.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 2
+      },
+      "last_issued_date": "2026-06-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 4753505.0,
+      "rank": 215
+    },
+    {
+      "builder": "H.J. MORRIS CONSTRUCTION, INC.",
+      "aliases": [
+        "H.J. MORRIS CONSTRUCTION, INC."
+      ],
+      "permit_count": 2,
+      "valuation": 1472591.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-06-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 736295.6,
+      "rank": 216
+    },
+    {
+      "builder": "Haven Build, LLC AKA: Haven Design/Build Haven Bui",
+      "aliases": [
+        "Haven Build, LLC AKA: Haven Design/Build Haven Bui"
+      ],
+      "permit_count": 2,
+      "valuation": 336307.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-05-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 168153.8,
+      "rank": 217
+    },
+    {
+      "builder": "HHHUNT HOMES RALEIGH-DURHAM LLC (B) (LIC# 66021)",
+      "aliases": [
+        "HHHUNT HOMES RALEIGH-DURHAM LLC (B) (LIC# 66021)"
+      ],
+      "permit_count": 2,
+      "valuation": 787250.02,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-04-14",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 393625.01,
+      "rank": 218
+    },
+    {
+      "builder": "HUGH P LATHAM JR",
+      "aliases": [
+        "HUGH P LATHAM JR"
+      ],
+      "permit_count": 2,
+      "valuation": 404000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-07-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 202000.0,
+      "rank": 219
+    },
+    {
+      "builder": "IVEY CUSTOM BUILDERS LLC (LIC# 77240)",
+      "aliases": [
+        "IVEY CUSTOM BUILDERS LLC (LIC# 77240)"
+      ],
+      "permit_count": 2,
+      "valuation": 338369.72,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2025-12-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 169184.86,
+      "rank": 220
+    },
+    {
+      "builder": "J. D. Beam, Inc.",
+      "aliases": [
+        "J. D. Beam, Inc."
+      ],
+      "permit_count": 2,
+      "valuation": 10634085.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-28",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 5317042.6,
+      "rank": 221
+    },
+    {
+      "builder": "JACOBS REDEVELOPMENT LLC (B) (LIC# 88121)",
+      "aliases": [
+        "JACOBS REDEVELOPMENT LLC (B) (LIC# 88121)"
+      ],
+      "permit_count": 2,
+      "valuation": 513289.66,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-05-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 256644.83,
+      "rank": 222
+    },
+    {
+      "builder": "KELLY C HODGES",
+      "aliases": [
+        "KELLY C HODGES"
+      ],
+      "permit_count": 2,
+      "valuation": 8086044.74,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-07-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 4043022.37,
+      "rank": 223
+    },
+    {
+      "builder": "KONRADY & SON CONSTRUCTION LLC (LIC# 69050)",
+      "aliases": [
+        "KONRADY & SON CONSTRUCTION LLC (LIC# 69050)"
+      ],
+      "permit_count": 2,
+      "valuation": 1825078.92,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-04-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 912539.46,
+      "rank": 224
+    },
+    {
+      "builder": "LANDMARK BUILDERS, INC",
+      "aliases": [
+        "LANDMARK BUILDERS, INC"
+      ],
+      "permit_count": 2,
+      "valuation": 8186337.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 2
+      },
+      "last_issued_date": "2026-04-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 4093168.5,
+      "rank": 225
+    },
+    {
+      "builder": "LEGACY HOMES & CONST LLC",
+      "aliases": [
+        "LEGACY HOMES & CONST LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 397000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-04-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 198500.0,
+      "rank": 226
+    },
+    {
+      "builder": "Leo Construction and Development LLC (GC) (LIC#108263)",
+      "aliases": [
+        "Leo Construction and Development LLC (GC) (LIC#108263)"
+      ],
+      "permit_count": 2,
+      "valuation": 550567.68,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 1,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-04-01",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 275283.84,
+      "rank": 227
+    },
+    {
+      "builder": "LIBERTY COASTAL INC (GC) (LIC# 104875)",
+      "aliases": [
+        "LIBERTY COASTAL INC (GC) (LIC# 104875)"
+      ],
+      "permit_count": 2,
+      "valuation": 590051.5,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-08-10",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 295025.75,
+      "rank": 228
+    },
+    {
+      "builder": "MCKINLEY BUILDING CORP (B) (LIC# 30896)",
+      "aliases": [
+        "MCKINLEY BUILDING CORP (B) (LIC# 30896)"
+      ],
+      "permit_count": 2,
+      "valuation": 10352587.89,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 2
+      },
+      "last_issued_date": "2026-02-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 5176293.95,
+      "rank": 229
+    },
+    {
+      "builder": "NORTH STATE CUSTOM BUILDERS AKA NORTH STATE PARTNERS CONSTRUCTION LLC (LIC# 70046)",
+      "aliases": [
+        "NORTH STATE CUSTOM BUILDERS AKA NORTH STATE PARTNERS CONSTRUCTION LLC (LIC# 70046)"
+      ],
+      "permit_count": 2,
+      "valuation": 1988859.57,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-05-26",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 994429.79,
+      "rank": 230
+    },
+    {
+      "builder": "PANORAMA COMPANIES, LLC",
+      "aliases": [
+        "PANORAMA COMPANIES, LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 2
+      },
+      "last_issued_date": "2026-03-30",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 231
+    },
+    {
+      "builder": "ROERS GENERAL CONTRACTING LLC",
+      "aliases": [
+        "ROERS GENERAL CONTRACTING LLC"
+      ],
+      "permit_count": 2,
+      "valuation": 35165338.56,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-06-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 17582669.28,
+      "rank": 232
+    },
+    {
+      "builder": "SALVADOR SANCHEZ-MILIAN",
+      "aliases": [
+        "SALVADOR SANCHEZ-MILIAN"
+      ],
+      "permit_count": 2,
+      "valuation": 450000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-04-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 225000.0,
+      "rank": 233
+    },
+    {
+      "builder": "SMITH DESIGNBUILD INC.",
+      "aliases": [
+        "SMITH DESIGNBUILD INC."
+      ],
+      "permit_count": 2,
+      "valuation": 1421473.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-07-31",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 710736.8,
+      "rank": 234
+    },
+    {
+      "builder": "STIER CONSTRUCTION COMPANY INC",
+      "aliases": [
+        "STIER CONSTRUCTION COMPANY INC"
+      ],
+      "permit_count": 2,
+      "valuation": 1279253.71,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-08-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 639626.85,
+      "rank": 235
+    },
+    {
+      "builder": "SWAN SONG PROPERTIES LLC (LIC# 75686)",
+      "aliases": [
+        "SWAN SONG PROPERTIES LLC (LIC# 75686)"
+      ],
+      "permit_count": 2,
+      "valuation": 433880.86,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-05-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 216940.43,
+      "rank": 236
+    },
+    {
+      "builder": "URBAN BUILDING & DEVELOPMENT LLC (B) (LIC# 81731)",
+      "aliases": [
+        "URBAN BUILDING & DEVELOPMENT LLC (B) (LIC# 81731)"
+      ],
+      "permit_count": 2,
+      "valuation": 636081.76,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 2
+      },
+      "last_issued_date": "2026-06-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 318040.88,
+      "rank": 237
+    },
+    {
+      "builder": "VENTURE CONSTRUCTION COMPANY (B) (LIC# 06934)",
+      "aliases": [
+        "VENTURE CONSTRUCTION COMPANY (B) (LIC# 06934)"
+      ],
+      "permit_count": 2,
+      "valuation": 1140637.16,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 2
+      },
+      "last_issued_date": "2026-04-02",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 570318.58,
+      "rank": 238
+    },
+    {
+      "builder": "W3 BUILT LLC (B) (LIC# 84763)",
+      "aliases": [
+        "W3 BUILT LLC (B) (LIC# 84763)"
+      ],
+      "permit_count": 2,
+      "valuation": 778867.98,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 1,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-03-16",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 389433.99,
+      "rank": 239
+    },
+    {
+      "builder": "3 PILLARS HOMES, LLC",
+      "aliases": [
+        "3 PILLARS HOMES, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 160000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-01-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 160000.0,
+      "rank": 240
+    },
+    {
+      "builder": "A SANCHEZ CONSTRUCTION LLC",
+      "aliases": [
+        "A SANCHEZ CONSTRUCTION LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 130000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-04-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 130000.0,
+      "rank": 241
+    },
+    {
+      "builder": "AMERICA'S HOME PLACE",
+      "aliases": [
+        "AMERICA'S HOME PLACE"
+      ],
+      "permit_count": 1,
+      "valuation": 637024.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 637024.0,
+      "rank": 242
+    },
+    {
+      "builder": "ANGE CONSTRUCTION COMPANY",
+      "aliases": [
+        "ANGE CONSTRUCTION COMPANY"
+      ],
+      "permit_count": 1,
+      "valuation": 1198808.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-31",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1198808.8,
+      "rank": 243
+    },
+    {
+      "builder": "ANNIS MANGRUM LLC  dba SUNDANCE SIGNATURE HOMES",
+      "aliases": [
+        "ANNIS MANGRUM LLC  dba SUNDANCE SIGNATURE HOMES"
+      ],
+      "permit_count": 1,
+      "valuation": 870587.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-02",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 870587.6,
+      "rank": 244
+    },
+    {
+      "builder": "Arcadia Construction Company",
+      "aliases": [
+        "Arcadia Construction Company"
+      ],
+      "permit_count": 1,
+      "valuation": 636515.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-21",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 636515.2,
+      "rank": 245
+    },
+    {
+      "builder": "ARCO Design/Build",
+      "aliases": [
+        "ARCO Design/Build"
+      ],
+      "permit_count": 1,
+      "valuation": 10000.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-08-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 10000.0,
+      "rank": 246
+    },
+    {
+      "builder": "ASI Signage",
+      "aliases": [
+        "ASI Signage"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 247
+    },
+    {
+      "builder": "ASJ WILSON CONSTRUCTION",
+      "aliases": [
+        "ASJ WILSON CONSTRUCTION"
+      ],
+      "permit_count": 1,
+      "valuation": 432791.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-02-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 432791.0,
+      "rank": 248
+    },
+    {
+      "builder": "ASL SIGNS",
+      "aliases": [
+        "ASL SIGNS"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-01-21",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 249
+    },
+    {
+      "builder": "ATLANTIC BUILDING COMPANY NC LLC (B) (LIC# 102235)",
+      "aliases": [
+        "ATLANTIC BUILDING COMPANY NC LLC (B) (LIC# 102235)"
+      ],
+      "permit_count": 1,
+      "valuation": 430903.03,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-03-04",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 430903.03,
+      "rank": 250
+    },
+    {
+      "builder": "B E VAUGHAN & SON, INC",
+      "aliases": [
+        "B E VAUGHAN & SON, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2025-12-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 251
+    },
+    {
+      "builder": "BARKER AND CANADY CUSTOM HOMES, INC",
+      "aliases": [
+        "BARKER AND CANADY CUSTOM HOMES, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 628873.58,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-04-14",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 628873.58,
+      "rank": 252
+    },
+    {
+      "builder": "BENNETT CONSTRUCTION GROUP NC, LLC (LIC# 88138)",
+      "aliases": [
+        "BENNETT CONSTRUCTION GROUP NC, LLC (LIC# 88138)"
+      ],
+      "permit_count": 1,
+      "valuation": 286312.84,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-04",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 286312.84,
+      "rank": 253
+    },
+    {
+      "builder": "Blanton Building, Inc.",
+      "aliases": [
+        "Blanton Building, Inc."
+      ],
+      "permit_count": 1,
+      "valuation": 842725.89,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-05",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 842725.89,
+      "rank": 254
+    },
+    {
+      "builder": "BLUEWATER CONSTRUCTION LLC (LIC#49996)",
+      "aliases": [
+        "BLUEWATER CONSTRUCTION LLC (LIC#49996)"
+      ],
+      "permit_count": 1,
+      "valuation": 417158.82,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2025-11-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 417158.82,
+      "rank": 255
+    },
+    {
+      "builder": "BOLENS HOME IMPROVEMENT",
+      "aliases": [
+        "BOLENS HOME IMPROVEMENT"
+      ],
+      "permit_count": 1,
+      "valuation": 72000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-02-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 72000.0,
+      "rank": 256
+    },
+    {
+      "builder": "BOSTIC BUILDING CORPORATION (B) (LIC# 55725)",
+      "aliases": [
+        "BOSTIC BUILDING CORPORATION (B) (LIC# 55725)"
+      ],
+      "permit_count": 1,
+      "valuation": 235910.31,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 235910.31,
+      "rank": 257
+    },
+    {
+      "builder": "BRASFIELD & GORRIE, L.L.C.",
+      "aliases": [
+        "BRASFIELD & GORRIE, L.L.C."
+      ],
+      "permit_count": 1,
+      "valuation": 308249031.38,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-07-10",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 308249031.38,
+      "rank": 258
+    },
+    {
+      "builder": "Bridges Construction, LLC",
+      "aliases": [
+        "Bridges Construction, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 406630.4,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 406630.4,
+      "rank": 259
+    },
+    {
+      "builder": "BTM CONSTRUCTION, LLC (LIC# 80317)",
+      "aliases": [
+        "BTM CONSTRUCTION, LLC (LIC# 80317)"
+      ],
+      "permit_count": 1,
+      "valuation": 186610.68,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-03-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 186610.68,
+      "rank": 260
+    },
+    {
+      "builder": "C Herman Construction",
+      "aliases": [
+        "C Herman Construction"
+      ],
+      "permit_count": 1,
+      "valuation": 9766110.06,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 9766110.06,
+      "rank": 261
+    },
+    {
+      "builder": "C4 BUILDERS LLC (LIC# 73522)",
+      "aliases": [
+        "C4 BUILDERS LLC (LIC# 73522)"
+      ],
+      "permit_count": 1,
+      "valuation": 470782.26,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-08-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 470782.26,
+      "rank": 262
+    },
+    {
+      "builder": "CALDERON CONST & REMODEL INC",
+      "aliases": [
+        "CALDERON CONST & REMODEL INC"
+      ],
+      "permit_count": 1,
+      "valuation": 110000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-01-29",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 110000.0,
+      "rank": 263
+    },
+    {
+      "builder": "CAROLINA BUILDERS AND DESIGN",
+      "aliases": [
+        "CAROLINA BUILDERS AND DESIGN"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-06-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 264
+    },
+    {
+      "builder": "CAROLINA MOUNTAINS TO COAST HOMES, LLC (LIC# 100273)",
+      "aliases": [
+        "CAROLINA MOUNTAINS TO COAST HOMES, LLC (LIC# 100273)"
+      ],
+      "permit_count": 1,
+      "valuation": 363736.42,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-05",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 363736.42,
+      "rank": 265
+    },
+    {
+      "builder": "Charles W. Hughes Construction, LLC",
+      "aliases": [
+        "Charles W. Hughes Construction, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 8438581.62,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-06-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 8438581.62,
+      "rank": 266
+    },
+    {
+      "builder": "CJM CONTRACTING (LIC# 106554)",
+      "aliases": [
+        "CJM CONTRACTING (LIC# 106554)"
+      ],
+      "permit_count": 1,
+      "valuation": 206904.04,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-12-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 206904.04,
+      "rank": 267
+    },
+    {
+      "builder": "Clancy & Theys Construction Company",
+      "aliases": [
+        "Clancy & Theys Construction Company"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 268
+    },
+    {
+      "builder": "CLANCY AND THEYS CONSTRUCTION Co.",
+      "aliases": [
+        "CLANCY AND THEYS CONSTRUCTION Co."
+      ],
+      "permit_count": 1,
+      "valuation": 11395049.3,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-30",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 11395049.3,
+      "rank": 269
+    },
+    {
+      "builder": "CLAYTON HOMES GREENSBORO",
+      "aliases": [
+        "CLAYTON HOMES GREENSBORO"
+      ],
+      "permit_count": 1,
+      "valuation": 54157.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-03-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 54157.0,
+      "rank": 270
+    },
+    {
+      "builder": "CLAYTON HOMES OF RALEIGH",
+      "aliases": [
+        "CLAYTON HOMES OF RALEIGH"
+      ],
+      "permit_count": 1,
+      "valuation": 351180.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-07",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 351180.8,
+      "rank": 271
+    },
+    {
+      "builder": "CMC BUILDING INC (LIC# 52920)",
+      "aliases": [
+        "CMC BUILDING INC (LIC# 52920)"
+      ],
+      "permit_count": 1,
+      "valuation": 1378771.5,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-06-04",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1378771.5,
+      "rank": 272
+    },
+    {
+      "builder": "COASTAL CYPRESS BUILDERS LLC  (GC) (LIC # 108542)",
+      "aliases": [
+        "COASTAL CYPRESS BUILDERS LLC  (GC) (LIC # 108542)"
+      ],
+      "permit_count": 1,
+      "valuation": 578360.76,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 578360.76,
+      "rank": 273
+    },
+    {
+      "builder": "COOKE CONTRACTING, INC",
+      "aliases": [
+        "COOKE CONTRACTING, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 750000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-04-29",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 750000.0,
+      "rank": 274
+    },
+    {
+      "builder": "Coral Construction Com LLC",
+      "aliases": [
+        "Coral Construction Com LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 8300.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-24",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 8300.0,
+      "rank": 275
+    },
+    {
+      "builder": "CRISTAL BUILD LLC",
+      "aliases": [
+        "CRISTAL BUILD LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 225000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 225000.0,
+      "rank": 276
+    },
+    {
+      "builder": "CROSSTOWER BUILDERS, LLC",
+      "aliases": [
+        "CROSSTOWER BUILDERS, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 110000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-04-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 110000.0,
+      "rank": 277
+    },
+    {
+      "builder": "DAE BUILDING INC (B) (LIC# 78264)",
+      "aliases": [
+        "DAE BUILDING INC (B) (LIC# 78264)"
+      ],
+      "permit_count": 1,
+      "valuation": 1224840.96,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-06-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1224840.96,
+      "rank": 278
+    },
+    {
+      "builder": "DREES HOME",
+      "aliases": [
+        "DREES HOME"
+      ],
+      "permit_count": 1,
+      "valuation": 777449.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-26",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 777449.6,
+      "rank": 279
+    },
+    {
+      "builder": "EASTERN ADU LLC (B) (LIC #104507)",
+      "aliases": [
+        "EASTERN ADU LLC (B) (LIC #104507)"
+      ],
+      "permit_count": 1,
+      "valuation": 162236.59,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-01-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 162236.59,
+      "rank": 280
+    },
+    {
+      "builder": "EDWARD ALEXANDER REAVES",
+      "aliases": [
+        "EDWARD ALEXANDER REAVES"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-04-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 281
+    },
+    {
+      "builder": "ELITE QUALITY CONSTRUCTION INC",
+      "aliases": [
+        "ELITE QUALITY CONSTRUCTION INC"
+      ],
+      "permit_count": 1,
+      "valuation": 224840.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-03-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 224840.0,
+      "rank": 282
+    },
+    {
+      "builder": "Essential Construction Maintenance Services, LLC",
+      "aliases": [
+        "Essential Construction Maintenance Services, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 283
+    },
+    {
+      "builder": "EXETER BUILDING COMPANY",
+      "aliases": [
+        "EXETER BUILDING COMPANY"
+      ],
+      "permit_count": 1,
+      "valuation": 1182202.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1182202.8,
+      "rank": 284
+    },
+    {
+      "builder": "F2 CONSTRUCTION & DEV LLC",
+      "aliases": [
+        "F2 CONSTRUCTION & DEV LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 165000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 165000.0,
+      "rank": 285
+    },
+    {
+      "builder": "FIGURED SERVICES, LLC (LIC# 86065)",
+      "aliases": [
+        "FIGURED SERVICES, LLC (LIC# 86065)"
+      ],
+      "permit_count": 1,
+      "valuation": 947170.52,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-01",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 947170.52,
+      "rank": 286
+    },
+    {
+      "builder": "FORREST CONSTRUCTION UNLIMITED LLC ((GC) LIC# 109008)",
+      "aliases": [
+        "FORREST CONSTRUCTION UNLIMITED LLC ((GC) LIC# 109008)"
+      ],
+      "permit_count": 1,
+      "valuation": 357229.31,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-26",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 357229.31,
+      "rank": 287
+    },
+    {
+      "builder": "FORTIFIED SOLUTIONS INC",
+      "aliases": [
+        "FORTIFIED SOLUTIONS INC"
+      ],
+      "permit_count": 1,
+      "valuation": 1646986.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-05",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1646986.0,
+      "rank": 288
+    },
+    {
+      "builder": "GFD BUILDERS LLC",
+      "aliases": [
+        "GFD BUILDERS LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 128800.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-11-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 128800.0,
+      "rank": 289
+    },
+    {
+      "builder": "GITTO ENTERPRISES",
+      "aliases": [
+        "GITTO ENTERPRISES"
+      ],
+      "permit_count": 1,
+      "valuation": 1388203.56,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-28",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1388203.56,
+      "rank": 290
+    },
+    {
+      "builder": "GREGORY A GUNTHER",
+      "aliases": [
+        "GREGORY A GUNTHER"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-02-16",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 291
+    },
+    {
+      "builder": "GURU CONSTRUCTION, LLC",
+      "aliases": [
+        "GURU CONSTRUCTION, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 900000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2025-11-26",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 900000.0,
+      "rank": 292
+    },
+    {
+      "builder": "HANK MORRIS - H.J. MORRIS CONSTR",
+      "aliases": [
+        "HANK MORRIS - H.J. MORRIS CONSTR"
+      ],
+      "permit_count": 1,
+      "valuation": 707560.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-28",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 707560.0,
+      "rank": 293
+    },
+    {
+      "builder": "HAPPINESS CONSTRUCTION SERVICES LLC (B) (LIC# 101641)",
+      "aliases": [
+        "HAPPINESS CONSTRUCTION SERVICES LLC (B) (LIC# 101641)"
+      ],
+      "permit_count": 1,
+      "valuation": 266791.51,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-12-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 266791.51,
+      "rank": 294
+    },
+    {
+      "builder": "HAYES BARTON HOMES",
+      "aliases": [
+        "HAYES BARTON HOMES"
+      ],
+      "permit_count": 1,
+      "valuation": 833043.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 833043.6,
+      "rank": 295
+    },
+    {
+      "builder": "HICKS CONSTRUCTION GROUP LLC (LIC# 103946)",
+      "aliases": [
+        "HICKS CONSTRUCTION GROUP LLC (LIC# 103946)"
+      ],
+      "permit_count": 1,
+      "valuation": 375316.87,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-11-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 375316.87,
+      "rank": 296
+    },
+    {
+      "builder": "HIGHLAND COMPANY OF EASTERN NORTH CAROLINA, LLC (LIC# 58057)",
+      "aliases": [
+        "HIGHLAND COMPANY OF EASTERN NORTH CAROLINA, LLC (LIC# 58057)"
+      ],
+      "permit_count": 1,
+      "valuation": 344215.09,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 344215.09,
+      "rank": 297
+    },
+    {
+      "builder": "HKJ",
+      "aliases": [
+        "HKJ"
+      ],
+      "permit_count": 1,
+      "valuation": 3711461.9,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-07-30",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 3711461.9,
+      "rank": 298
+    },
+    {
+      "builder": "HKS CONSTRUCTION INC (LIC# 76976)",
+      "aliases": [
+        "HKS CONSTRUCTION INC (LIC# 76976)"
+      ],
+      "permit_count": 1,
+      "valuation": 209109.84,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-12-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 209109.84,
+      "rank": 299
+    },
+    {
+      "builder": "Holtsclaw Construction Company, LLC",
+      "aliases": [
+        "Holtsclaw Construction Company, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 1115788.63,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-08-04",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1115788.63,
+      "rank": 300
+    },
+    {
+      "builder": "Homes by Hatteras",
+      "aliases": [
+        "Homes by Hatteras"
+      ],
+      "permit_count": 1,
+      "valuation": 499046.4,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-28",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 499046.4,
+      "rank": 301
+    },
+    {
+      "builder": "HOMESTEAD BUILDING COMPANY",
+      "aliases": [
+        "HOMESTEAD BUILDING COMPANY"
+      ],
+      "permit_count": 1,
+      "valuation": 1029427.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-19",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1029427.6,
+      "rank": 302
+    },
+    {
+      "builder": "HONEYCUTT CONSTRUCTION SERVICES INC (B) (LIC# 73372)",
+      "aliases": [
+        "HONEYCUTT CONSTRUCTION SERVICES INC (B) (LIC# 73372)"
+      ],
+      "permit_count": 1,
+      "valuation": 683920.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2025-11-21",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 683920.0,
+      "rank": 303
+    },
+    {
+      "builder": "Hoss Builders, Inc",
+      "aliases": [
+        "Hoss Builders, Inc"
+      ],
+      "permit_count": 1,
+      "valuation": 723732.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-28",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 723732.8,
+      "rank": 304
+    },
+    {
+      "builder": "IA1 PROPERTIES LLC",
+      "aliases": [
+        "IA1 PROPERTIES LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 150000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-12-30",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 150000.0,
+      "rank": 305
+    },
+    {
+      "builder": "INSEA MARINE LLC (B) (LIC# 105679)",
+      "aliases": [
+        "INSEA MARINE LLC (B) (LIC# 105679)"
+      ],
+      "permit_count": 1,
+      "valuation": 999011.95,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-05-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 999011.95,
+      "rank": 306
+    },
+    {
+      "builder": "JAMIE POLICZ, T/A (LIC# 63008)",
+      "aliases": [
+        "JAMIE POLICZ, T/A (LIC# 63008)"
+      ],
+      "permit_count": 1,
+      "valuation": 542516.51,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-03-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 542516.51,
+      "rank": 307
+    },
+    {
+      "builder": "JBC MOBILE TRANSPORT",
+      "aliases": [
+        "JBC MOBILE TRANSPORT"
+      ],
+      "permit_count": 1,
+      "valuation": 6000.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 6000.0,
+      "rank": 308
+    },
+    {
+      "builder": "JESSIE HOWIE T/A (B) (LIC# 51630)",
+      "aliases": [
+        "JESSIE HOWIE T/A (B) (LIC# 51630)"
+      ],
+      "permit_count": 1,
+      "valuation": 149442.95,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 149442.95,
+      "rank": 309
+    },
+    {
+      "builder": "JOHN CHARLES HYATT (B) (LIC # 68411)",
+      "aliases": [
+        "JOHN CHARLES HYATT (B) (LIC # 68411)"
+      ],
+      "permit_count": 1,
+      "valuation": 622366.47,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 622366.47,
+      "rank": 310
+    },
+    {
+      "builder": "JOHN HODGIN CONST CO, INC",
+      "aliases": [
+        "JOHN HODGIN CONST CO, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 800000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-11-14",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 800000.0,
+      "rank": 311
+    },
+    {
+      "builder": "JW2 BUILDING COMPANY",
+      "aliases": [
+        "JW2 BUILDING COMPANY"
+      ],
+      "permit_count": 1,
+      "valuation": 787557.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-18",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 787557.6,
+      "rank": 312
+    },
+    {
+      "builder": "KENNETH RENARD CANION",
+      "aliases": [
+        "KENNETH RENARD CANION"
+      ],
+      "permit_count": 1,
+      "valuation": 145000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-26",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 145000.0,
+      "rank": 313
+    },
+    {
+      "builder": "KINGPOST DESIGN & CONSTRUCTION INC (LIC# 52564)",
+      "aliases": [
+        "KINGPOST DESIGN & CONSTRUCTION INC (LIC# 52564)"
+      ],
+      "permit_count": 1,
+      "valuation": 974632.73,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-05",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 974632.73,
+      "rank": 314
+    },
+    {
+      "builder": "KOURY CONSTRUCTION SERVICES",
+      "aliases": [
+        "KOURY CONSTRUCTION SERVICES"
+      ],
+      "permit_count": 1,
+      "valuation": 35000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-05-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 35000.0,
+      "rank": 315
+    },
+    {
+      "builder": "L AND L OF RALEIGH INC",
+      "aliases": [
+        "L AND L OF RALEIGH INC"
+      ],
+      "permit_count": 1,
+      "valuation": 873331.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-15",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 873331.2,
+      "rank": 316
+    },
+    {
+      "builder": "LAZZARI CONSTRUCTION INC",
+      "aliases": [
+        "LAZZARI CONSTRUCTION INC"
+      ],
+      "permit_count": 1,
+      "valuation": 2963704.04,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-06-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 2963704.04,
+      "rank": 317
+    },
+    {
+      "builder": "LEGACY BUILDING GROUP, INC (L.104243)",
+      "aliases": [
+        "LEGACY BUILDING GROUP, INC (L.104243)"
+      ],
+      "permit_count": 1,
+      "valuation": 158817.6,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-19",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 158817.6,
+      "rank": 318
+    },
+    {
+      "builder": "LIONS CONSTRUCTION INC",
+      "aliases": [
+        "LIONS CONSTRUCTION INC"
+      ],
+      "permit_count": 1,
+      "valuation": 1301990.51,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1301990.51,
+      "rank": 319
+    },
+    {
+      "builder": "LOGAN DEVELOPERS INC T/A LOGAN HOMES (B) (LIC# 34408)",
+      "aliases": [
+        "LOGAN DEVELOPERS INC T/A LOGAN HOMES (B) (LIC# 34408)"
+      ],
+      "permit_count": 1,
+      "valuation": 509980.96,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-03-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 509980.96,
+      "rank": 320
+    },
+    {
+      "builder": "LTB CONSTRUCTION LLC",
+      "aliases": [
+        "LTB CONSTRUCTION LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 560560.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 560560.8,
+      "rank": 321
+    },
+    {
+      "builder": "LUGANO RESIDENTIAL LLC",
+      "aliases": [
+        "LUGANO RESIDENTIAL LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 225000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-04-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 225000.0,
+      "rank": 322
+    },
+    {
+      "builder": "Mangum Design-Build, Inc.",
+      "aliases": [
+        "Mangum Design-Build, Inc."
+      ],
+      "permit_count": 1,
+      "valuation": 717812.4,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 717812.4,
+      "rank": 323
+    },
+    {
+      "builder": "MAZZARONE CONSTRUCTION CO LLC (LIC# 85283)",
+      "aliases": [
+        "MAZZARONE CONSTRUCTION CO LLC (LIC# 85283)"
+      ],
+      "permit_count": 1,
+      "valuation": 183522.56,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-12-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 183522.56,
+      "rank": 324
+    },
+    {
+      "builder": "MIDDLEBURG CONSTRUCTION LLC (B) (LIC# 81228)",
+      "aliases": [
+        "MIDDLEBURG CONSTRUCTION LLC (B) (LIC# 81228)"
+      ],
+      "permit_count": 1,
+      "valuation": 71478.85,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-02-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 71478.85,
+      "rank": 325
+    },
+    {
+      "builder": "MIDTOWN CUSTOM HOMES LLC",
+      "aliases": [
+        "MIDTOWN CUSTOM HOMES LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 1285737.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-30",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1285737.6,
+      "rank": 326
+    },
+    {
+      "builder": "MILES E KATH (B) (LIC# 100796)",
+      "aliases": [
+        "MILES E KATH (B) (LIC# 100796)"
+      ],
+      "permit_count": 1,
+      "valuation": 248593.66,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-11-21",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 248593.66,
+      "rank": 327
+    },
+    {
+      "builder": "MINGLE CONTRACTING, INC",
+      "aliases": [
+        "MINGLE CONTRACTING, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 2300000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-03-30",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 2300000.0,
+      "rank": 328
+    },
+    {
+      "builder": "NELLA CONSTRUCTORS INC",
+      "aliases": [
+        "NELLA CONSTRUCTORS INC"
+      ],
+      "permit_count": 1,
+      "valuation": 75872.94,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-07-28",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 75872.94,
+      "rank": 329
+    },
+    {
+      "builder": "NextGen Custom Builders LLC",
+      "aliases": [
+        "NextGen Custom Builders LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 767919.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 767919.2,
+      "rank": 330
+    },
+    {
+      "builder": "Norsouth Construction Company of Georgia, Inc.",
+      "aliases": [
+        "Norsouth Construction Company of Georgia, Inc."
+      ],
+      "permit_count": 1,
+      "valuation": 7040185.74,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-05-19",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 7040185.74,
+      "rank": 331
+    },
+    {
+      "builder": "PARAGON BUILDING GROUP",
+      "aliases": [
+        "PARAGON BUILDING GROUP"
+      ],
+      "permit_count": 1,
+      "valuation": 961270.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-21",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 961270.8,
+      "rank": 332
+    },
+    {
+      "builder": "PETERSON BUILDERS FRAMING CONTRACTORS LLC (GC) (LIC # 83382)",
+      "aliases": [
+        "PETERSON BUILDERS FRAMING CONTRACTORS LLC (GC) (LIC # 83382)"
+      ],
+      "permit_count": 1,
+      "valuation": 353148.58,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-02",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 353148.58,
+      "rank": 333
+    },
+    {
+      "builder": "PG BRADSHAW & CO",
+      "aliases": [
+        "PG BRADSHAW & CO"
+      ],
+      "permit_count": 1,
+      "valuation": 225000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-03-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 225000.0,
+      "rank": 334
+    },
+    {
+      "builder": "PRAYLOR CONSTRUCTION CO",
+      "aliases": [
+        "PRAYLOR CONSTRUCTION CO"
+      ],
+      "permit_count": 1,
+      "valuation": 300000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-11-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 300000.0,
+      "rank": 335
+    },
+    {
+      "builder": "PREMIER CONSTRUCTION GROUP, INC.(LIC# 102003)",
+      "aliases": [
+        "PREMIER CONSTRUCTION GROUP, INC.(LIC# 102003)"
+      ],
+      "permit_count": 1,
+      "valuation": 412690.2,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-06-16",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 412690.2,
+      "rank": 336
+    },
+    {
+      "builder": "Prewitt-Douglas Custom Homes",
+      "aliases": [
+        "Prewitt-Douglas Custom Homes"
+      ],
+      "permit_count": 1,
+      "valuation": 501645.6,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-18",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 501645.6,
+      "rank": 337
+    },
+    {
+      "builder": "R. Stewart Homes, LLC",
+      "aliases": [
+        "R. Stewart Homes, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 1127764.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-24",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1127764.0,
+      "rank": 338
+    },
+    {
+      "builder": "REDLINE CONSTRUCTION LLC TA REDLINE CONS OF COASTAL CAROLINA LLC (B) (LIC# 84222)",
+      "aliases": [
+        "REDLINE CONSTRUCTION LLC TA REDLINE CONS OF COASTAL CAROLINA LLC (B) (LIC# 84222)"
+      ],
+      "permit_count": 1,
+      "valuation": 703319.33,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-11-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 703319.33,
+      "rank": 339
+    },
+    {
+      "builder": "ROBUCK PARTNERS LLC",
+      "aliases": [
+        "ROBUCK PARTNERS LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 583087.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 583087.2,
+      "rank": 340
+    },
+    {
+      "builder": "ROUTH CONSTRUCTION, CO",
+      "aliases": [
+        "ROUTH CONSTRUCTION, CO"
+      ],
+      "permit_count": 1,
+      "valuation": 100500.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-26",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 100500.0,
+      "rank": 341
+    },
+    {
+      "builder": "SALT ROCK BUILDERS LLC (B) (LIC# 60508)",
+      "aliases": [
+        "SALT ROCK BUILDERS LLC (B) (LIC# 60508)"
+      ],
+      "permit_count": 1,
+      "valuation": 461920.32,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-01-09",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 461920.32,
+      "rank": 342
+    },
+    {
+      "builder": "SAMET CORPORATION",
+      "aliases": [
+        "SAMET CORPORATION"
+      ],
+      "permit_count": 1,
+      "valuation": 25605694.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-04-10",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 25605694.0,
+      "rank": 343
+    },
+    {
+      "builder": "SCHMIDT CUSTOM BUILDERS, INC (LIC# 58046)",
+      "aliases": [
+        "SCHMIDT CUSTOM BUILDERS, INC (LIC# 58046)"
+      ],
+      "permit_count": 1,
+      "valuation": 546928.11,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 546928.11,
+      "rank": 344
+    },
+    {
+      "builder": "schumacher homes",
+      "aliases": [
+        "schumacher homes"
+      ],
+      "permit_count": 1,
+      "valuation": 1208050.4,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-16",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1208050.4,
+      "rank": 345
+    },
+    {
+      "builder": "SCHUMACHER HOMES OF NC",
+      "aliases": [
+        "SCHUMACHER HOMES OF NC"
+      ],
+      "permit_count": 1,
+      "valuation": 597117.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-12-19",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 597117.0,
+      "rank": 346
+    },
+    {
+      "builder": "SIERRA STRUCTURES INC",
+      "aliases": [
+        "SIERRA STRUCTURES INC"
+      ],
+      "permit_count": 1,
+      "valuation": 15161.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-04",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 15161.0,
+      "rank": 347
+    },
+    {
+      "builder": "SNYDER-HANKINS CUSTOM HOMES",
+      "aliases": [
+        "SNYDER-HANKINS CUSTOM HOMES"
+      ],
+      "permit_count": 1,
+      "valuation": 1039968.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 1039968.8,
+      "rank": 348
+    },
+    {
+      "builder": "SOSA DEVELOPMENTS LLC",
+      "aliases": [
+        "SOSA DEVELOPMENTS LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 220000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 220000.0,
+      "rank": 349
+    },
+    {
+      "builder": "STEWART BUILDING COMPANY LLC",
+      "aliases": [
+        "STEWART BUILDING COMPANY LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 186610.68,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-01-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 186610.68,
+      "rank": 350
+    },
+    {
+      "builder": "STONEWOOD HOMES",
+      "aliases": [
+        "STONEWOOD HOMES"
+      ],
+      "permit_count": 1,
+      "valuation": 950000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-14",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 950000.0,
+      "rank": 351
+    },
+    {
+      "builder": "STRONGLAST BUILDERS LLC (LIC# 103610)",
+      "aliases": [
+        "STRONGLAST BUILDERS LLC (LIC# 103610)"
+      ],
+      "permit_count": 1,
+      "valuation": 789124.95,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-12-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 789124.95,
+      "rank": 352
+    },
+    {
+      "builder": "TBD CONTRACTOR \u2013 DO NOT CHANGE THIS NAME!!",
+      "aliases": [
+        "TBD CONTRACTOR \u2013 DO NOT CHANGE THIS NAME!!"
+      ],
+      "permit_count": 1,
+      "valuation": 5125315.3,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-27",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 5125315.3,
+      "rank": 353
+    },
+    {
+      "builder": "TEEITUP VENTURES LLC T/A LIBERTY HOMES",
+      "aliases": [
+        "TEEITUP VENTURES LLC T/A LIBERTY HOMES"
+      ],
+      "permit_count": 1,
+      "valuation": 557846.82,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-11-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 557846.82,
+      "rank": 354
+    },
+    {
+      "builder": "THE CATAMOUNT GROUP LLC (LIC# 103860)",
+      "aliases": [
+        "THE CATAMOUNT GROUP LLC (LIC# 103860)"
+      ],
+      "permit_count": 1,
+      "valuation": 343140.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-08-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 343140.0,
+      "rank": 355
+    },
+    {
+      "builder": "THE CHRISTMAN COMPANY",
+      "aliases": [
+        "THE CHRISTMAN COMPANY"
+      ],
+      "permit_count": 1,
+      "valuation": 68270181.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-06-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 68270181.0,
+      "rank": 356
+    },
+    {
+      "builder": "THOMAS HOBSON BUILDER, INC",
+      "aliases": [
+        "THOMAS HOBSON BUILDER, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-12-01",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 357
+    },
+    {
+      "builder": "THOMAS JAMES CONSTRUCTION",
+      "aliases": [
+        "THOMAS JAMES CONSTRUCTION"
+      ],
+      "permit_count": 1,
+      "valuation": 385000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-03-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 385000.0,
+      "rank": 358
+    },
+    {
+      "builder": "TIDAL WAVE HOMES LLC (B) (LIC # 79581)",
+      "aliases": [
+        "TIDAL WAVE HOMES LLC (B) (LIC # 79581)"
+      ],
+      "permit_count": 1,
+      "valuation": 235665.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-08-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 235665.0,
+      "rank": 359
+    },
+    {
+      "builder": "TOO CONSTRUCTION COMPANY INC (B) (LIC# 83867)",
+      "aliases": [
+        "TOO CONSTRUCTION COMPANY INC (B) (LIC# 83867)"
+      ],
+      "permit_count": 1,
+      "valuation": 567111.18,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 567111.18,
+      "rank": 360
+    },
+    {
+      "builder": "TURNER-DUNN CONSTRUCTION, LLC ((GC) LIC# 102411)",
+      "aliases": [
+        "TURNER-DUNN CONSTRUCTION, LLC ((GC) LIC# 102411)"
+      ],
+      "permit_count": 1,
+      "valuation": 110069.42,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-08-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 110069.42,
+      "rank": 361
+    },
+    {
+      "builder": "UNIQUE HOMES/BUILDER DESIGNER INC (B) (LIC# 51627)",
+      "aliases": [
+        "UNIQUE HOMES/BUILDER DESIGNER INC (B) (LIC# 51627)"
+      ],
+      "permit_count": 1,
+      "valuation": 440718.84,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-02-04",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 440718.84,
+      "rank": 362
+    },
+    {
+      "builder": "Upton & Co., Inc.",
+      "aliases": [
+        "Upton & Co., Inc."
+      ],
+      "permit_count": 1,
+      "valuation": 743948.8,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 743948.8,
+      "rank": 363
+    },
+    {
+      "builder": "UTILITY PARTNERS OF AMERICA LLC T/A (B) (LIC# 70752)",
+      "aliases": [
+        "UTILITY PARTNERS OF AMERICA LLC T/A (B) (LIC# 70752)"
+      ],
+      "permit_count": 1,
+      "valuation": 16000.0,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2025-12-22",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 16000.0,
+      "rank": 364
+    },
+    {
+      "builder": "VILERRA HOMES, LLC (LIC# 105621)",
+      "aliases": [
+        "VILERRA HOMES, LLC (LIC# 105621)"
+      ],
+      "permit_count": 1,
+      "valuation": 240211.62,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-02-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 240211.62,
+      "rank": 365
+    },
+    {
+      "builder": "VRL BUILDERS GROUP LLC (B) (LIC# 83014)",
+      "aliases": [
+        "VRL BUILDERS GROUP LLC (B) (LIC# 83014)"
+      ],
+      "permit_count": 1,
+      "valuation": 609462.54,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2025-11-25",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 609462.54,
+      "rank": 366
+    },
+    {
+      "builder": "W. H. Bass, Inc.",
+      "aliases": [
+        "W. H. Bass, Inc."
+      ],
+      "permit_count": 1,
+      "valuation": 456019.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-06-29",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 456019.2,
+      "rank": 367
+    },
+    {
+      "builder": "WALLICK CONSTRUCTION LLC (GC) (LIC #88330)",
+      "aliases": [
+        "WALLICK CONSTRUCTION LLC (GC) (LIC #88330)"
+      ],
+      "permit_count": 1,
+      "valuation": 5528805.64,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-08-10",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 5528805.64,
+      "rank": 368
+    },
+    {
+      "builder": "WD CUSTOM HOMES",
+      "aliases": [
+        "WD CUSTOM HOMES"
+      ],
+      "permit_count": 1,
+      "valuation": 150000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-04-17",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 150000.0,
+      "rank": 369
+    },
+    {
+      "builder": "WENCO HOMES, INC",
+      "aliases": [
+        "WENCO HOMES, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 830000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-02-06",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 830000.0,
+      "rank": 370
+    },
+    {
+      "builder": "WILKS BUILDERS INC",
+      "aliases": [
+        "WILKS BUILDERS INC"
+      ],
+      "permit_count": 1,
+      "valuation": 969646.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-20",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 969646.0,
+      "rank": 371
+    },
+    {
+      "builder": "WILLIAM BRADLEY HAMILTON, T/A (LIC 81155)",
+      "aliases": [
+        "WILLIAM BRADLEY HAMILTON, T/A (LIC 81155)"
+      ],
+      "permit_count": 1,
+      "valuation": 477224.83,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-05-14",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 477224.83,
+      "rank": 372
+    },
+    {
+      "builder": "Williams Realty & Building Company",
+      "aliases": [
+        "Williams Realty & Building Company"
+      ],
+      "permit_count": 1,
+      "valuation": 485812.08,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-06-23",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 485812.08,
+      "rank": 373
+    },
+    {
+      "builder": "WILMINGTON BUILDING COMPANY LLC (LIC# 100834)",
+      "aliases": [
+        "WILMINGTON BUILDING COMPANY LLC (LIC# 100834)"
+      ],
+      "permit_count": 1,
+      "valuation": 333737.54,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-31",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 333737.54,
+      "rank": 374
+    },
+    {
+      "builder": "WILSON-COVINGTON CONSTRUCTION",
+      "aliases": [
+        "WILSON-COVINGTON CONSTRUCTION"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-06-29",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 375
+    },
+    {
+      "builder": "Woodard Builders of the Triangle, LLC",
+      "aliases": [
+        "Woodard Builders of the Triangle, LLC"
+      ],
+      "permit_count": 1,
+      "valuation": 684889.2,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-07-08",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 684889.2,
+      "rank": 376
+    },
+    {
+      "builder": "WXZ CONSTRUCTION/SE, LLC (LIC# 68602)",
+      "aliases": [
+        "WXZ CONSTRUCTION/SE, LLC (LIC# 68602)"
+      ],
+      "permit_count": 1,
+      "valuation": 15311.7,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-03-03",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 15311.7,
+      "rank": 377
+    },
+    {
+      "builder": "WYNNEFIELD PROPERTIES, INC",
+      "aliases": [
+        "WYNNEFIELD PROPERTIES, INC"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 1
+      },
+      "last_issued_date": "2026-05-11",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 0,
+      "average_valuation": 0.0,
+      "rank": 378
+    }
+  ]
+}

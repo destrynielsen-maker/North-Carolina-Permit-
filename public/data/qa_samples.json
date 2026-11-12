@@ -1,0 +1,510 @@
+{
+  "method": "Deterministic category-first and newest-date samples; manually verify with issuing agency",
+  "independently_verified": false,
+  "records": [
+    {
+      "id": "greensboro:202620733",
+      "jurisdiction": "Greensboro",
+      "permit_number": "202620733",
+      "issued_date": "2026-11-09",
+      "category": "Single Family",
+      "address": "4815 REEDY CREEK FARM CIR Greensboro North Carolina",
+      "contractor": "D R HORTON, INC",
+      "valuation": 198525.0,
+      "status": "Issued                                                      ",
+      "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
+      "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620733%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "greensboro:202620920",
+      "jurisdiction": "Greensboro",
+      "permit_number": "202620920",
+      "issued_date": "2026-11-06",
+      "category": "Multifamily",
+      "address": "234 HIRSCH WAY Greensboro North Carolina",
+      "contractor": "TRUE HOMES, LLC",
+      "valuation": 142725.0,
+      "status": "Issued                                                      ",
+      "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
+      "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620920%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "greensboro:202518414",
+      "jurisdiction": "Greensboro",
+      "permit_number": "202518414",
+      "issued_date": "2026-11-10",
+      "category": "Commercial",
+      "address": "2947 PATTERSON ST Greensboro North Carolina",
+      "contractor": "A & M CONSTRUCTION SERVICES",
+      "valuation": 3200000.0,
+      "status": "Issued                                                      ",
+      "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
+      "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202518414%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "greensboro:202620732",
+      "jurisdiction": "Greensboro",
+      "permit_number": "202620732",
+      "issued_date": "2026-11-09",
+      "category": "Single Family",
+      "address": "4818 REEDY CREEK FARM CIR Greensboro North Carolina",
+      "contractor": "D R HORTON, INC",
+      "valuation": 228750.0,
+      "status": "Issued                                                      ",
+      "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
+      "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620732%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "greensboro:202620919",
+      "jurisdiction": "Greensboro",
+      "permit_number": "202620919",
+      "issued_date": "2026-11-06",
+      "category": "Multifamily",
+      "address": "232 HIRSCH WAY Greensboro North Carolina",
+      "contractor": "TRUE HOMES, LLC",
+      "valuation": 142725.0,
+      "status": "Issued                                                      ",
+      "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
+      "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620919%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "greensboro:202620918",
+      "jurisdiction": "Greensboro",
+      "permit_number": "202620918",
+      "issued_date": "2026-11-06",
+      "category": "Multifamily",
+      "address": "230 HIRSCH WAY Greensboro North Carolina",
+      "contractor": "TRUE HOMES, LLC",
+      "valuation": 142725.0,
+      "status": "Issued                                                      ",
+      "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
+      "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620918%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "mecklenburg:B4839362",
+      "jurisdiction": "Mecklenburg County / Charlotte",
+      "permit_number": "B4839362",
+      "issued_date": "2026-11-10",
+      "category": "Single Family",
+      "address": "117  WATKINS ST",
+      "contractor": "",
+      "valuation": 30000.0,
+      "status": "Issued",
+      "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839362%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "mecklenburg:B4839209",
+      "jurisdiction": "Mecklenburg County / Charlotte",
+      "permit_number": "B4839209",
+      "issued_date": "2026-10-27",
+      "category": "Multifamily",
+      "address": "832  PIERSON DR",
+      "contractor": "",
+      "valuation": 300000.0,
+      "status": "Issued",
+      "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839209%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "mecklenburg:B4839203",
+      "jurisdiction": "Mecklenburg County / Charlotte",
+      "permit_number": "B4839203",
+      "issued_date": "2026-10-26",
+      "category": "Commercial",
+      "address": "14005  GAR CREEK DR",
+      "contractor": "",
+      "valuation": 20000.0,
+      "status": "Issued",
+      "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839203%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "mecklenburg:B4839208",
+      "jurisdiction": "Mecklenburg County / Charlotte",
+      "permit_number": "B4839208",
+      "issued_date": "2026-10-27",
+      "category": "Multifamily",
+      "address": "828  PIERSON DR",
+      "contractor": "",
+      "valuation": 300000.0,
+      "status": "Issued",
+      "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839208%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "mecklenburg:B4839207",
+      "jurisdiction": "Mecklenburg County / Charlotte",
+      "permit_number": "B4839207",
+      "issued_date": "2026-10-27",
+      "category": "Multifamily",
+      "address": "824  PIERSON DR",
+      "contractor": "",
+      "valuation": 300000.0,
+      "status": "Issued",
+      "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839207%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "mecklenburg:B4839206",
+      "jurisdiction": "Mecklenburg County / Charlotte",
+      "permit_number": "B4839206",
+      "issued_date": "2026-10-26",
+      "category": "Multifamily",
+      "address": "820  PIERSON DR",
+      "contractor": "",
+      "valuation": 300000.0,
+      "status": "Issued",
+      "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839206%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "new_hanover:26-017372",
+      "jurisdiction": "New Hanover County",
+      "permit_number": "26-017372",
+      "issued_date": "2026-11-10",
+      "category": "Single Family",
+      "address": "629 WATERSTONE DR WM NC",
+      "contractor": "MICHAEL CHRISTIAN HOMES LLC (B) (LIC# 85071)",
+      "valuation": 482959.91,
+      "status": "Issued",
+      "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2726-017372%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "new_hanover:25-01086",
+      "jurisdiction": "New Hanover County",
+      "permit_number": "25-01086",
+      "issued_date": "2026-11-05",
+      "category": "Multifamily",
+      "address": "1636 15TH ST WM NC",
+      "contractor": "CLANCY & THEYS CONSTRUCTION CO (LIC# 02077)",
+      "valuation": 17290758.34,
+      "status": "Issued",
+      "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2725-01086%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "new_hanover:25-01182",
+      "jurisdiction": "New Hanover County",
+      "permit_number": "25-01182",
+      "issued_date": "2026-11-10",
+      "category": "Commercial",
+      "address": "3301 KERR AV WM NC",
+      "contractor": "ENVIRONMENTS UNLIMITED INC (B) (LIC# 68071)",
+      "valuation": 487462.5,
+      "status": "Issued",
+      "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2725-01182%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "new_hanover:26-017708",
+      "jurisdiction": "New Hanover County",
+      "permit_number": "26-017708",
+      "issued_date": "2026-11-09",
+      "category": "Single Family",
+      "address": "5443 FOLKLORE WAY WM NC",
+      "contractor": "NEW LEAF BUILDERS OF NC LLC (B) (LIC# 86840)",
+      "valuation": 192456.05,
+      "status": "Issued",
+      "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2726-017708%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "new_hanover:26-017706",
+      "jurisdiction": "New Hanover County",
+      "permit_number": "26-017706",
+      "issued_date": "2026-11-09",
+      "category": "Single Family",
+      "address": "5442 FOLKLORE WAY WM NC",
+      "contractor": "NEW LEAF BUILDERS OF NC LLC (B) (LIC# 86840)",
+      "valuation": 209992.16,
+      "status": "Issued",
+      "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2726-017706%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "new_hanover:26-016846",
+      "jurisdiction": "New Hanover County",
+      "permit_number": "26-016846",
+      "issued_date": "2026-11-09",
+      "category": "Single Family",
+      "address": "1608 HERONS VIEW DR WM NC",
+      "contractor": "MICHAEL CHRISTIAN HOMES LLC (B) (LIC# 85071)",
+      "valuation": 496415.29,
+      "status": "Issued",
+      "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
+      "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2726-016846%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "raleigh:BLDR-049954-2026",
+      "jurisdiction": "Raleigh",
+      "permit_number": "BLDR-049954-2026",
+      "issued_date": "2026-11-10",
+      "category": "Single Family",
+      "address": "2100 Breeze Rd RALEIGH NC",
+      "contractor": "ALLURE HOMES, LLC",
+      "valuation": 774248.64,
+      "status": "Issued",
+      "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
+      "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-049954-2026%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "raleigh:BLDR-047549-2026",
+      "jurisdiction": "Raleigh",
+      "permit_number": "BLDR-047549-2026",
+      "issued_date": "2026-11-10",
+      "category": "Multifamily",
+      "address": "5441 Grandview Ridge Loop UNIT 107 RALEIGH NC",
+      "contractor": "Center Park Builder Services NC, LLC",
+      "valuation": 348288.6,
+      "status": "Issued",
+      "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
+      "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-047549-2026%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "raleigh:BLDNR-026392-2025",
+      "jurisdiction": "Raleigh",
+      "permit_number": "BLDNR-026392-2025",
+      "issued_date": "2026-10-29",
+      "category": "Commercial",
+      "address": "1110 Oculus Dr RALEIGH NC",
+      "contractor": "Consigli Construction",
+      "valuation": 115241263.5,
+      "status": "Issued",
+      "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
+      "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDNR-026392-2025%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "raleigh:BLDR-047548-2026",
+      "jurisdiction": "Raleigh",
+      "permit_number": "BLDR-047548-2026",
+      "issued_date": "2026-11-10",
+      "category": "Multifamily",
+      "address": "5441 Grandview Ridge Loop UNIT 106 RALEIGH NC",
+      "contractor": "Center Park Builder Services NC, LLC",
+      "valuation": 313613.85,
+      "status": "Issued",
+      "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
+      "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-047548-2026%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "raleigh:BLDR-047547-2026",
+      "jurisdiction": "Raleigh",
+      "permit_number": "BLDR-047547-2026",
+      "issued_date": "2026-11-10",
+      "category": "Multifamily",
+      "address": "5441 Grandview Ridge Loop UNIT 105 RALEIGH NC",
+      "contractor": "Center Park Builder Services NC, LLC",
+      "valuation": 312380.97,
+      "status": "Issued",
+      "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
+      "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-047547-2026%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    },
+    {
+      "id": "raleigh:BLDR-047546-2026",
+      "jurisdiction": "Raleigh",
+      "permit_number": "BLDR-047546-2026",
+      "issued_date": "2026-11-10",
+      "category": "Multifamily",
+      "address": "5441 Grandview Ridge Loop UNIT 104 RALEIGH NC",
+      "contractor": "Center Park Builder Services NC, LLC",
+      "valuation": 312380.97,
+      "status": "Issued",
+      "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
+      "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-047546-2026%27&outFields=%2A&returnGeometry=false",
+      "collection_state": "current_scan",
+      "verification_status": "manual_review_required",
+      "verification_checklist": [
+        "confirm permit number in issuing-agency record",
+        "confirm original issue date and current status",
+        "confirm ground-up classification and building use",
+        "confirm site address, contractor and valuation"
+      ]
+    }
+  ]
+}
