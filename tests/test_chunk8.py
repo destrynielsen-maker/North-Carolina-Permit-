@@ -35,6 +35,24 @@ class Chunk8Tests(unittest.TestCase):
         self.assertEqual(result['sample_size'],2)
         self.assertLessEqual(query.call_args.kwargs['limit'],v.MAX_SAMPLE)
 
+    def test_wake_duplicate_ids_do_not_create_false_overlap(self):
+        fields={k:'esriFieldTypeString' for k in
+                ('permit_number','permit_status','permit_type','work_class')}
+        fields['issue_date']='esriFieldTypeDate'
+        sample=[
+          {'PERMIT_NUMBER':'WAKE-01','PERMIT_STATUS':'Issued','WORK_CLASS':'New','ISSUE_DATE':1794355200000},
+          {'PERMIT_NUMBER':'WAKE-01','PERMIT_STATUS':'Issued','WORK_CLASS':'New','ISSUE_DATE':1794355200000},
+          {'PERMIT_NUMBER':'','PERMIT_STATUS':'Issued','WORK_CLASS':'New','ISSUE_DATE':None},
+        ]
+        with patch.object(v,'metadata',return_value=fields),patch.object(v,'query_page',return_value=sample):
+            result=v.wake_overlap_sample([])
+        self.assertEqual(result['sample_size'],3)
+        self.assertEqual(result['distinct_permit_numbers'],1)
+        self.assertEqual(result['repeated_permit_number_rows'],1)
+        self.assertEqual(result['blank_permit_numbers'],1)
+        self.assertEqual(result['exact_matches_against_screened_raleigh'],0)
+        self.assertTrue(result['sample_issue_date_max'].startswith('2026'))
+
     def test_wake_wrong_issue_date_type_rejects(self):
         data={k:'esriFieldTypeString' for k in
               ('permit_number','issue_date','permit_status','permit_type','work_class')}
