@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="North Carolina construction permit intelligence: project, builder, contacts and original government sources.">
+<title>Permit Details | North Carolina Construction Intelligence</title>
+<style>
+:root{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#192f43;background:#f2f5f9}
+*{box-sizing:border-box}
+body{margin:0}
+a{color:#14618d}
+header{background:#102d48;color:#fff;padding:20px max(18px,calc((100vw - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header .brand{font-weight:780;letter-spacing:.02em;font-size:16px}
+header a{color:#d6e6f1;text-decoration:none;font-size:14px}
+main{max-width:1180px;margin:auto;padding:28px 20px 48px}
+.breadcrumb{color:#60778b;font-size:13px;margin-bottom:17px}
+.breadcrumb a{text-decoration:none}
+.hero{background:#fff;border:1px solid #dce4ee;border-radius:15px;padding:28px;margin-bottom:18px}
+.eyebrow{font-size:11px;font-weight:780;letter-spacing:.12em;text-transform:uppercase;color:#51738c}
+h1{font-size:clamp(24px,3vw,34px);margin:9px 0 7px;line-height:1.18}
+.subhead{color:#5e7385;font-size:15px;margin:0}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{padding:7px 10px;background:#eaf3f8;color:#215c7c;border-radius:50px;font-size:12px;font-weight:650}
+.tag.caution{background:#fff4e6;color:#986215}
+.metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:25px}
+.metric{background:#f5f8fb;padding:17px;border:1px solid #e7ecf2;border-radius:11px}
+.metric .label{font-size:12px;color:#62798e;margin-bottom:6px}
+.metric strong{font-size:23px;display:block;word-break:break-word}
+.layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,1fr);gap:18px}
+.panel{background:white;border-radius:13px;border:1px solid #dce4ee;padding:23px;margin-bottom:18px}
+.panel h2{font-size:17px;margin:0 0 17px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px}
+.f-label{font-size:12px;color:#708297;margin-bottom:5px}
+.f-value{font-size:14px;line-height:1.4;overflow-wrap:anywhere;font-weight:570}
+.f-value.empty{color:#8292a1;font-weight:400}
+.detail{line-height:1.65;font-size:14px;white-space:pre-wrap;overflow-wrap:anywhere}
+.panel p{font-size:14px;line-height:1.55;color:#546a7e}
+.business{font-size:21px;font-weight:760;overflow-wrap:anywhere;margin-bottom:14px}
+.links{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.action{display:inline-flex;justify-content:center;align-items:center;gap:6px;padding:10px 13px;border-radius:9px;background:#155b89;color:white;text-decoration:none;font-size:13px;font-weight:650;border:1px solid #155b89;cursor:pointer;font-family:inherit}
+.action.secondary{background:white;color:#155b89;border-color:#b5ccdc}
+.action.light{background:#edf5fa;color:#155b89;border-color:#edf5fa}
+.note{color:#687d8c;font-size:12px;line-height:1.55}
+hr{border:0;border-top:1px solid #e6ecf1;margin:18px 0}
+.state{font-size:12px;color:#855d18;background:#fff6e9;border:1px solid #f5dba9;padding:12px 14px;border-radius:9px;line-height:1.55}
+#loading{text-align:center;background:white;padding:48px;border:1px solid #dce4ee;border-radius:12px;color:#62788b}
+#page{display:none}
+#error{display:none;background:#fff;border:1px solid #dce4ee;border-radius:12px;padding:30px}
+footer{padding:25px;text-align:center;color:#738599;font-size:12px}
+@media(max-width:810px){.layout{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.panel{padding:19px}.hero{padding:22px}}
+@media(max-width:490px){.metrics{grid-template-columns:1fr}.grid{grid-template-columns:1fr}main{padding:18px 12px}header{padding:16px}}
+</style>
+</head>
+<body>
+<header><div class="brand">NORTH CAROLINA · CONSTRUCTION INTELLIGENCE</div><a href="./">← All construction opportunities</a></header>
+<main>
+<div id="loading">Loading official-source permit data…</div>
+<div id="error"><h2>Permit not found</h2><p>This record is not in the current screened dataset. It may have aged out or the source may have changed.</p><a href="./">Back to construction opportunities</a></div>
+<div id="page">
+<div class="breadcrumb"><a href="./">Construction opportunities</a> / <span id="crumb"></span></div>
+<section class="hero">
+ <div class="eyebrow" id="jurisdiction">Permit details</div>
+ <h1 id="heading"></h1><p class="subhead" id="place"></p>
+ <div class="badges"><span class="tag" id="category"></span><span class="tag" id="status"></span><span class="tag caution">Screened public record · not independently verified</span></div>
+ <div class="metrics">
+  <div class="metric"><div class="label">Estimated project value</div><strong id="value"></strong></div>
+  <div class="metric"><div class="label">Permit number</div><strong id="permit"></strong></div>
+  <div class="metric"><div class="label">Issued date</div><strong id="issued"></strong></div>
+ </div>
+</section>
+<div class="layout">
+ <div>
+  <section class="panel">
+   <h2>Construction details</h2>
+   <div class="grid">
+    <div><div class="f-label">Project name</div><div id="projectname" class="f-value"></div></div>
+    <div><div class="f-label">Construction type</div><div id="workclass" class="f-value"></div></div>
+    <div><div class="f-label">Permit type</div><div id="permittype" class="f-value"></div></div>
+    <div><div class="f-label">Housing units</div><div id="units" class="f-value"></div></div>
+    <div><div class="f-label">Total square footage</div><div id="sqft" class="f-value"></div></div>
+    <div><div class="f-label">Stories</div><div id="stories" class="f-value"></div></div>
+   </div>
+   <hr>
+   <div class="f-label">Project scope / description</div>
+   <div id="description" class="detail"></div>
+  </section>
+  <section class="panel">
+   <h2>Project site</h2>
+   <div class="f-value" id="siteaddress"></div>
+   <div class="links" style="margin-top:16px"><a id="maplink" class="action secondary" target="_blank" rel="noopener noreferrer">View on map</a></div>
+  </section>
+ </div>
+ <div>
+  <section class="panel">
+   <h2>Builder / general contractor</h2>
+   <div id="builder" class="business"></div>
+   <div class="grid">
+    <div><div class="f-label">Business phone</div><div id="phone" class="f-value"></div></div>
+    <div><div class="f-label">Business email</div><div id="email" class="f-value"></div></div>
+    <div><div class="f-label">License number</div><div id="license" class="f-value"></div></div>
+    <div><div class="f-label">Doing business as</div><div id="dba" class="f-value"></div></div>
+   </div>
+   <hr>
+   <div class="f-label">Listed business address</div><div id="businessaddress" class="f-value"></div>
+   <p class="note">Contractor and contact details are shown only when published by the issuing government's dataset. Missing fields are not guessed or supplemented from unrelated businesses.</p>
+  </section>
+  <section class="panel">
+   <h2>Official permit & source</h2>
+   <p>Use the government record to confirm the current status and project information before contacting the builder.</p>
+   <div class="links" id="sourcelinks"></div>
+   <hr>
+   <div class="state">This is a screened permit candidate, not an independently audited sales lead. Source records can be amended, voided, or updated after collection.</div>
+   <p class="note">The original government data is preserved separately from this formatted sales view.</p>
+  </section>
+  <section class="panel">
+   <h2>Sales actions</h2>
+   <div class="links">
+    <button class="action light" type="button" id="copy">Copy project summary</button>
+    <a id="mailaction" class="action secondary" style="display:none">Email builder</a>
+   </div>
+   <p id="copynote" class="note"></p>
+  </section>
+ </div>
+</div>
+</div>
+</main>
+<footer>North Carolina Construction Intelligence · Screened government records for research and outreach</footer>
+<script>
+(function(){
+"use strict";
+function el(id){return document.getElementById(id);}
+function text(id,val){var node=el(id);var good=val!==null&&val!==undefined&&String(val).trim()!=="";node.textContent=good?String(val):"Not provided";node.classList.toggle("empty",!good);}
+function money(n){if(n===null||n===undefined||isNaN(Number(n)))return "Not provided";return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(Number(n));}
+function qty(n,suffix){return typeof n==="number"&&Number.isFinite(n)&&n>0?new Intl.NumberFormat("en-US").format(n)+(suffix||""):"Not provided";}
+function trusted(url,kind){
+ try{
+  var u=new URL(String(url||""));
+  if(u.protocol!=="https:"||u.username||u.password)return "";
+  var gis=["services.arcgis.com","gisport.nhcgov.com","meckgis.mecklenburgcountync.gov","gis.greensboro-nc.gov"];
+  if(kind==="gis"&&gis.includes(u.hostname))return u.href;
+  if(kind==="permit"&&u.hostname==="bisched.greensboro-nc.gov"&&u.pathname==="/frmBuildingPermitView.aspx"&&u.searchParams.has("bldgPermitNumber"))return u.href;
+ }catch(e){}
+ return "";
+}
+function addLink(label,url,primary){
+ if(!url)return;
+ var link=document.createElement("a");
+ link.textContent=label;link.href=url;link.target="_blank";link.rel="noopener noreferrer";
+ link.className="action "+(primary?"":"secondary");
+ el("sourcelinks").appendChild(link);
+}
+function contact(id,value,prefix,pattern){
+ var raw=String(value||"").trim();
+ if(!raw||!pattern.test(raw)){text(id,raw||"");return;}
+ var node=el(id),a=document.createElement("a");
+ a.textContent=raw;a.href=prefix+(prefix==="tel:"?raw.replace(/[^\d+]/g,""):raw);
+ node.replaceChildren(a);
+}
+var id=new URLSearchParams(location.search).get("id");
+if(!id||id.length>240){
+ el("loading").style.display="none";el("error").style.display="block";return;
+}
+fetch("data/permits.json",{cache:"no-store"}).then(function(response){
+ if(!response.ok)throw Error("Cannot load permits");
+ return response.json();
+}).then(function(records){
+ var p=records.find(function(record){return record.id===id;});
+ if(!p)throw Error("No such permit");
+ document.title=(p.permit_number||"Permit")+" | North Carolina Construction Intelligence";
+ text("crumb",p.permit_number);text("jurisdiction",p.jurisdiction);
+ text("heading",p.project_name||p.address||p.permit_number);
+ text("place",p.address);text("category",p.category);text("status",p.status);
+ text("value",money(p.valuation));text("permit",p.permit_number);text("issued",p.issued_date);
+ text("projectname",p.project_name);text("workclass",p.work_class);
+ text("permittype",p.permit_type);text("units",qty(p.housing_units));
+ text("sqft",qty(p.square_feet));text("stories",qty(p.stories));
+ text("description",p.description);text("siteaddress",p.address);
+ text("builder",p.contractor||"Not listed in source");
+ text("license",p.contractor_license);text("dba",p.contractor_dba);
+ text("businessaddress",p.contractor_address);
+ contact("phone",p.contractor_phone,"tel:",/^[+()0-9 .-]{7,25}$/);
+ contact("email",p.contractor_email,"mailto:",/^[^@\s<>]+@[^@\s<>]+\.[^@\s<>]+$/);
+ var official=trusted(p.permit_detail_url,"permit");
+ var specific=trusted(p.source_record_url,"gis");
+ var database=trusted(p.source_url,"gis");
+ addLink("Official city permit",official,true);
+ addLink("Exact GIS record",specific,!official);
+ addLink("Original data source",database,false);
+ if(!official&&!specific){var msg=document.createElement("p");msg.className="note";msg.textContent="An individual government permit URL is not yet available for this source. Use the original database link and permit number.";el("sourcelinks").appendChild(msg);}
+ var map=el("maplink");
+ if(p.address){map.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(p.address);}
+ else{map.removeAttribute("href");map.style.display="none";}
+ var email=el("mailaction");
+ if(p.contractor_email&&/^[^@\s<>]+@[^@\s<>]+\.[^@\s<>]+$/.test(p.contractor_email)){
+  email.href="mailto:"+p.contractor_email+"?subject="+encodeURIComponent("Regarding permit "+(p.permit_number||""));
+  email.style.display="inline-flex";
+ }
+ el("copy").addEventListener("click",function(){
+  var detail=[
+   "Permit: "+(p.permit_number||""),
+   "Location: "+(p.address||"Not provided"),
+   "Category: "+(p.category||""),
+   "Issued: "+(p.issued_date||""),
+   "Value: "+money(p.valuation),
+   "Builder: "+(p.contractor||"Not listed"),
+   "Phone: "+(p.contractor_phone||"Not provided"),
+   "Email: "+(p.contractor_email||"Not provided"),
+   "Project: "+(p.description||"Not provided"),
+   "Source: "+(specific||database||"Not available"),
+   "Status: Screened public record, not independently verified"
+  ].join("\n");
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+   navigator.clipboard.writeText(detail).then(function(){el("copynote").textContent="Project summary copied.";}).catch(function(){el("copynote").textContent="Clipboard permission denied; use the permit details above.";});
+  }else el("copynote").textContent="Clipboard not available in this browser.";
+ });
+ el("loading").style.display="none";el("page").style.display="block";
+}).catch(function(){
+ el("loading").style.display="none";el("error").style.display="block";
+});
+})();
+</script>
+</body>
+</html>
