@@ -65,6 +65,12 @@ The dashboard includes a separate **County research queue — NOT published lead
 
 The queue is created in `public/data/chunk13_review_queue.json` by `src/review_chunk13.py` when the workflow runs successfully. All rows have `included_in_sales_leads=false` and require separate manual issuer, date and prime-builder verification. The active dashboard and RSS continue to use the existing four verified-for-collection (not individually audited) GIS sources. See [Chunk 13 notes](docs/CHUNK_13_VALIDATION.md).
 
+## Chunk 15 — manual verification issue drafts
+
+The **Start verification** links in the County Research Queue open a prefilled GitHub issue draft with exact official GIS feature evidence, the county's public portal search, and a reviewer checklist for actual issuer and prime builder. This is a **human-only** workflow: no issue submission, lead approval, source activation or record promotion happens automatically.
+
+Details, limitations and release criteria are in [Chunk 15 validation](docs/CHUNK_15_VALIDATION.md). Wake and Brunswick remain research-only.
+
 ## Data quality rules
 
 - Authoritative **issued** date required; never substitute application date.
