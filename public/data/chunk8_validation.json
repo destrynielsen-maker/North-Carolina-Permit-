@@ -1,0 +1,173 @@
+{
+  "checked_at_utc": "2026-11-12T19:55:26.651463+00:00",
+  "policy": "Read-only sample and consistency checks. No disabled-source records enter the published leads.",
+  "independently_verified": false,
+  "pilot_sources": {
+    "wake": {
+      "state": "sampled_no_promotion",
+      "sample_size": 100,
+      "issue_date_type": "esriFieldTypeDate",
+      "distinct_permit_numbers": 99,
+      "exact_matches_against_screened_raleigh": 0,
+      "raleigh_screened_reference_count": 781,
+      "top_statuses": {
+        "Issued": 100
+      },
+      "top_work_classes": {
+        "New One- and Two-Family Dwelling": 43,
+        "Alteration": 21,
+        "Addition": 8,
+        "Deck": 5,
+        "Accessory Building": 5,
+        "Pool, Spa & Hot Tub": 5,
+        "Building Renovation or Repair": 4,
+        "Non-Building \u2013 Fences, Walls, Signs, Awnings": 3,
+        "Residential": 2,
+        "New Building or Addition": 2
+      },
+      "limitation": "Sample is limited to the newest returned Wake rows and only screened Raleigh IDs; zero matches does not prove feeds do not overlap. Issuing-jurisdiction detail is still required.",
+      "enabled_for_collection": false
+    },
+    "brunswick": {
+      "state": "sampled_no_promotion",
+      "sample_size": 100,
+      "date_field_type": "esriFieldTypeString",
+      "date_formats": {
+        "ISO datetime": 100
+      },
+      "parseable_by_current_issued_date_parser": 100,
+      "top_statuses": {
+        "Legacy": 99,
+        "Void": 1
+      },
+      "top_jurisdictions": {
+        "BRUNSWICK COUNTY": 99,
+        "ST. JAMES (SE SAN)": 1
+      },
+      "limitation": "Issue-date strings, permit status and government scope require record verification before publishing; no prime contractor is inferred from SubContractor.",
+      "enabled_for_collection": false
+    }
+  },
+  "source_record_rechecks": [
+    {
+      "id": "greensboro:202620733",
+      "jurisdiction": "Greensboro",
+      "permit_number": "202620733",
+      "review_kind": "official_source_requery_not_independent_portal",
+      "independently_verified": false,
+      "checks": {
+        "date_matches": true,
+        "category_matches": true,
+        "address_matches": true,
+        "contractor_matches": true,
+        "status_matches": true
+      },
+      "state": "source_requery_consistent"
+    },
+    {
+      "id": "greensboro:202620920",
+      "jurisdiction": "Greensboro",
+      "permit_number": "202620920",
+      "review_kind": "official_source_requery_not_independent_portal",
+      "independently_verified": false,
+      "checks": {
+        "date_matches": true,
+        "category_matches": true,
+        "address_matches": true,
+        "contractor_matches": true,
+        "status_matches": true
+      },
+      "state": "source_requery_consistent"
+    },
+    {
+      "id": "mecklenburg:B4839362",
+      "jurisdiction": "Mecklenburg County / Charlotte",
+      "permit_number": "B4839362",
+      "review_kind": "official_source_requery_not_independent_portal",
+      "independently_verified": false,
+      "checks": {
+        "date_matches": true,
+        "category_matches": true,
+        "address_matches": true,
+        "contractor_matches": true,
+        "status_matches": true
+      },
+      "state": "source_requery_consistent"
+    },
+    {
+      "id": "mecklenburg:B4839209",
+      "jurisdiction": "Mecklenburg County / Charlotte",
+      "permit_number": "B4839209",
+      "review_kind": "official_source_requery_not_independent_portal",
+      "independently_verified": false,
+      "checks": {
+        "date_matches": true,
+        "category_matches": true,
+        "address_matches": true,
+        "contractor_matches": true,
+        "status_matches": true
+      },
+      "state": "source_requery_consistent"
+    },
+    {
+      "id": "new_hanover:26-017372",
+      "jurisdiction": "New Hanover County",
+      "permit_number": "26-017372",
+      "review_kind": "official_source_requery_not_independent_portal",
+      "independently_verified": false,
+      "checks": {
+        "date_matches": true,
+        "category_matches": true,
+        "address_matches": true,
+        "contractor_matches": true,
+        "status_matches": true
+      },
+      "state": "source_requery_consistent"
+    },
+    {
+      "id": "new_hanover:25-01086",
+      "jurisdiction": "New Hanover County",
+      "permit_number": "25-01086",
+      "review_kind": "official_source_requery_not_independent_portal",
+      "independently_verified": false,
+      "checks": {
+        "date_matches": true,
+        "category_matches": true,
+        "address_matches": true,
+        "contractor_matches": true,
+        "status_matches": true
+      },
+      "state": "source_requery_consistent"
+    },
+    {
+      "id": "raleigh:BLDR-049954-2026",
+      "jurisdiction": "Raleigh",
+      "permit_number": "BLDR-049954-2026",
+      "review_kind": "official_source_requery_not_independent_portal",
+      "independently_verified": false,
+      "checks": {
+        "date_matches": true,
+        "category_matches": true,
+        "address_matches": true,
+        "contractor_matches": true,
+        "status_matches": true
+      },
+      "state": "source_requery_consistent"
+    },
+    {
+      "id": "raleigh:BLDR-047549-2026",
+      "jurisdiction": "Raleigh",
+      "permit_number": "BLDR-047549-2026",
+      "review_kind": "official_source_requery_not_independent_portal",
+      "independently_verified": false,
+      "checks": {
+        "date_matches": true,
+        "category_matches": true,
+        "address_matches": true,
+        "contractor_matches": true,
+        "status_matches": true
+      },
+      "state": "source_requery_consistent"
+    }
+  ]
+}
