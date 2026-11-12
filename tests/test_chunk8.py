@@ -1,5 +1,6 @@
 """Chunk 8 bounded pilot/record-recheck unit tests. No network calls."""
 import importlib.util
+import datetime as dt
 import pathlib
 import sys
 import unittest
@@ -48,11 +49,17 @@ class Chunk8Tests(unittest.TestCase):
                  'PermitStatus':'Issued','Jurisdiction':'Leland','PermitType':'New House'},
                 {'PermitNumber':'A2','DateIssued':'unknown',
                  'PermitStatus':'Applied','Jurisdiction':'Brunswick','PermitType':'Building'}]
-        with patch.object(v,'metadata',return_value=fields),patch.object(v,'query_page',return_value=sample):
+        with patch.object(v,'metadata',return_value=fields), \
+             patch.object(v,'query_page',return_value=sample) as query, \
+             patch.object(v,'TODAY',return_value=dt.date(2026,11,12)):
             out=v.brunswick_date_sample()
         self.assertFalse(out['enabled_for_collection'])
         self.assertEqual(out['sample_size'],2)
         self.assertEqual(out['parseable_by_current_issued_date_parser'],1)
+        self.assertEqual(out['sample_issued_in_last_365_days'],1)
+        self.assertEqual(out['sample_issued_date_max'],'2026-11-01')
+        self.assertEqual(out['sample_order'],'DateIssued DESC (lexical; assumes ISO-like strings)')
+        self.assertEqual(query.call_args.kwargs['order'],'DateIssued DESC')
         # Check output fields, not warning text that explicitly says
         # "no prime contractor is inferred from SubContractor".
         self.assertNotIn('contractor',out)
