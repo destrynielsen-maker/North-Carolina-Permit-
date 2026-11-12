@@ -44,3 +44,15 @@ Brunswick:
 ## Object-ID safety correction
 
 The initial generated Brunswick sample exposed `PermitNumber=1000` alongside the distinct `ProjectNumber=701942`. This prompted an important correction: a bare permit number may not uniquely identify a Brunswick GIS feature. Exact source-record links are now constructed using **`OBJECTID`**, not `PermitNumber` alone. The permit and project identifiers remain visible for the county portal lookup. A GIS object-ID query is exact *within the current service layer*, but still not an authenticated municipal permit-detail check.
+
+## Confirmed first corrected live output — 2026-11-12T20:41:14.171527+00:00
+
+GitHub Actions generated `public/data/chunk13_review_queue.json` after the Object ID fix, with **8 Wake** and **8 Brunswick** research-only records. All **16** object IDs across the two sets are distinct within their respective sampled layers, and all generated government lookup URLs now use `where=OBJECTID = <id>` (URL-encoded) rather than a potentially repeated permit number. Each record is explicitly marked `included_in_sales_leads=false`.
+
+Sample links in the published output:
+- Wake permit `RBPR-183204-2026` — ArcGIS object ID **128361** and current official Wake portal **search** link; its issuer remains unverified.
+- Brunswick project `701942` / permit `1000` — ArcGIS object ID **284255** and Brunswick portal **search** link; prime builder remains unverified.
+
+The refresh reached generated-data commit `59bd7693dc2d79d04fde922935b1c4b37a00b359`. Five new unit tests passed before collector output. **The latest Pages deployment and individual portal record views were not independently checked.**
+
+Existing production candidate total remains **3174**. No Wake or Brunswick permit has been promoted to the active sales-lead set, and `live_verified=false` remains appropriate.
