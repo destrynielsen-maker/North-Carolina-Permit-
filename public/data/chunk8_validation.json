@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-12T19:55:26.651463+00:00",
+  "checked_at_utc": "2026-11-12T20:01:13.478099+00:00",
   "policy": "Read-only sample and consistency checks. No disabled-source records enter the published leads.",
   "independently_verified": false,
   "pilot_sources": {
@@ -8,6 +8,10 @@
       "sample_size": 100,
       "issue_date_type": "esriFieldTypeDate",
       "distinct_permit_numbers": 99,
+      "blank_permit_numbers": 0,
+      "repeated_permit_number_rows": 1,
+      "sample_issue_date_min": "2026-11-04",
+      "sample_issue_date_max": "2026-11-10",
       "exact_matches_against_screened_raleigh": 0,
       "raleigh_screened_reference_count": 781,
       "top_statuses": {
@@ -36,13 +40,35 @@
         "ISO datetime": 100
       },
       "parseable_by_current_issued_date_parser": 100,
+      "sample_order": "DateIssued DESC (lexical; assumes ISO-like strings)",
+      "sample_issued_date_min": "2026-11-10",
+      "sample_issued_date_max": "2099-02-12",
+      "sample_issued_in_last_365_days": 98,
+      "top_permit_types": {
+        "RE-INSPECTION FEE": 12,
+        "INC MECH": 12,
+        "ELECTRICAL": 8,
+        "ZONING PERMIT": 7,
+        "TEMPORARY ELECTRICAL POWER": 6,
+        "COMMERCIAL FLOODPLAIN BUILDING": 5,
+        "INC MECH-GAS": 5,
+        "CHANGE OUT MECHANICAL": 5,
+        "INCLUDED ELECTRICAL": 5,
+        "T-POLE": 4
+      },
       "top_statuses": {
-        "Legacy": 99,
-        "Void": 1
+        "Active": 96,
+        "Legacy": 2,
+        "Void": 2
       },
       "top_jurisdictions": {
-        "BRUNSWICK COUNTY": 99,
-        "ST. JAMES (SE SAN)": 1
+        "BRUNSWICK COUNTY": 62,
+        "ST. JAMES": 19,
+        "NAVASSA": 8,
+        "BELVILLE": 7,
+        "NORTHWEST": 2,
+        "SHALLOTTE": 1,
+        "BOLIVIA": 1
       },
       "limitation": "Issue-date strings, permit status and government scope require record verification before publishing; no prime contractor is inferred from SubContractor.",
       "enabled_for_collection": false
