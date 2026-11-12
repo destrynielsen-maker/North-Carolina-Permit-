@@ -74,13 +74,22 @@ def wake_overlap_sample(raleigh, limit=MAX_SAMPLE):
     raleigh_nums={str(p.get('permit_number','')).strip().upper()
                   for p in raleigh if p.get('jurisdiction')=='Raleigh'}
     numbers=[str(value(a,'PERMIT_NUMBER') or '').strip().upper() for a in raw]
-    collisions=sorted(set(numbers)&raleigh_nums)
+    number_counts=Counter(n for n in numbers if n)
+    blank_permit_numbers=sum(not n for n in numbers)
+    duplicate_rows=sum(count-1 for count in number_counts.values() if count>1)
+    dates=[issue_date(value(a,'ISSUE_DATE')) for a in raw]
+    valid_dates=[d for d in dates if d is not None]
+    collisions=sorted(set(number_counts)&raleigh_nums)
     states=Counter(str(value(a,'PERMIT_STATUS') or '(blank)').strip()[:70] for a in raw)
     types=Counter(str(value(a,'WORK_CLASS') or '(blank)').strip()[:70] for a in raw)
     return {
       'state':'sampled_no_promotion','sample_size':len(raw),
       'issue_date_type':fields['issue_date'],
-      'distinct_permit_numbers':len({n for n in numbers if n}),
+      'distinct_permit_numbers':len(number_counts),
+      'blank_permit_numbers':blank_permit_numbers,
+      'repeated_permit_number_rows':duplicate_rows,
+      'sample_issue_date_min':min(valid_dates).isoformat() if valid_dates else None,
+      'sample_issue_date_max':max(valid_dates).isoformat() if valid_dates else None,
       'exact_matches_against_screened_raleigh':len(collisions),
       'raleigh_screened_reference_count':len(raleigh_nums),
       'top_statuses':dict(states.most_common(10)),
