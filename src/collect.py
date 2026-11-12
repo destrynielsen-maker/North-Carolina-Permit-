@@ -188,6 +188,92 @@ def cross_source_number_collisions(permits):
             for pair, v in sorted(summary.items())]
 
 
+def build_builder_rankings(permits, today=None):
+    """Rank screened permit counts, not unique construction projects or verified leads."""
+    today = today or dt.datetime.now(dt.timezone.utc).date()
+    groups = {}
+    for p in permits:
+        name = str(p.get('contractor') or '').strip()
+        key = builder_key(name)
+        issued = issue_date(p.get('issued_date'))
+        if not key or not issued or not (0 <= (today - issued).days <= DAYS_TO_KEEP):
+            continue
+        b = groups.setdefault(key, {'builder': name, 'aliases': set(),
+                                    'permit_count': 0, 'valuation': 0.0,
+                                    'jurisdictions': set(), 'categories': Counter(),
+                                    'last_issued_date': '',
+                                    'issued_last_30_days': 0,
+                                    'issued_last_90_days': 0})
+        b['aliases'].add(name)
+        b['permit_count'] += 1
+        b['valuation'] += float(p.get('valuation') or 0)
+        b['jurisdictions'].add(p.get('jurisdiction', ''))
+        b['categories'][p.get('category', 'Unclassified')] += 1
+        b['last_issued_date'] = max(b['last_issued_date'], issued.isoformat())
+        age = (today - issued).days
+        b['issued_last_30_days'] += int(age <= 30)
+        b['issued_last_90_days'] += int(age <= 90)
+    rows = []
+    for b in groups.values():
+        aliases = sorted(b['aliases'], key=lambda a: (a.casefold(), a))
+        rows.append({**b, 'builder': aliases[0], 'aliases': aliases,
+                     'jurisdictions': sorted(b['jurisdictions']),
+                     'categories': dict(sorted(b['categories'].items())),
+                     'valuation': round(b['valuation'], 2),
+                     'average_valuation': round(b['valuation'] / b['permit_count'], 2)})
+    rows.sort(key=lambda b: (-b['issued_last_90_days'], -b['issued_last_30_days'],
+                             -b['permit_count'], b['builder'].casefold()))
+    return [dict(b, rank=i+1) for i,b in enumerate(rows)]
+
+
+def manual_qa_samples(permits, sources, failed=(), per_source=6):
+    """Build a deterministic permit-level manual-review queue (never auto-verified)."""
+    enabled = {s['name']: s for s in sources if s['enabled']}
+    grouped = {}
+    for p in permits:
+        if p.get('jurisdiction') in enabled:
+            grouped.setdefault(p['jurisdiction'], []).append(p)
+    queue = []
+    for name in sorted(grouped):
+        source = enabled[name]
+        ranked = sorted(grouped[name],
+                        key=lambda p:(p['issued_date'],p.get('score',0),p['permit_number']),
+                        reverse=True)
+        picked, seen = [], set()
+        for kind in ('Single Family', 'Multifamily', 'Commercial'):
+            candidate = next((p for p in ranked if p['category']==kind and p['id'] not in seen), None)
+            if candidate:
+                picked.append(candidate)
+                seen.add(candidate['id'])
+        for p in ranked:
+            if len(picked)>=per_source:
+                break
+            if p['id'] not in seen:
+                picked.append(p)
+                seen.add(p['id'])
+        for p in picked[:per_source]:
+            permit_number = str(p['permit_number']).replace("'", "''")
+            where = f"{source['number']} = '{permit_number}'"
+            query_url = (source['url'] + '/query?' + urllib.parse.urlencode({
+                'f':'json', 'where':where, 'outFields':'*', 'returnGeometry':'false'
+            }))
+            queue.append({
+                'id':p['id'], 'jurisdiction':name,
+                'permit_number':p['permit_number'], 'issued_date':p['issued_date'],
+                'category':p['category'], 'address':p.get('address',''),
+                'contractor':p.get('contractor',''), 'valuation':p.get('valuation',0),
+                'status':p.get('status',''), 'source_url':source['url'],
+                'source_query_url':query_url,
+                'collection_state':'retained_from_previous_run' if name in failed else 'current_scan',
+                'verification_status':'manual_review_required',
+                'verification_checklist':['confirm permit number in issuing-agency record',
+                    'confirm original issue date and current status',
+                    'confirm ground-up classification and building use',
+                    'confirm site address, contractor and valuation'],
+            })
+    return queue
+
+
 def normalize(a, source, today=None):
     today = today or dt.datetime.now(dt.timezone.utc).date()
     number = str(value(a, source['number']) or '').strip()
@@ -373,6 +459,16 @@ def main():
     permits = sorted({p['id']: p for p in permits}.values(),
                      key=lambda x: (x['issued_date'], x['score']), reverse=True)
     (OUT / 'permits.json').write_text(json.dumps(permits, indent=2) + '\n', encoding='utf-8')
+    (OUT / 'builder_rankings.json').write_text(json.dumps({
+        'method': 'Ranked by issued permit candidates in last 90 days, then 30 days, then all screened permits; never unique projects',
+        'as_of_utc_date': dt.datetime.now(dt.timezone.utc).date().isoformat(),
+        'builders': build_builder_rankings(permits),
+    }, indent=2) + '\n', encoding='utf-8')
+    (OUT / 'qa_samples.json').write_text(json.dumps({
+        'method': 'Deterministic category-first and newest-date samples; manually verify with issuing agency',
+        'independently_verified': False,
+        'records': manual_qa_samples(permits, SOURCES, failed),
+    }, indent=2) + '\n', encoding='utf-8')
     collisions = cross_source_number_collisions(permits)
     (OUT / 'overlap_audit.json').write_text(json.dumps({
         'policy': 'Audit only. No cross-agency records removed based solely on addresses or permit numbers.',
