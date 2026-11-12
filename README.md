@@ -25,7 +25,7 @@ python -m http.server --directory public 8000
 
 ## GitHub Actions / Pages
 
-The [permit refresh workflow](.github/workflows/permits.yml) runs on pushes to `main`, manual dispatch and every six hours at minute 17 UTC. It checks the offline test suite (35 tests as of Chunk 7), queries official collection services, probes disabled source metadata without adding permit records, commits the refreshed data and deploys the `public/` folder.
+The [permit refresh workflow](.github/workflows/permits.yml) runs on pushes to `main`, manual dispatch and every six hours at minute 17 UTC. It checks the offline test suite, queries official collection services, probes disabled source metadata without adding permit records, commits the refreshed data and deploys the `public/` folder.
 
 **Enable Pages:** Repository → **Settings** → **Pages** → **Build and deployment** → **Source: GitHub Actions**. After enabling, use the **Actions** tab to run `North Carolina permit refresh and deploy` if the initial push didn't deploy.
 
@@ -44,6 +44,12 @@ See [source directory](docs/SOURCE_DIRECTORY.md) and [Chunk 7 checkpoint](docs/C
 For Greensboro, the permit number in the dashboard now opens the city's public **Building Permit Query** page at `https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?bldgPermitNumber=<PermitNum>`. This pattern is documented by publicly accessible city permit pages; individual new permit pages still need to be spot-checked in a browser. The original ArcGIS layer remains as `source_url` for provenance. Other jurisdictions continue linking to their published source unless a supported direct-permit URL format is verified.
 
 RSS items, CSV exports and the QA queue also use or expose the Greensboro direct-link field after a successful data refresh.
+
+## Chunk 10 — staged jurisdiction and new-home research
+
+The new `src/validate_chunk10.py` reads a bounded sample of Wake issued new-dwelling permits and queries the official Wake planning-jurisdiction polygons for Raleigh ETJ overlap evidence. Separately, it samples the county's own Brunswick Residential New Home permit categories while rejecting future and unparseable dates. Results are aggregate-only and should appear in `public/data/chunk10_validation.json` after a successful workflow run.
+
+**No Wake or Brunswick records are promoted automatically.** Planning jurisdiction is not proof of building-permit issuer, and Brunswick's source does not expose a verified prime contractor. Details and release gates: [Chunk 10 checkpoint](docs/CHUNK_10_VALIDATION.md).
 
 ## Data quality rules
 
