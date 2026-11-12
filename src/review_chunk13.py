@@ -20,18 +20,18 @@ BRUNSWICK_SAMPLE_LIMIT = 8
 ALLOWED_ID = re.compile(r'^[A-Za-z0-9][A-Za-z0-9_.-]{0,69}$')
 
 
-def official_gis_lookup(layer, permit_field, permit_number):
-    """Link to one *query* by exact permit number, never to the whole layer."""
-    ident = str(permit_number or '').strip()
-    if not ALLOWED_ID.fullmatch(ident):
-        return ''
+def official_gis_lookup(layer, object_id):
+    """Lookup a unique GIS object ID, not a potentially repeated permit number.
+
+    ArcGIS OBJECTID is unique within the current published layer. It may
+    change if the layer is republished, so the portal ID is also retained.
+    """
     if layer not in (WAKE_URL, BRUNSWICK_URL):
         return ''
-    if (layer, permit_field) not in ((WAKE_URL, 'PERMIT_NUMBER'),
-                                     (BRUNSWICK_URL, 'PermitNumber')):
+    if type(object_id) is not int or not 1 <= object_id <= 2_147_483_647:
         return ''
     params = {
-        'f': 'pjson', 'where': permit_field + " = '" + ident.replace("'", "''") + "'",
+        'f': 'pjson', 'where': f'OBJECTID = {object_id}',
         'outFields': '*', 'returnGeometry': 'false',
     }
     return layer + '/query?' + urlencode(params)
@@ -42,7 +42,7 @@ def wake_review_rows(request=get_features, today=None):
     rows = request(WAKE_URL, {
         'where': "ISSUE_DATE IS NOT NULL AND PERMIT_STATUS = 'Issued' "
                  "AND WORK_CLASS = 'New One- and Two-Family Dwelling'",
-        'outFields': 'PERMIT_NUMBER,ISSUE_DATE,PERMIT_STATUS,WORK_CLASS,CONTRACTOR,LINK',
+        'outFields': 'OBJECTID,PERMIT_NUMBER,ISSUE_DATE,PERMIT_STATUS,WORK_CLASS,CONTRACTOR,LINK',
         'returnGeometry': 'false',
         'orderByFields': 'ISSUE_DATE DESC',
         'resultRecordCount': WAKE_SAMPLE_LIMIT,
@@ -52,7 +52,7 @@ def wake_review_rows(request=get_features, today=None):
         a = r.get('attributes') or {}
         ident = str(value(a, 'PERMIT_NUMBER') or '').strip()
         when = issue_date(value(a, 'ISSUE_DATE'))
-        link = official_gis_lookup(WAKE_URL, 'PERMIT_NUMBER', ident)
+        link = official_gis_lookup(WAKE_URL, value(a, 'OBJECTID'))
         if not when or not (0 <= (today - when).days <= 365) or not link:
             continue
         signature = wake_link_signature(value(a, 'LINK'))
@@ -61,7 +61,7 @@ def wake_review_rows(request=get_features, today=None):
             'issued_date': when.isoformat(),
             'work_class': str(value(a, 'WORK_CLASS') or ''),
             'contractor_as_listed_unverified': str(value(a, 'CONTRACTOR') or '').strip()[:160],
-            'exact_gis_query_url': link,
+            'exact_gis_query_url': link, 'gis_object_id': value(a, 'OBJECTID'),
             'official_portal_search': OFFICIAL_WAKE_PORTAL.rstrip('/') + '#/search',
             'legacy_link_state': signature.get('state', 'missing_or_invalid'),
             'legacy_link_route': signature.get('fragment_first_route','other_or_none'),
@@ -78,7 +78,7 @@ def brunswick_review_rows(request=get_features, today=None):
         'where': ("ProjectType = 'Residential' AND PermitStatus = 'Active' "
                   "AND PermitType IN ('NEW HOME','RESIDENTIAL MODULAR','TOWNHOME') "
                   "AND DateIssued IS NOT NULL"),
-        'outFields': ('PermitNumber,ProjectNumber,DateIssued,PermitStatus,'
+        'outFields': ('OBJECTID,PermitNumber,ProjectNumber,DateIssued,PermitStatus,'
                       'PermitType,ParcelAddress,Jurisdiction'),
         'returnGeometry': 'false',
         'orderByFields': 'DateIssued DESC',
@@ -89,7 +89,7 @@ def brunswick_review_rows(request=get_features, today=None):
         a = r.get('attributes') or {}
         ident = str(value(a, 'PermitNumber') or '').strip()
         when = issue_date(value(a, 'DateIssued'))
-        link = official_gis_lookup(BRUNSWICK_URL, 'PermitNumber', ident)
+        link = official_gis_lookup(BRUNSWICK_URL, value(a, 'OBJECTID'))
         if not when or not (0 <= (today - when).days <= 365) or not link:
             continue
         result.append({
@@ -99,7 +99,7 @@ def brunswick_review_rows(request=get_features, today=None):
             'permit_type': str(value(a, 'PermitType') or '').strip()[:100],
             'address': str(value(a, 'ParcelAddress') or '').strip()[:160],
             'reported_jurisdiction': str(value(a, 'Jurisdiction') or '').strip()[:100],
-            'exact_gis_query_url': link,
+            'exact_gis_query_url': link, 'gis_object_id': value(a, 'OBJECTID'),
             'official_portal_search': OFFICIAL_BRUNSWICK_PORTAL,
             'prime_builder': None,
             'prime_builder_verification': 'not_available_from_this_gis_layer',
