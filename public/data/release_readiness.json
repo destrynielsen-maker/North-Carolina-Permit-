@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-11-12T21:29:36.179578+00:00",
+  "scope": "Wake and Brunswick manual review gating; no changes to production permits",
+  "policy": "Only explicitly authorized future releases may change published leads. Compiled review state never does.",
+  "counts": {
+    "research_records_audited": 2,
+    "pending_or_followup_or_rejected": 2,
+    "evidence_complete_for_review": 0,
+    "eligible_for_automatic_promotion": 0,
+    "new_live_sources_approved": 0
+  },
+  "reviews": [
+    {
+      "source": "brunswick",
+      "gis_object_id": 284255,
+      "reference_label": "Project 701942",
+      "issue_url": "https://github.com/destrynielsen-maker/North-Carolina-Permit-/issues/2",
+      "curated_decision": "pending",
+      "evidence_complete_for_review": false,
+      "blocked_reasons": [
+        "review_not_confirmed",
+        "official_record_evidence_missing",
+        "named_human_review_missing",
+        "issuing_authority_unverified",
+        "licensed_prime_builder_unverified",
+        "duplicate_check_unresolved",
+        "portal_identity_and_issuance_attestations_incomplete",
+        "source_not_approved_for_live_collection",
+        "separate_manual_release_authorization_required"
+      ],
+      "release_status": "held_research_only",
+      "included_in_sales_leads": false
+    },
+    {
+      "source": "wake",
+      "gis_object_id": 128361,
+      "reference_label": "Permit RBPR-183204-2026",
+      "issue_url": "https://github.com/destrynielsen-maker/North-Carolina-Permit-/issues/1",
+      "curated_decision": "pending",
+      "evidence_complete_for_review": false,
+      "blocked_reasons": [
+        "review_not_confirmed",
+        "official_record_evidence_missing",
+        "named_human_review_missing",
+        "issuing_authority_unverified",
+        "licensed_prime_builder_unverified",
+        "duplicate_check_unresolved",
+        "portal_identity_and_issuance_attestations_incomplete",
+        "source_not_approved_for_live_collection",
+        "separate_manual_release_authorization_required"
+      ],
+      "release_status": "held_research_only",
+      "included_in_sales_leads": false
+    }
+  ]
+}
