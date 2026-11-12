@@ -67,7 +67,7 @@ SOURCES = [
     {
         'id': 'wake', 'name': 'Wake County', 'enabled': False,
         'url': 'https://maps.wake.gov/arcgis/rest/services/Inspections/Building_Permits/MapServer/0',
-        'reason': 'official dataset confirmed; field schema and overlap with Raleigh not yet tested',
+        'reason': 'ISSUE_DATE, PERMIT_NUMBER, PERMIT_STATUS, WORK_CLASS and CONTRACTOR verified in schema; issuer jurisdiction and Raleigh overlap require testing',
     },
     {
         'id': 'durham', 'name': 'Durham', 'enabled': False,
