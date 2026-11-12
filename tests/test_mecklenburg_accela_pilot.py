@@ -65,6 +65,34 @@ class AccelaPilotTests(unittest.TestCase):
         multi=example(description='New townhome building',comres='Residential')
         self.assertEqual(a.classify(multi['attributes']),'Multifamily')
 
+    def test_explicit_new_building_can_include_incidental_trade_work(self):
+        new_home=example(typeofwork='New Residential Construction',
+                         description='New single-family home with electrical and plumbing',
+                         casenumber='RES-NEW-26-004012')
+        p=a.eligible_candidate(new_home['attributes'],TODAY)
+        self.assertIsNotNone(p)
+        self.assertEqual(p['category_screened'],'Single Family')
+        summary=a.summarize(METADATA,[new_home],[],TODAY)
+        self.assertEqual(summary['explicit_new_work_rows'],1)
+        self.assertEqual(summary['explicit_new_with_conflicting_existing_work_description'],0)
+
+    def test_explicit_new_type_with_existing_renovation_conflict_stays_held(self):
+        out=example(typeofwork='New Residential Construction',
+                    description='Renovation of existing building with new walls')
+        self.assertIsNone(a.eligible_candidate(out['attributes'],TODAY))
+        s=a.summarize(METADATA,[out],[],TODAY)
+        self.assertEqual(s['explicit_new_work_rows'],1)
+        self.assertEqual(s['explicit_new_with_conflicting_existing_work_description'],1)
+        self.assertEqual(s['screened_new_building_records'],0)
+
+    def test_unresolved_residential_subtype_is_not_falsely_single_family(self):
+        out=example(typeofwork='New Residential Construction',
+                    description='New residential construction',
+                    comres='Residential')
+        p=a.eligible_candidate(out['attributes'],TODAY)
+        self.assertIsNotNone(p)
+        self.assertEqual(p['category_screened'],'Residential — type review')
+
     def test_public_phone_is_optional_and_invalid_is_hidden(self):
         record=a.eligible_candidate(example(contractorsphone='not a phone')['attributes'],TODAY)
         self.assertEqual(record['contractor_phone_as_published'],'')
