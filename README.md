@@ -9,10 +9,11 @@ Public permit-intelligence dashboard for screened **newly issued** single-family
 | Raleigh | Collector configured | Issued-past-180-days GIS service |
 | New Hanover County | Collector configured | Published issue-date/work-class schema; GIS monthly refresh |
 | Mecklenburg County / Charlotte | Collector configured | Contractor not exposed in selected GIS layer |
+| Greensboro | Collector added in Chunk 4 | Official dashboard layer; live permit qualification pending |
 | Wake County | Paused | Need to validate schema and Raleigh overlap |
 | Durham | Paused | Existing active permit layer lacks issue dates |
 
-**Records are screened candidates**, not individually verified permits or statewide coverage. Municipal live query success and first real permit counts are still pending.
+**Records are screened candidates**, not individually verified permits or statewide coverage. The scheduled collector has produced screened results for Raleigh, New Hanover County and Mecklenburg; record-level validation remains pending. Greensboro collection results are pending.
 
 ## Local development
 
@@ -30,7 +31,9 @@ The [permit refresh workflow](.github/workflows/permits.yml) runs on pushes to `
 
 Dashboard URL (after successful deployment): https://destrynielsen-maker.github.io/North-Carolina-Permit-/
 
-See [source directory](docs/SOURCE_DIRECTORY.md) for government data URLs and coverage caveats.
+The next successful refresh also writes `public/data/diagnostics.json`, aggregated work types, permit types, statuses, and rejection reasons to diagnose undercounting. These aggregate diagnostics contain no rejected permit addresses.
+
+See [source directory](docs/SOURCE_DIRECTORY.md) for government data URLs, Chunk 4 validation notes, and coverage caveats.
 
 ## Data quality rules
 
