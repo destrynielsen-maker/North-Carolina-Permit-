@@ -54,12 +54,12 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 </section>
 <section class="panel" style="margin-top:18px">
 <h2>County research queue — NOT published leads</h2>
-<p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. Existing reviews open their own GitHub issue; new items use Start verification for a draft. Neither action verifies or promotes a lead. Review states are human-curated; even evidence-recorded decisions remain on hold until a separate release approval. Brunswick's county PermitNumber field may repeat across different projects: use the project number and exact GIS record ID for research. Confirm the actual issuer and prime builder in the official portal; a GIS response or portal home page is not independent verification.</p>
+<p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. Existing reviews open their own GitHub issue; new items use Start verification for a draft. Neither action verifies or promotes a lead. Review states are human-curated; even evidence-recorded decisions remain on hold until a separate release approval. The release blocker audit explains missing evidence and county approval gates. Brunswick's county PermitNumber field may repeat across different projects: use the project number and exact GIS record ID for research. Confirm the actual issuer and prime builder in the official portal; a GIS response or portal home page is not independent verification.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>County</th><th>Project / permit reference</th><th>Issue date</th><th>Work / site</th><th>Official record</th><th>Public portal</th><th>GIS consistency</th><th>Review status</th><th>Verify</th></tr></thead>
 <tbody id="countyReviewRows"></tbody></table></div>
 <p class="muted" id="countyReviewNotice">Loading research-only candidates…</p>
-<p class="muted"><a href="data/chunk13_review_queue.json" target="_blank" rel="noopener noreferrer">Complete review queue and source evidence</a> · <a href="data/chunk14_validation.json" target="_blank" rel="noopener noreferrer">GIS consistency audit</a> · <a href="data/review_status.json" target="_blank" rel="noopener noreferrer">Curated review status</a></p>
+<p class="muted"><a href="data/chunk13_review_queue.json" target="_blank" rel="noopener noreferrer">Complete review queue and source evidence</a> · <a href="data/chunk14_validation.json" target="_blank" rel="noopener noreferrer">GIS consistency audit</a> · <a href="data/review_status.json" target="_blank" rel="noopener noreferrer">Curated review status</a> · <a href="data/release_readiness.json" target="_blank" rel="noopener noreferrer">Release blockers</a></p>
 </section>
 <section class="panel" style="margin-top:18px">
 <h2>Source status</h2><p class="muted" id="checked">No live source check has been confirmed.</p><div id="sources" class="muted"></div>
@@ -189,9 +189,12 @@ Promise.all([
  }).catch(function(){return null;}),
  fetch("data/review_status.json").then(function(response){
   if(!response.ok)return null;return response.json();
+ }).catch(function(){return null;}),
+ fetch("data/release_readiness.json").then(function(response){
+  if(!response.ok)return null;return response.json();
  }).catch(function(){return null;})
 ]).then(function(allReports){
- var report=allReports[0],audit=allReports[1],issueManifest=allReports[2],reviewRegistry=allReports[3];
+ var report=allReports[0],audit=allReports[1],issueManifest=allReports[2],reviewRegistry=allReports[3],releaseRegistry=allReports[4];
  var issueLookup={};
  ((issueManifest||{}).entries||[]).forEach(function(item){
   var link=String(item.issue_url||"");
@@ -205,6 +208,11 @@ Promise.all([
   if(!["wake","brunswick"].includes(item.source)||!Number.isInteger(item.gis_object_id))return;
   // This is a human-curated evidence state, never an automatic sales approval.
   reviewLookup[item.source+":"+item.gis_object_id]=item;
+ });
+ var releaseLookup={};
+ (((releaseRegistry||{}).reviews)||[]).forEach(function(item){
+  if(!["wake","brunswick"].includes(item.source)||!Number.isInteger(item.gis_object_id))return;
+  releaseLookup[item.source+":"+item.gis_object_id]=item;
  });
  var rechecks={};
  (((audit||{}).results||{}).record_checks||[]).forEach(function(item){
@@ -256,7 +264,24 @@ Promise.all([
     review.decision==="needs_follow_up"?"Follow-up required — held":
     "Pending — not verified":
     "Not reviewed — held";
-   textCell(tr,description);
+   var reviewCell=textCell(tr,description);
+   var release=releaseLookup[auditKey];
+   if(release&&Array.isArray(release.blocked_reasons)){
+    var reasons={
+     review_not_confirmed:"Official review not confirmed",
+     official_record_evidence_missing:"Official record evidence missing",
+     named_human_review_missing:"Human reviewer not documented",
+     issuing_authority_unverified:"Issuing office unverified",
+     licensed_prime_builder_unverified:"Licensed builder unverified",
+     duplicate_check_unresolved:"Duplicate check unresolved",
+     portal_identity_and_issuance_attestations_incomplete:"Permit details not independently attested",
+     source_not_approved_for_live_collection:"County not approved",
+     separate_manual_release_authorization_required:"Separate release approval required"
+    };
+    var detail=document.createElement("div");detail.className="muted";
+    detail.textContent=release.blocked_reasons.slice(0,3).map(function(code){return reasons[code]||"Review gate pending"}).join(" · ");
+    reviewCell.appendChild(detail);
+   }
    var td=document.createElement("td"),link=document.createElement("a");
    var linkedIssue=issueLookup[key+":"+p.gis_object_id];
    link.href=linkedIssue?linkedIssue.url:verificationIssueUrl(p);
