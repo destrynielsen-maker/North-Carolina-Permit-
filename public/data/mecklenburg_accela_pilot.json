@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-12T22:26:54.563342+00:00",
+  "checked_at_utc": "2026-11-12T22:32:05.200604+00:00",
   "policy": "Read-only current Accela source; no live permit or builder publication",
   "independently_verified": false,
   "pilot": {
@@ -30,14 +30,86 @@
       "EV Charger Level 2": 1
     },
     "sample_rows_missing_issue_date": 0,
-    "screened_new_building_records": 0,
-    "screened_with_contractor_name": 0,
-    "screened_with_contractor_phone": 0,
+    "explicit_new_work_rows": 5,
+    "explicit_new_with_conflicting_existing_work_description": 0,
+    "explicit_new_screened_categories": {
+      "held_other_reason": 1,
+      "Commercial": 1,
+      "Single Family": 3
+    },
+    "screened_new_building_records": 4,
+    "screened_with_contractor_name": 4,
+    "screened_with_contractor_phone": 4,
     "screened_case_numbers_matching_existing_mecklenburg": 0,
     "existing_mecklenburg_reference_count": 701,
     "sample_repeated_case_number_rows": 0,
     "note": "Bounded newest-row sample, not complete source coverage. Zero exact case-number collisions does not establish zero project overlap. Contractor identity is official source text but has not been validated against the individual permit.",
-    "research_records": [],
+    "research_records": [
+      {
+        "id": "mecklenburg_accela:BLD2025-06222",
+        "case_number": "BLD2025-06222",
+        "gis_object_id": 187607,
+        "issued_date": "2026-11-12",
+        "category_screened": "Commercial",
+        "status_as_published": "Issued",
+        "address_as_published": "1720 S Douglass Rd Anaheim, Ca 92806",
+        "contractor_as_published_unverified": "Curtom-matt",
+        "contractor_phone_as_published": "5629022277",
+        "owner_builder_flag_as_published": "No",
+        "source_record_url": "https://services3.arcgis.com/hPs600I3X0RTaaaq/arcgis/rest/services/Accela_Building_Permits/FeatureServer/0/query?f=pjson&where=OBJECTID+%3D+187607&outFields=%2A&returnGeometry=false",
+        "record_verification": "agency_record_review_required",
+        "builder_role_verification": "not_independently_verified",
+        "included_in_sales_leads": false
+      },
+      {
+        "id": "mecklenburg_accela:BLD2025-05535",
+        "case_number": "BLD2025-05535",
+        "gis_object_id": 186913,
+        "issued_date": "2026-11-10",
+        "category_screened": "Single Family",
+        "status_as_published": "Issued",
+        "address_as_published": "733 N East St B Anaheim, Ca 92805",
+        "contractor_as_published_unverified": "Landmark Builder And Developer Inc",
+        "contractor_phone_as_published": "(714) 468 4022",
+        "owner_builder_flag_as_published": "",
+        "source_record_url": "https://services3.arcgis.com/hPs600I3X0RTaaaq/arcgis/rest/services/Accela_Building_Permits/FeatureServer/0/query?f=pjson&where=OBJECTID+%3D+186913&outFields=%2A&returnGeometry=false",
+        "record_verification": "agency_record_review_required",
+        "builder_role_verification": "not_independently_verified",
+        "included_in_sales_leads": false
+      },
+      {
+        "id": "mecklenburg_accela:BLD2025-06394",
+        "case_number": "BLD2025-06394",
+        "gis_object_id": 187784,
+        "issued_date": "2026-11-04",
+        "category_screened": "Single Family",
+        "status_as_published": "Issued",
+        "address_as_published": "1427 W Stella Ave B Anaheim, Ca 92802",
+        "contractor_as_published_unverified": "Ken Rock Construction",
+        "contractor_phone_as_published": "(714) 443 1668",
+        "owner_builder_flag_as_published": "No",
+        "source_record_url": "https://services3.arcgis.com/hPs600I3X0RTaaaq/arcgis/rest/services/Accela_Building_Permits/FeatureServer/0/query?f=pjson&where=OBJECTID+%3D+187784&outFields=%2A&returnGeometry=false",
+        "record_verification": "agency_record_review_required",
+        "builder_role_verification": "not_independently_verified",
+        "included_in_sales_leads": false
+      },
+      {
+        "id": "mecklenburg_accela:BLD2025-04325",
+        "case_number": "BLD2025-04325",
+        "gis_object_id": 185722,
+        "issued_date": "2026-10-29",
+        "category_screened": "Single Family",
+        "status_as_published": "Issued",
+        "address_as_published": "2839 W Academy Ave B Anaheim, Ca 92804",
+        "contractor_as_published_unverified": "Maga Project Developers",
+        "contractor_phone_as_published": "(657) 671 5619",
+        "owner_builder_flag_as_published": "No",
+        "source_record_url": "https://services3.arcgis.com/hPs600I3X0RTaaaq/arcgis/rest/services/Accela_Building_Permits/FeatureServer/0/query?f=pjson&where=OBJECTID+%3D+185722&outFields=%2A&returnGeometry=false",
+        "record_verification": "agency_record_review_required",
+        "builder_role_verification": "not_independently_verified",
+        "included_in_sales_leads": false
+      }
+    ],
     "enabled_for_collection": false,
     "new_permits_added_to_live": 0
   }

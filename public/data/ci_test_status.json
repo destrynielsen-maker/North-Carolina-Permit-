@@ -1,12 +1,10 @@
 {
-  "checked_at_utc": "2026-11-12T22:29:19.992583+00:00",
-  "result": "failed",
-  "tests_run": 117,
-  "failure_count": 1,
-  "failed_tests": [
-    "test_mecklenburg_accela_pilot (unittest.loader._FailedTest.test_mecklenburg_accela_pilot)"
-  ],
-  "error_excerpt": "ds_are_distinct_from_builder) ... ok\ntest_contact_coverage_counts_are_aggregate_and_source_scoped (test_sales_details.SalesDetailTests.test_contact_coverage_counts_are_aggregate_and_source_scoped) ... ok\ntest_dashboard_primary_link_is_own_detail_page_and_csv_has_url (test_sales_details.SalesDetailTests.test_dashboard_primary_link_is_own_detail_page_and_csv_has_url) ... ok\ntest_greensboro_official_page_is_separate_from_original_gis (test_sales_details.SalesDetailTests.test_greensboro_official_page_is_separate_from_original_gis) ... ok\ntest_mecklenburg_source_only_site_and_size_fields (test_sales_details.SalesDetailTests.test_mecklenburg_source_only_site_and_size_fields) ... ok\ntest_new_hanover_project_contact_is_not_the_general_contractor (test_sales_details.SalesDetailTests.test_new_hanover_project_contact_is_not_the_general_contractor) ... ok\ntest_no_contact_data_is_never_fabricated (test_sales_details.SalesDetailTests.test_no_contact_data_is_never_fabricated) ... ok\ntest_only_real_positive_quantities_display (test_sales_details.SalesDetailTests.test_only_real_positive_quantities_display) ... ok\ntest_raleigh_public_business_contact_fields_are_mapped (test_sales_details.SalesDetailTests.test_raleigh_public_business_contact_fields_are_mapped) ... ok\ntest_sales_detail_page_loads_current_dataset_by_exact_id (test_sales_details.SalesDetailTests.test_sales_detail_page_loads_current_dataset_by_exact_id) ... ok\ntest_sales_page_links_official_county_search_not_guessed_permit_url (test_sales_details.SalesDetailTests.test_sales_page_links_official_county_search_not_guessed_permit_url) ... ok\ntest_suspicious_object_ids_do_not_form_source_record_urls (test_sales_details.SalesDetailTests.test_suspicious_object_ids_do_not_form_source_record_urls) ... ok\n\n======================================================================\nERROR: test_mecklenburg_accela_pilot (unittest.loader._FailedTest.test_mecklenburg_accela_pilot)\n----------------------------------------------------------------------\nImportError: Failed to import test module: test_mecklenburg_accela_pilot\nTraceback (most recent call last):\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py\", line 396, in _find_test_path\n    module = self._get_module_from_name(name)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/unittest/loader.py\", line 339, in _get_module_from_name\n    __import__(name)\n  File \"/home/runner/work/North-Carolina-Permit-/North-Carolina-Permit-/tests/test_mecklenburg_accela_pilot.py\", line 12, in <module>\n    spec.loader.exec_module(a)\n  File \"/home/runner/work/North-Carolina-Permit-/North-Carolina-Permit-/src/probe_mecklenburg_accela.py\", line 31\n    SAFE_PHONE = re.compile(r'^[+()0-9 .-]{7,25}\n                            ^\nSyntaxError: unterminated string literal (detected at line 31)\n\n\n----------------------------------------------------------------------\nRan 117 tests in 0.100s\n\nFAILED (errors=1)\n",
-  "reported_commit": "8f18787193affb8d1a24206c24964a6e6437b18b",
+  "checked_at_utc": "2026-11-12T22:31:33.460361+00:00",
+  "result": "passed",
+  "tests_run": 129,
+  "failure_count": 0,
+  "failed_tests": [],
+  "error_excerpt": "",
+  "reported_commit": "b0b17e687d2d5d02867d27ee8bd5b31cbdc5f254",
   "note": "CI test result only; no permit or sales lead is validated by test success."
 }
