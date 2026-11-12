@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "meaning": "Human-curated review state only. Confirmed means reviewer documented evidence, not an automated verification or published lead.",
+  "counts": {
+    "confirmed": 0,
+    "needs_follow_up": 0,
+    "pending": 2,
+    "rejected": 0
+  },
+  "auto_promoted_leads": 0,
+  "new_sources_enabled": 0,
+  "reviews": [
+    {
+      "source": "brunswick",
+      "gis_object_id": 284255,
+      "reference_label": "Project 701942",
+      "decision": "pending",
+      "issue_url": "https://github.com/destrynielsen-maker/North-Carolina-Permit-/issues/2",
+      "evidence_recorded": false,
+      "independently_verified_by_automation": false,
+      "release_status": "held_research_only",
+      "included_in_sales_leads": false
+    },
+    {
+      "source": "wake",
+      "gis_object_id": 128361,
+      "reference_label": "Permit RBPR-183204-2026",
+      "decision": "pending",
+      "issue_url": "https://github.com/destrynielsen-maker/North-Carolina-Permit-/issues/1",
+      "evidence_recorded": false,
+      "independently_verified_by_automation": false,
+      "release_status": "held_research_only",
+      "included_in_sales_leads": false
+    }
+  ]
+}
