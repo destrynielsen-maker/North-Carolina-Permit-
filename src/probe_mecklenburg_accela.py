@@ -133,6 +133,9 @@ def summarize(metadata, features, previous, today=None):
     source_rows=[]
     eligible=[]
     missing_issued=0
+    explicit_new_count=0
+    explicit_new_conflict_count=0
+    explicit_new_classifications=Counter()
     for feature in features[:SAMPLE_LIMIT]:
         a=feature.get('attributes') or {}
         if not isinstance(a,dict):
@@ -140,6 +143,10 @@ def summarize(metadata, features, previous, today=None):
         source_rows.append(a)
         statuses[current_status(a) or '(blank)']+=1
         work[clean(a,'typeofwork') or '(blank)']+=1
+        if EXPLICIT_NEW_WORK.search(clean(a,'typeofwork')):
+            explicit_new_count+=1
+            explicit_new_conflict_count+=int(bool(CONFLICTING_EXISTING.search(clean(a,'description',500))))
+            explicit_new_classifications[classify(a) or 'held_other_reason']+=1
         if issue_date(a.get('permitissued')) is None:
             missing_issued+=1
         record=eligible_candidate(a,today)
@@ -162,6 +169,9 @@ def summarize(metadata, features, previous, today=None):
         'sample_statuses':dict(statuses.most_common(15)),
         'sample_work_types':dict(work.most_common(15)),
         'sample_rows_missing_issue_date':missing_issued,
+        'explicit_new_work_rows':explicit_new_count,
+        'explicit_new_with_conflicting_existing_work_description':explicit_new_conflict_count,
+        'explicit_new_screened_categories':dict(explicit_new_classifications),
         'screened_new_building_records':len(eligible),
         'screened_with_contractor_name':contractor_count,
         'screened_with_contractor_phone':phone_count,
