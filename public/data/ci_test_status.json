@@ -1,10 +1,10 @@
 {
-  "checked_at_utc": "2026-11-12T22:15:15.324834+00:00",
+  "checked_at_utc": "2026-11-12T22:25:38.412182+00:00",
   "result": "passed",
-  "tests_run": 116,
+  "tests_run": 126,
   "failure_count": 0,
   "failed_tests": [],
   "error_excerpt": "",
-  "reported_commit": "d978e32cca5321bb54468ff29982fb44ff03fc9d",
+  "reported_commit": "2593cc9005bc309d4373c7b62f50888bc0ab9310",
   "note": "CI test result only; no permit or sales lead is validated by test success."
 }

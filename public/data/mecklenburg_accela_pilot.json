@@ -1,0 +1,44 @@
+{
+  "checked_at_utc": "2026-11-12T22:25:51.150290+00:00",
+  "policy": "Read-only current Accela source; no live permit or builder publication",
+  "independently_verified": false,
+  "pilot": {
+    "state": "sampled_no_promotion",
+    "layer": "https://services3.arcgis.com/hPs600I3X0RTaaaq/arcgis/rest/services/Accela_Building_Permits/FeatureServer/0",
+    "sample_size": 250,
+    "required_schema_fields_confirmed": true,
+    "sample_statuses": {
+      "Issued": 240,
+      "Finaled": 8,
+      "On Hold": 2
+    },
+    "sample_work_types": {
+      "Trade Only": 109,
+      "Reroof": 71,
+      "Residential Remodel": 19,
+      "Residential Addition": 10,
+      "Demolition": 7,
+      "Tenant Improvement": 7,
+      "Photovoltaic System": 5,
+      "New Residential Construction": 4,
+      "Patio Cover": 4,
+      "Miscellaneous": 4,
+      "Photovoltaic with Micro-Inverters": 3,
+      "(blank)": 3,
+      "Repair or Alteration of Existing": 1,
+      "New Commercial Construction": 1,
+      "EV Charger Level 2": 1
+    },
+    "sample_rows_missing_issue_date": 0,
+    "screened_new_building_records": 0,
+    "screened_with_contractor_name": 0,
+    "screened_with_contractor_phone": 0,
+    "screened_case_numbers_matching_existing_mecklenburg": 0,
+    "existing_mecklenburg_reference_count": 701,
+    "sample_repeated_case_number_rows": 0,
+    "note": "Bounded newest-row sample, not complete source coverage. Zero exact case-number collisions does not establish zero project overlap. Contractor identity is official source text but has not been validated against the individual permit.",
+    "research_records": [],
+    "enabled_for_collection": false,
+    "new_permits_added_to_live": 0
+  }
+}
