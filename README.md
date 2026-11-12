@@ -97,6 +97,14 @@ The detailed sales view now supports official **Raleigh** contractor phone/email
 
 The [sales contact coverage report](public/data/sales_field_coverage.json) is generated on a successful permit refresh and reports counts of records with source-published contact and project details, grouped by jurisdiction. The [CI test diagnostics](public/data/ci_test_status.json) records test pass/fail results even when tests block collection. In case of a failed run, see the failing test name and correct it before relying on new data. Details: [sales rollout checkpoint](docs/SALES_DETAIL_ROLLOUT_CHUNK2.md).
 
+## Charlotte / Mecklenburg sales-research workflow
+
+For the **Mecklenburg County / Charlotte** permits, the selected official GIS layer does not contain an explicit building contractor field. The sales detail page therefore shows **builder not listed**, never guesses a homebuilder from a property owner. New sourced details include subdivision, parcel number, tax jurisdiction, project phase, and heated/unheated/total area when present.
+
+To find the actual GC, the page now provides the county's [Permit and Plan Review Status Portal](https://gis.mecklenburgcountync.gov/meck-accela/) and [Building Permits Issued Daily contractor-filterable report](https://code.mecknc.gov/node/1041); the salesperson can copy the permit number and research the exact project. A separate [NC licensing-board search](https://portal.nclbgc.org/Public/Search) is available when a builder has been named in the original source; a license search is not treated as a verified GC/project match.
+
+The main dashboard can filter **Builder missing — research** and offers direct county portal research on Charlotte rows. Contact availability and builder fields are intentionally separate. See [Mecklenburg source and implementation notes](docs/MECKLENBURG_SALES_RESEARCH.md).
+
 ## Data quality rules
 
 - Authoritative **issued** date required; never substitute application date.
