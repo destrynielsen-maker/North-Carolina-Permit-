@@ -91,6 +91,12 @@ The collector preserves Raleigh's publicly listed contractor phone, email, licen
 
 The primary view is **our own permit.html**, not a generic ArcGIS layer; the agency link remains as provenance. [Implementation and source-field coverage](docs/SALES_PERMIT_DETAILS_V1.md).
 
+## Sales rollout — field completeness and CI diagnostics
+
+The detailed sales view now supports official **Raleigh** contractor phone/email/license/address, **New Hanover** project name/square footage and a distinctly labeled project contact, plus **Mecklenburg/Charlotte** project name and project number. Missing fields stay unavailable; a project contact must not be presumed to be a general contractor.
+
+The [sales contact coverage report](public/data/sales_field_coverage.json) is generated on a successful permit refresh and reports counts of records with source-published contact and project details, grouped by jurisdiction. The [CI test diagnostics](public/data/ci_test_status.json) records test pass/fail results even when tests block collection. In case of a failed run, see the failing test name and correct it before relying on new data. Details: [sales rollout checkpoint](docs/SALES_DETAIL_ROLLOUT_CHUNK2.md).
+
 ## Data quality rules
 
 - Authoritative **issued** date required; never substitute application date.
