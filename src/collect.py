@@ -358,13 +358,24 @@ def normalize(a, source, today=None):
         ),
         'project_contact': source_contact(a, 'PROJECT_CONTACT') if is_new_hanover else '',
         'project_number': source_contact(a, 'projnum') if is_mecklenburg else '',
+        'subdivision': source_contact(a, 'subdiv') if is_mecklenburg else '',
+        'parcel_number': (
+            source_contact(a, 'parcelnum') if is_mecklenburg
+            else source_contact(a, 'PID') if is_new_hanover
+            else ''
+        ),
+        'tax_jurisdiction': source_contact(a, 'taxjuris') if is_mecklenburg else '',
+        'project_phase': source_contact(a, 'projphase') if is_mecklenburg else '',
         'work_class': parts(a, source['work_fields'])[:200],
         'permit_type': parts(a, source['type_fields'])[:200],
         'square_feet': (
             optional_number(value(a, 'totalsqft')) if is_raleigh
             else optional_number(value(a, 'SQUARE_FEET')) if is_new_hanover
+            else optional_number(value(a, 'totalsqft')) if is_mecklenburg
             else None
         ),
+        'heated_square_feet': optional_number(value(a, 'heatsqft')) if is_mecklenburg else None,
+        'unheated_square_feet': optional_number(value(a, 'unheatsqft')) if is_mecklenburg else None,
         'stories': optional_number(value(a, 'numberstories')) if is_raleigh else None,
         'housing_units': optional_number(value(a, source.get('units'))) if source.get('units') else None,
         'contractor_phone': source_contact(a, 'contractorphone') if is_raleigh else '',
@@ -499,7 +510,9 @@ def sales_field_coverage(permits):
     buckets = {}
     keys = ('contractor', 'contractor_phone', 'contractor_email',
             'contractor_license', 'project_name', 'project_number',
-            'project_contact', 'square_feet', 'housing_units',
+            'project_contact', 'subdivision', 'parcel_number',
+            'project_phase', 'square_feet', 'heated_square_feet',
+            'unheated_square_feet', 'housing_units',
             'source_record_url', 'permit_detail_url')
     for p in permits:
         market = p.get('jurisdiction') or '(unknown)'
