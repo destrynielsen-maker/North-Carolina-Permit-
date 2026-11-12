@@ -6,6 +6,7 @@ queries still need validation. Do not equate a screened permit with a certified 
 from __future__ import annotations
 
 import datetime as dt
+from collections import Counter
 import json
 import pathlib
 import re
@@ -51,6 +52,17 @@ SOURCES = [
         'contractor': None, 'valuation': 'bldgcost', 'address_fields': ['projadd'],
         'units': 'numunits', 'days': 365,
         'validation': 'published field schema confirmed; builder not exposed in this layer; record-level verification pending',
+    },
+    {
+        'id': 'greensboro', 'name': 'Greensboro', 'enabled': True,
+        'url': 'https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6',
+        'date': 'IssuedDate', 'number': 'PermitNum', 'status': 'StatusCurrent',
+        'type_fields': ['ApplicationType', 'OccupancyDesc'],
+        'work_fields': ['ApplicationType'],
+        'description_fields': ['Description'], 'contractor': 'Contractor',
+        'valuation': 'TotalCost', 'address_fields': ['FullAddress', 'City', 'State'],
+        'units': 'NumUnits', 'days': 365,
+        'validation': 'official issued-date/contractor schema confirmed; live records and screening require review',
     },
     {
         'id': 'wake', 'name': 'Wake County', 'enabled': False,
@@ -194,7 +206,28 @@ def check_schema(info, source):
     return oid
 
 
-def collect(source, today=None):
+def rejection_reason(attributes, source, today):
+    """Aggregate diagnostics only; never publish raw rejected permit details."""
+    if not str(value(attributes, source['number']) or '').strip():
+        return 'missing_permit_number'
+    issued = issue_date(value(attributes, source['date']))
+    if issued is None:
+        return 'missing_issued_date'
+    if not 0 <= (today - issued).days <= DAYS_TO_KEEP:
+        return 'outside_date_window'
+    if BAD_STATUS.search(str(value(attributes, source['status']) or '')):
+        return 'blocked_status'
+    typ = parts(attributes, source['type_fields'])
+    work = parts(attributes, source['work_fields'])
+    description = parts(attributes, source['description_fields'])
+    if BLOCKED.search(' '.join((typ, work))) or BLOCKED.search(description):
+        return 'excluded_work_or_trade'
+    if not (NEW_BUILD.search(' '.join((typ, work, description))) or re.search(r'\bnew\b', work, re.I)):
+        return 'no_explicit_new_construction'
+    return 'missing_building_category'
+
+
+def collect(source, today=None, diagnostics=None):
     """Scan by issue date rather than object ID, with a fixed count and cutoff.
 
     Pagination cap errors rather than falsely claiming a complete scan.
@@ -207,6 +240,18 @@ def collect(source, today=None):
     cutoff = today - dt.timedelta(days=lookback)
     where = f"{source['date']} IS NOT NULL AND {source['date']} >= DATE '{cutoff.isoformat()}'"
     rows, scanned, offset = [], 0, 0
+    work_types, permit_types, statuses, rejected = Counter(), Counter(), Counter(), Counter()
+
+    def finish():
+        if diagnostics is not None:
+            diagnostics.update({
+                'scanned': scanned, 'qualified': len(rows),
+                'work_types': dict(work_types.most_common(15)),
+                'permit_types': dict(permit_types.most_common(15)),
+                'statuses': dict(statuses.most_common(15)),
+                'rejection_reasons': dict(rejected.most_common()),
+            })
+        return rows, scanned
     for _ in range(MAX_PAGES):
         page = get(source['url'] + '/query', {
             'f': 'json', 'where': where, 'outFields': '*', 'returnGeometry': 'false',
@@ -220,12 +265,19 @@ def collect(source, today=None):
         features = page['features']
         scanned += len(features)
         for feature in features:
-            record = normalize(feature.get('attributes', {}), source, today)
+            attributes = feature.get('attributes', {})
+            record = normalize(attributes, source, today)
+            if diagnostics is not None:
+                work_types[parts(attributes, source['work_fields'])[:100] or '(blank)'] += 1
+                permit_types[parts(attributes, source['type_fields'])[:100] or '(blank)'] += 1
+                statuses[str(value(attributes, source['status']) or '(blank)')[:80]] += 1
+                if not record:
+                    rejected[rejection_reason(attributes, source, today)] += 1
             if record:
                 rows.append(record)
         offset += len(features)
         if len(features) < count and not page.get('exceededTransferLimit'):
-            return rows, scanned
+            return finish()
         if len(features) == 0:
             raise RuntimeError('Pagination was truncated without progress')
     raise RuntimeError(f'Pagination cap {MAX_PAGES} reached; incomplete scan ({scanned} records)')
@@ -248,7 +300,7 @@ def rss(title, records, path):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    permits, health = [], []
+    permits, health, diagnostics_by_source = [], [], []
     for source in SOURCES:
         if not source['enabled']:
             health.append({'name': source['name'], 'source_url': source['url'],
@@ -256,7 +308,9 @@ def main():
                            'detail': source['reason'], 'scanned': 0, 'qualified': 0})
             continue
         try:
-            records, scanned = collect(source)
+            source_diag = {}
+            records, scanned = collect(source, diagnostics=source_diag)
+            diagnostics_by_source.append({'source': source['name'], **source_diag})
             permits.extend(records)
             health.append({'name': source['name'], 'source_url': source['url'],
                            'state': 'collected - sample verification pending',
@@ -278,6 +332,10 @@ def main():
     permits = sorted({p['id']: p for p in permits}.values(),
                      key=lambda x: (x['issued_date'], x['score']), reverse=True)
     (OUT / 'permits.json').write_text(json.dumps(permits, indent=2) + '\n', encoding='utf-8')
+    (OUT / 'diagnostics.json').write_text(json.dumps({
+        'note': 'Aggregated counts from latest successful scans; no individual rejected records',
+        'sources': diagnostics_by_source,
+    }, indent=2) + '\n', encoding='utf-8')
     (OUT / 'sources.json').write_text(json.dumps({
         'last_checked_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
         'live_verified': False, 'coverage_note': 'Partial market coverage; record-level verification pending',
