@@ -188,6 +188,15 @@ class SalesDetailTests(unittest.TestCase):
         self.assertIn('not independently verified',html.lower())
         self.assertNotIn('innerHTML',html)
 
+    def test_sales_csv_has_safe_spreadsheet_export_and_clear_archive_navigation(self):
+        page=(ROOT/'public'/'index.html').read_text(encoding='utf-8')
+        self.assertIn('official_source_navigation_url',page)
+        self.assertIn('north-carolina-HISTORIC-snapshot-not-current-leads.csv',page)
+        self.assertIn('maps.mecklenburgcountync.gov/openmapping/data.html',page)
+        self.assertIn('if(/^[',page)
+        self.assertIn('s.replaceAll',page)
+        self.assertIn('historicOnly',page)
+
     def test_dashboard_primary_link_is_own_detail_page_and_csv_has_url(self):
         html=(ROOT/'public'/'index.html').read_text(encoding='utf-8')
         self.assertIn('function detailUrl(p)',html)
