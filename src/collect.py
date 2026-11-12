@@ -340,6 +340,8 @@ def normalize(a, source, today=None):
                 + (15 if amount >= 500000 else 5 if amount >= 100000 else 0)
                 + (10 if kind == 'Multifamily' else 5 if kind == 'Commercial' else 0))
     is_raleigh = source.get('id') == 'raleigh'
+    is_new_hanover = source.get('id') == 'new_hanover'
+    is_mecklenburg = source.get('id') == 'mecklenburg'
     return {
         'id': source['id'] + ':' + number, 'jurisdiction': source['name'],
         'permit_number': number, 'issued_date': issued.isoformat(), 'category': kind,
@@ -348,10 +350,21 @@ def normalize(a, source, today=None):
         'verification': 'screened government record — not independently verified',
         'permit_detail_url': public_permit_detail_url(source, number),
         'source_record_url': public_record_query_url(source, a),
-        'project_name': source_contact(a, 'projectname') if is_raleigh else '',
+        'project_name': (
+            source_contact(a, 'projectname') if is_raleigh
+            else source_contact(a, 'PROJECT') if is_new_hanover
+            else source_contact(a, 'projname') if is_mecklenburg
+            else ''
+        ),
+        'project_contact': source_contact(a, 'PROJECT_CONTACT') if is_new_hanover else '',
+        'project_number': source_contact(a, 'projnum') if is_mecklenburg else '',
         'work_class': parts(a, source['work_fields'])[:200],
         'permit_type': parts(a, source['type_fields'])[:200],
-        'square_feet': optional_number(value(a, 'totalsqft')) if is_raleigh else None,
+        'square_feet': (
+            optional_number(value(a, 'totalsqft')) if is_raleigh
+            else optional_number(value(a, 'SQUARE_FEET')) if is_new_hanover
+            else None
+        ),
         'stories': optional_number(value(a, 'numberstories')) if is_raleigh else None,
         'housing_units': optional_number(value(a, source.get('units'))) if source.get('units') else None,
         'contractor_phone': source_contact(a, 'contractorphone') if is_raleigh else '',
