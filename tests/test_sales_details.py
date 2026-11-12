@@ -135,7 +135,7 @@ class SalesDetailTests(unittest.TestCase):
         self.assertIn('Builder missing — research',page)
         self.assertIn('Find builder via county permit search',page)
         self.assertIn('builderStatus==="missing"',page)
-        self.assertIn('"builderStatus"].forEach',page)
+        self.assertIn('"builderStatus","freshness"].forEach',page)
         self.assertIn('subdivision',page)
         self.assertIn('heated_square_feet',page)
 
