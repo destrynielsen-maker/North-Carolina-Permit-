@@ -53,7 +53,12 @@ class Chunk8Tests(unittest.TestCase):
         self.assertFalse(out['enabled_for_collection'])
         self.assertEqual(out['sample_size'],2)
         self.assertEqual(out['parseable_by_current_issued_date_parser'],1)
-        self.assertNotIn('contractor',str(out).lower())
+        # Check output fields, not warning text that explicitly says
+        # "no prime contractor is inferred from SubContractor".
+        self.assertNotIn('contractor',out)
+        self.assertNotIn('prime_contractor',out)
+        self.assertNotIn('subcontractor',out)
+        self.assertTrue(out['limitation'].startswith('Issue-date strings'))
 
     def test_qa_recheck_matches_current_record_but_not_independently_verified(self):
         item={'id':'raleigh:TEST-01','jurisdiction':'Raleigh','permit_number':'TEST-01',
