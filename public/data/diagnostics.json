@@ -1,0 +1,209 @@
+{
+  "note": "Aggregated counts from latest successful scans; no individual rejected records",
+  "sources": [
+    {
+      "source": "Raleigh",
+      "scanned": 3005,
+      "qualified": 781,
+      "work_types": {
+        "Existing Alteration/Repairs": 1242,
+        "New Townhouse": 401,
+        "Existing New Residential Dwelling": 370,
+        "Existing Deck/Porch": 312,
+        "New Addition": 208,
+        "New Accessory Structure": 94,
+        "Existing New Building": 93,
+        "Existing Pool/Spa": 92,
+        "Existing Retaining Wall": 59,
+        "Existing Change of Use": 45,
+        "Existing Interior Completion": 37,
+        "Existing Foundation Only": 27,
+        "New Temporary Trailer": 11,
+        "Existing Cell Tower": 3,
+        "Existing Awning/Canopy": 3
+      },
+      "permit_types": {
+        "Building Residential Building ADDITION/ALTERATION RESIDENTIAL BLDG": 1373,
+        "Building Non-Residential Building ADDITION/ALTERATION NONRESIDENTIAL BLDG": 412,
+        "Building Residential Building RESIDENTIAL TOWNHOUSE": 374,
+        "Building Residential Building DETACHED SINGLE FAMILY DWELLING": 311,
+        "Building Non-Residential Building ADDITION/ALTERATION RESIDENTIAL BLDG": 173,
+        "Building Non-Residential Building MISCELLANEOUS SUCH AS FENCES": 113,
+        "Building Residential Building SHEDS, BOATHOUSES, ACCESSORY BUILDINGS": 50,
+        "Building Non-Residential Building SHEDS, BOATHOUSES, ACCESSORY BUILDINGS": 41,
+        "Building Residential Building TWO FAMILY BUILDING (DUPLEX)": 37,
+        "Building Non-Residential Building FIVE OR MORE FAMILY BUILDING": 28,
+        "Building Residential Building": 23,
+        "Building Residential Building OUTDOOR SWIMMING POOL, STADIUM OR DOCK": 10,
+        "Building Non-Residential Building AMUSEMENT & RECREATIONAL BUILDING": 10,
+        "Building Non-Residential Building THREE OR FOUR FAMILY BUILDING": 8,
+        "Building Non-Residential Building DETACHED SINGLE FAMILY DWELLING": 7
+      },
+      "statuses": {
+        "Issued": 2342,
+        "Complete": 644,
+        "Withdrawn": 10,
+        "Void": 3,
+        "On Hold": 3,
+        "Stop Work Order": 2,
+        "Active": 1
+      },
+      "rejection_reasons": {
+        "excluded_work_or_trade": 2138,
+        "no_explicit_new_construction": 73,
+        "blocked_status": 13
+      }
+    },
+    {
+      "source": "New Hanover County",
+      "scanned": 21445,
+      "qualified": 813,
+      "work_types": {
+        "Mechanical HVAC": 5455,
+        "Electrical": 2984,
+        "Alteration/Renovation": 2141,
+        "New": 1757,
+        "Mechanical": 1714,
+        "Stand Alone": 1528,
+        "NSFR": 1212,
+        "Addition": 963,
+        "Plumbing": 897,
+        "Alteration/Renovation, General Repair, Accessory": 667,
+        "Prior Cut On": 368,
+        "General Repairs": 229,
+        "EV Charger": 221,
+        "Sign": 210,
+        "Demolition": 189
+      },
+      "permit_types": {
+        "NHC Residential Trade Permit": 8652,
+        "NHC Residential Building": 2665,
+        "NHC Commercial Trade Permit": 2619,
+        "NHC Residential Electrical": 1122,
+        "NHC Commercial Electrical": 886,
+        "NHC Commercial Building": 532,
+        "NHC FLI Public Swimming Pool": 443,
+        "NHC Residential Accessory": 442,
+        "NHC Residential Plumbing": 432,
+        "NHC Residential Mechanical": 352,
+        "NHC Residential Addition": 323,
+        "NHC Commercial Plumbing": 310,
+        "NHC Commercial Mechanical": 286,
+        "NHC Land Disturbance Permit": 281,
+        "NHC FLI Body Art": 234
+      },
+      "statuses": {
+        "Complete": 11469,
+        "Issued": 7196,
+        "Certificate of Compliance (CC) Issued": 938,
+        "Expired": 898,
+        "Certificate of Occupancy (CO) Issued": 641,
+        "Void": 113,
+        "Withdrawn": 103,
+        "In Review": 55,
+        "Certificate Review": 11,
+        "Awaiting Payment": 11,
+        "On Hold": 5,
+        "Temporary Certificate of Occupancy (TCO) Issued": 2,
+        "Site Evaluated": 1,
+        "Revoked": 1,
+        "Partial Certificate of Occupancy (PCO) Issued": 1
+      },
+      "rejection_reasons": {
+        "excluded_work_or_trade": 17817,
+        "no_explicit_new_construction": 1615,
+        "blocked_status": 1169,
+        "missing_building_category": 29,
+        "outside_date_window": 2
+      }
+    },
+    {
+      "source": "Mecklenburg County / Charlotte",
+      "scanned": 1729,
+      "qualified": 7,
+      "work_types": {
+        "5B     * WOOD FRAME/UNPROTECTED": 1403,
+        "5A     * WOOD FRAME/PROTECTED": 126,
+        "1A     * NONCOMBUSTIBLE/PROTECTED": 93,
+        "3A     * NONCOMBUSTIBLE WALLS/PROTECTED": 59,
+        "2B     * NONCOMBUSTIBLE/UNPROTECTED": 26,
+        "3B     * NONCOMBUSTIBLE WALLS/UNPROTECTED": 10,
+        "New 5B     * WOOD FRAME/UNPROTECTED": 7,
+        "1B     * NONCOMBUSTIBLE/UNPROTECTED": 3,
+        "2A     * NONCOMBUSTIBLE/PROTECTED": 2
+      },
+      "permit_types": {
+        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 102 - One Family Attached/Townhouse (la": 361,
+        "One/Two Family Existing Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Dwelling (Alteration, Re": 316,
+        "Commercial New Bldg R2     * RESIDENTIAL - MULTIPLE FAMILY 105 - 5 or More Family Apartments (no lan": 217,
+        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Dwelling (Alteration, Repair,": 128,
+        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 101 - One Family Detached": 96,
+        "One/Two Family Addition to existing Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Dwelling - C": 88,
+        "Commercial Existing Bldg A5    *ASSEMBLY - OUTDOOR STADIUM, BLEACHER, GRANDSTAND 437 - Commercial - ": 63,
+        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Accessory Bldg (Add, Alterati": 60,
+        "Commercial Existing Bldg A4    *ASSEMBLY - INDOOR ARENA, SKATING RINK, TENNIS COURT 437 - Commercial": 52,
+        "One/Two Family Addition to existing Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Dwelling (Al": 44,
+        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 328 - Residential - New Accessory Bldg ": 42,
+        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 438 - Residential Garages / Carports(at": 22,
+        "Commercial New Bldg A3C     * ASSEMBLY - COMMON ASSEMBLIES 105 - 5 or More Family Apartments (no lan": 18,
+        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 329 - Residential New Structures - not ": 15,
+        "Commercial Existing Bldg E      * EDUCATIONAL 437 - Commercial - Plan Review (Upfits, Additions, Rep": 14
+      },
+      "statuses": {
+        "Issued": 1088,
+        "Complete": 641
+      },
+      "rejection_reasons": {
+        "excluded_work_or_trade": 907,
+        "no_explicit_new_construction": 815
+      }
+    },
+    {
+      "source": "Greensboro",
+      "scanned": 3594,
+      "qualified": 879,
+      "work_types": {
+        "Int/Ext Alteration": 1361,
+        "New Construction": 996,
+        "Miscellaneous": 354,
+        "Addition": 212,
+        "Int/Ext Demolition": 128,
+        "Deck": 106,
+        "Accessory Building - Residential": 103,
+        "Reroof": 94,
+        "Repair": 86,
+        "Total Demolish": 75,
+        "Retaining Wall": 53,
+        "Initial Up-Fit": 20,
+        "Sign": 3,
+        "Place on Lot": 3
+      },
+      "permit_types": {
+        "Int/Ext Alteration One Family Residence": 853,
+        "New Construction One Family Residence": 540,
+        "New Construction Townhouse": 251,
+        "Int/Ext Alteration Business": 198,
+        "Addition One Family Residence": 194,
+        "Miscellaneous Sign": 172,
+        "Miscellaneous ABC": 114,
+        "Deck One Family Residence": 105,
+        "Accessory Building - Residential One Family Residence": 89,
+        "Int/Ext Alteration Assembly": 58,
+        "Int/Ext Alteration Mercantile": 57,
+        "Int/Ext Demolition Business": 50,
+        "Repair One Family Residence": 49,
+        "Int/Ext Demolition Apartment-Individual Units": 48,
+        "New Construction Apartment Building - Shell": 43
+      },
+      "statuses": {
+        "Issued                                                      ": 1887,
+        "Final Inspection Made                                       ": 1707
+      },
+      "rejection_reasons": {
+        "excluded_work_or_trade": 2347,
+        "no_explicit_new_construction": 310,
+        "missing_building_category": 58
+      }
+    }
+  ]
+}

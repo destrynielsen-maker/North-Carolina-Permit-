@@ -1,5 +1,5 @@
 {
-  "last_checked_utc": "2026-11-12T18:37:58.145347+00:00",
+  "last_checked_utc": "2026-11-12T18:50:43.099126+00:00",
   "live_verified": false,
   "coverage_note": "Partial market coverage; record-level verification pending",
   "sources": [
@@ -26,6 +26,14 @@
       "detail": "published field schema confirmed; builder not exposed in this layer; record-level verification pending",
       "scanned": 1729,
       "qualified": 7
+    },
+    {
+      "name": "Greensboro",
+      "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
+      "state": "collected - sample verification pending",
+      "detail": "official issued-date/contractor schema confirmed; live records and screening require review",
+      "scanned": 3594,
+      "qualified": 879
     },
     {
       "name": "Wake County",
