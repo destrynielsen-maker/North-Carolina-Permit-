@@ -51,6 +51,14 @@ The new `src/validate_chunk10.py` reads a bounded sample of Wake issued new-dwel
 
 **No Wake or Brunswick records are promoted automatically.** Planning jurisdiction is not proof of building-permit issuer, and Brunswick's source does not expose a verified prime contractor. Details and release gates: [Chunk 10 checkpoint](docs/CHUNK_10_VALIDATION.md).
 
+## Chunk 12 — Wake record links and Brunswick builder attribution
+
+Wake's GIS permit links reference an older EnerGov host, while current county instructions use `https://wakecountync-energovpub.tylerhost.net/apps/selfservice`. The project **does not** rewrite old permit-specific URLs without independently verifying the corresponding record. The dashboard now links to the current official public search.
+
+Brunswick's mapped source exposes `SubContractor`, not a confirmed prime/general contractor. Do not add those names to builder rankings. The dashboard now links to the official Brunswick portal and new-home permit reports for manual research.
+
+The [Chunk 12 validation report](docs/CHUNK_12_VALIDATION.md) describes the safeguards. A read-only `public/data/chunk12_validation.json` report will summarize Wake URL shapes (without permit IDs) and Brunswick GIS field evidence after a successful workflow refresh.
+
 ## Data quality rules
 
 - Authoritative **issued** date required; never substitute application date.
