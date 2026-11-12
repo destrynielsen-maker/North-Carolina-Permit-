@@ -263,7 +263,7 @@ def manual_qa_samples(permits, sources, failed=(), per_source=6):
                 'category':p['category'], 'address':p.get('address',''),
                 'contractor':p.get('contractor',''), 'valuation':p.get('valuation',0),
                 'status':p.get('status',''), 'source_url':source['url'],
-                'source_query_url':query_url,
+                'source_query_url':query_url, 'permit_detail_url': public_permit_detail_url(source, p['permit_number']),
                 'collection_state':'retained_from_previous_run' if name in failed else 'current_scan',
                 'verification_status':'manual_review_required',
                 'verification_checklist':['confirm permit number in issuing-agency record',
@@ -272,6 +272,21 @@ def manual_qa_samples(permits, sources, failed=(), per_source=6):
                     'confirm site address, contractor and valuation'],
             })
     return queue
+
+
+def public_permit_detail_url(source, permit_number):
+    """Link to an official permit page only for proven permit-detail URL patterns.
+
+    Preserve the GIS source URL for provenance and as a fallback for unsupported
+    jurisdictions. Greensboro's permit number must be numeric.
+    """
+    if source.get('id') != 'greensboro':
+        return ''
+    number = str(permit_number or '').strip()
+    if not re.fullmatch(r'[0-9]{6,12}', number):
+        return ''
+    return ('https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?'
+            + urllib.parse.urlencode({'bldgPermitNumber': number}))
 
 
 def normalize(a, source, today=None):
@@ -305,6 +320,7 @@ def normalize(a, source, today=None):
         'address': address, 'contractor': contractor, 'description': description,
         'status': status, 'valuation': amount, 'score': score, 'source_url': source['url'],
         'verification': 'unverified lead - matches source fields and screening rules',
+        'permit_detail_url': public_permit_detail_url(source, number),
     }
 
 
@@ -421,7 +437,7 @@ def rss(title, records, path):
         ET.SubElement(item, 'title').text = f"{p['category']} · {p['jurisdiction']} · {p['permit_number']}"
         ET.SubElement(item, 'description').text = f"{p['address']} | {p['contractor']} | $" + f"{p['valuation']:,.0f} | score {p['score']}"
         ET.SubElement(item, 'guid', isPermaLink='false').text = p['id']
-        ET.SubElement(item, 'link').text = p['source_url']
+        ET.SubElement(item, 'link').text = p.get('permit_detail_url') or p['source_url']
     (ROOT / 'public' / path).write_bytes(ET.tostring(root, encoding='utf-8', xml_declaration=True))
 
 
