@@ -1,0 +1,72 @@
+{
+  "checked_at_utc": "2026-11-12T20:20:51.909060+00:00",
+  "policy": "Read-only permitting role and contractor evidence audit",
+  "pilot_sources": {
+    "wake_agency_roles": {
+      "state": "sampled_no_promotion",
+      "sample_size": 32,
+      "planning_jurisdiction_counts": {
+        "KNIGHTDALE": 8,
+        "ROLESVILLE": 7,
+        "WENDELL": 9,
+        "ZEBULON": 3,
+        "no_matching_polygon": 5
+      },
+      "authority_evidence_buckets": {
+        "shared_permitting_process_needs_review": 12,
+        "town_issuance_guidance_but_permit_unverified": 15,
+        "unknown_planning_area_hold": 5
+      },
+      "safe_permit_link_hosts": {
+        "energovcitizenaccess.tylertech.com": 32
+      },
+      "boundary_errors": 0,
+      "municipal_guidance": {
+        "KNIGHTDALE": {
+          "possible_issuer": "Town of Knightdale",
+          "issuer_evidence": "town_says_it_issues",
+          "official_guidance": "https://www.knightdalenc.gov/development-services/permits-and-inspections/building-permits"
+        },
+        "ROLESVILLE": {
+          "possible_issuer": "Town of Rolesville",
+          "issuer_evidence": "town_says_it_issues",
+          "official_guidance": "https://www.rolesvillenc.gov/planning/frequently-asked-questions-0"
+        },
+        "WENDELL": {
+          "possible_issuer": "Town of Wendell / Wake County shared process",
+          "issuer_evidence": "municipal_handling_only",
+          "official_guidance": "https://wildforwendell.com/town/departments-planning-building-permits-8694ea6a09"
+        },
+        "ZEBULON": {
+          "possible_issuer": "Town of Zebulon / Wake County shared process",
+          "issuer_evidence": "shared_process_requires_record_review",
+          "official_guidance": "https://www.townofzebulon.org/o/planning"
+        }
+      },
+      "official_manual_permit_lookup": "https://wakecountync-energovpub.tylerhost.net/apps/selfservice",
+      "all_permits_independently_verified": false,
+      "do_not_infer": "No planning area, portal host or shared county inspection proves an individual permit issuer.",
+      "enabled_for_collection": false
+    },
+    "brunswick_prime_builder": {
+      "state": "sampled_no_promotion",
+      "sample_size": 50,
+      "nonblank_permit_numbers": 50,
+      "nonblank_project_numbers": 50,
+      "nonblank_subcontractor_fields": 50,
+      "confirmed_prime_contractors": 0,
+      "recent_issue_dates": 50,
+      "future_dates": 0,
+      "jurisdiction_counts": {
+        "BRUNSWICK COUNTY": 45,
+        "NAVASSA": 4,
+        "NORTHWEST": 1
+      },
+      "official_manual_permit_lookup": "https://bcpp.brunswickcountync.gov/",
+      "prime_contractor_mapping": "not_established",
+      "warning": "SubContractor is a trade contact field, NOT automatically the GC or builder. Portal detail may require a login and manual review.",
+      "enabled_for_collection": false
+    }
+  },
+  "independent_permit_verification": false
+}
