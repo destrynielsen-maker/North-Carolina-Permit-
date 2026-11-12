@@ -80,6 +80,10 @@ footer{padding:25px;text-align:center;color:#738599;font-size:12px}
     <div><div class="f-label">Permit type</div><div id="permittype" class="f-value"></div></div>
     <div><div class="f-label">Housing units</div><div id="units" class="f-value"></div></div>
     <div><div class="f-label">Total square footage</div><div id="sqft" class="f-value"></div></div>
+    <div><div class="f-label">Heated square footage</div><div id="heated_sqft" class="f-value"></div></div>
+    <div><div class="f-label">Unheated square footage</div><div id="unheated_sqft" class="f-value"></div></div>
+    <div><div class="f-label">Subdivision</div><div id="subdivision" class="f-value"></div></div>
+    <div><div class="f-label">Project phase</div><div id="projectphase" class="f-value"></div></div>
     <div><div class="f-label">Stories</div><div id="stories" class="f-value"></div></div>
    </div>
    <hr>
@@ -89,6 +93,10 @@ footer{padding:25px;text-align:center;color:#738599;font-size:12px}
   <section class="panel">
    <h2>Project site</h2>
    <div class="f-value" id="siteaddress"></div>
+   <div class="grid" style="margin-top:16px">
+    <div><div class="f-label">Parcel number</div><div id="parcelnumber" class="f-value"></div></div>
+    <div><div class="f-label">Tax jurisdiction (source field)</div><div id="taxjurisdiction" class="f-value"></div></div>
+   </div>
    <div class="links" style="margin-top:16px"><a id="maplink" class="action secondary" target="_blank" rel="noopener noreferrer">View on map</a></div>
   </section>
  </div>
@@ -120,6 +128,7 @@ footer{padding:25px;text-align:center;color:#738599;font-size:12px}
    <h2>Sales actions</h2>
    <div class="links">
     <button class="action light" type="button" id="copy">Copy project summary</button>
+    <button class="action secondary" type="button" id="copypermit">Copy permit number</button>
     <a id="mailaction" class="action secondary" style="display:none">Email builder</a>
    </div>
    <p id="copynote" class="note"></p>
@@ -179,6 +188,9 @@ fetch("data/permits.json",{cache:"no-store"}).then(function(response){
  text("projectcontact",p.project_contact);text("workclass",p.work_class);
  text("permittype",p.permit_type);text("units",qty(p.housing_units));
  text("sqft",qty(p.square_feet));text("stories",qty(p.stories));
+ text("heated_sqft",qty(p.heated_square_feet));text("unheated_sqft",qty(p.unheated_square_feet));
+ text("subdivision",p.subdivision);text("projectphase",p.project_phase);
+ text("parcelnumber",p.parcel_number);text("taxjurisdiction",p.tax_jurisdiction);
  text("description",p.description);text("siteaddress",p.address);
  text("builder",p.contractor||"Not listed in source");
  text("license",p.contractor_license);text("dba",p.contractor_dba);
@@ -191,6 +203,16 @@ fetch("data/permits.json",{cache:"no-store"}).then(function(response){
  addLink("Official city permit",official,true);
  addLink("Exact GIS record",specific,!official);
  addLink("Original data source",database,false);
+ if(p.jurisdiction==="Mecklenburg County / Charlotte"){
+  addLink("County permit search (enter permit #)","https://gis.mecklenburgcountync.gov/meck-accela/",false);
+  addLink("County issued-permit report (contractor search)","https://code.mecknc.gov/node/1041",false);
+  var hint=document.createElement("p");hint.className="note";
+  hint.textContent="Charlotte's selected GIS layer does not identify the builder. Use the county permit search or issued-permit report to research the contractor by permit number; no builder is inferred here.";
+  el("sourcelinks").appendChild(hint);
+ }
+ if(p.contractor){
+  addLink("Verify contractor license in NC","https://portal.nclbgc.org/Public/Search",false);
+ }
  if(!official&&!specific){var msg=document.createElement("p");msg.className="note";msg.textContent="An individual government permit URL is not yet available for this source. Use the original database link and permit number.";el("sourcelinks").appendChild(msg);}
  var map=el("maplink");
  if(p.address){map.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(p.address);}
@@ -200,6 +222,13 @@ fetch("data/permits.json",{cache:"no-store"}).then(function(response){
   email.href="mailto:"+p.contractor_email+"?subject="+encodeURIComponent("Regarding permit "+(p.permit_number||""));
   email.style.display="inline-flex";
  }
+ el("copypermit").addEventListener("click",function(){
+  if(navigator.clipboard&&navigator.clipboard.writeText){
+   navigator.clipboard.writeText(String(p.permit_number||""))
+   .then(function(){el("copynote").textContent="Permit number copied. Paste it into the county permit search.";})
+   .catch(function(){el("copynote").textContent="Copy was blocked by the browser.";});
+  }else{el("copynote").textContent="Clipboard is unavailable in this browser.";}
+ });
  el("copy").addEventListener("click",function(){
   var detail=[
    "Permit: "+(p.permit_number||""),
