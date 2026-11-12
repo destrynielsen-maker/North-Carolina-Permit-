@@ -46,6 +46,13 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 <div id="empty" class="empty"></div>
 </section>
 <section class="panel" style="margin-top:18px">
+<h2>Builder leaderboard — last 90 days</h2>
+<p class="muted">Ranks by screened permits issued in the past 90 days, then the past 30 days. Counts are permits, not verified leads or distinct developments. Similar legal names are kept separate unless they differ only in punctuation, case or license labels.</p>
+<div class="table-wrap"><table><thead><tr><th>Rank</th><th>Builder</th><th>30 days</th><th>90 days</th><th>Total permits</th><th>Last issued</th><th>Valuation</th></tr></thead><tbody id="builderRows"></tbody></table></div>
+<p class="muted" id="buildersEmpty">Loading builder rankings…</p>
+<p class="muted"><a href="data/builder_rankings.json" target="_blank" rel="noopener noreferrer">Full builder ranking data</a> · <a href="data/qa_samples.json" target="_blank" rel="noopener noreferrer">Permit review samples</a></p>
+</section>
+<section class="panel" style="margin-top:18px">
 <h2>Source status</h2><p class="muted" id="checked">No live source check has been confirmed.</p><div id="sources" class="muted"></div>
 <h3>RSS feeds</h3><p><a href="all.xml">All</a> · <a href="single-family.xml">Single family</a> · <a href="multifamily.xml">Multifamily</a> · <a href="commercial.xml">Commercial</a> · <a href="top.xml">Top opportunities</a></p>
 </section>
@@ -87,6 +94,24 @@ function exportCsv(){
 ["search","type","jur","days","score"].forEach(function(id){el(id).addEventListener("input",render)});
 document.querySelectorAll("th[data-key]").forEach(function(th){th.addEventListener("click",function(){var key=th.dataset.key;dir=(key===order)?-dir:-1;order=key;render()})});
 el("export").addEventListener("click",exportCsv);
+fetch("data/builder_rankings.json").then(function(r){
+ if(!r.ok)throw Error("Builder rankings unavailable");
+ return r.json();
+}).then(function(report){
+ var body=el("builderRows");
+ (report.builders||[]).slice(0,20).forEach(function(b){
+  var tr=document.createElement("tr");
+  textCell(tr,String(b.rank));textCell(tr,b.builder);
+  textCell(tr,String(b.issued_last_30_days));
+  textCell(tr,String(b.issued_last_90_days));
+  textCell(tr,String(b.permit_count));
+  textCell(tr,b.last_issued_date);
+  textCell(tr,money(b.valuation));
+  body.appendChild(tr);
+ });
+ el("buildersEmpty").textContent=(report.builders||[]).length?"Showing top 20 builders by recent screened permit activity.":"No contractor records available.";
+}).catch(function(e){el("buildersEmpty").textContent="Builder rankings not available yet.";});
+
 Promise.all([
  fetch("data/permits.json").then(function(r){if(!r.ok)throw Error("Permit data missing");return r.json()}),
  fetch("data/sources.json").then(function(r){if(!r.ok)throw Error("Source data missing");return r.json()})
