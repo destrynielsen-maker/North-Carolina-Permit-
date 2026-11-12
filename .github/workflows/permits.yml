@@ -47,6 +47,8 @@ jobs:
         run: python src/review_chunk13.py
       - name: Recheck disabled-county GIS object IDs (read-only)
         run: python src/validate_chunk14.py
+      - name: Validate curated review decisions and publish held statuses
+        run: python src/compile_reviews.py
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
