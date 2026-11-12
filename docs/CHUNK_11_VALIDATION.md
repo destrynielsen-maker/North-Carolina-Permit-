@@ -46,3 +46,47 @@ Both sources remain **disabled**. The existing dashboard last reported **3,174 s
 ## Next chunk
 
 Use the Chunk 11 audit results to decide whether Wake should be a separate labeled service-area dataset rather than a county-issued dataset. For Brunswick, investigate the county portal's official permit detail records and verify builders on a small manual sample before publishing any builder rankings.
+
+## Confirmed automated results — 2026-11-12T20:20:51.909060+00:00
+
+The first post-Chunk-11 GitHub collection committed `public/data/chunk11_validation.json`. The Actions workflow reached the output-commit stage after the new five-test suite; the GitHub Pages deployment step was not independently inspected.
+
+### Wake new-dwelling permits — 32 record pilot
+
+| Planning area | Sampled permits |
+|---|---:|
+| KNIGHTDALE | 8 |
+| ROLESVILLE | 7 |
+| WENDELL | 9 |
+| ZEBULON | 3 |
+| no_matching_polygon | 5 |
+| **Total** | **32** |
+
+Evidence-group counts:
+- Towns that explicitly say they issue their own building permits (Knightdale + Rolesville): **15** sampled locations. This is guidance, not record-level verification.
+- Shared municipal/Wake arrangements requiring role review (Wendell + Zebulon): **12**.
+- Unmatched/unknown planning polygons: **5**.
+- Raleigh planning area matches: **0** in this sample only.
+- Boundary errors: **0**.
+
+All **32** sample records expose a `LINK` on hostname `energovcitizenaccess.tylertech.com`; this alone does **not** establish that the link opens the correct record or remains current. A separate official public search portal is https://wakecountync-energovpub.tylerhost.net/apps/selfservice .
+
+**No issuer was automatically assigned to an individual permit**, and no Wake records entered the published leads.
+
+### Brunswick recent active residential permits — 50 record pilot
+
+- Nonblank permit IDs: **50 / 50**
+- Nonblank project IDs: **50 / 50**
+- Nonblank `SubContractor` fields: **50 / 50**
+- Verified prime builders: **0**
+- Recent issue dates within 365 days: **50**
+- Future-dated records: **0**
+- Jurisdiction breakdown: BRUNSWICK COUNTY 45, NAVASSA 4, NORTHWEST 1
+
+An occupied `SubContractor` field is **not** evidence of the actual GC or homebuilder. The next task is verifying the prime contractor in the official portal by the captured project/permit identifier and checking whether a reliable public export/API field exists.
+
+### Final decision
+
+Neither Wake nor Brunswick has enough verified issuer/prime-builder evidence for full sales-lead promotion. Current dashboard total remains **3174** screened permits across the four existing jurisdictions. Leave `live_verified=false` and both candidate sources disabled.
+
+Suggested Chunk 12: inspect Wake `LINK` deep links for reliable record-level verification and confirm official issuance roles by town; request or research Brunswick public permit detail builder fields rather than assuming the subcontractor is the prime builder.
