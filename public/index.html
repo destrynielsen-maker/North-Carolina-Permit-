@@ -145,7 +145,18 @@ function render(){
  data.slice(0,2000).forEach(function(p){
   var tr=document.createElement("tr");textCell(tr,p.issued_date);textCell(tr,String(p.score));textCell(tr,p.category);
   textCell(tr,p.jurisdiction);var description=textCell(tr,p.address);var small=document.createElement("div");small.className="muted";small.textContent=(p.description||"").slice(0,160);description.appendChild(small);
-  textCell(tr,p.contractor||"Not listed");textCell(tr,money(p.valuation));
+  var builderCell=textCell(tr,p.contractor||"Not listed");
+  if(p.contractor_phone&&/^[+()0-9 .-]{7,25}$/.test(p.contractor_phone)){
+   var phone=document.createElement("div"),call=document.createElement("a");phone.className="muted";
+   call.href="tel:"+p.contractor_phone.replace(/[^\d+]/g,"");
+   call.textContent="Call "+p.contractor_phone;phone.appendChild(call);builderCell.appendChild(phone);
+  }
+  if(p.contractor_email&&/^[^@\s<>]+@[^@\s<>]+\.[^@\s<>]+$/.test(p.contractor_email)){
+   var emailRow=document.createElement("div"),email=document.createElement("a");emailRow.className="muted";
+   email.href="mailto:"+p.contractor_email;email.textContent="Email builder";
+   emailRow.appendChild(email);builderCell.appendChild(emailRow);
+  }
+  textCell(tr,money(p.valuation));
   var cell=document.createElement("td"),a=document.createElement("a");
   a.textContent=p.permit_number;a.href=detailUrl(p);a.title="View sales-friendly permit details";
   cell.appendChild(a);tr.appendChild(cell);
