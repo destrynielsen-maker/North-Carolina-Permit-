@@ -55,6 +55,30 @@ class SalesDetailTests(unittest.TestCase):
         self.assertEqual(parse_qs(urlsplit(p['source_record_url']).query)['where'],['OBJECTID = 91234'])
         self.assertEqual(p['source_url'],RALEIGH['url'])
 
+    def test_new_hanover_project_contact_is_not_the_general_contractor(self):
+        nhc=next(x for x in nc.SOURCES if x['id']=='new_hanover')
+        p=nc.normalize(row(nhc,GENERAL_CONTRACTOR='BUILDER LLC',
+                           PROJECT_CONTACT='Project Manager Name',
+                           PROJECT='Canal Grove',SQUARE_FEET=4890,
+                           OBJECTID=47123),nhc,TODAY)
+        self.assertEqual(p['contractor'],'BUILDER LLC')
+        self.assertEqual(p['project_contact'],'Project Manager Name')
+        self.assertEqual(p['project_name'],'Canal Grove')
+        self.assertEqual(p['square_feet'],4890.0)
+        self.assertEqual(p['contractor_email'],'')
+        self.assertEqual(p['contractor_phone'],'')
+        self.assertIn('OBJECTID+%3D+47123',p['source_record_url'])
+
+    def test_charlotte_project_fields_are_distinct_from_builder(self):
+        p=nc.normalize(row(MECK,projname='Marsh Estates',
+                           projnum='PLN-2026-123',numunits=4,objectid=9281),MECK,TODAY)
+        self.assertEqual(p['project_name'],'Marsh Estates')
+        self.assertEqual(p['project_number'],'PLN-2026-123')
+        self.assertEqual(p['housing_units'],4.0)
+        self.assertEqual(p['contractor'],'')
+        self.assertEqual(p['project_contact'],'')
+        self.assertIn('OBJECTID+%3D+9281',p['source_record_url'])
+
     def test_no_contact_data_is_never_fabricated(self):
         p=nc.normalize(row(MECK,projadd='123 TEST AVE',contractorphone='FAKE'),
                        MECK,TODAY)
@@ -114,6 +138,9 @@ class SalesDetailTests(unittest.TestCase):
         self.assertIn('Exact GIS record',html)
         self.assertIn('Official city permit',html)
         self.assertIn('contractor_email',html)
+        self.assertIn('projectcontact',html)
+        self.assertIn('not necessarily the GC',html)
+        self.assertIn('projectnumber',html)
         self.assertIn('contractor_phone',html)
         self.assertIn('Copy project summary',html)
         self.assertIn('not independently verified',html.lower())
