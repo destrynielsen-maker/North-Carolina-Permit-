@@ -41,3 +41,29 @@ Do **not** populate an owner, applicant, project contact, subcontractor, develop
 Check `public/data/ci_test_status.json` for a fresh run with 116 tests passing, then inspect `public/data/sales_field_coverage.json` to determine how often Mecklenburg's new square-footage and subdivision/parcel fields are populated. The GitHub Pages deployment still needs its own live-browser check.
 
 For reliable Charlotte builder attribution, evaluate the county's official contractor-filterable issued-permits export in a controlled discovery pilot. Do not join automatically by address/project name alone, because one site may have many permits and contractors.
+
+## Confirmed automated result — 2026-11-12T22:13:49.918390+00:00
+
+GitHub Actions finished on commit `b57304db498016ba71198bb3e0b71e26637208fa`. The CI report at `2026-11-12T22:13:32.911127+00:00` shows **116 passed tests, 0 failures**. The collector refreshed `public/data/sources.json` at `2026-11-12T22:13:49.964448+00:00`.
+
+### Actual source field coverage after the new mapping
+
+| Field | Mecklenburg screened records populated |
+|---|---:|
+| Project name | 701 |
+| Project number | 701 |
+| Parcel number | 701 |
+| Subdivision | 11 |
+| Project phase | 701 |
+| Total square footage | 700 |
+| Heated square footage | 625 |
+| Unheated square footage | 556 |
+| Housing units | 701 |
+| Builder/GC name | **0** |
+| Published builder phone/email | **0** |
+
+The update adds substantial site-level context while preserving honest uncertainty about the builder. The dashboard offers **Builder missing — research**, the official Mecklenburg public permit search, county issued-permits report and a state contractor-license search when the original feed identifies a builder. None of these links is a verified individual-permit portal deep link or a claim that a particular contractor constructed the building.
+
+**Production total:** 3174 screened candidates, unchanged. Wake and Brunswick remain research-only.
+
+**Page deployment limitation:** The accessible web reader could not open the GitHub Pages website to inspect the current browser rendering. The GitHub repo source, automated tests and generated collector data were verified; the latest Pages deployment and on-screen presentation were not independently observed.
