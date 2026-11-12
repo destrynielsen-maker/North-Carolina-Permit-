@@ -289,6 +289,31 @@ def public_permit_detail_url(source, permit_number):
             + urllib.parse.urlencode({'bldgPermitNumber': number}))
 
 
+def public_record_query_url(source, a):
+    """Link a unique GIS feature by layer OBJECTID; keep source_url separately."""
+    object_id = value(a, 'OBJECTID')
+    if type(object_id) is int and 0 < object_id <= 2147483647:
+        return source['url'] + '/query?' + urllib.parse.urlencode({
+            'f': 'pjson', 'where': 'OBJECTID = ' + str(object_id),
+            'outFields': '*', 'returnGeometry': 'false'})
+    return ''
+
+
+def optional_number(v):
+    """Only display genuine finite positive quantitative source values."""
+    try:
+        number = float(v)
+        return number if 0 < number < 1e12 and number == number else None
+    except (ValueError, TypeError, OverflowError):
+        return None
+
+
+def source_contact(a, field):
+    """Public business-contact field, scoped to explicit agency metadata."""
+    raw = value(a, field)
+    return str(raw).strip()[:200] if raw not in (None, '') else ''
+
+
 def normalize(a, source, today=None):
     today = today or dt.datetime.now(dt.timezone.utc).date()
     number = str(value(a, source['number']) or '').strip()
@@ -314,13 +339,28 @@ def normalize(a, source, today=None):
                 + (15 if contractor else 0)
                 + (15 if amount >= 500000 else 5 if amount >= 100000 else 0)
                 + (10 if kind == 'Multifamily' else 5 if kind == 'Commercial' else 0))
+    is_raleigh = source.get('id') == 'raleigh'
     return {
         'id': source['id'] + ':' + number, 'jurisdiction': source['name'],
         'permit_number': number, 'issued_date': issued.isoformat(), 'category': kind,
         'address': address, 'contractor': contractor, 'description': description,
-        'status': status, 'valuation': amount, 'score': score, 'source_url': source['url'],
-        'verification': 'unverified lead - matches source fields and screening rules',
+        'status': status.strip(), 'valuation': amount, 'score': score, 'source_url': source['url'],
+        'verification': 'screened government record — not independently verified',
         'permit_detail_url': public_permit_detail_url(source, number),
+        'source_record_url': public_record_query_url(source, a),
+        'project_name': source_contact(a, 'projectname') if is_raleigh else '',
+        'work_class': parts(a, source['work_fields'])[:200],
+        'permit_type': parts(a, source['type_fields'])[:200],
+        'square_feet': optional_number(value(a, 'totalsqft')) if is_raleigh else None,
+        'stories': optional_number(value(a, 'numberstories')) if is_raleigh else None,
+        'housing_units': optional_number(value(a, source.get('units'))) if source.get('units') else None,
+        'contractor_phone': source_contact(a, 'contractorphone') if is_raleigh else '',
+        'contractor_email': source_contact(a, 'contractoremail') if is_raleigh else '',
+        'contractor_license': source_contact(a, 'contractorlicnum') if is_raleigh else '',
+        'contractor_dba': source_contact(a, 'contractordba') if is_raleigh else '',
+        'contractor_address': parts(a, [
+            'contractoraddress1', 'contractorcity', 'contractorstate', 'contractorzip'
+        ])[:260] if is_raleigh else '',
     }
 
 
