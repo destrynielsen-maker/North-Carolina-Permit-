@@ -86,7 +86,7 @@ BLOCKED = re.compile(
 )
 NEW_BUILD = re.compile(
     r'\b(new construction|new building|new residential|new single[ -]?family|'
-    r'new dwelling|new home|new residence|new sfr|new commercial|'
+    r'new dwelling|new home|new residence|new sfr|new commercial|new bldg|'
     r'new multi[ -]?family|new apartment|new townhouse|new townhome|'
     r'ground.?up|construct(?:ion|ing)? (?:a |an )?new|new house|new structure)\b', re.I
 )
