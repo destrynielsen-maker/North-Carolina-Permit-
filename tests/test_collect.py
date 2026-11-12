@@ -126,6 +126,56 @@ class QualificationTests(unittest.TestCase):
              'issued_date': '2026-11-02', 'address': '7 Example St'}
         self.assertEqual(nc.cross_source_number_collisions([a, b]), [])
 
+    def test_rankings_use_recent_90_and_category_breakdown(self):
+        p = [
+          {'contractor':'Acme Builders LLC','issued_date':'2026-11-11','category':'Single Family',
+           'jurisdiction':'Greensboro','valuation':200000},
+          {'contractor':'ACME BUILDERS, LLC','issued_date':'2026-08-24','category':'Multifamily',
+           'jurisdiction':'Raleigh','valuation':800000},
+          {'contractor':'Beta Homes','issued_date':'2026-01-01','category':'Single Family',
+           'jurisdiction':'Raleigh','valuation':120000},
+        ]
+        rows=nc.build_builder_rankings(p,TODAY)
+        self.assertEqual(set(rows[0]['aliases']),{'ACME BUILDERS, LLC','Acme Builders LLC'})
+        self.assertEqual(rows[0]['rank'],1)
+        self.assertEqual(rows[0]['issued_last_30_days'],1)
+        self.assertEqual(rows[0]['issued_last_90_days'],2)
+        self.assertEqual(rows[0]['categories']['Multifamily'],1)
+        self.assertEqual(rows[0]['permit_count'],2)
+        self.assertEqual(rows[0]['valuation'],1000000)
+        self.assertEqual(rows[0]['jurisdictions'],['Greensboro','Raleigh'])
+
+    def test_rankings_exclude_missing_contractor_and_old_date(self):
+        rows=nc.build_builder_rankings([
+            {'contractor':'','issued_date':'2026-11-10','category':'Single Family'},
+            {'contractor':'Old','issued_date':'2021-01-01','category':'Single Family'},
+        ],TODAY)
+        self.assertEqual(rows,[])
+
+    def test_qa_samples_choose_one_each_category_and_remain_unverified(self):
+        original=[make(R, permitnum=f'SAMPLE-{i}',
+                     proposedworkdescription=desc,
+                     permittypemapped=cat, workclassmapped='New',
+                     issueddate='2026-11-10') for i,(cat,desc) in enumerate([
+                         ('Residential','New detached single family home'),
+                         ('Commercial','New warehouse'),
+                         ('Residential','New apartment building'),
+                         ('Residential','New detached single family home')],1)]
+        rows=[nc.normalize(x,R,TODAY) for x in original]
+        self.assertTrue(all(rows))
+        q=nc.manual_qa_samples(rows,[R],per_source=3)
+        self.assertEqual(len(q),3)
+        self.assertEqual(set(x['category'] for x in q),
+                         {'Single Family','Commercial','Multifamily'})
+        self.assertTrue(all(x['verification_status']=='manual_review_required' for x in q))
+        self.assertTrue(all('query?' in x['source_query_url'] for x in q))
+
+    def test_qa_samples_mark_retained_source_and_escaping(self):
+        p=nc.normalize(make(R,permitnum="A'B",issueddate='2026-11-10'),R,TODAY)
+        q=nc.manual_qa_samples([p],[R],failed={'Raleigh'})
+        self.assertEqual(q[0]['collection_state'],'retained_from_previous_run')
+        self.assertIn('A%27%27B',q[0]['source_query_url'])
+
     def test_applied_without_issued_date_excluded(self):
         a = make(R, issueddate=None, applieddate='2026-11-10')
         self.assertIsNone(nc.normalize(a, R, TODAY))
