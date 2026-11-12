@@ -84,6 +84,27 @@ class SalesDetailTests(unittest.TestCase):
             with self.subTest(oid=oid):
                 self.assertEqual(nc.public_record_query_url(RALEIGH,{'OBJECTID':oid}),'')
 
+    def test_contact_coverage_counts_are_aggregate_and_source_scoped(self):
+        records=[
+            {'jurisdiction':'Raleigh','contractor':'Example LLC',
+             'contractor_phone':'9195550100','contractor_email':'sales@example.test',
+             'contractor_license':'12345','source_record_url':'https://example.test/gis'},
+            {'jurisdiction':'Raleigh','contractor':'Other LLC','contractor_phone':'',
+             'contractor_email':'','source_record_url':'https://example.test/gis2'},
+            {'jurisdiction':'Mecklenburg County / Charlotte','contractor':'',
+             'source_record_url':''},
+        ]
+        coverage=nc.sales_field_coverage(records)
+        self.assertEqual(len(coverage),2)
+        r=next(x for x in coverage if x['jurisdiction']=='Raleigh')
+        self.assertEqual(r['screened_permits'],2)
+        self.assertEqual(r['contractor_available'],2)
+        self.assertEqual(r['phone_or_email_available'],1)
+        self.assertEqual(r['contractor_email_available'],1)
+        self.assertEqual(r['source_record_url_available'],2)
+        self.assertNotIn('sales@example.test',str(coverage))
+        self.assertNotIn('9195550100',str(coverage))
+
     def test_sales_detail_page_loads_current_dataset_by_exact_id(self):
         html=(ROOT/'public'/'permit.html').read_text(encoding='utf-8')
         self.assertIn('fetch("data/permits.json"',html)
