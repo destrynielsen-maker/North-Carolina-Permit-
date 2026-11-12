@@ -77,7 +77,7 @@ class SalesDetailTests(unittest.TestCase):
         for bad in (None,'','not recorded',0,-1,float('nan'),float('inf')):
             with self.subTest(raw=bad):
                 self.assertIsNone(nc.optional_number(bad))
-        self.assertEqual(nc.optional_number('3,200') if False else nc.optional_number('3200'),3200.0)
+        self.assertEqual(nc.optional_number('3200'),3200.0)
 
     def test_suspicious_object_ids_do_not_form_source_record_urls(self):
         for oid in (None,0,-5,'1 OR 1=1',True,2147483648):
