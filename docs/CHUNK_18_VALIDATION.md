@@ -56,3 +56,21 @@ No automatic system here can declare either source verified merely from another 
 ## Next checkpoint
 
 Validate the workflow run and inspect `public/data/release_readiness.json` for the two pending reviews and their blockers. Verify nothing in the data totals changed. The next substantive release prerequisite is independent portal evidence recorded in the existing GitHub issues—not another GIS recheck.
+
+## Confirmed automated outcome — 2026-11-12T21:29:36.179578+00:00
+
+GitHub Actions reached the refreshed-data commit `5b9fdf4d455479462177b99826c620cd3e147263` after executing the test suite, collection, curated-review compilation and release audit. The generated `public/data/release_readiness.json` reports:
+
+- Research records audited: **2**
+- Pending/follow-up/rejected: **2**
+- Evidence-complete for review: **0**
+- Automatically promotable permits: **0**
+- New live source approvals: **0**
+
+Both Wake OBJECTID 128361 and Brunswick OBJECTID 284255 are pending, each with explicit missing-evidence and approval gates. Both have `included_in_sales_leads=false` and `release_status=held_research_only`.
+
+The active collector last refreshed at `2026-11-12T21:29:07.373966+00:00` and still reports **3174** screened candidates across the original four areas. No Wake or Brunswick records were promoted.
+
+Seven new offline tests in `tests/test_chunk18.py` ran in the successful data-refresh workflow; they cover rejection of stale statuses, inconsistent identities, unsafe portal home URLs, unexpected county enablement and a synthetic evidence-complete decision that remains blocked. Independent browser inspection of the latest GitHub Pages deployment and actual county permit-detail pages is still outstanding.
+
+**Checkpoint decision:** Keep both counties research-only. No release approved.
