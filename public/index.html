@@ -54,9 +54,9 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 </section>
 <section class="panel" style="margin-top:18px">
 <h2>County research queue — NOT published leads</h2>
-<p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. Open the exact government GIS record, then use the official portal search to confirm the actual issuer and general contractor. A GIS response or portal home page is not independent record verification.</p>
+<p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. Brunswick's county PermitNumber field may repeat across different projects: use the project number and exact GIS record ID for research. Confirm the actual issuer and prime builder in the official portal; a GIS response or portal home page is not independent verification.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>County</th><th>Permit / project</th><th>Issue date</th><th>Work / site</th><th>Official record</th><th>Public portal</th></tr></thead>
+<thead><tr><th>County</th><th>Project / permit reference</th><th>Issue date</th><th>Work / site</th><th>Official record</th><th>Public portal</th></tr></thead>
 <tbody id="countyReviewRows"></tbody></table></div>
 <p class="muted" id="countyReviewNotice">Loading research-only candidates…</p>
 <p class="muted"><a href="data/chunk13_review_queue.json" target="_blank" rel="noopener noreferrer">Complete review queue and source evidence</a></p>
@@ -143,7 +143,13 @@ fetch("data/chunk13_review_queue.json").then(function(response){
   (source.candidates||[]).forEach(function(p){
    var tr=document.createElement("tr");
    textCell(tr,p.source);
-   textCell(tr,p.permit_number+(p.project_number?" / "+p.project_number:""));
+   var ref=textCell(tr,p.reference_label||(p.project_number?"Project "+p.project_number:"Permit "+p.permit_number));
+   var refNote=document.createElement("div");refNote.className="muted";
+   refNote.textContent=p.project_number?
+    "County permit field: "+p.permit_number+(p.permit_number_reused_in_sample?" (reused in sample)":"")+
+    " · GIS record "+p.gis_object_id:
+    "GIS record "+p.gis_object_id+(p.permit_number_reused_in_sample?" · permit ID repeated":"");
+   ref.appendChild(refNote);
    textCell(tr,p.issued_date);
    textCell(tr,p.work_class||p.permit_type||"");
    var location=tr.lastChild;
