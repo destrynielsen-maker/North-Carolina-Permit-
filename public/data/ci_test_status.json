@@ -1,13 +1,10 @@
 {
-  "checked_at_utc": "2026-11-12T22:49:40.239914+00:00",
-  "result": "failed",
-  "tests_run": 122,
-  "failure_count": 2,
-  "failed_tests": [
-    "test_archived_detail_page_excludes_live_gis_navigation (test_mecklenburg_snapshot.MecklenburgSnapshotTests.test_archived_detail_page_excludes_live_gis_navigation)",
-    "test_dashboard_primary_link_is_own_detail_page_and_csv_has_url (test_sales_details.SalesDetailTests.test_dashboard_primary_link_is_own_detail_page_and_csv_has_url)"
-  ],
-  "error_excerpt": "dependently attested\",\\n     source_not_approved_for_live_collection:\"County not approved\",\\n     separate_manual_release_authorization_required:\"Separate release approval required\"\\n    };\\n    var detail=document.createElement(\"div\");detail.className=\"muted\";\\n    detail.textContent=release.blocked_reasons.slice(0,3).map(function(code){return reasons[code]||\"Review gate pending\"}).join(\" \u00b7 \");\\n    reviewCell.appendChild(detail);\\n   }\\n   var td=document.createElement(\"td\"),link=document.createElement(\"a\");\\n   var linkedIssue=issueLookup[key+\":\"+p.gis_object_id];\\n   link.href=linkedIssue?linkedIssue.url:verificationIssueUrl(p);\\n   link.target=\"_blank\";link.rel=\"noopener noreferrer\";\\n   link.textContent=linkedIssue?\"Open review #\"+linkedIssue.num:\"Start verification\";\\n   link.title=linkedIssue?\"Open existing unverified review issue\":\"Open a prefilled GitHub issue draft; no lead is verified or promoted automatically.\";\\n   td.appendChild(link);tr.appendChild(td);\\n   tbody.appendChild(tr);count++;\\n  });\\n });\\n el(\"countyReviewNotice\").textContent=count?\\n  \"Showing \"+count+\" unverified research candidates; none are included in sales-lead totals.\":\\n  \"No review candidates were returned; see source diagnostics.\";\\n}).catch(function(){el(\"countyReviewNotice\").textContent=\"Research queue not yet available. Main permit dashboard is unaffected.\";});\\n\\nPromise.all([\\n fetch(\"data/permits.json\").then(function(r){if(!r.ok)throw Error(\"Permit data missing\");return r.json()}),\\n fetch(\"data/sources.json\").then(function(r){if(!r.ok)throw Error(\"Source data missing\");return r.json()})\\n]).then(function(data){\\n all=data[0];var info=data[1],names=[...new Set(all.map(function(p){return p.jurisdiction}))].sort();\\n names.forEach(function(n){el(\"jur\").add(new Option(n,n))});\\n el(\"checked\").textContent=\"Last source check: \"+(info.last_checked_utc||\"not run\")+\" \u00b7 Record verification pending.\";\\n (info.sources||[]).forEach(function(s){\\n  var div=document.createElement(\"div\");div.className=\"source\";\\n  var b=document.createElement(\"strong\");b.textContent=s.name+\": \";div.appendChild(b);\\n  div.appendChild(document.createTextNode(s.state+\" \u00b7 \"+(s.qualified||0)+\" current screened\"+(s.archived_count?\" \u00b7 \"+s.archived_count+\" historic as of \"+String(s.snapshot_as_of_utc||\"\").slice(0,10):\"\")+\" \u00b7 \"+(s.detail||\"\")));\\n  var link=document.createElement(\"a\");\\n  link.href=s.collection_mode===\"historic_snapshot\"?\"https://maps.mecklenburgcountync.gov/openmapping/data.html\":s.source_url;\\n  link.target=\"_blank\";link.rel=\"noopener noreferrer\";\\n  link.textContent=s.collection_mode===\"historic_snapshot\"?\" official download catalog\":\" official source\";\\n  div.appendChild(link);el(\"sources\").appendChild(div);\\n });render();\\n}).catch(function(e){el(\"empty\").textContent=\"Collector has not provided data yet: \"+e.message});\\n})();\\n</script>\\n</body></html>\\n'\n\n----------------------------------------------------------------------\nRan 122 tests in 0.031s\n\nFAILED (failures=2)\n",
-  "reported_commit": "61161191810bfd947d18760c2b6c570bebdf069a",
+  "checked_at_utc": "2026-11-12T22:50:57.042011+00:00",
+  "result": "passed",
+  "tests_run": 123,
+  "failure_count": 0,
+  "failed_tests": [],
+  "error_excerpt": "",
+  "reported_commit": "3643585ee89bf3dabb417557e29305f540dd4573",
   "note": "CI test result only; no permit or sales lead is validated by test success."
 }
