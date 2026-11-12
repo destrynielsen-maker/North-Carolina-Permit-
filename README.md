@@ -83,6 +83,14 @@ The [release-readiness report](public/data/release_readiness.json) lists evidenc
 
 **No review confirmation automatically approves a lead or enables a county**. The dashboard displays the blocked reasons in its separate research queue. See [Chunk 18 checkpoint](docs/CHUNK_18_VALIDATION.md).
 
+## Sales-ready permit details
+
+The **Construction opportunities** table now opens our own consistent, mobile-friendly [permit detail page](public/permit.html) for each permit. It displays the site, project scope, issuance date, value, builder and official contact details (when published), followed by an **Official Permit** link when supported and a separate **Original government GIS source** link.
+
+The collector preserves Raleigh's publicly listed contractor phone, email, license, doing-business-as, business address, project name, square footage, stories and housing units. Other jurisdictions retain their available fields without guessing missing business contacts. CSV exports now include a direct link to the formatted permit, official permit-detail URL, government record URL and business contacts when available.
+
+The primary view is **our own permit.html**, not a generic ArcGIS layer; the agency link remains as provenance. [Implementation and source-field coverage](docs/SALES_PERMIT_DETAILS_V1.md).
+
 ## Data quality rules
 
 - Authoritative **issued** date required; never substitute application date.
