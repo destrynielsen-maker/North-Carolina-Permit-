@@ -1,63 +1,45 @@
-# Mecklenburg / Charlotte — current Accela building permits contractor-source pilot
+# Mecklenburg Accela investigation — source correction and withdrawal
 
-**Date:** November 12, 2026  
-**Status:** Read-only official ArcGIS pilot. No changes to production permit or builder rankings.
+**Updated November 12, 2026**
 
-## Critical source distinction
+## Critical retraction
 
-Our 701 current screened Charlotte-area records came from the county's older `BuildingPermits/FeatureServer/0` GIS layer, which has project, property and size fields but does not publish the building general contractor.
+An ArcGIS layer initially investigated as a Mecklenburg County "Accela Building Permits" contractor source:
 
-The county's [Building Permits Issued Daily](https://code.mecknc.gov/node/1041) report describes a contractor filter and CSV/Excel exports. However, the [county statistical reporting page](https://code.mecknc.gov/site-menu/public-records/statistical-data) explains that some historical reporting relates to legacy permit portals and updated Accela statistical reporting is still in development. **We cannot assume an exported contractor row matches a current Accela record merely because both came from Mecklenburg County.**
+`https://services3.arcgis.com/hPs600I3X0RTaaaq/arcgis/rest/services/Accela_Building_Permits/FeatureServer/0`
 
-A better official source was discovered independently:
+was **incorrectly attributed to Mecklenburg County, North Carolina**. Its coordinate reference system is California State Plane Zone VI, and subsequent source checking established that the data belonged to **Anaheim, California**.
 
-**[Accela Building Permits — official ArcGIS FeatureServer layer](https://services3.arcgis.com/hPs600I3X0RTaaaq/arcgis/rest/services/Accela_Building_Permits/FeatureServer/0)**
+The initial read-only pilot was immediately **withdrawn** when this was discovered. The code that queried the source, its tests, and the false research panel were removed. The original pilot output was replaced with a `rejected_wrong_jurisdiction` marker and **zero eligible North Carolina records**. **No Anaheim permit or contractor records entered the production North Carolina leads.**
 
-The layer's published schema includes:
+**Do not reuse the ArcGIS URL above for any North Carolina sales intelligence.** Its field schema is *not* evidence of a Mecklenburg government builder/GC source.
 
-| Purpose | Field |
-|---|---|
-| Permit/case reference | `casenumber` |
-| Recorded status | `casestatus` |
-| Issued date | `permitissued` (ArcGIS date) |
-| Work classification | `typeofwork` |
-| Building description | `description` |
-| Residential/commercial | `comres` |
-| Address and parcel | `address`, `parcel` |
-| Job valuation | `jobvaluation` |
-| Contractor as published | `contractorsname` |
-| Contractor phone as published | `contractorsphone` |
-| Owner-builder flag | `ownerbuilder` |
-| Exact feature query | `OBJECTID` |
+## Mecklenburg's actual current source options
 
-The presence of `contractorsname` and `contractorsphone` gives us a potential authoritative way to produce actionable Charlotte leads without using a third-party contractor directory or silently substituting an owner for the builder. Whether each row identifies the responsible **prime builder** still requires checking source semantics and actual permits.
+The County's [Open Mapping portal](https://maps.mecklenburgcountync.gov/openmapping/data.html) lists downloadable **Accela Building Permits** (current building permits), **Accela Permits** (all permit types), and a separately named **Winchester Building Permits** legacy dataset.
 
-## Implemented bounded pilot
+The official county [Reuse Policy](https://maps.mecklenburgcountync.gov/openmapping/index.html) allows commercial reuse of **downloaded, locally hosted copies**, but specifically **prohibits commercial apps from continuously querying County live map/API services**. Therefore:
 
-`src/probe_mecklenburg_accela.py` is a read-only, source-scoped discovery check. It:
+- Scheduled calls to `https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0` have been disabled in the North Carolina collector.
+- The last previously collected **701** screened Mecklenburg records remain available as a **frozen historic snapshot**, dated **November 12, 2026**.
+- Historical records are clearly labeled, excluded by default from current sales opportunities, and not included in new-permit RSS feeds or builder rankings.
+- Current live collection now covers Raleigh, New Hanover County, and Greensboro; Mecklenburg will return only after a local/offline import from permitted official downloads with source and classification validation.
 
-1. Checks the official layer's schema before processing records.
-2. Requests up to **250** recently issued building records, ordered by real issue date, not application date.
-3. Rejects missing/old/future dates, void/pending statuses, trade-only work, and records without explicit new-building evidence.
-4. Counts current contractor and business phone availability among *screened new-construction records*.
-5. Compares **exact case numbers** to the 701 previously screened Charlotte records, reporting overlap as a diagnostic only. It never merges records solely by address or company name.
-6. Outputs a maximum of **12** clearly labeled government-source research candidates, each with case number, issue date, type, address, contractor and phone **as listed**, and a direct exact ArcGIS `OBJECTID` query.
-7. Never writes `permits.json`, builder rankings, RSS, the live county source list or other customer-facing sales feeds.
+No official Mecklenburg builder field or prime-contractor mapping has been established from the actual published County GIS dataset. Do not substitute property owners, applicants, or subcontractors for building GCs.
 
-The result is `public/data/mecklenburg_accela_pilot.json` after a successful GitHub workflow run. On request or schema failure, the pilot records a non-promotion error instead of producing false leads. The separate `tests/test_mecklenburg_accela_pilot.py` contains **10 synthetic tests** of schema controls, new-building screening, contractor attribution, phone hygiene, exact-ID comparison and fail-closed behavior.
+## Recommended compliant replacement
 
-## Promotion gates
+1. Visit the [official Mecklenburg Open Mapping Data catalog](https://maps.mecklenburgcountync.gov/openmapping/data.html) and download the published **Accela Building Permits** file in the supported format (CSV/ZIP or GeoPackage).
+2. Retain the dated downloaded file locally or within a controlled organization-owned storage area; record the download time, filename, size and source catalogue link.
+3. Inspect the actual downloaded schema and specifically determine whether it has an explicit general contractor field and authoritative issued-date/work-class fields.
+4. Build a **local, deterministic importer**, with source-specific tests, new-construction screening, exact permit identifiers, duplicate controls and a dry-run review report. Do not silently join or infer builders from addresses/owners.
+5. Only when validated, publish the locally processed permit data and refresh on a cadence compatible with the government's download and reuse rules. No direct live API polling by our commercial dashboard.
 
-Before adding Accela records to the main North Carolina dashboard:
+## Provenance documents
 
-- Inspect real `casestatus`, `typeofwork`, `comres`, `casenumber` and `description` values from the pilot; adjust classification based on evidence.
-- Confirm whether source `contractorsname` is a building general contractor or another relationship for this specific layer, and how to interpret `ownerbuilder`.
-- Check a small sample of actual individual permit records in the county Accela portal.
-- Compare permit identity and project-level overlap with the older GIS feed; exact-number collisions and address overlap need separate treatment.
-- Only then consider enabling the Accela source under its own `mecklenburg_accela` identity with the same sales-friendly permit-detail URL style and a separate official source link.
+- [Official Mecklenburg Open Mapping reuse policy](https://maps.mecklenburgcountync.gov/openmapping/index.html)
+- [Official Mecklenburg open-data catalog](https://maps.mecklenburgcountync.gov/openmapping/data.html)
+- [Charlotte snapshot provenance](../public/data/mecklenburg_snapshot_info.json)
+- [North Carolina sales-detail rollout](SALES_DETAIL_ROLLOUT_CHUNK2.md)
 
-**Do not treat a successful GIS query, a contractor-name field, or a legacy Power BI report as proof of a verified GC on an individual project.**
-
-## Next checkpoint
-
-Review the first pilot output and match counts. If it yields appropriate new-construction candidates and published contractor data, build a conservative live collector for this *new* source rather than joining county statistical reports based on names or addresses.
+**Status:** Withdrawn invalid pilot; commercially compliant downloaded-data replacement not yet implemented.
