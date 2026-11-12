@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-11-12T20:43:04.472104+00:00",
+  "created_utc": "2026-11-12T20:50:19.436834+00:00",
   "purpose": "Research-only review queue; permits are not audited sales leads.",
   "policy": "Only government GIS exact-record queries and published portal search links. No inferred redirect, issuer, or prime builder. Do not include these records in permit totals.",
   "independently_verified": false,
@@ -8,6 +8,11 @@
     "wake": {
       "state": "review_queue_ready",
       "count": 8,
+      "identifier_audit": {
+        "permit_numbers_reused_in_sample": 0,
+        "project_numbers_reused_in_sample": 0,
+        "scope_note": "Non-uniqueness flags describe this bounded sample, not the complete county dataset."
+      },
       "candidates": [
         {
           "source": "Wake County",
@@ -22,7 +27,11 @@
           "legacy_link_route": "permit",
           "record_verification": "manual_portal_review_required",
           "issuer_verification": "unknown_issuer_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": false,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Permit RBPR-183204-2026",
+          "reference_kind": "permit_number_not_globally_verified"
         },
         {
           "source": "Wake County",
@@ -37,7 +46,11 @@
           "legacy_link_route": "permit",
           "record_verification": "manual_portal_review_required",
           "issuer_verification": "unknown_issuer_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": false,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Permit RBPR-183097-2026",
+          "reference_kind": "permit_number_not_globally_verified"
         },
         {
           "source": "Wake County",
@@ -52,7 +65,11 @@
           "legacy_link_route": "permit",
           "record_verification": "manual_portal_review_required",
           "issuer_verification": "unknown_issuer_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": false,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Permit RBPR-181304-2026",
+          "reference_kind": "permit_number_not_globally_verified"
         },
         {
           "source": "Wake County",
@@ -67,7 +84,11 @@
           "legacy_link_route": "permit",
           "record_verification": "manual_portal_review_required",
           "issuer_verification": "unknown_issuer_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": false,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Permit RBPR-181316-2026",
+          "reference_kind": "permit_number_not_globally_verified"
         },
         {
           "source": "Wake County",
@@ -82,7 +103,11 @@
           "legacy_link_route": "permit",
           "record_verification": "manual_portal_review_required",
           "issuer_verification": "unknown_issuer_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": false,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Permit RBPR-181323-2026",
+          "reference_kind": "permit_number_not_globally_verified"
         },
         {
           "source": "Wake County",
@@ -97,7 +122,11 @@
           "legacy_link_route": "permit",
           "record_verification": "manual_portal_review_required",
           "issuer_verification": "unknown_issuer_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": false,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Permit RBPR-181309-2026",
+          "reference_kind": "permit_number_not_globally_verified"
         },
         {
           "source": "Wake County",
@@ -112,7 +141,11 @@
           "legacy_link_route": "permit",
           "record_verification": "manual_portal_review_required",
           "issuer_verification": "unknown_issuer_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": false,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Permit RBPR-181314-2026",
+          "reference_kind": "permit_number_not_globally_verified"
         },
         {
           "source": "Wake County",
@@ -127,7 +160,11 @@
           "legacy_link_route": "permit",
           "record_verification": "manual_portal_review_required",
           "issuer_verification": "unknown_issuer_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": false,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Permit RBPR-181322-2026",
+          "reference_kind": "permit_number_not_globally_verified"
         }
       ],
       "enabled_for_collection": false
@@ -135,6 +172,11 @@
     "brunswick": {
       "state": "review_queue_ready",
       "count": 8,
+      "identifier_audit": {
+        "permit_numbers_reused_in_sample": 1,
+        "project_numbers_reused_in_sample": 0,
+        "scope_note": "Non-uniqueness flags describe this bounded sample, not the complete county dataset."
+      },
       "candidates": [
         {
           "source": "Brunswick County",
@@ -150,7 +192,11 @@
           "prime_builder": null,
           "prime_builder_verification": "not_available_from_this_gis_layer",
           "record_verification": "manual_portal_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": true,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Project 701942",
+          "reference_kind": "project_number_not_globally_verified"
         },
         {
           "source": "Brunswick County",
@@ -166,7 +212,11 @@
           "prime_builder": null,
           "prime_builder_verification": "not_available_from_this_gis_layer",
           "record_verification": "manual_portal_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": true,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Project 701212",
+          "reference_kind": "project_number_not_globally_verified"
         },
         {
           "source": "Brunswick County",
@@ -182,7 +232,11 @@
           "prime_builder": null,
           "prime_builder_verification": "not_available_from_this_gis_layer",
           "record_verification": "manual_portal_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": true,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Project 702962",
+          "reference_kind": "project_number_not_globally_verified"
         },
         {
           "source": "Brunswick County",
@@ -198,7 +252,11 @@
           "prime_builder": null,
           "prime_builder_verification": "not_available_from_this_gis_layer",
           "record_verification": "manual_portal_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": true,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Project 702963",
+          "reference_kind": "project_number_not_globally_verified"
         },
         {
           "source": "Brunswick County",
@@ -214,7 +272,11 @@
           "prime_builder": null,
           "prime_builder_verification": "not_available_from_this_gis_layer",
           "record_verification": "manual_portal_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": true,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Project 702949",
+          "reference_kind": "project_number_not_globally_verified"
         },
         {
           "source": "Brunswick County",
@@ -230,7 +292,11 @@
           "prime_builder": null,
           "prime_builder_verification": "not_available_from_this_gis_layer",
           "record_verification": "manual_portal_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": true,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Project 702957",
+          "reference_kind": "project_number_not_globally_verified"
         },
         {
           "source": "Brunswick County",
@@ -246,7 +312,11 @@
           "prime_builder": null,
           "prime_builder_verification": "not_available_from_this_gis_layer",
           "record_verification": "manual_portal_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": true,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Project 702955",
+          "reference_kind": "project_number_not_globally_verified"
         },
         {
           "source": "Brunswick County",
@@ -262,7 +332,11 @@
           "prime_builder": null,
           "prime_builder_verification": "not_available_from_this_gis_layer",
           "record_verification": "manual_portal_review_required",
-          "included_in_sales_leads": false
+          "included_in_sales_leads": false,
+          "permit_number_reused_in_sample": true,
+          "project_number_reused_in_sample": false,
+          "reference_label": "Project 702954",
+          "reference_kind": "project_number_not_globally_verified"
         }
       ],
       "enabled_for_collection": false

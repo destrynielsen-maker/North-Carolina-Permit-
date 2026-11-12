@@ -1,0 +1,339 @@
+{
+  "checked_at_utc": "2026-11-12T20:50:20.366285+00:00",
+  "scope": "Exact current GIS object-ID rechecks of disabled-county queue only",
+  "policy": "A same-source GIS recheck is not independent permit-portal verification and never approves a new source.",
+  "independently_verified": false,
+  "new_leads_promoted": 0,
+  "results": {
+    "state": "source_requery_audit_no_promotion",
+    "records_attempted": 16,
+    "same_source_consistent_count": 16,
+    "state_counts": {
+      "same_source_consistent": 16
+    },
+    "independently_verified_count": 0,
+    "enabled_for_collection": false,
+    "record_checks": [
+      {
+        "source": "wake",
+        "gis_object_id": 128361,
+        "reference_label": "Permit RBPR-183204-2026",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "work_class_matches": true,
+          "contractor_matches": true,
+          "status_is_issued": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "wake",
+        "gis_object_id": 128435,
+        "reference_label": "Permit RBPR-183097-2026",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "work_class_matches": true,
+          "contractor_matches": true,
+          "status_is_issued": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "wake",
+        "gis_object_id": 126587,
+        "reference_label": "Permit RBPR-181304-2026",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "work_class_matches": true,
+          "contractor_matches": true,
+          "status_is_issued": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "wake",
+        "gis_object_id": 126472,
+        "reference_label": "Permit RBPR-181316-2026",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "work_class_matches": true,
+          "contractor_matches": true,
+          "status_is_issued": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "wake",
+        "gis_object_id": 126594,
+        "reference_label": "Permit RBPR-181323-2026",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "work_class_matches": true,
+          "contractor_matches": true,
+          "status_is_issued": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "wake",
+        "gis_object_id": 126471,
+        "reference_label": "Permit RBPR-181309-2026",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "work_class_matches": true,
+          "contractor_matches": true,
+          "status_is_issued": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "wake",
+        "gis_object_id": 126470,
+        "reference_label": "Permit RBPR-181314-2026",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "work_class_matches": true,
+          "contractor_matches": true,
+          "status_is_issued": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "wake",
+        "gis_object_id": 126583,
+        "reference_label": "Permit RBPR-181322-2026",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "work_class_matches": true,
+          "contractor_matches": true,
+          "status_is_issued": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "brunswick",
+        "gis_object_id": 284255,
+        "reference_label": "Project 701942",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "project_number_matches": true,
+          "permit_type_matches": true,
+          "address_matches": true,
+          "jurisdiction_matches": true,
+          "status_is_active": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "brunswick",
+        "gis_object_id": 283852,
+        "reference_label": "Project 701212",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "project_number_matches": true,
+          "permit_type_matches": true,
+          "address_matches": true,
+          "jurisdiction_matches": true,
+          "status_is_active": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "brunswick",
+        "gis_object_id": 284686,
+        "reference_label": "Project 702962",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "project_number_matches": true,
+          "permit_type_matches": true,
+          "address_matches": true,
+          "jurisdiction_matches": true,
+          "status_is_active": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "brunswick",
+        "gis_object_id": 284688,
+        "reference_label": "Project 702963",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "project_number_matches": true,
+          "permit_type_matches": true,
+          "address_matches": true,
+          "jurisdiction_matches": true,
+          "status_is_active": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "brunswick",
+        "gis_object_id": 284644,
+        "reference_label": "Project 702949",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "project_number_matches": true,
+          "permit_type_matches": true,
+          "address_matches": true,
+          "jurisdiction_matches": true,
+          "status_is_active": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "brunswick",
+        "gis_object_id": 284675,
+        "reference_label": "Project 702957",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "project_number_matches": true,
+          "permit_type_matches": true,
+          "address_matches": true,
+          "jurisdiction_matches": true,
+          "status_is_active": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "brunswick",
+        "gis_object_id": 284661,
+        "reference_label": "Project 702955",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "project_number_matches": true,
+          "permit_type_matches": true,
+          "address_matches": true,
+          "jurisdiction_matches": true,
+          "status_is_active": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      },
+      {
+        "source": "brunswick",
+        "gis_object_id": 284654,
+        "reference_label": "Project 702954",
+        "same_source_check": true,
+        "independently_verified": false,
+        "permit_issuer_verified": false,
+        "prime_builder_verified": false,
+        "included_in_sales_leads": false,
+        "checks": {
+          "permit_number_matches": true,
+          "issued_date_matches": true,
+          "project_number_matches": true,
+          "permit_type_matches": true,
+          "address_matches": true,
+          "jurisdiction_matches": true,
+          "status_is_active": true
+        },
+        "state": "same_source_consistent",
+        "failed_check_names": []
+      }
+    ]
+  }
+}
