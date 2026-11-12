@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "policy": "Manually curated reviews only. Never infer verification from issue status, GIS consistency, or a portal home page. Never publish leads automatically.",
+  "decisions": [
+    {
+      "source": "wake",
+      "gis_object_id": 128361,
+      "issue_number": 1,
+      "decision": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "official_evidence_url": null,
+      "official_record_reference": null,
+      "issuer": null,
+      "licensed_prime_builder": null,
+      "duplicate_disposition": "unreviewed",
+      "permit_id_confirmed": false,
+      "issued_date_confirmed": false,
+      "status_confirmed": false,
+      "new_construction_confirmed": false,
+      "reviewer_attests_portal_record_match": false,
+      "reason": "Independent municipal permit-portal record and issuing authority not yet verified."
+    },
+    {
+      "source": "brunswick",
+      "gis_object_id": 284255,
+      "issue_number": 2,
+      "decision": "pending",
+      "reviewer": null,
+      "reviewed_on": null,
+      "official_evidence_url": null,
+      "official_record_reference": null,
+      "issuer": null,
+      "licensed_prime_builder": null,
+      "duplicate_disposition": "unreviewed",
+      "permit_id_confirmed": false,
+      "issued_date_confirmed": false,
+      "status_confirmed": false,
+      "new_construction_confirmed": false,
+      "reviewer_attests_portal_record_match": false,
+      "reason": "Licensed primary builder/GC and original project record not yet independently confirmed."
+    }
+  ]
+}
