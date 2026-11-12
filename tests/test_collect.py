@@ -13,6 +13,7 @@ TODAY = dt.date(2026, 11, 12)
 R = nc.SOURCES[0]
 N = nc.SOURCES[1]
 M = nc.SOURCES[2]
+G = next(s for s in nc.SOURCES if s['id'] == 'greensboro')
 
 
 def make(source, **overrides):
@@ -46,6 +47,20 @@ class QualificationTests(unittest.TestCase):
                               projdesc='New warehouse', projadd='TEST AVE', bldgcost=990000), M, TODAY)
         self.assertEqual(p['category'], 'Commercial')
         self.assertEqual(p['contractor'], '')
+
+    def test_greensboro_new_single_family_with_contractor(self):
+        p = nc.normalize(make(G, PermitNum=123456, IssuedDate='2026-11-10',
+                              StatusCurrent='Issued', ApplicationType='New Construction',
+                              OccupancyDesc='Single Family Detached', Description='Construct new home',
+                              Contractor='Example Homebuilders', TotalCost=310000,
+                              FullAddress='10 TEST DR'), G, TODAY)
+        self.assertEqual(p['category'], 'Single Family')
+        self.assertEqual(p['contractor'], 'Example Homebuilders')
+        self.assertEqual(p['valuation'], 310000)
+
+    def test_greensboro_remodel_is_not_accepted(self):
+        self.assertIsNone(nc.normalize(make(G, ApplicationType='Alteration',
+                       Description='Remodel existing residence'), G, TODAY))
 
     def test_applied_without_issued_date_excluded(self):
         a = make(R, issueddate=None, applieddate='2026-11-10')
@@ -112,6 +127,23 @@ class ApiTests(unittest.TestCase):
         self.assertTrue(requests[1][1]['orderByFields'].startswith('issueddate DESC'))
         self.assertIn("DATE '2026-05-16'", requests[1][1]['where'])
         self.assertEqual(requests[2][1]['resultOffset'], 2)
+
+    def test_diagnostics_count_reasons_without_rejected_addresses(self):
+        info = {'fields': [{'name': x} for x in
+                ['PermitNum', 'IssuedDate', 'StatusCurrent', 'TotalCost', 'ApplicationType']],
+                'objectIdField': 'OBJECTID', 'capabilities': 'Query', 'maxRecordCount': 10}
+        records = [make(G, ApplicationType='New Construction', OccupancyDesc='Single Family',
+                        Description='New single-family home'),
+                   make(G, PermitNum=99002, IssuedDate=None, Description='New single-family home',
+                        FullAddress='DO NOT EXPOSE ADDRESS')]
+        def fake_get(url, params):
+            return info if url == G['url'] else {'features': [{'attributes': a} for a in records]}
+        diag = {}
+        with patch.object(nc, 'get', side_effect=fake_get):
+            rows, scanned = nc.collect(G, TODAY, diagnostics=diag)
+        self.assertEqual((len(rows), scanned), (1, 2))
+        self.assertEqual(diag['rejection_reasons']['missing_issued_date'], 1)
+        self.assertNotIn('DO NOT EXPOSE ADDRESS', str(diag))
 
     def test_query_error_fails_closed(self):
         info = {'fields': [{'name': x} for x in
