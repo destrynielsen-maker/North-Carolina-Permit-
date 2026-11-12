@@ -17,6 +17,7 @@ from validate_chunk10 import (WAKE_URL, BRUNSWICK_URL, get_features,
 WAKE_LIMIT = 32
 BRUNSWICK_LIMIT = 50
 PUBLIC_BRUNSWICK_PORTAL = 'https://bcpp.brunswickcountync.gov/'
+PUBLIC_WAKE_PORTAL = 'https://wakecountync-energovpub.tylerhost.net/apps/selfservice'
 
 # Role claims sourced from official municipal pages. Never infer issuer just
 # because the point intersects a town's planning jurisdiction.
@@ -39,7 +40,7 @@ AGENCY_GUIDANCE = {
     'ZEBULON': {
         'possible_issuer': 'Town of Zebulon / Wake County shared process',
         'issuer_evidence': 'shared_process_requires_record_review',
-        'official_guidance': 'https://www.townofzebulon.org/',
+        'official_guidance': 'https://www.townofzebulon.org/o/planning',
     },
 }
 
@@ -101,6 +102,7 @@ def wake_roles_pilot(source_request=get_features, boundary_request=get_features)
         'safe_permit_link_hosts':dict(sorted(urls.items())),
         'boundary_errors':boundary_errors,
         'municipal_guidance':AGENCY_GUIDANCE,
+        'official_manual_permit_lookup':PUBLIC_WAKE_PORTAL,
         'all_permits_independently_verified':False,
         'do_not_infer':'No planning area, portal host or shared county inspection proves an individual permit issuer.',
         'enabled_for_collection':False,
