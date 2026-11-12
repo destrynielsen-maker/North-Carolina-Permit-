@@ -53,6 +53,15 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 <p class="muted"><a href="data/builder_rankings.json" target="_blank" rel="noopener noreferrer">Full builder ranking data</a> · <a href="data/qa_samples.json" target="_blank" rel="noopener noreferrer">Permit review samples</a></p>
 </section>
 <section class="panel" style="margin-top:18px">
+<h2>County research queue — NOT published leads</h2>
+<p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. Open the exact government GIS record, then use the official portal search to confirm the actual issuer and general contractor. A GIS response or portal home page is not independent record verification.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>County</th><th>Permit / project</th><th>Issue date</th><th>Work / site</th><th>Official record</th><th>Public portal</th></tr></thead>
+<tbody id="countyReviewRows"></tbody></table></div>
+<p class="muted" id="countyReviewNotice">Loading research-only candidates…</p>
+<p class="muted"><a href="data/chunk13_review_queue.json" target="_blank" rel="noopener noreferrer">Complete review queue and source evidence</a></p>
+</section>
+<section class="panel" style="margin-top:18px">
 <h2>Source status</h2><p class="muted" id="checked">No live source check has been confirmed.</p><div id="sources" class="muted"></div>
 <h3>Additional county research (not included in permit totals)</h3>
 <p class="muted">Wake and Brunswick remain on hold. Use official public search sites to check individual permits. The Wake GIS link host is legacy; do not treat it as a verified direct permit page. These links open a search or portal—not an automatically verified record.</p>
@@ -123,6 +132,45 @@ fetch("data/builder_rankings.json").then(function(r){
  });
  el("buildersEmpty").textContent=(report.builders||[]).length?"Showing top 20 builders by recent screened permit activity.":"No contractor records available.";
 }).catch(function(e){el("buildersEmpty").textContent="Builder rankings not available yet.";});
+
+fetch("data/chunk13_review_queue.json").then(function(response){
+ if(!response.ok)throw Error("Research queue not generated");
+ return response.json();
+}).then(function(report){
+ var tbody=el("countyReviewRows"),count=0;
+ ["wake","brunswick"].forEach(function(key){
+  var source=(report.sources||{})[key]||{};
+  (source.candidates||[]).forEach(function(p){
+   var tr=document.createElement("tr");
+   textCell(tr,p.source);
+   textCell(tr,p.permit_number+(p.project_number?" / "+p.project_number:""));
+   textCell(tr,p.issued_date);
+   textCell(tr,p.work_class||p.permit_type||"");
+   var location=tr.lastChild;
+   var small=document.createElement("div");small.className="muted";
+   small.textContent=p.address||"Contractor as listed (unverified): "+(p.contractor_as_listed_unverified||"Not supplied");
+   location.appendChild(small);
+   function safeLink(cell,url,label,prefixes){
+    if(!prefixes.some(function(prefix){return String(url||"").startsWith(prefix)})){textCell(tr,"Unavailable");return;}
+    var td=document.createElement("td"),a=document.createElement("a");
+    a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent=label;
+    td.appendChild(a);tr.appendChild(td);
+   }
+   safeLink(tr,p.exact_gis_query_url,"Exact GIS lookup",[
+    "https://maps.wake.gov/arcgis/rest/services/Inspections/Building_Permits/MapServer/0/query?",
+    "https://services1.arcgis.com/W6gamXPYQeLXrdAd/arcgis/rest/services/Permit_Locations/FeatureServer/0/query?"
+   ]);
+   safeLink(tr,p.official_portal_search,"Search permit",[
+    "https://wakecountync-energovpub.tylerhost.net/apps/selfservice",
+    "https://bcpp.brunswickcountync.gov/"
+   ]);
+   tbody.appendChild(tr);count++;
+  });
+ });
+ el("countyReviewNotice").textContent=count?
+  "Showing "+count+" unverified research candidates; none are included in sales-lead totals.":
+  "No review candidates were returned; see source diagnostics.";
+}).catch(function(){el("countyReviewNotice").textContent="Research queue not yet available. Main permit dashboard is unaffected.";});
 
 Promise.all([
  fetch("data/permits.json").then(function(r){if(!r.ok)throw Error("Permit data missing");return r.json()}),
