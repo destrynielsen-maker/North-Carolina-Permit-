@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-12T22:01:37.566101+00:00",
+  "checked_at_utc": "2026-11-12T22:02:36.123600+00:00",
   "policy": "Read-only sample and consistency checks. No disabled-source records enter the published leads.",
   "independently_verified": false,
   "pilot_sources": {
