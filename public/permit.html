@@ -206,9 +206,16 @@ fetch("data/permits.json",{cache:"no-store"}).then(function(response){
  var official=trusted(p.permit_detail_url,"permit");
  var specific=trusted(p.source_record_url,"gis");
  var database=trusted(p.source_url,"gis");
- addLink("Official city permit",official,true);
- addLink("Exact GIS record",specific,!official);
- addLink("Original data source",database,false);
+ if(historic){
+  // The county's commercial reuse rules require downloaded/local data rather
+  // than using this app to query live Mecklenburg GIS endpoints.
+  addLink("Mecklenburg open-data downloads","https://maps.mecklenburgcountync.gov/openmapping/data.html",true);
+  addLink("Official county permit search (manual)","https://gis.mecklenburgcountync.gov/meck-accela/",false);
+ }else{
+  addLink("Official city permit",official,true);
+  addLink("Exact GIS record",specific,!official);
+  addLink("Original data source",database,false);
+ }
  if(p.jurisdiction==="Mecklenburg County / Charlotte"){
   addLink("County permit search (enter permit #)","https://gis.mecklenburgcountync.gov/meck-accela/",false);
   addLink("County issued-permit report (contractor search)","https://code.mecknc.gov/node/1041",false);
@@ -219,7 +226,7 @@ fetch("data/permits.json",{cache:"no-store"}).then(function(response){
  if(p.contractor){
   addLink("Verify contractor license in NC","https://portal.nclbgc.org/Public/Search",false);
  }
- if(!official&&!specific){var msg=document.createElement("p");msg.className="note";msg.textContent="An individual government permit URL is not yet available for this source. Use the original database link and permit number.";el("sourcelinks").appendChild(msg);}
+ if(!historic&&!official&&!specific){var msg=document.createElement("p");msg.className="note";msg.textContent="An individual government permit URL is not yet available for this source. Use the original database link and permit number.";el("sourcelinks").appendChild(msg);}
  var map=el("maplink");
  if(p.address){map.href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(p.address);}
  else{map.removeAttribute("href");map.style.display="none";}
