@@ -14,6 +14,7 @@
       "status": "Issued                                                      ",
       "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
       "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620733%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?bldgPermitNumber=202620733",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -35,6 +36,7 @@
       "status": "Issued                                                      ",
       "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
       "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620920%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?bldgPermitNumber=202620920",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -56,6 +58,7 @@
       "status": "Issued                                                      ",
       "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
       "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202518414%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?bldgPermitNumber=202518414",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -77,6 +80,7 @@
       "status": "Issued                                                      ",
       "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
       "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620732%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?bldgPermitNumber=202620732",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -98,6 +102,7 @@
       "status": "Issued                                                      ",
       "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
       "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620919%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?bldgPermitNumber=202620919",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -119,6 +124,7 @@
       "status": "Issued                                                      ",
       "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
       "source_query_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6/query?f=json&where=PermitNum+%3D+%27202620918%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?bldgPermitNumber=202620918",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -140,6 +146,7 @@
       "status": "Issued",
       "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839362%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -161,6 +168,7 @@
       "status": "Issued",
       "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839209%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -182,6 +190,7 @@
       "status": "Issued",
       "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839203%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -203,6 +212,7 @@
       "status": "Issued",
       "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839208%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -224,6 +234,7 @@
       "status": "Issued",
       "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839207%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -245,6 +256,7 @@
       "status": "Issued",
       "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0/query?f=json&where=permitnum+%3D+%27B4839206%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -266,6 +278,7 @@
       "status": "Issued",
       "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2726-017372%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -287,6 +300,7 @@
       "status": "Issued",
       "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2725-01086%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -308,6 +322,7 @@
       "status": "Issued",
       "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2725-01182%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -329,6 +344,7 @@
       "status": "Issued",
       "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2726-017708%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -350,6 +366,7 @@
       "status": "Issued",
       "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2726-017706%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -371,6 +388,7 @@
       "status": "Issued",
       "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
       "source_query_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0/query?f=json&where=PERMIT_NUMBER+%3D+%2726-016846%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -392,6 +410,7 @@
       "status": "Issued",
       "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
       "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-049954-2026%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -413,6 +432,7 @@
       "status": "Issued",
       "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
       "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-047549-2026%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -434,6 +454,7 @@
       "status": "Issued",
       "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
       "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDNR-026392-2025%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -455,6 +476,7 @@
       "status": "Issued",
       "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
       "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-047548-2026%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -476,6 +498,7 @@
       "status": "Issued",
       "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
       "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-047547-2026%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
@@ -497,6 +520,7 @@
       "status": "Issued",
       "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
       "source_query_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0/query?f=json&where=permitnum+%3D+%27BLDR-047546-2026%27&outFields=%2A&returnGeometry=false",
+      "permit_detail_url": "",
       "collection_state": "current_scan",
       "verification_status": "manual_review_required",
       "verification_checklist": [
