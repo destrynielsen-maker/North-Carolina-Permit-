@@ -8,12 +8,12 @@ Public permit-intelligence dashboard for screened **newly issued** single-family
 |---|---|---|
 | Raleigh | Collector configured | Issued-past-180-days GIS service |
 | New Hanover County | Collector configured | Published issue-date/work-class schema; GIS monthly refresh |
-| Mecklenburg County / Charlotte | Collector configured | Contractor not exposed in selected GIS layer |
+| Mecklenburg County / Charlotte | **Historical snapshot only — live API polling disabled** | 701 preserved records as of Nov 12, 2026; County commercial open-data policy requires locally hosted downloads |
 | Greensboro | Collecting | 879 screened candidates from the November 12 refresh |
 | Wake County | Paused | Need to validate schema and Raleigh overlap |
 | Durham | Paused | Existing active permit layer lacks issue dates |
 
-**Records are screened candidates**, not individually verified permits or statewide coverage. The scheduled collector has produced screened results for Raleigh, New Hanover County, Mecklenburg and Greensboro. Record-level issuance and classification verification remains pending.
+**Records are screened candidates**, not individually verified permits or statewide coverage. Current scheduled collection covers Raleigh, New Hanover County, and Greensboro. The previous Mecklenburg data is preserved only as a dated historical snapshot. Record-level issuance and classification verification remains pending.
 
 ## Local development
 
@@ -104,6 +104,14 @@ For the **Mecklenburg County / Charlotte** permits, the selected official GIS la
 To find the actual GC, the page now provides the county's [Permit and Plan Review Status Portal](https://gis.mecklenburgcountync.gov/meck-accela/) and [Building Permits Issued Daily contractor-filterable report](https://code.mecknc.gov/node/1041); the salesperson can copy the permit number and research the exact project. A separate [NC licensing-board search](https://portal.nclbgc.org/Public/Search) is available when a builder has been named in the original source; a license search is not treated as a verified GC/project match.
 
 The main dashboard can filter **Builder missing — research** and offers direct county portal research on Charlotte rows. Contact availability and builder fields are intentionally separate. See [Mecklenburg source and implementation notes](docs/MECKLENBURG_SALES_RESEARCH.md).
+
+## Mecklenburg historic snapshot and commercial reuse policy
+
+Mecklenburg County's [official GIS reuse policy](https://maps.mecklenburgcountync.gov/openmapping/index.html) permits commercial reuse of downloaded copies, but prohibits commercial products from continuously querying the county's live GIS API/map services. Therefore this project's scheduled Mecklenburg API polling has been **disabled**.
+
+**2,473 current screened permits** remain across Raleigh, New Hanover County and Greensboro; **701 Charlotte/Mecklenburg records** remain in a frozen, explicitly dated historical snapshot. The dashboard defaults to current records but lets salespeople include archived Charlotte permits for research. Archived data never enters new-permit RSS or current builder rankings.
+
+The next Mecklenburg update must use official downloaded [Accela Building Permits](https://maps.mecklenburgcountync.gov/openmapping/data.html) files, locally hosted and processed, with source and builder-role validation. See [snapshot and compliance checkpoint](docs/MECKLENBURG_SNAPSHOT_COMPLIANCE.md). The earlier contractor-rich ArcGIS pilot was withdrawn after identifying its source as Anaheim, California, not North Carolina.
 
 ## Data quality rules
 
