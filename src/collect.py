@@ -93,7 +93,7 @@ NEW_BUILD = re.compile(
 MULTI = re.compile(r'\b(multi[ -]?family|apartment\w*|duplex|triplex|quadplex|fourplex|townhome\w*|townhouse\w*|condominium\w*)\b', re.I)
 COMMERCIAL = re.compile(r'\b(commercial|industrial|warehouse|office|retail|restaurant|hotel|school|mixed[ -]?use|business|factory)\b', re.I)
 SINGLE = re.compile(r'\b(single[ -]?family|sfr|residen\w*|dwelling|house|home|detached)\b', re.I)
-BAD_STATUS = re.compile(r'\b(void\w*|cancel\w*|withdraw\w*|denied|expired|pending|applied|not issued|under review|in review|incomplete)\b', re.I)
+BAD_STATUS = re.compile(r'\b(void\w*|cancel\w*|withdraw\w*|denied|expired|revoked|pending|applied|not issued|under review|in review|incomplete|on hold|stop work(?: order)?)\b', re.I)
 
 
 def value(a, key):
@@ -145,6 +145,47 @@ def category(a, source):
     if SINGLE.search(all_text):
         return 'Single Family'
     return None
+
+
+def builder_key(name):
+    """Conservative contractor key: casing, punctuation and license decorations only.
+
+    Keep legal-entity and trading-as details so different companies are not
+    silently merged. Do not use fuzzy matching or drop GROUP/CORP words.
+    """
+    name = str(name or '').strip().upper()
+    name = re.sub(r'\s*\(LIC\s*#?\s*\d+\)|\s*\(B\)', ' ', name)
+    return re.sub(r'\s+', ' ', re.sub(r'[^A-Z0-9]+', ' ', name)).strip()
+
+
+def cross_source_number_collisions(permits):
+    """Audit only; never merge records automatically from different agencies.
+
+    Same permit number in two feeds does not prove the same issuance. Return
+    aggregated pair counts and no permit addresses or owner details.
+    """
+    from itertools import combinations
+    by_number = {}
+    for p in permits:
+        number = str(p.get('permit_number') or '').strip().upper()
+        if number:
+            by_number.setdefault(number, []).append(p)
+    tally = Counter()
+    for records in by_number.values():
+        for a, b in combinations(records, 2):
+            names = sorted((str(a.get('jurisdiction', '')), str(b.get('jurisdiction', ''))))
+            if not names[0] or names[0] == names[1]:
+                continue
+            key = ' | '.join(names)
+            tally[(key, 'same_number')] += 1
+            if a.get('issued_date') == b.get('issued_date'):
+                tally[(key, 'same_number_and_issued_date')] += 1
+    summary = {}
+    for (pair, typ), count in tally.items():
+        summary.setdefault(pair, {})[typ] = count
+    return [{'jurisdictions': pair, 'same_number': v.get('same_number', 0),
+             'same_number_and_issued_date': v.get('same_number_and_issued_date', 0)}
+            for pair, v in sorted(summary.items())]
 
 
 def normalize(a, source, today=None):
@@ -332,6 +373,12 @@ def main():
     permits = sorted({p['id']: p for p in permits}.values(),
                      key=lambda x: (x['issued_date'], x['score']), reverse=True)
     (OUT / 'permits.json').write_text(json.dumps(permits, indent=2) + '\n', encoding='utf-8')
+    collisions = cross_source_number_collisions(permits)
+    (OUT / 'overlap_audit.json').write_text(json.dumps({
+        'policy': 'Audit only. No cross-agency records removed based solely on addresses or permit numbers.',
+        'wake_enabled': any(src['id'] == 'wake' and src['enabled'] for src in SOURCES),
+        'cross_source_number_collision_pairs': collisions,
+    }, indent=2) + '\n', encoding='utf-8')
     (OUT / 'diagnostics.json').write_text(json.dumps({
         'note': 'Aggregated counts from latest successful scans; no individual rejected records',
         'sources': diagnostics_by_source,
@@ -343,14 +390,23 @@ def main():
     builders = {}
     for p in permits:
         name = p['contractor'].strip()
-        if name:
-            b = builders.setdefault(name, {'builder': name, 'projects': 0, 'valuation': 0, 'jurisdictions': set()})
+        key = builder_key(name)
+        if key:
+            b = builders.setdefault(key, {'builder': name, 'projects': 0,
+                                          'valuation': 0, 'jurisdictions': set(),
+                                          'aliases': set()})
             b['projects'] += 1
             b['valuation'] += p['valuation']
             b['jurisdictions'].add(p['jurisdiction'])
-    (OUT / 'builders.json').write_text(json.dumps([
-        {**b, 'jurisdictions': sorted(b['jurisdictions'])}
-        for b in sorted(builders.values(), key=lambda b: -b['projects'])], indent=2) + '\n', encoding='utf-8')
+            b['aliases'].add(name)
+    rolled = []
+    for b in builders.values():
+        aliases = sorted(b['aliases'], key=lambda name: (name.casefold(), name))
+        rolled.append({**b, 'builder': aliases[0], 'aliases': aliases,
+                       'jurisdictions': sorted(b['jurisdictions'])})
+    (OUT / 'builders.json').write_text(json.dumps(
+        sorted(rolled, key=lambda b: (-b['projects'], b['builder'].casefold())),
+        indent=2) + '\n', encoding='utf-8')
     for filename, title, condition in [
         ('all.xml', 'NC issued new construction candidates', lambda x: True),
         ('single-family.xml', 'NC single family candidates', lambda x: x['category'] == 'Single Family'),
