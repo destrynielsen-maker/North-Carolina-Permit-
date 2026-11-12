@@ -11,6 +11,17 @@ Field schema verification does not prove live query success or record accuracy.
 | Wake County | [Open data](https://data-wake.opendata.arcgis.com/datasets/Wake::building-permits) | Paused | Schema/overlap testing |
 | Durham | [Monthly construction activity reports](https://www.durhamnc.gov/308/Monthly-Construction-Activity-Reports) | Paused | Current GIS layer has no issue-date field |
 
+## Chunk 7 investigation: additional sources (not live)
+
+| Area | Official evidence | Status | Hold reason |
+|---|---|---|---|
+| Wake County | [Building Permits data catalog](https://catalog.data.gov/dataset/building-permits-ff506) and [GIS service](https://maps.wake.gov/arcgis/rest/services/Inspections/Building_Permits/MapServer/0) | Metadata probe staged | Verify issued-date field, local issuing jurisdiction, City of Raleigh overlap; service may be inaccessible from automation |
+| Brunswick County | [Official permit report directory](https://brunswickcountync.gov/195/Permit-Reports) and [Permit Locations GIS](https://services1.arcgis.com/W6gamXPYQeLXrdAd/arcgis/rest/services/Permit_Locations/FeatureServer/0) | Metadata probe staged | Published `DateIssued` is **text**, not a proper GIS date. Need format and status validation; `SubContractor` is **not** a general contractor field |
+| Cabarrus County | [Accela permit search](https://aca-prod.accela.com/CABARRUS/Cap/CapHome.aspx?TabName=PERMITS&module=Permits) and [GIS Plan Reviews layer](https://location.cabarruscounty.us/arcgisservices/rest/services/Current_Accela_Permits/Plan_Reviews/MapServer/0) | Metadata probe staged | Accessible GIS layer includes `B1_FILE_DD` and `B1_APPL_STATUS_DATE`, not an authoritative building-permit issue date |
+| Johnston County | [County-issued permit search by work type/date](https://www.johnstonnc.gov/insp/Worktypelookup.cfm) | Manual-source candidate only | Official web form reports work type, date, contractor and valuation, but no validated API/automated feed yet |
+
+Read-only staging probes are implemented in `src/probe_sources.py` and run without enabling any of these counties. They write `public/data/source_probes.json` once the revised workflow completes.
+
 ## Next integrations
 Guilford County beyond Greensboro, Brunswick, Cabarrus, Johnston, Buncombe/Asheville.
 
