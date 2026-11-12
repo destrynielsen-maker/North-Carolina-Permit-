@@ -133,7 +133,9 @@ function filtered(){
  return all.filter(function(p){
   return (!kind||p.category===kind)&&(!j||p.jurisdiction===j)&&Number(p.score)>=score
    &&(now-Date.parse(p.issued_date+"T12:00:00Z"))/86400000<=days
-   &&[p.address,p.contractor,p.description,p.permit_number,p.jurisdiction].join(" ").toLowerCase().includes(q);
+   &&[p.address,p.contractor,p.contractor_dba,p.contractor_license,
+      p.contractor_phone,p.contractor_email,p.project_name,p.project_number,
+      p.description,p.permit_number,p.jurisdiction].join(" ").toLowerCase().includes(q);
  }).sort(function(a,b){return ((a[order]>b[order])?1:(a[order]<b[order])?-1:0)*dir});
 }
 function render(){
