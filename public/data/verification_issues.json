@@ -1,0 +1,25 @@
+{
+  "notice": "Manual verification issues are independent review tasks. No referenced permit is verified, approved, or promoted by this manifest.",
+  "approval_policy": "GitHub issue status alone never promotes leads. Review completed only after independent official portal evidence and explicit curator decision.",
+  "entries": [
+    {
+      "source": "wake",
+      "gis_object_id": 128361,
+      "permit_number": "RBPR-183204-2026",
+      "issue_number": 1,
+      "issue_url": "https://github.com/destrynielsen-maker/North-Carolina-Permit-/issues/1",
+      "verification_status": "manual_review_required",
+      "included_in_sales_leads": false
+    },
+    {
+      "source": "brunswick",
+      "gis_object_id": 284255,
+      "project_number": "701942",
+      "permit_number": "1000",
+      "issue_number": 2,
+      "issue_url": "https://github.com/destrynielsen-maker/North-Carolina-Permit-/issues/2",
+      "verification_status": "manual_review_required",
+      "included_in_sales_leads": false
+    }
+  ]
+}
