@@ -47,3 +47,35 @@ The permit-locations layer lacks a verified prime/general-contractor field, and 
 ## Next checkpoint
 
 Check the published report, assess whether Wake jurisdiction labels are sufficiently useful for an anti-overlap rule, inspect Brunswick's newest filtered permit sample, and perform independent agency-level record checks before enabling any new jurisdiction.
+
+## Confirmed live result — 2026-11-12T20:12:37.401186+00:00
+
+GitHub Actions generated `public/data/chunk10_validation.json`. The 7 new unit tests and existing test suite were passed by the workflow before creating this report; the GitHub Pages step itself was not separately inspected.
+
+### Wake planning boundaries — 20 issued new-dwelling records
+
+- KNIGHTDALE: **1**
+- ROLESVILLE: **7**
+- WENDELL: **6**
+- ZEBULON: **3**
+- No polygon match: **3**
+- Matched Raleigh planning jurisdiction: **0**
+- Boundary API query errors: **0**
+
+Seventeen sampled points matched named non-Raleigh **planning areas**, but this does not establish their building-permit **issuer**. Three points had no polygon match and remain unknown. These 20 records are not a statistically comprehensive test of the Wake GIS layer's scope. Raleigh ETJ is included in the planning layer; future full-source overlap validation is still required.
+
+### Brunswick new residential construction filter — 100 records
+
+- 97 records: `NEW HOME`
+- 3 records: `RESIDENTIAL MODULAR`
+- All 100 are filtered `Active` residential permit records
+- All 100 were parseable and dated **2026-10-23 to 2026-11-10**; zero future, stale or unparseable dates in this sample
+- Jurisdictions: BRUNSWICK COUNTY **83**, NAVASSA **6**, NORTHWEST **1**, SHALLOTTE **6**, ST. JAMES **3**, VARNAMTOWN **1**
+
+The refined source is materially more relevant to new construction than the general all-permit sample. It still lacks a verified general contractor field and independent permit-record checks. Do not promote these candidate records into the sales dashboard on this evidence alone.
+
+### Dashboard and release gates
+
+The active collector totals after the pilot remain **3174** screened permits across Raleigh, New Hanover, Mecklenburg and Greensboro. Both pilot sources still report `enabled_for_collection=false`; no pilot data entered the lead dataset.
+
+Recommended Chunk 11 scope: crosscheck larger Wake samples against official permit-issuing agencies and boundaries; verify how Brunswick identifies prime building contractors; cross-verify a sample of new-home permits in official county permit detail; enable a jurisdiction only after a documented review gate.
