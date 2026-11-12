@@ -44,3 +44,22 @@ This was fixed in commit `30bc894f6173a2357d10c002fd798b738ee34fbf`. CI now writ
 [Sales-friendly Raleigh permit page](https://destrynielsen-maker.github.io/North-Carolina-Permit-/permit.html?id=raleigh%3ABLDR-049954-2026).
 
 The underlying government source link stays secondary. Every opportunity is a screened public record, not an independently audited issuance.
+
+## Confirmed rollout after CI repair — 2026-11-12T22:02:35.157009+00:00
+
+The workflow recorded **113 tests passed with zero failures** at `2026-11-12T22:02:20.001437+00:00`, then refreshed the four active permit markets at `2026-11-12T22:02:35.204352+00:00`. The generated source-contact coverage file is now present.
+
+| Market | Screened permits | Builder names | Phone | Email | Phone or email | Other actionable fields |
+|---|---:|---:|---:|---:|---:|---|
+| Raleigh | 781 | 776 | 663 | 741 | **754** | 436 project names |
+| New Hanover | 813 | 748 | 0 | 0 | 0 | 772 project contacts, 787 square-footage values |
+| Mecklenburg/Charlotte | 701 | 0 | 0 | 0 | 0 | 701 project names, 701 project numbers |
+| Greensboro | 879 | 879 | 0 | 0 | 0 | 821 housing-unit values |
+
+Raleigh's **754 of 781 (96.5%)** have a source-published phone number or email. All 3174 screened candidates now have exact government GIS record query links; Greensboro's 879 records retain city individual permit links.
+
+Some advertised source fields remain empty in the screened records (for example, Raleigh contractor license and square footage). Missing fields are not inferred.
+
+The dashboard now also offers a **Contact available** selector (all / phone or email / phone / email), allowing direct filtering for outreach opportunities. The filter does not alter the underlying collected lead list.
+
+**Next release gate:** Although the CI test pass and collector refresh are confirmed, the latest browser-level GitHub Pages deployment of `public/permit.html` has not been independently opened here. Salespeople should confirm the page displays correctly when clicked.
