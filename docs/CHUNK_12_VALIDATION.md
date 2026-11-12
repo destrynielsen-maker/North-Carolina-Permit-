@@ -50,3 +50,41 @@ GitHub Actions runs the script after previous collection and validations, genera
 ## Next checkpoint
 
 Inspect the new output for Wake route structures. If record-specific legacy routes are present, attempt a tiny manual browser validation in the *official current portal*, without guessing URL translations. For Brunswick, explore the official public permit search UI for prime contractor fields; document whether usable without authentication. Neither can be promoted without successful record QA.
+
+## Confirmed automated results — 2026-11-12T20:28:39.860242+00:00
+
+The scheduled GitHub workflow produced `public/data/chunk12_validation.json`. The test stage passed before collection; the separate Pages deployment stage was not independently inspected.
+
+### Wake permit deep-link audit
+
+- Sample: **32** recent issued new one-/two-family dwelling records.
+- Legacy URL hostname `energovcitizenaccess.tylertech.com`: **32 / 32**.
+- First fragment-route category: `permit` for **32** records.
+- Legacy links appearing to target individual permit routes: **32**.
+- Permit-specific deep links verified on the current government portal: **0**.
+- The audit intentionally publishes no raw permit URLs or identifiers, only patterns and counts.
+
+**Decision:** existing Wake GIS source links should not be rewritten to the newer Tyler-hosted portal without testing a record-specific translation and confirming the correct permit loads. The dashboard's current official public-record search link is the approved user-facing workaround for manual lookup.
+
+### Brunswick prime-builder evidence audit
+
+- Sample: **30** active residential new-home records.
+- Published layer field count: **20**.
+- `SubContractor` field present: **true**.
+- Sample rows with nonblank subcontractor: **30 / 30**.
+- Separate `contractor` or `builder` field candidates (excluding subcontractors): **0**.
+- Prime builders verified: **0**.
+- The official current permit portal is JavaScript-based; browser/portal record review remains necessary for GC attribution.
+
+**Decision:** retain Brunswick in research-only status. Do not promote subcontractors into builder rankings.
+
+### Dashboard and collector impact
+
+- Four established markets still collect **3174** screened permit candidates; no new Wake or Brunswick leads were added.
+- All seven new synthetic tests passed as part of the workflow that created the report.
+- The dashboard contains official current Wake and Brunswick manual lookup links.
+- Both pilot reports retain `enabled_for_collection=false` and `independent_permit_verification=false`.
+
+### Next gated step
+
+Use a few known, non-sensitive Wake permit numbers to compare old portal URLs against current official search results in a browser; document exact success/failure before enabling individual link redirects. Verify Brunswick's actual prime contractor from a permitted official portal record or an authoritative public data export. No automatic promotion based on URL format or a subcontractor text field.
