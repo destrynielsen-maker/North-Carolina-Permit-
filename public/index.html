@@ -54,9 +54,9 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 </section>
 <section class="panel" style="margin-top:18px">
 <h2>County research queue — NOT published leads</h2>
-<p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. Brunswick's county PermitNumber field may repeat across different projects: use the project number and exact GIS record ID for research. Confirm the actual issuer and prime builder in the official portal; a GIS response or portal home page is not independent verification.</p>
+<p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. The Start verification link opens a draft issue for human review; it does not verify or promote a lead. Brunswick's county PermitNumber field may repeat across different projects: use the project number and exact GIS record ID for research. Confirm the actual issuer and prime builder in the official portal; a GIS response or portal home page is not independent verification.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>County</th><th>Project / permit reference</th><th>Issue date</th><th>Work / site</th><th>Official record</th><th>Public portal</th><th>GIS consistency</th></tr></thead>
+<thead><tr><th>County</th><th>Project / permit reference</th><th>Issue date</th><th>Work / site</th><th>Official record</th><th>Public portal</th><th>GIS consistency</th><th>Verify</th></tr></thead>
 <tbody id="countyReviewRows"></tbody></table></div>
 <p class="muted" id="countyReviewNotice">Loading research-only candidates…</p>
 <p class="muted"><a href="data/chunk13_review_queue.json" target="_blank" rel="noopener noreferrer">Complete review queue and source evidence</a> · <a href="data/chunk14_validation.json" target="_blank" rel="noopener noreferrer">GIS consistency audit</a></p>
@@ -77,6 +77,49 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 var all=[],order="issued_date",dir=-1;
 function el(id){return document.getElementById(id)}
 function money(n){return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(n||0)}
+function verificationIssueUrl(p){
+ // This drafts an issue for a human reviewer; it does not verify a permit.
+ function safe(v){return String(v==null?"":v).replace(/[<>\\r\\n]/g," ").slice(0,240)}
+ var which=p.source==="Wake County"?"Wake":"Brunswick";
+ var reference=p.project_number?"Project "+safe(p.project_number)+" (county permit field "+safe(p.permit_number)+")":"Permit "+safe(p.permit_number);
+ var issueTitle="[Verification needed] "+which+" "+reference;
+ var evidence=[
+  "## Unverified county permit review",
+  "**Status: MANUAL REVIEW REQUIRED — NOT A VERIFIED LEAD**",
+  "",
+  "- County: "+safe(p.source),
+  "- Reference: "+reference,
+  "- GIS feature OBJECTID: "+safe(p.gis_object_id),
+  "- Recorded issue date: "+safe(p.issued_date),
+  "- Work type: "+safe(p.work_class||p.permit_type),
+  "- GIS lookup: "+safe(p.exact_gis_query_url),
+  "- Official portal search: "+safe(p.official_portal_search),
+  "",
+  "## Reviewer checklist",
+  "- [ ] Locate the SAME permit or project in the official permitting portal (not only GIS)",
+  "- [ ] Verify actual permit number / project number and site",
+  "- [ ] Verify original issue date, current status and new-construction type",
+  "- [ ] Identify the actual permit issuing authority (not just the planning boundary)",
+  "- [ ] Verify licensed prime builder / GC and role (or record that it is unavailable)",
+  "- [ ] Check for duplicate project or building permits in overlapping jurisdictions",
+  "- [ ] Save official record URL and evidence date",
+  "",
+  "## Fill in from official evidence",
+  "Official record URL:",
+  "Date reviewed:",
+  "Issuing authority:",
+  "Site address:",
+  "Issue date and current status:",
+  "Licensed primary GC / builder:",
+  "Builder role source:",
+  "Duplicate determination:",
+  "Outcome: Needs review / Verified / Excluded",
+  "",
+  "IMPORTANT: This issue is a research checklist only. No issue automatically enables a county or promotes leads."
+ ].join("\n");
+ var args=new URLSearchParams({title:issueTitle,body:evidence});
+ return "https://github.com/destrynielsen-maker/North-Carolina-Permit-/issues/new?"+args.toString();
+}
 function permitUrl(p){
  if(p.permit_detail_url)return p.permit_detail_url;
  if(p.jurisdiction==="Greensboro"&&/^[0-9]{6,12}$/.test(String(p.permit_number||"")))
@@ -186,6 +229,12 @@ Promise.all([
                auditState==="same_source_changed"?"Changed — review":
                auditState==="missing_or_multiple_current_features"?"Missing / ambiguous":
                auditState==="gis_recheck_error"?"GIS error":"Not yet checked");
+   var td=document.createElement("td"),link=document.createElement("a");
+   link.href=verificationIssueUrl(p);
+   link.target="_blank";link.rel="noopener noreferrer";
+   link.textContent="Start verification";
+   link.title="Open a prefilled GitHub issue. No lead is verified or promoted automatically.";
+   td.appendChild(link);tr.appendChild(td);
    tbody.appendChild(tr);count++;
   });
  });
