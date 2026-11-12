@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-12T21:12:29.044468+00:00",
+  "checked_at_utc": "2026-11-12T21:19:56.129852+00:00",
   "scope": "Exact current GIS object-ID rechecks of disabled-county queue only",
   "policy": "A same-source GIS recheck is not independent permit-portal verification and never approves a new source.",
   "independently_verified": false,
