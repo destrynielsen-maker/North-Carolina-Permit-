@@ -211,7 +211,7 @@ function exportCsv(){
  // Prefix dangerous leading formula operators, including after whitespace.
  function quote(x){
   var s=String(x==null?"":x);
-  if(/^[\\s\\uFEFF]*[=+@-]/.test(s))s="'"+s;
+  if(/^[\s\uFEFF]*[=+@-]/.test(s))s="'"+s;
   return '"'+s.replaceAll('"','""')+'"';
  }
  var rows=filtered(),historicOnly=rows.length>0&&rows.every(function(p){return p.collection_mode==="historic_snapshot"});
@@ -222,7 +222,7 @@ function exportCsv(){
    :(p.permit_detail_url||p.source_record_url||p.source_url||""));
   return quote(p[k]);
  }).join(",")}));
- var a=document.createElement("a"),url=URL.createObjectURL(new Blob([lines.join("\\r\\n")],{type:"text/csv;charset=utf-8"}));
+ var a=document.createElement("a"),url=URL.createObjectURL(new Blob([lines.join("\r\n")],{type:"text/csv;charset=utf-8"}));
  a.href=url;a.download=historicOnly?"north-carolina-HISTORIC-snapshot-not-current-leads.csv":"north-carolina-permit-leads.csv";
  a.click();URL.revokeObjectURL(url);
 }
