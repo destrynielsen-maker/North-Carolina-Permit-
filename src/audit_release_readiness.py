@@ -9,6 +9,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 from pathlib import Path
+from compile_reviews import validate_and_compile
 
 ROOT = Path(__file__).resolve().parents[1]
 REVIEW_LEDGER = ROOT / 'reviews' / 'decisions.json'
@@ -26,8 +27,13 @@ FLAGS = ('permit_id_confirmed', 'issued_date_confirmed', 'status_confirmed',
 
 def audit_readiness(ledger, statuses, issue_manifest, queue, sources):
     """Fail closed on stale/mismatched source IDs and curated status data."""
-    entries = ledger.get('decisions', [])
+    # Re-run the validated human evidence contract. A fabricated status JSON
+    # or a generic portal URL must never pass the release-readiness audit.
+    expected = validate_and_compile(ledger, issue_manifest, queue)
     published = statuses.get('reviews', [])
+    if published != expected['reviews'] or statuses.get('counts') != expected['counts']:
+        raise ValueError('Compiled review status is stale or inconsistent')
+    entries = ledger.get('decisions', [])
     issue_entries = issue_manifest.get('entries', [])
     if not isinstance(entries, list) or not isinstance(published, list) or not isinstance(issue_entries, list):
         raise ValueError('Review inputs must be lists')
