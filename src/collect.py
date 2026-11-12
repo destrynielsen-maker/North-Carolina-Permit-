@@ -43,7 +43,8 @@ SOURCES = [
         'validation': 'published field schema confirmed; record-level verification pending; monthly refresh',
     },
     {
-        'id': 'mecklenburg', 'name': 'Mecklenburg County / Charlotte', 'enabled': True,
+        'id': 'mecklenburg', 'name': 'Mecklenburg County / Charlotte', 'enabled': False, 'snapshot_only': True,
+        'snapshot_as_of_utc': '2026-11-12T22:34:56.402783+00:00',
         'url': 'https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0',
         'date': 'issuedate', 'number': 'permitnum', 'status': 'permitstat',
         'type_fields': ['permittype', 'typeofbldg', 'occupancy', 'usdcdesc'],
@@ -51,7 +52,8 @@ SOURCES = [
         'description_fields': ['permitdesc', 'projdesc', 'workdesc'],
         'contractor': None, 'valuation': 'bldgcost', 'address_fields': ['projadd'],
         'units': 'numunits', 'days': 365,
-        'validation': 'published field schema confirmed; builder not exposed in this layer; record-level verification pending',
+        'reason': 'Historic downloaded/published GIS snapshot only; commercial continuous API use is prohibited by Mecklenburg County reuse policy. Use approved open-data downloads and host our own copy.',
+        'validation': 'historic snapshot from the last pre-pause government GIS scan; not refreshed; builder not provided',
     },
     {
         'id': 'greensboro', 'name': 'Greensboro', 'enabled': True,
@@ -528,10 +530,66 @@ def sales_field_coverage(permits):
     return sorted(buckets.values(), key=lambda r:r['jurisdiction'].casefold())
 
 
+def preserve_historic_mecklenburg(records, as_of):
+    """Freeze already published Mecklenburg candidates, not a new service query.
+
+    Keep the sales permit pages accessible, while forbidding these records
+    from current feeds and rankings. The original government fields remain
+    as collected; every record gets explicit data provenance.
+    """
+    preserved=[]
+    for record in records:
+        if not isinstance(record,dict):
+            continue
+        if record.get('jurisdiction') != 'Mecklenburg County / Charlotte':
+            continue
+        if not str(record.get('id') or '').startswith('mecklenburg:'):
+            continue
+        item=dict(record)
+        item['collection_mode']='historic_snapshot'
+        item['snapshot_as_of_utc']=as_of
+        item['verification']='Historic Mecklenburg government GIS snapshot — not refreshed; verify current permit status with issuer'
+        preserved.append(item)
+    preserved.sort(key=lambda x:(str(x.get('issued_date') or ''),str(x.get('permit_number') or '')),reverse=True)
+    return preserved
+
+
+def read_json_array(path):
+    try:
+        raw=json.loads(path.read_text(encoding='utf-8'))
+        return raw if isinstance(raw,list) else []
+    except (OSError,ValueError,TypeError):
+        return []
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     permits, health, diagnostics_by_source = [], [], []
+    old = OUT / 'permits.json'
+    archived_file=OUT / 'mecklenburg_snapshot.json'
+    # Once frozen, the standalone local archive is authoritative. Never
+    # rebuild it from new GIS calls or silently replace its contents.
+    meck_source=next(x for x in SOURCES if x.get('id')=='mecklenburg')
+    if archived_file.exists():
+        archived=preserve_historic_mecklenburg(
+            read_json_array(archived_file),meck_source['snapshot_as_of_utc'])
+    else:
+        archived=preserve_historic_mecklenburg(
+            read_json_array(old),meck_source['snapshot_as_of_utc'])
+        if archived:
+            archived_file.write_text(json.dumps(archived,indent=2)+'\\n',encoding='utf-8')
     for source in SOURCES:
+        if source.get('snapshot_only'):
+            permits.extend(archived)
+            health.append({
+                'name':source['name'],'source_url':source['url'],
+                'state':'historic snapshot - live API polling disabled',
+                'detail':source['reason'],
+                'scanned':0,'qualified':0,'archived_count':len(archived),
+                'snapshot_as_of_utc':source['snapshot_as_of_utc'],
+                'collection_mode':'historic_snapshot',
+            })
+            continue
         if not source['enabled']:
             health.append({'name': source['name'], 'source_url': source['url'],
                            'state': 'paused - not qualified for issued-lead collection',
@@ -549,7 +607,6 @@ def main():
             health.append({'name': source['name'], 'source_url': source['url'],
                            'state': 'error - requires investigation', 'detail': str(exc)[:250],
                            'scanned': 0, 'qualified': 0})
-    old = OUT / 'permits.json'
     failed = {h['name'] for h in health if h['state'].startswith('error')}
     if failed and old.exists():
         try:
@@ -561,6 +618,7 @@ def main():
             pass
     permits = sorted({p['id']: p for p in permits}.values(),
                      key=lambda x: (x['issued_date'], x['score']), reverse=True)
+    current_permits=[p for p in permits if p.get('collection_mode')!='historic_snapshot']
     (OUT / 'permits.json').write_text(json.dumps(permits, indent=2) + '\n', encoding='utf-8')
     (OUT / 'sales_field_coverage.json').write_text(json.dumps({
         'note': 'Source-published business contact availability among screened records; not independently verified leads',
@@ -570,7 +628,7 @@ def main():
     (OUT / 'builder_rankings.json').write_text(json.dumps({
         'method': 'Ranked by issued permit candidates in last 90 days, then 30 days, then all screened permits; never unique projects',
         'as_of_utc_date': dt.datetime.now(dt.timezone.utc).date().isoformat(),
-        'builders': build_builder_rankings(permits),
+        'builders': build_builder_rankings(current_permits),
     }, indent=2) + '\n', encoding='utf-8')
     (OUT / 'qa_samples.json').write_text(json.dumps({
         'method': 'Deterministic category-first and newest-date samples; manually verify with issuing agency',
@@ -592,7 +650,7 @@ def main():
         'live_verified': False, 'coverage_note': 'Partial market coverage; record-level verification pending',
         'sources': health}, indent=2) + '\n', encoding='utf-8')
     builders = {}
-    for p in permits:
+    for p in current_permits:
         name = p['contractor'].strip()
         key = builder_key(name)
         if key:
@@ -618,8 +676,8 @@ def main():
         ('commercial.xml', 'NC commercial candidates', lambda x: x['category'] == 'Commercial'),
         ('top.xml', 'NC top opportunity candidates', lambda x: x['score'] >= 60),
     ]:
-        rss(title, [p for p in permits if condition(p)], filename)
-    print(json.dumps({'qualified': len(permits), 'sources': health}, indent=2))
+        rss(title, [p for p in current_permits if condition(p)], filename)
+    print(json.dumps({'current_screened': len(current_permits), 'historic_mecklenburg_snapshot': len(archived), 'sources': health}, indent=2))
 
 
 if __name__ == '__main__':
