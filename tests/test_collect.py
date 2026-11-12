@@ -92,6 +92,40 @@ class QualificationTests(unittest.TestCase):
         self.assertIsNone(nc.normalize(make(G, ApplicationType='Alteration',
                        Description='Remodel existing residence'), G, TODAY))
 
+    def test_on_hold_stop_work_revoked_are_excluded(self):
+        for status in ('On Hold', 'Stop Work Order', 'Revoked'):
+            with self.subTest(status=status):
+                self.assertIsNone(nc.normalize(make(R, statuscurrent=status), R, TODAY))
+
+    def test_builder_key_case_punctuation_and_license_decorations(self):
+        self.assertEqual(nc.builder_key('Stanley Martin Homes, LLC'),
+                         nc.builder_key('STANLEY MARTIN HOMES LLC'))
+        self.assertEqual(nc.builder_key('PULTE HOME COMPANY LLC (B) (LIC# 19311)'),
+                         nc.builder_key('Pulte Home Company LLC'))
+        self.assertNotEqual(nc.builder_key('CLAYTON PROPERTIES GROUP INC'),
+                            nc.builder_key('CLAYTON PROPERTIES INC'))
+        self.assertNotEqual(nc.builder_key('D R HORTON INC'),
+                            nc.builder_key('D.R. Horton, Inc. T/A Emerald Homes'))
+
+    def test_cross_source_permit_number_collision_is_audit_only(self):
+        a = {'jurisdiction': 'Raleigh', 'permit_number': 'ABC-123',
+             'issued_date': '2026-11-02', 'address': '7 Example St'}
+        b = {'jurisdiction': 'Wake County', 'permit_number': 'abc-123',
+             'issued_date': '2026-11-02', 'address': '7 Example St'}
+        c = {'jurisdiction': 'Wake County', 'permit_number': 'ABC-123',
+             'issued_date': '2026-11-03', 'address': '7 Example St'}
+        x = nc.cross_source_number_collisions([a, b, c])
+        self.assertEqual(x[0]['same_number'], 2)
+        self.assertEqual(x[0]['same_number_and_issued_date'], 1)
+        self.assertEqual(len([a,b,c]), 3)
+
+    def test_same_address_different_permit_is_not_a_collision(self):
+        a = {'jurisdiction': 'Raleigh', 'permit_number': 'A-5',
+             'issued_date': '2026-11-02', 'address': '7 Example St'}
+        b = {'jurisdiction': 'Wake County', 'permit_number': 'B-9',
+             'issued_date': '2026-11-02', 'address': '7 Example St'}
+        self.assertEqual(nc.cross_source_number_collisions([a, b]), [])
+
     def test_applied_without_issued_date_excluded(self):
         a = make(R, issueddate=None, applieddate='2026-11-10')
         self.assertIsNone(nc.normalize(a, R, TODAY))
