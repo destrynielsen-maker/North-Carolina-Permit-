@@ -109,6 +109,39 @@ def brunswick_review_rows(request=get_features, today=None):
     return result
 
 
+def annotate_review_identifiers(candidates, kind):
+    """Sample-level identifier cautions; only GIS OBJECTID is an exact lookup.
+
+    A project number is useful for public searching but not independently
+    proven globally unique, even when it is unique in this sample.
+    """
+    from collections import Counter
+    permits = Counter(str(c.get('permit_number') or '').strip()
+                      for c in candidates if c.get('permit_number'))
+    projects = Counter(str(c.get('project_number') or '').strip()
+                       for c in candidates if c.get('project_number'))
+    for c in candidates:
+        permit = str(c.get('permit_number') or '').strip()
+        project = str(c.get('project_number') or '').strip()
+        c['permit_number_reused_in_sample'] = bool(permit and permits[permit] > 1)
+        c['project_number_reused_in_sample'] = bool(project and projects[project] > 1)
+        if kind == 'brunswick':
+            if project and not c['project_number_reused_in_sample']:
+                c['reference_label'] = 'Project ' + project
+                c['reference_kind'] = 'project_number_not_globally_verified'
+            else:
+                c['reference_label'] = 'GIS record ' + str(c['gis_object_id'])
+                c['reference_kind'] = 'gis_object_id'
+        else:
+            c['reference_label'] = ('Permit ' + permit) if permit and not c['permit_number_reused_in_sample'] else 'GIS record ' + str(c['gis_object_id'])
+            c['reference_kind'] = 'permit_number_not_globally_verified' if permit and not c['permit_number_reused_in_sample'] else 'gis_object_id'
+    return {
+        'permit_numbers_reused_in_sample': sum(n > 1 for n in permits.values()),
+        'project_numbers_reused_in_sample': sum(n > 1 for n in projects.values()),
+        'scope_note': 'Non-uniqueness flags describe this bounded sample, not the complete county dataset.',
+    }
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     data = {
@@ -125,9 +158,11 @@ def main():
                          ('brunswick', brunswick_review_rows)]:
         try:
             candidates = method()
+            identifier_audit = annotate_review_identifiers(candidates, name)
             data['sources'][name] = {
                 'state': 'review_queue_ready',
                 'count': len(candidates),
+                'identifier_audit': identifier_audit,
                 'candidates': candidates,
                 'enabled_for_collection': False,
             }
