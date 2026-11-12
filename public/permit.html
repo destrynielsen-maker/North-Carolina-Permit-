@@ -75,6 +75,7 @@ footer{padding:25px;text-align:center;color:#738599;font-size:12px}
    <h2>Construction details</h2>
    <div class="grid">
     <div><div class="f-label">Project name</div><div id="projectname" class="f-value"></div></div>
+    <div><div class="f-label">Project number</div><div id="projectnumber" class="f-value"></div></div>
     <div><div class="f-label">Construction type</div><div id="workclass" class="f-value"></div></div>
     <div><div class="f-label">Permit type</div><div id="permittype" class="f-value"></div></div>
     <div><div class="f-label">Housing units</div><div id="units" class="f-value"></div></div>
@@ -95,6 +96,8 @@ footer{padding:25px;text-align:center;color:#738599;font-size:12px}
   <section class="panel">
    <h2>Builder / general contractor</h2>
    <div id="builder" class="business"></div>
+   <div class="f-label">Other listed project contact (not necessarily the GC)</div>
+   <div id="projectcontact" class="f-value" style="margin-bottom:16px"></div>
    <div class="grid">
     <div><div class="f-label">Business phone</div><div id="phone" class="f-value"></div></div>
     <div><div class="f-label">Business email</div><div id="email" class="f-value"></div></div>
@@ -172,7 +175,8 @@ fetch("data/permits.json",{cache:"no-store"}).then(function(response){
  text("heading",p.project_name||p.address||p.permit_number);
  text("place",p.address);text("category",p.category);text("status",p.status);
  text("value",money(p.valuation));text("permit",p.permit_number);text("issued",p.issued_date);
- text("projectname",p.project_name);text("workclass",p.work_class);
+ text("projectname",p.project_name);text("projectnumber",p.project_number);
+ text("projectcontact",p.project_contact);text("workclass",p.work_class);
  text("permittype",p.permit_type);text("units",qty(p.housing_units));
  text("sqft",qty(p.square_feet));text("stories",qty(p.stories));
  text("description",p.description);text("siteaddress",p.address);
