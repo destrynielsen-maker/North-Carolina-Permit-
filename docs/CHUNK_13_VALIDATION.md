@@ -12,7 +12,7 @@
 ## What is now built
 
 - `src/review_chunk13.py` creates a bounded **research-only** manual-review queue of up to eight Wake new-dwelling and eight Brunswick new-home records.
-- Each review item has a permit number, issue date, an exact government ArcGIS query with the permit number, and the official current portal-search URL. Brunswick entries also include project number and public source address; no `SubContractor` is exposed as a builder.
+- Each review item has its permit and (for Brunswick) project number, issue date, and a government ArcGIS query keyed by the feature's **OBJECTID**. This is unique within the published GIS layer, unlike potentially repeated permit numbers; the object ID can change if the service is republished. It also includes the official current portal-search URL. Brunswick entries also include project number and public source address; no `SubContractor` is exposed as a builder.
 - Wake entries retain only the safe legacy link category, not a guessed rewritten record URL. Contractor names, where exposed, are clearly labeled `contractor_as_listed_unverified`; issuing agency remains unknown.
 - Filters exclude invalid permit IDs, future records, old records, and missing issue dates. All entries explicitly set `included_in_sales_leads=false`.
 - `public/index.html` has a separate **County research queue — NOT published leads** section and links to the exact record query and official portal search, distinct from the active lead listings, leaderboards, RSS and sales exports.
@@ -40,3 +40,7 @@ Brunswick:
 4. Complete a sample of independently verified new-building permits before any feed promotion.
 
 **At checkpoint:** live workflow output must be checked separately; do not infer data refresh success from a code commit.
+
+## Object-ID safety correction
+
+The initial generated Brunswick sample exposed `PermitNumber=1000` alongside the distinct `ProjectNumber=701942`. This prompted an important correction: a bare permit number may not uniquely identify a Brunswick GIS feature. Exact source-record links are now constructed using **`OBJECTID`**, not `PermitNumber` alone. The permit and project identifiers remain visible for the county portal lookup. A GIS object-ID query is exact *within the current service layer*, but still not an authenticated municipal permit-detail check.
