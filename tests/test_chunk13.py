@@ -13,34 +13,32 @@ spec.loader.exec_module(m)
 TODAY=dt.date(2026,11,12)
 
 class Chunk13Tests(unittest.TestCase):
-    def test_wake_exact_gis_query_is_parameterized_and_official(self):
-        url=m.official_gis_lookup(m.WAKE_URL,'PERMIT_NUMBER','WAKE-1001')
+    def test_unique_object_id_query_is_official_and_precise(self):
+        url=m.official_gis_lookup(m.WAKE_URL,123456)
         self.assertIn('/query?',url)
-        self.assertIn('PERMIT_NUMBER+%3D+',url)
-        self.assertIn('WAKE-1001',url)
+        self.assertIn('OBJECTID+%3D+123456',url)
         self.assertIn('returnGeometry=false',url)
+        self.assertNotIn('PERMIT_NUMBER',url)
         self.assertNotEqual(url,m.WAKE_URL)
 
-    def test_refuse_untrusted_layer_field_and_bad_identifiers(self):
-        self.assertEqual(m.official_gis_lookup('https://wrong.example.com/x',
-                         'PERMIT_NUMBER','WAKE-1001'),'')
-        self.assertEqual(m.official_gis_lookup(m.WAKE_URL,
-                         'ProjectNumber','WAKE-1001'),'')
-        for ident in ("X' OR 1=1", '../file', '', 'A/123', '#foo'):
+    def test_reject_untrusted_layers_and_non_numeric_object_ids(self):
+        self.assertEqual(m.official_gis_lookup('https://wrong.example.com/x',123),'')
+        for ident in ("X' OR 1=1", '../file', '', 'A/123', '#foo', True, 0, -1):
             with self.subTest(ident=ident):
-                self.assertEqual(m.official_gis_lookup(m.WAKE_URL,
-                              'PERMIT_NUMBER',ident),'')
+                self.assertEqual(m.official_gis_lookup(m.WAKE_URL,ident),'')
 
     def test_wake_requires_valid_issue_date_and_remains_unverified(self):
         rows=[
-          {'attributes':{'PERMIT_NUMBER':'W-1001','ISSUE_DATE':1794355200000,
+          {'attributes':{'OBJECTID':1234,'PERMIT_NUMBER':'W-1001','ISSUE_DATE':1794355200000,
               'WORK_CLASS':'New One- and Two-Family Dwelling',
               'CONTRACTOR':'Test Homes','LINK':'https://energovcitizenaccess.tylertech.com/WakeCountyNC/SelfService#/permit/abc'}},
-          {'attributes':{'PERMIT_NUMBER':'BAD','ISSUE_DATE':None}},
+          {'attributes':{'OBJECTID':1235,'PERMIT_NUMBER':'BAD','ISSUE_DATE':None}},
         ]
         out=m.wake_review_rows(lambda *_:rows,TODAY)
         self.assertEqual(len(out),1)
         self.assertEqual(out[0]['contractor_as_listed_unverified'],'Test Homes')
+        self.assertEqual(out[0]['gis_object_id'],1234)
+        self.assertIn('OBJECTID+%3D+1234',out[0]['exact_gis_query_url'])
         self.assertEqual(out[0]['legacy_link_route'],'permit')
         self.assertTrue(out[0]['official_portal_search'].startswith('https://wakecountync-'))
         self.assertFalse(out[0]['included_in_sales_leads'])
@@ -49,16 +47,17 @@ class Chunk13Tests(unittest.TestCase):
 
     def test_brunswick_never_infers_general_contractor_from_trade_contact(self):
         rows=[
-          {'attributes':{'PermitNumber':'B-1001','ProjectNumber':'P-1001',
+          {'attributes':{'OBJECTID':4567,'PermitNumber':'B-1001','ProjectNumber':'P-1001',
               'DateIssued':'2026-11-10T10:00:00',
               'PermitType':'NEW HOME','ParcelAddress':'100 TEST DR',
               'SubContractor':'Electrician LLC','Jurisdiction':'BRUNSWICK COUNTY'}},
-          {'attributes':{'PermitNumber':'B-1002','DateIssued':'2099-11-10',
+          {'attributes':{'OBJECTID':4568,'PermitNumber':'B-1002','DateIssued':'2099-11-10',
               'PermitType':'NEW HOME'}}
         ]
         out=m.brunswick_review_rows(lambda *_:rows,TODAY)
         self.assertEqual(len(out),1)
         self.assertIsNone(out[0]['prime_builder'])
+        self.assertIn('OBJECTID+%3D+4567',out[0]['exact_gis_query_url'])
         self.assertNotIn('Electrician LLC',str(out))
         self.assertIn('100 TEST DR',out[0]['address'])
         self.assertFalse(out[0]['included_in_sales_leads'])
