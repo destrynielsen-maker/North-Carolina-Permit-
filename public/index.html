@@ -8,7 +8,7 @@
 :root{font-family:Inter,system-ui,Arial,sans-serif;color:#1a2b3c;background:#f3f6fa}
 *{box-sizing:border-box}body{margin:0}header{background:#102d48;color:white;padding:30px max(20px,calc((100vw - 1240px)/2))}
 header h1{margin:0 0 7px;font-size:28px}header p{margin:0;color:#c4d4e2}
-main{max-width:1280px;margin:auto;padding:24px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:18px}
+main{max-width:1280px;margin:auto;padding:24px}.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:18px}
 .metric,.panel{background:white;border:1px solid #dce5ed;border-radius:12px;padding:20px}.metric strong{font-size:30px;display:block}.metric span,.muted{font-size:13px;color:#637487}
 .filters{display:flex;gap:9px;flex-wrap:wrap;margin:15px 0}
 input,select,button{padding:10px 12px;border:1px solid #cbd7e2;border-radius:7px;background:white;font:inherit}
@@ -24,15 +24,17 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 <header><h1>North Carolina Construction Intelligence</h1><p>Publicly issued new construction · builder intelligence · permit opportunities</p></header>
 <main>
 <div class="metrics">
-  <div class="metric"><strong id="total">—</strong><span>Screened permits</span></div>
+  <div class="metric"><strong id="total">—</strong><span>Current screened permits</span></div>
+  <div class="metric"><strong id="archived">—</strong><span>Historic Charlotte snapshot</span></div>
   <div class="metric"><strong id="sf">—</strong><span>Single-family</span></div>
   <div class="metric"><strong id="mf">—</strong><span>Multifamily</span></div>
   <div class="metric"><strong id="co">—</strong><span>Commercial</span></div>
 </div>
 <section class="panel">
 <h2>Construction opportunities</h2>
-<p class="muted">Click a permit number for a sales-friendly project page with builder details and contacts when provided by the agency. Original GIS sources and official city permit pages are in the next column. These are screened public-record opportunities, not independently verified leads.</p>
+<p class="muted">Click a permit number for a sales-friendly project page with builder details and contacts when provided by the agency. Original GIS sources and official city permit pages are in the next column. These are screened public-record opportunities, not independently verified leads. Mecklenburg County records collected before the commercial-use pause are marked historic and excluded from the default current view.</p>
 <div class="filters">
+<select id="freshness" title="Choose current or archived permit records"><option value="current">Current collections</option><option value="all">Include historic Charlotte</option><option value="historic">Historic Charlotte only</option></select>
 <input id="search" placeholder="Search builder, permit, address or project">
 <select id="type"><option value="">All types</option><option>Single Family</option><option>Multifamily</option><option>Commercial</option></select>
 <select id="jur"><option value="">All jurisdictions</option></select>
@@ -133,11 +135,14 @@ function textCell(row,text){var td=document.createElement("td");td.textContent=t
 function filtered(){
  var q=el("search").value.toLowerCase(),kind=el("type").value,j=el("jur").value,
  days=Number(el("days").value),score=Number(el("score").value),
- contact=el("contact").value,builderStatus=el("builderStatus").value,now=Date.now();
+ contact=el("contact").value,builderStatus=el("builderStatus").value,
+ freshness=el("freshness").value,now=Date.now();
  return all.filter(function(p){
   var hasPhone=!!String(p.contractor_phone||"").trim();
   var hasEmail=!!String(p.contractor_email||"").trim();
-  return (!contact||(contact==="any"&&(hasPhone||hasEmail))||(contact==="phone"&&hasPhone)||(contact==="email"&&hasEmail))
+  var archived=p.collection_mode==="historic_snapshot";
+  return (freshness==="all"||(freshness==="historic"&&archived)||(freshness==="current"&&!archived))
+   &&(!contact||(contact==="any"&&(hasPhone||hasEmail))||(contact==="phone"&&hasPhone)||(contact==="email"&&hasEmail))
    &&(!builderStatus||(builderStatus==="listed"&&!!String(p.contractor||"").trim())||
          (builderStatus==="missing"&&!String(p.contractor||"").trim()))
    &&(!kind||p.category===kind)&&(!j||p.jurisdiction===j)&&Number(p.score)>=score
@@ -149,13 +154,20 @@ function filtered(){
 }
 function render(){
  var data=filtered(),tbody=el("rows");tbody.textContent="";
- el("total").textContent=data.length;el("sf").textContent=data.filter(function(p){return p.category==="Single Family"}).length;
+ el("total").textContent=data.filter(function(p){return p.collection_mode!=="historic_snapshot"}).length;
+ el("archived").textContent=all.filter(function(p){return p.collection_mode==="historic_snapshot"}).length;
+ el("sf").textContent=data.filter(function(p){return p.category==="Single Family"}).length;
  el("mf").textContent=data.filter(function(p){return p.category==="Multifamily"}).length;
  el("co").textContent=data.filter(function(p){return p.category==="Commercial"}).length;
  el("empty").textContent=data.length?"":"No matching permits. Check source status or widen filters.";
  data.slice(0,2000).forEach(function(p){
   var tr=document.createElement("tr");textCell(tr,p.issued_date);textCell(tr,String(p.score));textCell(tr,p.category);
   textCell(tr,p.jurisdiction);var description=textCell(tr,p.address);var small=document.createElement("div");small.className="muted";small.textContent=(p.description||"").slice(0,160);description.appendChild(small);
+  if(p.collection_mode==="historic_snapshot"){
+   var archive=document.createElement("div");archive.className="muted";
+   archive.textContent="HISTORIC SNAPSHOT — not refreshed after "+String(p.snapshot_as_of_utc||"2026-11-12").slice(0,10)+"; current status unconfirmed";
+   description.appendChild(archive);
+  }
   var builderCell=textCell(tr,p.contractor||"Not listed");
   if(!p.contractor&&p.jurisdiction==="Mecklenburg County / Charlotte"){
    var research=document.createElement("div"),official=document.createElement("a");
@@ -180,7 +192,7 @@ function render(){
   cell.appendChild(a);tr.appendChild(cell);
   var sourceCell=document.createElement("td"),sourceLink=document.createElement("a");
   sourceLink.href=p.source_record_url||p.source_url||"#";
-  sourceLink.textContent=p.source_record_url?"Exact GIS record":"GIS source";
+  sourceLink.textContent=p.collection_mode==="historic_snapshot"?"Original GIS source (manual research)":(p.source_record_url?"Exact GIS record":"GIS source");
   sourceLink.title="View original government source data";sourceLink.target="_blank";sourceLink.rel="noopener noreferrer";
   sourceCell.appendChild(sourceLink);
   var cityPermit=permitUrl(p);
@@ -193,7 +205,7 @@ function render(){
  });
 }
 function exportCsv(){
- var cols=["issued_date","score","category","jurisdiction","address","contractor","valuation","permit_number","description","project_name","project_number","subdivision","parcel_number","square_feet","heated_square_feet","unheated_square_feet","contractor_phone","contractor_email","contractor_license","sales_detail_url","permit_detail_url","source_record_url","source_url"];
+ var cols=["issued_date","score","category","jurisdiction","address","contractor","valuation","permit_number","description","project_name","project_number","subdivision","parcel_number","square_feet","heated_square_feet","unheated_square_feet","contractor_phone","contractor_email","contractor_license","collection_mode","snapshot_as_of_utc","sales_detail_url","permit_detail_url","source_record_url","source_url"];
  function quote(x){return '"'+String(x==null?"":x).replaceAll('"','""')+'"'}
  var lines=[cols.join(",")].concat(filtered().map(function(p){return cols.map(function(k){
   return quote(k==="sales_detail_url"?new URL(detailUrl(p),location.href).href:p[k]);
@@ -201,7 +213,7 @@ function exportCsv(){
  var a=document.createElement("a"),url=URL.createObjectURL(new Blob([lines.join("\r\n")],{type:"text/csv"}));
  a.href=url;a.download="north-carolina-permit-leads.csv";a.click();URL.revokeObjectURL(url);
 }
-["search","type","jur","days","score","contact","builderStatus"].forEach(function(id){el(id).addEventListener("input",render)});
+["search","type","jur","days","score","contact","builderStatus","freshness"].forEach(function(id){el(id).addEventListener("input",render)});
 document.querySelectorAll("th[data-key]").forEach(function(th){th.addEventListener("click",function(){var key=th.dataset.key;dir=(key===order)?-dir:-1;order=key;render()})});
 el("export").addEventListener("click",exportCsv);
 fetch("data/builder_rankings.json").then(function(r){
@@ -353,7 +365,7 @@ Promise.all([
  (info.sources||[]).forEach(function(s){
   var div=document.createElement("div");div.className="source";
   var b=document.createElement("strong");b.textContent=s.name+": ";div.appendChild(b);
-  div.appendChild(document.createTextNode(s.state+" · "+(s.qualified||0)+" screened · "+(s.detail||"")));
+  div.appendChild(document.createTextNode(s.state+" · "+(s.qualified||0)+" current screened"+(s.archived_count?" · "+s.archived_count+" historic as of "+String(s.snapshot_as_of_utc||"").slice(0,10):"")+" · "+(s.detail||"")));
   var link=document.createElement("a");link.href=s.source_url;link.target="_blank";link.rel="noopener noreferrer";link.textContent=" official source";
   div.appendChild(link);el("sources").appendChild(div);
  });render();
