@@ -142,8 +142,7 @@ def recheck_qa_records(queue, per_market=2):
                 clause=key+' = '+ident
             else:
                 clause=key+" = '"+ident.replace("'","''")+"'"
-            rows=query_page(source['url'],clause,[f['name'] for f in get(source['url'],{'f':'json'}).get('fields',[])],
-                            limit=3)
+            rows=query_page(source['url'],clause,['*'],limit=3)
             actual=[a for a in rows if str(value(a,key) or '').strip()==ident]
             if len(actual)!=1:
                 result['state']='not_single_record_match'
