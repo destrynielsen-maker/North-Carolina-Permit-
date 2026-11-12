@@ -97,6 +97,48 @@ class SalesDetailTests(unittest.TestCase):
         self.assertIn('OBJECTID+%3D+181231',p['source_record_url'])
         self.assertEqual(p['source_url'],GREENSBORO['url'])
 
+    def test_mecklenburg_source_only_site_and_size_fields(self):
+        p=nc.normalize(row(MECK,projadd='200 TEST ROAD',projname='Oaks East',
+                           projnum='ACC-2026-12',subdiv='Oaks Estate',
+                           parcelnum='11223344',taxjuris='Charlotte',projphase='Phase 2',
+                           totalsqft=2600,heatsqft=2210,unheatsqft=390,
+                           numunits=1),MECK,TODAY)
+        self.assertEqual(p['subdivision'],'Oaks Estate')
+        self.assertEqual(p['parcel_number'],'11223344')
+        self.assertEqual(p['tax_jurisdiction'],'Charlotte')
+        self.assertEqual(p['project_phase'],'Phase 2')
+        self.assertEqual(p['square_feet'],2600.0)
+        self.assertEqual(p['heated_square_feet'],2210.0)
+        self.assertEqual(p['unheated_square_feet'],390.0)
+        self.assertEqual(p['housing_units'],1.0)
+        self.assertEqual(p['contractor'],'')
+        self.assertEqual(p['contractor_phone'],'')
+        self.assertEqual(p['contractor_email'],'')
+
+    def test_sales_page_links_official_county_search_not_guessed_permit_url(self):
+        page=(ROOT/'public'/'permit.html').read_text(encoding='utf-8')
+        self.assertIn('https://gis.mecklenburgcountync.gov/meck-accela/',page)
+        self.assertIn('https://code.mecknc.gov/node/1041',page)
+        self.assertIn('https://portal.nclbgc.org/Public/Search',page)
+        self.assertIn('County permit search (enter permit #)',page)
+        self.assertIn('Copy permit number',page)
+        self.assertIn('heated_sqft',page)
+        self.assertIn('unheated_sqft',page)
+        self.assertIn('subdivision',page)
+        self.assertIn('parcelnumber',page)
+        self.assertIn('taxjurisdiction',page)
+        self.assertNotIn('ownname',page)
+
+    def test_builder_missing_filter_and_research_path(self):
+        page=(ROOT/'public'/'index.html').read_text(encoding='utf-8')
+        self.assertIn('id="builderStatus"',page)
+        self.assertIn('Builder missing — research',page)
+        self.assertIn('Find builder via county permit search',page)
+        self.assertIn('builderStatus==="missing"',page)
+        self.assertIn('"builderStatus"].forEach',page)
+        self.assertIn('subdivision',page)
+        self.assertIn('heated_square_feet',page)
+
     def test_only_real_positive_quantities_display(self):
         for bad in (None,'','not recorded',0,-1,float('nan'),float('inf')):
             with self.subTest(raw=bad):
