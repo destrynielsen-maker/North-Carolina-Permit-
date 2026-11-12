@@ -577,7 +577,7 @@ def main():
         archived=preserve_historic_mecklenburg(
             read_json_array(old),meck_source['snapshot_as_of_utc'])
         if archived:
-            archived_file.write_text(json.dumps(archived,indent=2)+'\\n',encoding='utf-8')
+            archived_file.write_text(json.dumps(archived,indent=2)+'\n',encoding='utf-8')
     for source in SOURCES:
         if source.get('snapshot_only'):
             permits.extend(archived)
