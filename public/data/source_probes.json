@@ -1,0 +1,79 @@
+{
+  "checked_at_utc": "2026-11-12T19:12:29.574133+00:00",
+  "note": "Metadata-only investigation; no permit records; no source enabled automatically",
+  "sources": [
+    {
+      "id": "wake",
+      "name": "Wake County",
+      "url": "https://maps.wake.gov/arcgis/rest/services/Inspections/Building_Permits/MapServer/0",
+      "state": "schema_read",
+      "field_count": 25,
+      "issue_date_candidates": [
+        {
+          "name": "ISSUE_DATE",
+          "type": "esriFieldTypeDate"
+        }
+      ],
+      "interesting_fields": [
+        "PERMIT_NUMBER",
+        "DESCRIPTION",
+        "APPLICATION_DATE",
+        "ISSUE_DATE",
+        "PERMIT_STATUS",
+        "PERMIT_TYPE",
+        "WORK_CLASS",
+        "CONTRACTOR"
+      ],
+      "supports_query": true,
+      "hold_reason": "Must verify issue date, issuing jurisdiction and overlap with Raleigh",
+      "enabled_for_collection": false
+    },
+    {
+      "id": "brunswick",
+      "name": "Brunswick County",
+      "url": "https://services1.arcgis.com/W6gamXPYQeLXrdAd/arcgis/rest/services/Permit_Locations/FeatureServer/0",
+      "state": "schema_read",
+      "field_count": 20,
+      "issue_date_candidates": [
+        {
+          "name": "DateIssued",
+          "type": "esriFieldTypeString"
+        }
+      ],
+      "interesting_fields": [
+        "PermitNumber",
+        "PemitProjectStatus",
+        "PermitType",
+        "PermitStatus",
+        "Description",
+        "SubContractor",
+        "PermitAmount",
+        "Jurisdiction",
+        "PermitMonth",
+        "PermitYear",
+        "DateIssued"
+      ],
+      "supports_query": true,
+      "hold_reason": "DateIssued is a string; verify date formatting and issued vs active records before collecting",
+      "enabled_for_collection": false
+    },
+    {
+      "id": "cabarrus",
+      "name": "Cabarrus County",
+      "url": "https://location.cabarruscounty.us/arcgisservices/rest/services/Current_Accela_Permits/Plan_Reviews/MapServer/0",
+      "state": "schema_read",
+      "field_count": 19,
+      "issue_date_candidates": [],
+      "interesting_fields": [
+        "B1_PER_SUB_TYPE",
+        "B1_APPL_STATUS",
+        "B1_APPL_STATUS_DATE",
+        "DaysUntilLastStatus",
+        "PermitDist"
+      ],
+      "supports_query": true,
+      "hold_reason": "Current plan-review layer exposes filing/status dates, not established permit issue date",
+      "enabled_for_collection": false
+    }
+  ]
+}
