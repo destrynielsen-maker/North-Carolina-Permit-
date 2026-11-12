@@ -120,7 +120,7 @@
     {
       "source": "Mecklenburg County / Charlotte",
       "scanned": 1729,
-      "qualified": 7,
+      "qualified": 701,
       "work_types": {
         "5B     * WOOD FRAME/UNPROTECTED": 1403,
         "5A     * WOOD FRAME/PROTECTED": 126,
@@ -155,7 +155,7 @@
       },
       "rejection_reasons": {
         "excluded_work_or_trade": 907,
-        "no_explicit_new_construction": 815
+        "no_explicit_new_construction": 121
       }
     },
     {
