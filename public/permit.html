@@ -62,7 +62,7 @@ footer{padding:25px;text-align:center;color:#738599;font-size:12px}
 <section class="hero">
  <div class="eyebrow" id="jurisdiction">Permit details</div>
  <h1 id="heading"></h1><p class="subhead" id="place"></p>
- <div class="badges"><span class="tag" id="category"></span><span class="tag" id="status"></span><span class="tag caution">Screened public record · not independently verified</span></div>
+ <div class="badges"><span class="tag" id="category"></span><span class="tag" id="status"></span><span class="tag caution" id="recordfreshness">Screened public record · not independently verified</span></div>
  <div class="metrics">
   <div class="metric"><div class="label">Estimated project value</div><strong id="value"></strong></div>
   <div class="metric"><div class="label">Permit number</div><strong id="permit"></strong></div>
@@ -121,7 +121,7 @@ footer{padding:25px;text-align:center;color:#738599;font-size:12px}
    <p>Use the government record to confirm the current status and project information before contacting the builder.</p>
    <div class="links" id="sourcelinks"></div>
    <hr>
-   <div class="state">This is a screened permit candidate, not an independently audited sales lead. Source records can be amended, voided, or updated after collection.</div>
+   <div class="state" id="verificationnotice">This is a screened permit candidate, not an independently audited sales lead. Source records can be amended, voided, or updated after collection.</div>
    <p class="note">The original government data is preserved separately from this formatted sales view.</p>
   </section>
   <section class="panel">
@@ -181,6 +181,12 @@ fetch("data/permits.json",{cache:"no-store"}).then(function(response){
  if(!p)throw Error("No such permit");
  document.title=(p.permit_number||"Permit")+" | North Carolina Construction Intelligence";
  text("crumb",p.permit_number);text("jurisdiction",p.jurisdiction);
+ var historic=p.collection_mode==="historic_snapshot";
+ if(historic){
+  var asOf=String(p.snapshot_as_of_utc||"2026-11-12").slice(0,10);
+  el("recordfreshness").textContent="HISTORIC SNAPSHOT · not refreshed since "+asOf;
+  el("verificationnotice").textContent="Archived Mecklenburg permit data collected before the commercial live-service pause, dated "+asOf+". This is NOT a current permit status, newly issued lead, or independently verified construction project. Confirm the permit directly with Mecklenburg County before outreach.";
+ }
  text("heading",p.project_name||p.address||p.permit_number);
  text("place",p.address);text("category",p.category);text("status",p.status);
  text("value",money(p.valuation));text("permit",p.permit_number);text("issued",p.issued_date);
@@ -241,7 +247,7 @@ fetch("data/permits.json",{cache:"no-store"}).then(function(response){
    "Email: "+(p.contractor_email||"Not provided"),
    "Project: "+(p.description||"Not provided"),
    "Source: "+(specific||database||"Not available"),
-   "Status: Screened public record, not independently verified"
+   historic?"Status: HISTORICAL SNAPSHOT — collected "+String(p.snapshot_as_of_utc||"").slice(0,10)+"; not refreshed or independently verified":"Status: Screened public record, not independently verified"
   ].join("\n");
   if(navigator.clipboard&&navigator.clipboard.writeText){
    navigator.clipboard.writeText(detail).then(function(){el("copynote").textContent="Project summary copied.";}).catch(function(){el("copynote").textContent="Clipboard permission denied; use the permit details above.";});
