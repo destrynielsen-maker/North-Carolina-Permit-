@@ -42,6 +42,8 @@ jobs:
           git push
       - name: Collect official municipal and county sources
         run: python src/collect.py
+      - name: Pilot current Mecklenburg Accela building permits and contractor fields (read-only)
+        run: python src/probe_mecklenburg_accela.py
       - name: Probe additional official source schemas (read-only)
         run: python src/probe_sources.py
       - name: Read-only Wake/Brunswick pilot and official-source permit rechecks
