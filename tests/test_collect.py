@@ -78,6 +78,24 @@ class QualificationTests(unittest.TestCase):
                               worktype='', permitdesc='Existing residence'), M, TODAY)
         self.assertIsNone(p)
 
+    def test_greensboro_official_permit_detail_url(self):
+        url = nc.public_permit_detail_url(G, '202620733')
+        self.assertEqual(url, 'https://bisched.greensboro-nc.gov/'
+                             'frmBuildingPermitView.aspx?bldgPermitNumber=202620733')
+        p = nc.normalize(make(G, PermitNum=202620733), G, TODAY)
+        self.assertEqual(p['permit_detail_url'], url)
+        self.assertEqual(p['source_url'], G['url'])
+
+    def test_greensboro_rejects_invalid_detail_url_identifiers(self):
+        for number in ("2026'A", '../202620733', 'invalid', ''):
+            with self.subTest(number=number):
+                self.assertEqual(nc.public_permit_detail_url(G, number), '')
+
+    def test_unverified_agencies_still_use_gis_provenance(self):
+        p = nc.normalize(make(R), R, TODAY)
+        self.assertEqual(p['permit_detail_url'], '')
+        self.assertEqual(p['source_url'], R['url'])
+
     def test_greensboro_new_single_family_with_contractor(self):
         p = nc.normalize(make(G, PermitNum=123456, IssuedDate='2026-11-10',
                               StatusCurrent='Issued', ApplicationType='New Construction',
