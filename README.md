@@ -39,6 +39,12 @@ Chunk 7 generates **[time-window builder rankings](public/data/builder_rankings.
 
 See [source directory](docs/SOURCE_DIRECTORY.md) and [Chunk 7 checkpoint](docs/CHUNK_7_VALIDATION.md) for government data URLs, verification evidence, and coverage caveats.
 
+## Official permit-detail links
+
+For Greensboro, the permit number in the dashboard now opens the city's public **Building Permit Query** page at `https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?bldgPermitNumber=<PermitNum>`. This pattern is documented by publicly accessible city permit pages; individual new permit pages still need to be spot-checked in a browser. The original ArcGIS layer remains as `source_url` for provenance. Other jurisdictions continue linking to their published source unless a supported direct-permit URL format is verified.
+
+RSS items, CSV exports and the QA queue also use or expose the Greensboro direct-link field after a successful data refresh.
+
 ## Data quality rules
 
 - Authoritative **issued** date required; never substitute application date.
