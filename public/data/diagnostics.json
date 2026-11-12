@@ -118,47 +118,6 @@
       }
     },
     {
-      "source": "Mecklenburg County / Charlotte",
-      "scanned": 1729,
-      "qualified": 701,
-      "work_types": {
-        "5B     * WOOD FRAME/UNPROTECTED": 1403,
-        "5A     * WOOD FRAME/PROTECTED": 126,
-        "1A     * NONCOMBUSTIBLE/PROTECTED": 93,
-        "3A     * NONCOMBUSTIBLE WALLS/PROTECTED": 59,
-        "2B     * NONCOMBUSTIBLE/UNPROTECTED": 26,
-        "3B     * NONCOMBUSTIBLE WALLS/UNPROTECTED": 10,
-        "New 5B     * WOOD FRAME/UNPROTECTED": 7,
-        "1B     * NONCOMBUSTIBLE/UNPROTECTED": 3,
-        "2A     * NONCOMBUSTIBLE/PROTECTED": 2
-      },
-      "permit_types": {
-        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 102 - One Family Attached/Townhouse (la": 361,
-        "One/Two Family Existing Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Dwelling (Alteration, Re": 316,
-        "Commercial New Bldg R2     * RESIDENTIAL - MULTIPLE FAMILY 105 - 5 or More Family Apartments (no lan": 217,
-        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Dwelling (Alteration, Repair,": 128,
-        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 101 - One Family Detached": 96,
-        "One/Two Family Addition to existing Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Dwelling - C": 88,
-        "Commercial Existing Bldg A5    *ASSEMBLY - OUTDOOR STADIUM, BLEACHER, GRANDSTAND 437 - Commercial - ": 63,
-        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Accessory Bldg (Add, Alterati": 60,
-        "Commercial Existing Bldg A4    *ASSEMBLY - INDOOR ARENA, SKATING RINK, TENNIS COURT 437 - Commercial": 52,
-        "One/Two Family Addition to existing Bldg R3     * RESIDENTIAL - SINGLE FAMILY 434 - Res Dwelling (Al": 44,
-        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 328 - Residential - New Accessory Bldg ": 42,
-        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 438 - Residential Garages / Carports(at": 22,
-        "Commercial New Bldg A3C     * ASSEMBLY - COMMON ASSEMBLIES 105 - 5 or More Family Apartments (no lan": 18,
-        "One/Two Family New Bldg R3     * RESIDENTIAL - SINGLE FAMILY 329 - Residential New Structures - not ": 15,
-        "Commercial Existing Bldg E      * EDUCATIONAL 437 - Commercial - Plan Review (Upfits, Additions, Rep": 14
-      },
-      "statuses": {
-        "Issued": 1088,
-        "Complete": 641
-      },
-      "rejection_reasons": {
-        "excluded_work_or_trade": 907,
-        "no_explicit_new_construction": 121
-      }
-    },
-    {
       "source": "Greensboro",
       "scanned": 3594,
       "qualified": 879,

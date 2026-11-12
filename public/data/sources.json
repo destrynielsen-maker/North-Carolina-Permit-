@@ -1,5 +1,5 @@
 {
-  "last_checked_utc": "2026-11-12T22:34:56.402783+00:00",
+  "last_checked_utc": "2026-11-12T22:39:36.403493+00:00",
   "live_verified": false,
   "coverage_note": "Partial market coverage; record-level verification pending",
   "sources": [
@@ -22,10 +22,13 @@
     {
       "name": "Mecklenburg County / Charlotte",
       "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
-      "state": "collected - sample verification pending",
-      "detail": "published field schema confirmed; builder not exposed in this layer; record-level verification pending",
-      "scanned": 1729,
-      "qualified": 701
+      "state": "historic snapshot - live API polling disabled",
+      "detail": "Historic downloaded/published GIS snapshot only; commercial continuous API use is prohibited by Mecklenburg County reuse policy. Use approved open-data downloads and host our own copy.",
+      "scanned": 0,
+      "qualified": 0,
+      "archived_count": 701,
+      "snapshot_as_of_utc": "2026-11-12T22:34:56.402783+00:00",
+      "collection_mode": "historic_snapshot"
     },
     {
       "name": "Greensboro",

@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-12T22:34:57.225971+00:00",
+  "checked_at_utc": "2026-11-12T22:39:37.304101+00:00",
   "policy": "Read-only sample and consistency checks. No disabled-source records enter the published leads.",
   "independently_verified": false,
   "pilot_sources": {
@@ -94,36 +94,6 @@
       "id": "greensboro:202620920",
       "jurisdiction": "Greensboro",
       "permit_number": "202620920",
-      "review_kind": "official_source_requery_not_independent_portal",
-      "independently_verified": false,
-      "checks": {
-        "date_matches": true,
-        "category_matches": true,
-        "address_matches": true,
-        "contractor_matches": true,
-        "status_matches": true
-      },
-      "state": "source_requery_consistent"
-    },
-    {
-      "id": "mecklenburg:B4839362",
-      "jurisdiction": "Mecklenburg County / Charlotte",
-      "permit_number": "B4839362",
-      "review_kind": "official_source_requery_not_independent_portal",
-      "independently_verified": false,
-      "checks": {
-        "date_matches": true,
-        "category_matches": true,
-        "address_matches": true,
-        "contractor_matches": true,
-        "status_matches": true
-      },
-      "state": "source_requery_consistent"
-    },
-    {
-      "id": "mecklenburg:B4839209",
-      "jurisdiction": "Mecklenburg County / Charlotte",
-      "permit_number": "B4839209",
       "review_kind": "official_source_requery_not_independent_portal",
       "independently_verified": false,
       "checks": {
