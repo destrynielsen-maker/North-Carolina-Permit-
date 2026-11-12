@@ -155,6 +155,11 @@ class SalesDetailTests(unittest.TestCase):
         self.assertIn('sourceLink.href=p.source_record_url||p.source_url',html)
         self.assertIn('sales_detail_url',html)
         self.assertIn('source_record_url',html)
+        self.assertIn('id="contact"',html)
+        self.assertIn('Has phone or email',html)
+        self.assertIn('contact==="phone"&&hasPhone',html)
+        self.assertIn('contact==="email"&&hasEmail',html)
+        self.assertIn('"score","contact"',html)
         self.assertIn('Call "+p.contractor_phone',html)
         self.assertIn('Email builder',html)
 
