@@ -79,7 +79,7 @@ function el(id){return document.getElementById(id)}
 function money(n){return new Intl.NumberFormat("en-US",{style:"currency",currency:"USD",maximumFractionDigits:0}).format(n||0)}
 function verificationIssueUrl(p){
  // This drafts an issue for a human reviewer; it does not verify a permit.
- function safe(v){return String(v==null?"":v).replace(/[<>\\r\\n]/g," ").slice(0,240)}
+ function safe(v){return String(v==null?"":v).replace(/[<>\r\n]/g," ").slice(0,240)}
  var which=p.source==="Wake County"?"Wake":"Brunswick";
  var reference=p.project_number?"Project "+safe(p.project_number)+" (county permit field "+safe(p.permit_number)+")":"Permit "+safe(p.permit_number);
  var issueTitle="[Verification needed] "+which+" "+reference;
