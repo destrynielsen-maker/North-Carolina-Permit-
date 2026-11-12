@@ -82,6 +82,25 @@ class MecklenburgSnapshotTests(unittest.TestCase):
             meck=next(row for row in coverage['sources'] if row['jurisdiction']=='Mecklenburg County / Charlotte')
             self.assertEqual(meck['historical_snapshot_count'],2)
 
+    def test_dashboard_defaults_to_current_and_dates_historic_charlotte(self):
+        page=(pathlib.Path(__file__).resolve().parents[1]/'public/index.html').read_text()
+        self.assertIn('id="freshness"',page)
+        self.assertIn('<option value="current">Current collections</option>',page)
+        self.assertIn('id="archived"',page)
+        self.assertIn('p.collection_mode==="historic_snapshot"',page)
+        self.assertIn('snapshot_as_of_utc',page)
+        self.assertIn('sourceLink.href=isHistoric?"https://maps.mecklenburgcountync.gov/openmapping/data.html"',page)
+        self.assertIn('"snapshot_as_of_utc"',page)
+
+    def test_archived_detail_page_excludes_live_gis_navigation(self):
+        page=(pathlib.Path(__file__).resolve().parents[1]/'public/permit.html').read_text()
+        self.assertIn('var historic=p.collection_mode==="historic_snapshot"',page)
+        self.assertIn('HISTORIC SNAPSHOT',page)
+        self.assertIn('if(historic){',page)
+        self.assertIn('Mecklenburg open-data downloads',page)
+        self.assertIn('Official county permit search (manual)',page)
+        self.assertIn('}else{\\n  addLink("Official city permit",official,true);',page)
+
     def test_standalone_frozen_archive_is_not_overwritten_on_later_runs(self):
         with tempfile.TemporaryDirectory() as temp:
             folder=pathlib.Path(temp)
