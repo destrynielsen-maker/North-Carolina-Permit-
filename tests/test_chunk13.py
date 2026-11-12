@@ -1,0 +1,83 @@
+"""Chunk 13 research-only permit lookup tests (no network)."""
+import datetime as dt
+import importlib.util
+import pathlib
+import sys
+import unittest
+
+SRC=pathlib.Path(__file__).resolve().parents[1]/'src'
+sys.path.insert(0,str(SRC))
+spec=importlib.util.spec_from_file_location('chunk13',SRC/'review_chunk13.py')
+m=importlib.util.module_from_spec(spec)
+spec.loader.exec_module(m)
+TODAY=dt.date(2026,11,12)
+
+class Chunk13Tests(unittest.TestCase):
+    def test_wake_exact_gis_query_is_parameterized_and_official(self):
+        url=m.official_gis_lookup(m.WAKE_URL,'PERMIT_NUMBER','WAKE-1001')
+        self.assertIn('/query?',url)
+        self.assertIn('PERMIT_NUMBER+%3D+',url)
+        self.assertIn('WAKE-1001',url)
+        self.assertIn('returnGeometry=false',url)
+        self.assertNotEqual(url,m.WAKE_URL)
+
+    def test_refuse_untrusted_layer_field_and_bad_identifiers(self):
+        self.assertEqual(m.official_gis_lookup('https://wrong.example.com/x',
+                         'PERMIT_NUMBER','WAKE-1001'),'')
+        self.assertEqual(m.official_gis_lookup(m.WAKE_URL,
+                         'ProjectNumber','WAKE-1001'),'')
+        for ident in ("X' OR 1=1", '../file', '', 'A/123', '#foo'):
+            with self.subTest(ident=ident):
+                self.assertEqual(m.official_gis_lookup(m.WAKE_URL,
+                              'PERMIT_NUMBER',ident),'')
+
+    def test_wake_requires_valid_issue_date_and_remains_unverified(self):
+        rows=[
+          {'attributes':{'PERMIT_NUMBER':'W-1001','ISSUE_DATE':1794355200000,
+              'WORK_CLASS':'New One- and Two-Family Dwelling',
+              'CONTRACTOR':'Test Homes','LINK':'https://energovcitizenaccess.tylertech.com/WakeCountyNC/SelfService#/permit/abc'}},
+          {'attributes':{'PERMIT_NUMBER':'BAD','ISSUE_DATE':None}},
+        ]
+        out=m.wake_review_rows(lambda *_:rows,TODAY)
+        self.assertEqual(len(out),1)
+        self.assertEqual(out[0]['contractor_as_listed_unverified'],'Test Homes')
+        self.assertEqual(out[0]['legacy_link_route'],'permit')
+        self.assertTrue(out[0]['official_portal_search'].startswith('https://wakecountync-'))
+        self.assertFalse(out[0]['included_in_sales_leads'])
+        self.assertNotIn('legacy_link_url',out[0])
+        self.assertNotIn('issuer',out[0])
+
+    def test_brunswick_never_infers_general_contractor_from_trade_contact(self):
+        rows=[
+          {'attributes':{'PermitNumber':'B-1001','ProjectNumber':'P-1001',
+              'DateIssued':'2026-11-10T10:00:00',
+              'PermitType':'NEW HOME','ParcelAddress':'100 TEST DR',
+              'SubContractor':'Electrician LLC','Jurisdiction':'BRUNSWICK COUNTY'}},
+          {'attributes':{'PermitNumber':'B-1002','DateIssued':'2099-11-10',
+              'PermitType':'NEW HOME'}}
+        ]
+        out=m.brunswick_review_rows(lambda *_:rows,TODAY)
+        self.assertEqual(len(out),1)
+        self.assertIsNone(out[0]['prime_builder'])
+        self.assertNotIn('Electrician LLC',str(out))
+        self.assertIn('100 TEST DR',out[0]['address'])
+        self.assertFalse(out[0]['included_in_sales_leads'])
+
+    def test_queue_is_bounded_and_uses_exact_types(self):
+        calls=[]
+        def wake_req(url,args):
+            calls.append((url,args))
+            return []
+        def brunswick_req(url,args):
+            calls.append((url,args))
+            return []
+        self.assertEqual(m.wake_review_rows(wake_req,TODAY),[])
+        self.assertEqual(m.brunswick_review_rows(brunswick_req,TODAY),[])
+        self.assertEqual(calls[0][1]['resultRecordCount'],8)
+        self.assertEqual(calls[1][1]['resultRecordCount'],8)
+        self.assertIn('Issued',calls[0][1]['where'])
+        self.assertIn('NEW HOME',calls[1][1]['where'])
+        self.assertIn('Residential',calls[1][1]['where'])
+
+if __name__=='__main__':
+    unittest.main()
