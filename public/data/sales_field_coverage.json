@@ -1,0 +1,70 @@
+{
+  "note": "Source-published business contact availability among screened records; not independently verified leads",
+  "as_of_utc": "2026-11-12T22:01:36.866230+00:00",
+  "sources": [
+    {
+      "jurisdiction": "Greensboro",
+      "screened_permits": 879,
+      "contractor_available": 879,
+      "contractor_phone_available": 0,
+      "contractor_email_available": 0,
+      "contractor_license_available": 0,
+      "project_name_available": 0,
+      "project_number_available": 0,
+      "project_contact_available": 0,
+      "square_feet_available": 0,
+      "housing_units_available": 821,
+      "source_record_url_available": 879,
+      "permit_detail_url_available": 879,
+      "phone_or_email_available": 0
+    },
+    {
+      "jurisdiction": "Mecklenburg County / Charlotte",
+      "screened_permits": 701,
+      "contractor_available": 0,
+      "contractor_phone_available": 0,
+      "contractor_email_available": 0,
+      "contractor_license_available": 0,
+      "project_name_available": 701,
+      "project_number_available": 701,
+      "project_contact_available": 0,
+      "square_feet_available": 0,
+      "housing_units_available": 701,
+      "source_record_url_available": 701,
+      "permit_detail_url_available": 0,
+      "phone_or_email_available": 0
+    },
+    {
+      "jurisdiction": "New Hanover County",
+      "screened_permits": 813,
+      "contractor_available": 748,
+      "contractor_phone_available": 0,
+      "contractor_email_available": 0,
+      "contractor_license_available": 0,
+      "project_name_available": 0,
+      "project_number_available": 0,
+      "project_contact_available": 772,
+      "square_feet_available": 787,
+      "housing_units_available": 0,
+      "source_record_url_available": 813,
+      "permit_detail_url_available": 0,
+      "phone_or_email_available": 0
+    },
+    {
+      "jurisdiction": "Raleigh",
+      "screened_permits": 781,
+      "contractor_available": 776,
+      "contractor_phone_available": 663,
+      "contractor_email_available": 741,
+      "contractor_license_available": 0,
+      "project_name_available": 436,
+      "project_number_available": 0,
+      "project_contact_available": 0,
+      "square_feet_available": 0,
+      "housing_units_available": 0,
+      "source_record_url_available": 781,
+      "permit_detail_url_available": 0,
+      "phone_or_email_available": 754
+    }
+  ]
+}
