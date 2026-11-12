@@ -55,13 +55,6 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 <p class="muted"><a href="data/builder_rankings.json" target="_blank" rel="noopener noreferrer">Full builder ranking data</a> · <a href="data/sales_field_coverage.json" target="_blank" rel="noopener noreferrer">Builder contact coverage</a> · <a href="data/qa_samples.json" target="_blank" rel="noopener noreferrer">Permit review samples</a></p>
 </section>
 <section class="panel" style="margin-top:18px">
-<h2>Mecklenburg Accela — new-building research (not published leads)</h2>
-<p class="muted">Pilot results from the current official Accela Building Permits dataset. Names and phone numbers are as published, but the exact contractor role has not been independently confirmed. These research records are excluded from permit counts, builder rankings, RSS and sales CSV exports.</p>
-<div class="scroller"><table><thead><tr><th>Issued</th><th>Accela case</th><th>Type / Address</th><th>Contractor as listed</th><th>Official GIS record</th></tr></thead><tbody id="accelaResearchRows"></tbody></table></div>
-<p class="muted" id="accelaResearchNotice">Loading read-only Accela pilot…</p>
-<p class="muted"><a href="data/mecklenburg_accela_pilot.json" target="_blank" rel="noopener noreferrer">Pilot results and audit counts</a> · <a href="https://gis.mecklenburgcountync.gov/meck-accela/" target="_blank" rel="noopener noreferrer">Mecklenburg public permit search</a></p>
-</section>
-<section class="panel" style="margin-top:18px">
 <h2>County research queue — NOT published leads</h2>
 <p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. Existing reviews open their own GitHub issue; new items use Start verification for a draft. Neither action verifies or promotes a lead. Review states are human-curated; even evidence-recorded decisions remain on hold until a separate release approval. The release blocker audit explains missing evidence and county approval gates. Brunswick's county PermitNumber field may repeat across different projects: use the project number and exact GIS record ID for research. Confirm the actual issuer and prime builder in the official portal; a GIS response or portal home page is not independent verification.</p>
 <div class="table-wrap"><table>
@@ -211,40 +204,6 @@ function exportCsv(){
 ["search","type","jur","days","score","contact","builderStatus"].forEach(function(id){el(id).addEventListener("input",render)});
 document.querySelectorAll("th[data-key]").forEach(function(th){th.addEventListener("click",function(){var key=th.dataset.key;dir=(key===order)?-dir:-1;order=key;render()})});
 el("export").addEventListener("click",exportCsv);
-fetch("data/mecklenburg_accela_pilot.json").then(function(response){
- if(!response.ok)throw Error("Pilot output not yet available");
- return response.json();
-}).then(function(report){
- var p=report.pilot||{},entries=p.research_records||[],tbody=el("accelaResearchRows");
- entries.forEach(function(record){
-  var tr=document.createElement("tr");
-  textCell(tr,record.issued_date);
-  textCell(tr,record.case_number);
-  var type=textCell(tr,record.category_screened||"Unclassified"),extra=document.createElement("div");
-  extra.className="muted";extra.textContent=record.address_as_published||"Address not provided";type.appendChild(extra);
-  var builder=textCell(tr,record.contractor_as_published_unverified||"Not provided");
-  if(record.contractor_phone_as_published&&/^[+()0-9 .-]{7,25}$/.test(record.contractor_phone_as_published)){
-   var phone=document.createElement("div"),a=document.createElement("a");
-   phone.className="muted";a.href="tel:"+record.contractor_phone_as_published.replace(/[^\\d+]/g,"");
-   a.textContent="Call listed contractor: "+record.contractor_phone_as_published;
-   phone.appendChild(a);builder.appendChild(phone);
-  }
-  var td=document.createElement("td"),link=document.createElement("a");
-  var url=String(record.source_record_url||"");
-  if(url.startsWith("https://services3.arcgis.com/hPs600I3X0RTaaaq/arcgis/rest/services/Accela_Building_Permits/FeatureServer/0/query?")){
-   link.href=url;link.target="_blank";link.rel="noopener noreferrer";
-   link.textContent="Exact source record";td.appendChild(link);
-  }else{td.textContent="Source unavailable";}
-  tr.appendChild(td);tbody.appendChild(tr);
- });
- var count=Number(p.screened_new_building_records||0);
- var available=Number(p.screened_with_contractor_name||0);
- var phones=Number(p.screened_with_contractor_phone||0);
- el("accelaResearchNotice").textContent=p.state==="sampled_no_promotion"?
-  "Sample of "+p.sample_size+" recent building records: "+count+" screened new-building candidates, "+available+" with a listed contractor, "+phones+" with a phone. Showing "+entries.length+" research rows. None included in live leads.":
-  "Pilot not yet qualified: "+(p.error||"source metadata/review pending");
-}).catch(function(){el("accelaResearchNotice").textContent="Accela pilot results unavailable. Existing permit dashboard is unaffected.";});
-
 fetch("data/builder_rankings.json").then(function(r){
  if(!r.ok)throw Error("Builder rankings unavailable");
  return r.json();
