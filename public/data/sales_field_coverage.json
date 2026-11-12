@@ -1,6 +1,6 @@
 {
   "note": "Source-published business contact availability among screened records; not independently verified leads",
-  "as_of_utc": "2026-11-12T22:39:36.340706+00:00",
+  "as_of_utc": "2026-11-12T22:45:13.553274+00:00",
   "sources": [
     {
       "jurisdiction": "Greensboro",
@@ -21,7 +21,8 @@
       "housing_units_available": 821,
       "source_record_url_available": 879,
       "permit_detail_url_available": 879,
-      "phone_or_email_available": 0
+      "phone_or_email_available": 0,
+      "historical_snapshot_count": 0
     },
     {
       "jurisdiction": "Mecklenburg County / Charlotte",
@@ -42,7 +43,8 @@
       "housing_units_available": 701,
       "source_record_url_available": 701,
       "permit_detail_url_available": 0,
-      "phone_or_email_available": 0
+      "phone_or_email_available": 0,
+      "historical_snapshot_count": 701
     },
     {
       "jurisdiction": "New Hanover County",
@@ -63,7 +65,8 @@
       "housing_units_available": 0,
       "source_record_url_available": 813,
       "permit_detail_url_available": 0,
-      "phone_or_email_available": 0
+      "phone_or_email_available": 0,
+      "historical_snapshot_count": 0
     },
     {
       "jurisdiction": "Raleigh",
@@ -84,7 +87,8 @@
       "housing_units_available": 0,
       "source_record_url_available": 781,
       "permit_detail_url_available": 0,
-      "phone_or_email_available": 754
+      "phone_or_email_available": 754,
+      "historical_snapshot_count": 0
     }
   ]
 }
