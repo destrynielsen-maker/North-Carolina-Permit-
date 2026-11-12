@@ -54,7 +54,7 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 </section>
 <section class="panel" style="margin-top:18px">
 <h2>County research queue — NOT published leads</h2>
-<p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. The Start verification link opens a draft issue for human review; it does not verify or promote a lead. Brunswick's county PermitNumber field may repeat across different projects: use the project number and exact GIS record ID for research. Confirm the actual issuer and prime builder in the official portal; a GIS response or portal home page is not independent verification.</p>
+<p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. Existing reviews open their own GitHub issue; new items use Start verification for a draft. Neither action verifies or promotes a lead. Brunswick's county PermitNumber field may repeat across different projects: use the project number and exact GIS record ID for research. Confirm the actual issuer and prime builder in the official portal; a GIS response or portal home page is not independent verification.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>County</th><th>Project / permit reference</th><th>Issue date</th><th>Work / site</th><th>Official record</th><th>Public portal</th><th>GIS consistency</th><th>Verify</th></tr></thead>
 <tbody id="countyReviewRows"></tbody></table></div>
@@ -183,9 +183,20 @@ Promise.all([
  }),
  fetch("data/chunk14_validation.json").then(function(response){
   if(!response.ok)return null;return response.json();
+ }).catch(function(){return null;}),
+ fetch("data/verification_issues.json").then(function(response){
+  if(!response.ok)return null;return response.json();
  }).catch(function(){return null;})
 ]).then(function(allReports){
- var report=allReports[0],audit=allReports[1];
+ var report=allReports[0],audit=allReports[1],issueManifest=allReports[2];
+ var issueLookup={};
+ ((issueManifest||{}).entries||[]).forEach(function(item){
+  var link=String(item.issue_url||"");
+  if(!/^[a-z]+$/.test(String(item.source||"")))return;
+  if(!Number.isInteger(item.gis_object_id)||item.gis_object_id<1)return;
+  if(!/^https:\/\/github\.com\/destrynielsen-maker\/North-Carolina-Permit-\/issues\/[1-9][0-9]*$/.test(link))return;
+  issueLookup[item.source+":"+item.gis_object_id]={url:link,num:item.issue_number};
+ });
  var rechecks={};
  (((audit||{}).results||{}).record_checks||[]).forEach(function(item){
   rechecks[item.source+":"+item.gis_object_id]=item.state;
@@ -230,10 +241,11 @@ Promise.all([
                auditState==="missing_or_multiple_current_features"?"Missing / ambiguous":
                auditState==="gis_recheck_error"?"GIS error":"Not yet checked");
    var td=document.createElement("td"),link=document.createElement("a");
-   link.href=verificationIssueUrl(p);
+   var linkedIssue=issueLookup[key+":"+p.gis_object_id];
+   link.href=linkedIssue?linkedIssue.url:verificationIssueUrl(p);
    link.target="_blank";link.rel="noopener noreferrer";
-   link.textContent="Start verification";
-   link.title="Open a prefilled GitHub issue. No lead is verified or promoted automatically.";
+   link.textContent=linkedIssue?"Open review #"+linkedIssue.num:"Start verification";
+   link.title=linkedIssue?"Open existing unverified review issue":"Open a prefilled GitHub issue draft; no lead is verified or promoted automatically.";
    td.appendChild(link);tr.appendChild(td);
    tbody.appendChild(tr);count++;
   });
