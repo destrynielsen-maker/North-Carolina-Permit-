@@ -35,6 +35,8 @@ jobs:
         run: python src/collect.py
       - name: Probe additional official source schemas (read-only)
         run: python src/probe_sources.py
+      - name: Read-only Wake/Brunswick pilot and official-source permit rechecks
+        run: python src/validate_chunk8.py
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
