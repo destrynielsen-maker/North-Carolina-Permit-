@@ -64,6 +64,14 @@ Other possible messages are **Follow-up required — held**, **Rejected — held
 
 The new `tests/test_chunk17.py` covers pending states, missing evidence, official URLs, issue/object mismatch, duplicate decisions, synthetic human evidence, and no automatic lead promotion.
 
+## Initial published status confirmation
+
+An initial `public/data/review_status.json` was published directly from the two pending ledger entries in commit `a44005c3b0cd283f032465a94dd91ec14b74e859`. The public file reports **2 pending**, **0 confirmed**, **0 rejected**, **0 follow-up**, and **0 auto-promoted leads**. Both records show `release_status=held_research_only`.
+
+The current dashboard source loads this status alongside the research queue and the same-source GIS audit. The new compiler is registered in the scheduled/push-triggered workflow, and nine additional offline unit tests have been added. **At the time of this report, a post-change automated GitHub Actions run has not been independently confirmed**, so do not report all nine tests as passing in CI yet. A direct container clone was blocked by unavailable DNS/network access; that is not a test failure in the repository.
+
+Production remains **3,174** screened candidates across the original four areas. No manual portal review or source approval has occurred.
+
 ## Next checkpoint
 
 Use the [Wake permit review](https://github.com/destrynielsen-maker/North-Carolina-Permit-/issues/1) and [Brunswick project review](https://github.com/destrynielsen-maker/North-Carolina-Permit-/issues/2) to collect real official evidence. Once available, manually update the curated review file and check whether a separate, jurisdiction-specific release process is justified. Do not turn on a whole county from one reviewed record.
