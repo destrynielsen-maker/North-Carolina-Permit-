@@ -107,6 +107,8 @@ class SalesDetailTests(unittest.TestCase):
         self.assertIn('sourceLink.href=p.source_record_url||p.source_url',html)
         self.assertIn('sales_detail_url',html)
         self.assertIn('source_record_url',html)
+        self.assertIn('Call "+p.contractor_phone',html)
+        self.assertIn('Email builder',html)
 
 
 if __name__=='__main__':
