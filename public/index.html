@@ -56,10 +56,10 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 <h2>County research queue — NOT published leads</h2>
 <p class="muted">These Wake and Brunswick candidates are excluded from the live permit totals, rankings and RSS feeds. Brunswick's county PermitNumber field may repeat across different projects: use the project number and exact GIS record ID for research. Confirm the actual issuer and prime builder in the official portal; a GIS response or portal home page is not independent verification.</p>
 <div class="table-wrap"><table>
-<thead><tr><th>County</th><th>Project / permit reference</th><th>Issue date</th><th>Work / site</th><th>Official record</th><th>Public portal</th></tr></thead>
+<thead><tr><th>County</th><th>Project / permit reference</th><th>Issue date</th><th>Work / site</th><th>Official record</th><th>Public portal</th><th>GIS consistency</th></tr></thead>
 <tbody id="countyReviewRows"></tbody></table></div>
 <p class="muted" id="countyReviewNotice">Loading research-only candidates…</p>
-<p class="muted"><a href="data/chunk13_review_queue.json" target="_blank" rel="noopener noreferrer">Complete review queue and source evidence</a></p>
+<p class="muted"><a href="data/chunk13_review_queue.json" target="_blank" rel="noopener noreferrer">Complete review queue and source evidence</a> · <a href="data/chunk14_validation.json" target="_blank" rel="noopener noreferrer">GIS consistency audit</a></p>
 </section>
 <section class="panel" style="margin-top:18px">
 <h2>Source status</h2><p class="muted" id="checked">No live source check has been confirmed.</p><div id="sources" class="muted"></div>
@@ -133,10 +133,20 @@ fetch("data/builder_rankings.json").then(function(r){
  el("buildersEmpty").textContent=(report.builders||[]).length?"Showing top 20 builders by recent screened permit activity.":"No contractor records available.";
 }).catch(function(e){el("buildersEmpty").textContent="Builder rankings not available yet.";});
 
-fetch("data/chunk13_review_queue.json").then(function(response){
- if(!response.ok)throw Error("Research queue not generated");
- return response.json();
-}).then(function(report){
+Promise.all([
+ fetch("data/chunk13_review_queue.json").then(function(response){
+  if(!response.ok)throw Error("Research queue not generated");
+  return response.json();
+ }),
+ fetch("data/chunk14_validation.json").then(function(response){
+  if(!response.ok)return null;return response.json();
+ }).catch(function(){return null;})
+]).then(function(allReports){
+ var report=allReports[0],audit=allReports[1];
+ var rechecks={};
+ (((audit||{}).results||{}).record_checks||[]).forEach(function(item){
+  rechecks[item.source+":"+item.gis_object_id]=item.state;
+ });
  var tbody=el("countyReviewRows"),count=0;
  ["wake","brunswick"].forEach(function(key){
   var source=(report.sources||{})[key]||{};
@@ -170,6 +180,12 @@ fetch("data/chunk13_review_queue.json").then(function(response){
     "https://wakecountync-energovpub.tylerhost.net/apps/selfservice",
     "https://bcpp.brunswickcountync.gov/"
    ]);
+   var auditKey=key+":"+p.gis_object_id;
+   var auditState=rechecks[auditKey];
+   textCell(tr,auditState==="same_source_consistent"?"Consistent (GIS only)":
+               auditState==="same_source_changed"?"Changed — review":
+               auditState==="missing_or_multiple_current_features"?"Missing / ambiguous":
+               auditState==="gis_recheck_error"?"GIS error":"Not yet checked");
    tbody.appendChild(tr);count++;
   });
  });
