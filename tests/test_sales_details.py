@@ -87,7 +87,7 @@ class SalesDetailTests(unittest.TestCase):
         self.assertEqual(p['contractor_email'],'')
         self.assertIsNone(p['square_feet'])
         self.assertEqual(p['source_record_url'],'')
-        self.assertIn('unverified',p['verification'])
+        self.assertIn('not independently verified',p['verification'])
 
     def test_greensboro_official_page_is_separate_from_original_gis(self):
         p=nc.normalize(row(GREENSBORO,PermitNum='202518414',OBJECTID=181231,
