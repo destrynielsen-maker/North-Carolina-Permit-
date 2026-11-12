@@ -56,7 +56,10 @@ class MecklenburgSnapshotTests(unittest.TestCase):
                 if source['id']=='mecklenburg':
                     raise AssertionError('commercial live Mecklenburg API must never be queried')
                 return [],0
-            with patch.object(nc,'OUT',folder),patch.object(nc,'collect',side_effect=safe_collect):
+            feeds={}
+            def capture_feed(title,records,filename):
+                feeds[filename]=list(records)
+            with patch.object(nc,'OUT',folder),patch.object(nc,'collect',side_effect=safe_collect),patch.object(nc,'rss',side_effect=capture_feed):
                 nc.main()
             self.assertNotIn('mecklenburg',queried)
             archived=json.loads((folder/'mecklenburg_snapshot.json').read_text())
@@ -70,12 +73,9 @@ class MecklenburgSnapshotTests(unittest.TestCase):
             self.assertEqual(market['qualified'],0)
             self.assertEqual(market['archived_count'],2)
             self.assertIn('live API polling disabled',market['state'])
-            self.assertNotIn('B1001',(folder.parent/'notexist.txt').name)
-            rss=(folder.parent/'all.xml')
-            # rss() writes feed documents to ROOT/public, not OUT in some versions.
-            # Test the output content when it is in the expected place.
-            if rss.exists():
-                self.assertNotIn('B1001',rss.read_text())
+            self.assertIn('all.xml',feeds)
+            self.assertEqual(feeds['all.xml'],[])
+            self.assertTrue(all(not rows for rows in feeds.values()))
             rank=json.loads((folder/'builder_rankings.json').read_text())
             self.assertEqual(rank['builders'],[])
             coverage=json.loads((folder/'sales_field_coverage.json').read_text())
@@ -89,7 +89,7 @@ class MecklenburgSnapshotTests(unittest.TestCase):
             (folder/'permits.json').write_text(json.dumps(old),encoding='utf-8')
             def empty_collect(_source,**_kwargs):
                 return [],0
-            with patch.object(nc,'OUT',folder),patch.object(nc,'collect',side_effect=empty_collect):
+            with patch.object(nc,'OUT',folder),patch.object(nc,'collect',side_effect=empty_collect),patch.object(nc,'rss'):
                 nc.main()
                 frozen=(folder/'mecklenburg_snapshot.json').read_text()
                 (folder/'permits.json').write_text(json.dumps([fake_meck('B9999')]),encoding='utf-8')
