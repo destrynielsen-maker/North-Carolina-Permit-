@@ -1,0 +1,36 @@
+{
+  "checked_at_utc": "2026-11-12T20:28:39.860242+00:00",
+  "policy": "Read-only URL-pattern and GC-field validation; no source activated",
+  "independent_permit_verification": false,
+  "pilots": {
+    "wake_link_integrity": {
+      "state": "sampled_no_promotion",
+      "sample_size": 32,
+      "link_states": {
+        "legacy_host": 32
+      },
+      "fragment_route_classes": {
+        "permit": 32
+      },
+      "legacy_links_appearing_record_specific": 32,
+      "old_gis_link_host": "energovcitizenaccess.tylertech.com",
+      "current_official_search_portal": "https://wakecountync-energovpub.tylerhost.net/apps/selfservice",
+      "deep_links_verified_at_new_portal": 0,
+      "link_policy": "Never substitute the new portal host into a legacy record-specific URL without a tested direct-link translation. Use current official search portal and permit number for manual lookup until verified.",
+      "enabled_for_collection": false
+    },
+    "brunswick_gc_fields": {
+      "state": "sampled_no_promotion",
+      "sample_size": 30,
+      "gis_fields_count": 20,
+      "gis_subcontractor_field_present": true,
+      "independent_gc_or_builder_field_candidates": [],
+      "nonblank_subcontractor_fields": 30,
+      "verified_prime_builder_names": 0,
+      "official_permit_portal": "https://bcpp.brunswickcountync.gov/",
+      "official_public_permit_search": "https://apps.brunsco.net/bcms/dashboard/",
+      "interpretation": "The available GIS layer has no independently verified prime-builder assignment. SubContractor cannot be used as a general contractor. A browser/account-dependent portal may require manual review.",
+      "enabled_for_collection": false
+    }
+  }
+}
