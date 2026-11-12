@@ -22,6 +22,15 @@ Field schema verification does not prove live query success or record accuracy.
 
 Read-only staging probes are implemented in `src/probe_sources.py` and run without enabling any of these counties. They write `public/data/source_probes.json` once the revised workflow completes.
 
+## Chunk 10 official release-gate sources
+
+- **Wake planning jurisdiction polygon layer:** https://maps.wake.gov/arcgis/rest/services/Jurisdictions/Jurisdictions/MapServer/1 . Government maintained dataset explicitly includes municipal corporate limits and extra-territorial planning jurisdiction. Its `JURISDICTION` attribute distinguishes `RALEIGH` from other named city planning areas. It is not by itself proof of which office issued the building permit.
+- **Raleigh ETJ explanation:** https://raleighnc.gov/planning/services/annexations/extraterritorial-jurisdiction-etj . City confirms Raleigh planning and building regulations extend outside city limits in the ETJ.
+- **Brunswick county's filtered residential-new-home archive:** https://brunswickcountync.gov/195/Permit-Reports . Official site links to `Monthly Permit Locations` filtered to `ProjectType=Residential`, `PermitStatus=Active`, `PermitType` values `NEW HOME`, `RESIDENTIAL MODULAR` and `TOWNHOME`. The filter is a candidate-screening aid, not confirmation of individual permit issuance.
+- **Brunswick development pipeline context:** https://brunswickcountync.gov/1008/Development-Dashboards-Maps . Official residential and commercial development dashboards are updated monthly; municipal coverage is explicitly incomplete.
+
+`src/validate_chunk10.py` runs **read-only** bounded Wake polygon checks and Brunswick new-home record sampling. **Neither feed is enabled automatically**, regardless of pilot results. Null/ambiguous boundary results, future dates, missing GC information and records that cannot be independently checked remain blocked.
+
 ## Next integrations
 Guilford County beyond Greensboro, Brunswick, Cabarrus, Johnston, Buncombe/Asheville.
 
