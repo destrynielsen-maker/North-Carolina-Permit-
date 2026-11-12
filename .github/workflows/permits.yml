@@ -33,6 +33,8 @@ jobs:
         run: python -m unittest discover -s tests -v
       - name: Collect official municipal and county sources
         run: python src/collect.py
+      - name: Probe additional official source schemas (read-only)
+        run: python src/probe_sources.py
       - name: Commit refreshed data
         run: |
           git config user.name "github-actions[bot]"
