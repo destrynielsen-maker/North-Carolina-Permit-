@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-11-12T20:12:37.401186+00:00",
+  "policy": "Read-only spatial/new-home pilots; no new source feeds enabled",
+  "independent_permit_verification": false,
+  "pilots": {
+    "wake_planning_boundary": {
+      "state": "sampled_no_promotion",
+      "sample_size": 20,
+      "work_class_filter": "New One- and Two-Family Dwelling",
+      "boundary_url": "https://maps.wake.gov/arcgis/rest/services/Jurisdictions/Jurisdictions/MapServer/1",
+      "boundary_spatial_reference_wkid": 2264,
+      "planning_jurisdiction_counts": {
+        "KNIGHTDALE": 1,
+        "ROLESVILLE": 7,
+        "WENDELL": 6,
+        "ZEBULON": 3,
+        "no_matching_polygon": 3
+      },
+      "raleigh_planning_area_count": 0,
+      "other_named_planning_areas_count": 17,
+      "unknown_or_error_count": 3,
+      "boundary_query_errors": 0,
+      "boundary_interpretation": "Planning jurisdiction includes ETJ and is not proof of permitting agency. No polygon match is NOT proof of an unincorporated county permit. Only a bounded new-dwelling sample was checked.",
+      "enabled_for_collection": false
+    },
+    "brunswick_new_home": {
+      "state": "sampled_no_promotion",
+      "sample_size": 100,
+      "filtered_types": [
+        "NEW HOME",
+        "RESIDENTIAL MODULAR",
+        "TOWNHOME"
+      ],
+      "filtered_status": "Active",
+      "parseable_recent_not_future": 100,
+      "future_dated": 0,
+      "unparseable": 0,
+      "older_than_year": 0,
+      "recent_date_min": "2026-10-23",
+      "recent_date_max": "2026-11-10",
+      "permit_type_counts": {
+        "NEW HOME": 97,
+        "RESIDENTIAL MODULAR": 3
+      },
+      "jurisdiction_counts": {
+        "BRUNSWICK COUNTY": 83,
+        "NAVASSA": 6,
+        "NORTHWEST": 1,
+        "SHALLOTTE": 6,
+        "ST. JAMES": 3,
+        "VARNAMTOWN": 1
+      },
+      "limitation": "Pre-filtered candidates only: no verified general contractor, no permit-detail audit, no live promotion.",
+      "enabled_for_collection": false
+    }
+  }
+}
