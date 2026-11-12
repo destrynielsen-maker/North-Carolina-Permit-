@@ -498,8 +498,9 @@ def sales_field_coverage(permits):
     """Aggregate contact availability; no personal data in the summary."""
     buckets = {}
     keys = ('contractor', 'contractor_phone', 'contractor_email',
-            'contractor_license', 'project_name', 'source_record_url',
-            'permit_detail_url')
+            'contractor_license', 'project_name', 'project_number',
+            'project_contact', 'square_feet', 'housing_units',
+            'source_record_url', 'permit_detail_url')
     for p in permits:
         market = p.get('jurisdiction') or '(unknown)'
         row = buckets.setdefault(market, {'jurisdiction': market, 'screened_permits': 0,
