@@ -520,8 +520,11 @@ def sales_field_coverage(permits):
         market = p.get('jurisdiction') or '(unknown)'
         row = buckets.setdefault(market, {'jurisdiction': market, 'screened_permits': 0,
                                            **{k + '_available': 0 for k in keys},
-                                           'phone_or_email_available': 0})
+                                           'phone_or_email_available': 0,
+                                           'historical_snapshot_count': 0})
         row['screened_permits'] += 1
+        row['historical_snapshot_count'] += int(
+            p.get('collection_mode') == 'historic_snapshot')
         for k in keys:
             row[k + '_available'] += int(bool(str(p.get(k) or '').strip()))
         row['phone_or_email_available'] += int(bool(
