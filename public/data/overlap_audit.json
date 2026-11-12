@@ -1,0 +1,5 @@
+{
+  "policy": "Audit only. No cross-agency records removed based solely on addresses or permit numbers.",
+  "wake_enabled": false,
+  "cross_source_number_collision_pairs": []
+}

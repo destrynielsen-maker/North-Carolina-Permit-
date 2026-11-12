@@ -49,9 +49,9 @@
         "Active": 1
       },
       "rejection_reasons": {
-        "excluded_work_or_trade": 2138,
+        "excluded_work_or_trade": 2133,
         "no_explicit_new_construction": 73,
-        "blocked_status": 13
+        "blocked_status": 18
       }
     },
     {
@@ -110,9 +110,9 @@
         "Partial Certificate of Occupancy (PCO) Issued": 1
       },
       "rejection_reasons": {
-        "excluded_work_or_trade": 17817,
-        "no_explicit_new_construction": 1615,
-        "blocked_status": 1169,
+        "excluded_work_or_trade": 17812,
+        "no_explicit_new_construction": 1614,
+        "blocked_status": 1175,
         "missing_building_category": 29,
         "outside_date_window": 2
       }
