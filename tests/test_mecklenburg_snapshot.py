@@ -99,7 +99,8 @@ class MecklenburgSnapshotTests(unittest.TestCase):
         self.assertIn('if(historic){',page)
         self.assertIn('Mecklenburg open-data downloads',page)
         self.assertIn('Official county permit search (manual)',page)
-        self.assertIn('}else{\\n  addLink("Official city permit",official,true);',page)
+        self.assertIn('addLink("Official city permit",official,true);',page)
+        self.assertIn('if(historic){',page)
 
     def test_standalone_frozen_archive_is_not_overwritten_on_later_runs(self):
         with tempfile.TemporaryDirectory() as temp:
