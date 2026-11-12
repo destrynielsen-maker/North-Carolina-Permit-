@@ -1,0 +1,17 @@
+{
+  "market": "Mecklenburg County / Charlotte",
+  "collection_mode": "historic_snapshot",
+  "snapshot_as_of_utc": "2026-11-12T22:34:56.402783+00:00",
+  "source": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
+  "original_screened_permit_count": 701,
+  "reuse_policy_url": "https://maps.mecklenburgcountync.gov/openmapping/index.html",
+  "official_download_catalog": "https://maps.mecklenburgcountync.gov/openmapping/data.html",
+  "official_download_datasets": [
+    "Accela Building Permits",
+    "Accela Permits"
+  ],
+  "status": "Live API polling disabled for the commercial sales application; no independent permit-level verification.",
+  "interpretation": "An archived, frozen historical snapshot from the last pre-pause collected records; not newly issued, refreshed, or current permit status.",
+  "reuse_plan": "Acquire officially published downloadable datasets, store and process our own local copies, and only then develop an approved, source-specific importer.",
+  "customer_display_policy": "Preserve archived project pages but exclude these rows from default current opportunities, new-permit RSS feeds, and builder rankings. Show the snapshot date."
+}
