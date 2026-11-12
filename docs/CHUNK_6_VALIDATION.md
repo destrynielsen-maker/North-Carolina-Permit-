@@ -1,6 +1,6 @@
 # Chunk 6 — post-Mecklenburg validation, contractor normalization and Wake safeguards
 
-**Date:** 2026-11-12. **Status:** Code and offline tests complete; scheduled refresh after Chunk 6 and official record-level verification pending.
+**Date:** 2026-11-12. **Status:** Code and 27 offline tests complete; first post-change collector refresh confirmed; official record-level verification pending.
 
 ## Post-fix live collection evidence
 
@@ -23,7 +23,7 @@ The project still sets `live_verified=false` and shows the data as screened cand
 - Exclude additional permit statuses: on hold, stop work order, and revoked, even when issue dates and new-build descriptions exist.
 - Normalize builder grouping **conservatively** for case, punctuation and known license-decorations. Preserve legal-entity and trading-as detail, and expose `aliases` on each builder rollup. The original `builder`, `projects`, `valuation` and `jurisdictions` fields remain for dashboard compatibility.
 - Create `public/data/overlap_audit.json` after successful scans. It counts exact cross-source permit-number collisions, separately tracking when issue dates also match, without deleting or merging any permits. Address similarity never constitutes proof of identity.
-- Add four unit tests for the status, builder and cross-source collision policies. **27 tests passed in the local development environment.** The GitHub Actions run resulting from these changes is not counted as passed unless independently checked.
+- Add four unit tests for the status, builder and cross-source collision policies. **27 tests passed in the local development environment.** The later generated-data commit provides evidence that the workflow passed its test and collection stages, but the Pages deployment stage was not independently inspected.
 - Do not turn on Wake County until a trustworthy issue date, issuer jurisdiction and overlap rule are validated.
 
 ## Record-level validation limitations
@@ -48,3 +48,13 @@ Official Wake data catalog: https://catalog.data.gov/dataset/building-permits-ff
 2. Official record-level spot checks, especially newly included Mecklenburg new-building records.
 3. Complete Wake schema/jurisdiction discovery; enable only if data and duplicate gates pass.
 4. Expand to at least one additional quality source (e.g. Johnston, Brunswick, Cabarrus or Buncombe), subject to authoritative issued-date and eligibility fields.
+
+## First post-Chunk-6 live refresh confirmed
+
+`public/data/sources.json` reports a new collection at **2026-11-12 19:02:03 UTC** with the same screened market totals: Raleigh 781, New Hanover 813, Mecklenburg 701 and Greensboro 879 (total **3,174**).
+
+New `public/data/overlap_audit.json` is present with `wake_enabled=false` and **zero exact cross-source permit-number collision pairs** across active markets. This is a baseline, not proof of perfect project de-duplication.
+
+The updated `public/data/builders.json` contains **378 builder groups**, with **five groups** retaining multiple source-name variants after conservative normalization. For example, the two punctuation/case spellings of **Stanley Martin Homes LLC** now total **116 screened projects** in one displayed group. No fuzzy merging of different legal entities was performed.
+
+**Still pending:** agency-level verification of sample issued permits, Wake source schema/jurisdiction, and explicit confirmation of the Pages deployment step for this refresh.
