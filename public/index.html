@@ -81,7 +81,7 @@ function render(){
   var tr=document.createElement("tr");textCell(tr,p.issued_date);textCell(tr,String(p.score));textCell(tr,p.category);
   textCell(tr,p.jurisdiction);var description=textCell(tr,p.address);var small=document.createElement("div");small.className="muted";small.textContent=(p.description||"").slice(0,160);description.appendChild(small);
   textCell(tr,p.contractor||"Not listed");textCell(tr,money(p.valuation));
-  var cell=document.createElement("td"),a=document.createElement("a");a.textContent=p.permit_number;a.href=p.permit_detail_url||p.source_url;a.title=p.permit_detail_url?"Open individual permit details":"Open official source database";a.target=" _blank".trim();a.rel="noopener noreferrer";cell.appendChild(a);tr.appendChild(cell);tbody.appendChild(tr);
+  var cell=document.createElement("td"),a=document.createElement("a");a.textContent=p.permit_number;a.href=p.permit_detail_url||p.source_url;a.title=p.permit_detail_url?"Open individual permit details":"Open official source database";a.target="_blank";a.rel="noopener noreferrer";cell.appendChild(a);tr.appendChild(cell);tbody.appendChild(tr);
  });
 }
 function exportCsv(){
