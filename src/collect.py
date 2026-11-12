@@ -481,6 +481,26 @@ def rss(title, records, path):
     (ROOT / 'public' / path).write_bytes(ET.tostring(root, encoding='utf-8', xml_declaration=True))
 
 
+def sales_field_coverage(permits):
+    """Aggregate contact availability; no personal data in the summary."""
+    buckets = {}
+    keys = ('contractor', 'contractor_phone', 'contractor_email',
+            'contractor_license', 'project_name', 'source_record_url',
+            'permit_detail_url')
+    for p in permits:
+        market = p.get('jurisdiction') or '(unknown)'
+        row = buckets.setdefault(market, {'jurisdiction': market, 'screened_permits': 0,
+                                           **{k + '_available': 0 for k in keys},
+                                           'phone_or_email_available': 0})
+        row['screened_permits'] += 1
+        for k in keys:
+            row[k + '_available'] += int(bool(str(p.get(k) or '').strip()))
+        row['phone_or_email_available'] += int(bool(
+            str(p.get('contractor_phone') or '').strip()
+            or str(p.get('contractor_email') or '').strip()))
+    return sorted(buckets.values(), key=lambda r:r['jurisdiction'].casefold())
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     permits, health, diagnostics_by_source = [], [], []
@@ -515,6 +535,11 @@ def main():
     permits = sorted({p['id']: p for p in permits}.values(),
                      key=lambda x: (x['issued_date'], x['score']), reverse=True)
     (OUT / 'permits.json').write_text(json.dumps(permits, indent=2) + '\n', encoding='utf-8')
+    (OUT / 'sales_field_coverage.json').write_text(json.dumps({
+        'note': 'Source-published business contact availability among screened records; not independently verified leads',
+        'as_of_utc': dt.datetime.now(dt.timezone.utc).isoformat(),
+        'sources': sales_field_coverage(permits),
+    }, indent=2) + '\n', encoding='utf-8')
     (OUT / 'builder_rankings.json').write_text(json.dumps({
         'method': 'Ranked by issued permit candidates in last 90 days, then 30 days, then all screened permits; never unique projects',
         'as_of_utc_date': dt.datetime.now(dt.timezone.utc).date().isoformat(),
