@@ -62,6 +62,40 @@ class Chunk13Tests(unittest.TestCase):
         self.assertIn('100 TEST DR',out[0]['address'])
         self.assertFalse(out[0]['included_in_sales_leads'])
 
+    def test_brunswick_duplicate_permit_numbers_use_project_reference(self):
+        sample=[
+            {'permit_number':'1000','project_number':'701942','gis_object_id':284255},
+            {'permit_number':'1000','project_number':'701212','gis_object_id':283852},
+            {'permit_number':'1000','project_number':'702962','gis_object_id':284686},
+        ]
+        audit=m.annotate_review_identifiers(sample,'brunswick')
+        self.assertEqual(audit['permit_numbers_reused_in_sample'],1)
+        self.assertEqual(audit['project_numbers_reused_in_sample'],0)
+        self.assertEqual(sample[0]['reference_label'],'Project 701942')
+        self.assertTrue(all(r['permit_number_reused_in_sample'] for r in sample))
+        self.assertTrue(all(r['reference_kind']=='project_number_not_globally_verified' for r in sample))
+
+    def test_repeated_project_number_falls_back_to_exact_gis_id(self):
+        sample=[
+            {'permit_number':'1000','project_number':'200','gis_object_id':91},
+            {'permit_number':'1000','project_number':'200','gis_object_id':92},
+        ]
+        audit=m.annotate_review_identifiers(sample,'brunswick')
+        self.assertEqual(audit['project_numbers_reused_in_sample'],1)
+        self.assertTrue(all(r['reference_kind']=='gis_object_id' for r in sample))
+        self.assertEqual(sample[0]['reference_label'],'GIS record 91')
+
+    def test_wake_duplicate_number_is_flagged_without_promotion(self):
+        sample=[
+            {'permit_number':'A-1','gis_object_id':3},
+            {'permit_number':'A-1','gis_object_id':4},
+            {'permit_number':'B-2','gis_object_id':5},
+        ]
+        m.annotate_review_identifiers(sample,'wake')
+        self.assertEqual(sample[0]['reference_label'],'GIS record 3')
+        self.assertEqual(sample[2]['reference_label'],'Permit B-2')
+        self.assertTrue(sample[1]['permit_number_reused_in_sample'])
+
     def test_queue_is_bounded_and_uses_exact_types(self):
         calls=[]
         def wake_req(url,args):
