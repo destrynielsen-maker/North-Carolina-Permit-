@@ -43,6 +43,7 @@ def inspect_metadata(info, target):
     return {
         'id': target['id'], 'name': target['name'], 'url': target['url'],
         'state': 'schema_read', 'field_count': len(fields),
+        'field_names': [f['name'] for f in fields],
         'issue_date_candidates': [{'name':f['name'], 'type':f.get('type','')}
                                   for f in dates],
         'interesting_fields': interesting[:75],
