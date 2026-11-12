@@ -1,1 +1,2258 @@
-[]
+[
+  {
+    "builder": "CLAYTON PROPERTIES GROUP INC (LIC# 81396)",
+    "projects": 196,
+    "valuation": 58005662.62,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Meritage Homes of the Carolinas, Inc.",
+    "projects": 109,
+    "valuation": 43500581.93000001,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "PULTE HOME COMPANY LLC (B) (LIC# 19311)",
+    "projects": 76,
+    "valuation": 21739499.74,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "D.R. Horton, Inc. T/A Emerald Homes",
+    "projects": 60,
+    "valuation": 15962868.450000001,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "LENNAR CAROLINAS, LLC",
+    "projects": 58,
+    "valuation": 19989889.41,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Stanley Martin Homes, LLC",
+    "projects": 52,
+    "valuation": 16427687.460000005,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "KB Home Raleigh-Durham Inc.",
+    "projects": 45,
+    "valuation": 13405412.670000004,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "TRUSST BUILDER GROUP LLC (B) (LIC# 73371)",
+    "projects": 41,
+    "valuation": 15894002.189999994,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Front Street Construction Services, LLC",
+    "projects": 39,
+    "valuation": 20010790.959999997,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "NEW LEAF BUILDERS OF NC LLC (B) (LIC# 86840)",
+    "projects": 36,
+    "valuation": 9356121.280000001,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Toll Brothers",
+    "projects": 22,
+    "valuation": 9215941.63,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "CHARTER BUILDING GROUP INC (B) (LIC# 67679)",
+    "projects": 19,
+    "valuation": 8555967.33,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HERRINGTON CLASSIC HOMES LLC T/A (B) (LIC# 68106)",
+    "projects": 18,
+    "valuation": 4180101.2899999996,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HARDISON HOMES LLC (LIC# 72498)",
+    "projects": 18,
+    "valuation": 5592144.16,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Center Park Builder Services NC, LLC",
+    "projects": 16,
+    "valuation": 5237120.129999999,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "HALLMARK BUILDING CORPORATION, T/A (B) (LIC#67549)",
+    "projects": 16,
+    "valuation": 4643429.580000001,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ROBUCK HOMES TRIANGLE LLC (B) (LIC# 57083)",
+    "projects": 16,
+    "valuation": 5014776.01,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "MICHAEL CHRISTIAN HOMES LLC (B) (LIC# 85071)",
+    "projects": 15,
+    "valuation": 8117785.16,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Havenn Homes, LLC",
+    "projects": 15,
+    "valuation": 3913528.799999999,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Taylor Morrison of Carolina",
+    "projects": 15,
+    "valuation": 4576160.540000001,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "HAGOOD HOMES INC (B) (LIC# 36868)",
+    "projects": 14,
+    "valuation": 3316640.880000001,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "M I HOMES OF RALEIGH",
+    "projects": 14,
+    "valuation": 4252002.400000001,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Concept 8, LLC",
+    "projects": 12,
+    "valuation": 3846014.659999999,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Smoot Custom Homes, LLC",
+    "projects": 12,
+    "valuation": 2064631.2000000004,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "TM BTR of Carolinas, LLC",
+    "projects": 11,
+    "valuation": 3815147.16,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "WILLIAMS REALTY & BUILDING COMPANY INC.",
+    "projects": 10,
+    "valuation": 5625535.199999999,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "PBC BUILDING CORPORATION (B) (LIC# 100860)",
+    "projects": 10,
+    "valuation": 10023253.489999998,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SOURCE CONSTRUCTION LLC (B) (LIC# 100275)",
+    "projects": 10,
+    "valuation": 4347143.92,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "FACT Construction Company",
+    "projects": 10,
+    "valuation": 5496874.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "SMITH DOUGLAS HOMES",
+    "projects": 10,
+    "valuation": 3066588.34,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "LEGACY CUSTOM HOMES",
+    "projects": 10,
+    "valuation": 3611287.28,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "COLEMAN FINE HOMES LLC (LIC# 79419)",
+    "projects": 9,
+    "valuation": 4567329.48,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "BEAZER HOMES CORP, T/A",
+    "projects": 9,
+    "valuation": 3383772.6300000004,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "LEWIS COASTAL HOMES AND RENOVATIONS LLC (B) (LIC# 87899)",
+    "projects": 9,
+    "valuation": 2465202.0800000005,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Haven Build",
+    "projects": 9,
+    "valuation": 1527174.4,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "CONTR - CHOATE CONSTRUCTION CO.",
+    "projects": 9,
+    "valuation": 14130616.899999997,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "CLANCY & THEYS CONSTRUCTION CO (LIC# 02077)",
+    "projects": 8,
+    "valuation": 30000642.96,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HOMES BY DICKERSON INC",
+    "projects": 8,
+    "valuation": 6102480.58,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "TILYOU HOMES LLC (B) (LIC# 86593)",
+    "projects": 8,
+    "valuation": 4380498.220000001,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "MURDOCK GANNON CONSTRUCTION, I",
+    "projects": 8,
+    "valuation": 5160166.180000001,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "HARDISON BUILDING INC (B) (LIC# 38799)",
+    "projects": 8,
+    "valuation": 4017253.89,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ICG HOMES, LLC",
+    "projects": 7,
+    "valuation": 6587714.229999999,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Legacy Custom Homes NC, Inc",
+    "projects": 7,
+    "valuation": 3691396.83,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "CAPE FEAR HABITAT FOR HUMANITY INC (B) (LIC# 46532)",
+    "projects": 7,
+    "valuation": 1081944.9000000001,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HABITAT FOR HUMANITY OF WAKE COUNTY",
+    "projects": 7,
+    "valuation": 1127796.46,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "HAROLD K JORDAN AND CO INC (B) (LIC# 26431)",
+    "projects": 7,
+    "valuation": 22124440.529999997,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SBM HOMES LLC",
+    "projects": 7,
+    "valuation": 2037772.7999999998,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "GWATHMEY RESIDENTIAL GROUP LLC (B) (LIC# 77174)",
+    "projects": 7,
+    "valuation": 896326.8299999998,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ROLINA HOMES NC LLC (LIC# 86936)",
+    "projects": 6,
+    "valuation": 1373882.5299999998,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Meritage Homes",
+    "projects": 6,
+    "valuation": 2686260.3600000003,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "TRUE HOME LLC AKA TRIBUTE HOMES TRUE HOMES LLC T/A (B) (LIC#67353)",
+    "projects": 6,
+    "valuation": 1322046.23,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "BRIDGEWATER BUILDERS, INC. (LIC# 106967)",
+    "projects": 6,
+    "valuation": 1975624.77,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Blue Heel Construction",
+    "projects": 5,
+    "valuation": 2788345.21,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "JOHNSON CUSTOM BUILDERS LLC (LIC#82124)",
+    "projects": 5,
+    "valuation": 1143927.88,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "DJF BUILDERS, INC.",
+    "projects": 5,
+    "valuation": 5017073.87,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "KIRK PIGFORD HOMES LLC (B) (LIC# 66732)",
+    "projects": 5,
+    "valuation": 2343772.79,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "VAHUE CUSTOM HOMES INC (B) (LIC# 83504)",
+    "projects": 5,
+    "valuation": 2554095.8200000003,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ROBUCK HOMES TRIANGLE LLC",
+    "projects": 5,
+    "valuation": 2967275.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "STEVENS FINE HOMES  T/A STEVENS BUILDING COMPANY (B) (LIC# 31626)",
+    "projects": 5,
+    "valuation": 1495311.82,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "RICHARD WALLACE BUILDER INC (B) (LIC# 29206)",
+    "projects": 5,
+    "valuation": 2347963.81,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "IRONWOOD LLC (B) (LIC# 79479)",
+    "projects": 5,
+    "valuation": 1418660.27,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "McMurphy Homes",
+    "projects": 4,
+    "valuation": 833799.5,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "CCH RDU, LLC",
+    "projects": 4,
+    "valuation": 2795893.44,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "VENTURE HOMES CONSTRUCTION LLC (B) (LIC# 81685)",
+    "projects": 4,
+    "valuation": 1945074.44,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "AWK INC - KENT HOMES & ASSOCIATES (LIC# 36337)",
+    "projects": 4,
+    "valuation": 2137971.65,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Ravenscape Construction, LLC",
+    "projects": 4,
+    "valuation": 2459132.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "A & M Ventures, Inc. T/A Habitech Builders",
+    "projects": 4,
+    "valuation": 2773924.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "WIMCO CORP (B) LIC# 03478)",
+    "projects": 4,
+    "valuation": 1743084.22,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Cardinal Civil Contracting",
+    "projects": 4,
+    "valuation": 14467932.680000002,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Kaye House",
+    "projects": 4,
+    "valuation": 1384796.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "DANIEL KERR TOLLENS (B) (LIC# 104094)",
+    "projects": 4,
+    "valuation": 1625123.1500000001,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "OakTowne Builders",
+    "projects": 3,
+    "valuation": 2730969.78,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "TM BTR OF CAROLINAS, LLC",
+    "projects": 3,
+    "valuation": 983221.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "RALEIGH CUSTOM HOMES",
+    "projects": 3,
+    "valuation": 3117602.55,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "ROCK CREEK BUILDERS INC",
+    "projects": 3,
+    "valuation": 2634406.0700000003,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Eastwood Construction Partners, LLC",
+    "projects": 3,
+    "valuation": 922040.1299999999,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Annex Construction, LLC",
+    "projects": 3,
+    "valuation": 5230334.5,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Caruso Homes",
+    "projects": 3,
+    "valuation": 1619671.96,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "RETE CONSTRUCTION INC (B) (LIC# 83556)",
+    "projects": 3,
+    "valuation": 542957.67,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HOME LIFE INC (GC) (LIC # 38767)",
+    "projects": 3,
+    "valuation": 1037718.6099999999,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "MONTEITH CONSTRUCTION CORP (B) (LIC# 43319)",
+    "projects": 3,
+    "valuation": 13238333.53,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "COPPER BUILDERS LLC (LIC# 73657)",
+    "projects": 3,
+    "valuation": 1614204.44,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "STEVE SYPHER DESIGNS INC",
+    "projects": 2,
+    "valuation": 1102927.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "ENVIRONMENTS UNLIMITED INC (B) (LIC# 68071)",
+    "projects": 2,
+    "valuation": 3539455.5,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "KEN HARVEY HOMES, L.L.C.",
+    "projects": 2,
+    "valuation": 1578702.8399999999,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Upright Builders, Inc.",
+    "projects": 2,
+    "valuation": 2127520.57,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "DELANEYS COASTAL CONSTRUCTION LLC (LIC# 86286)",
+    "projects": 2,
+    "valuation": 733318.21,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "CAMBRIDGE CLASSIC HOMES LLC",
+    "projects": 2,
+    "valuation": 1789260.4,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "FEP CONSTRUCTION LLC",
+    "projects": 2,
+    "valuation": 1040835.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "TRI Pointe Homes Holdings, Inc",
+    "projects": 2,
+    "valuation": 895224.99,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "DENNIS MOELLER CUSTOM HOMES INC (LIC# 42807)",
+    "projects": 2,
+    "valuation": 1113156.97,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SHELTER ROCK BUILDERS LLC (LIC# 87938)",
+    "projects": 2,
+    "valuation": 412705.18,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "REDEEMING DEVELOPMENT GROUP LLC.",
+    "projects": 2,
+    "valuation": 1111647.31,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "WELLS CONSTRUCTION CORP (LIC# 60812)",
+    "projects": 2,
+    "valuation": 848019.81,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "LOYD BUILDERS, LLC",
+    "projects": 2,
+    "valuation": 2720821.64,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "SEXTON CONSTRUCTION COASTAL LLC (B) (LIC# 74848)",
+    "projects": 2,
+    "valuation": 2512470.48,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "W.M. Jordan Company, Inc.",
+    "projects": 2,
+    "valuation": 60064242.739999995,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Hicaps",
+    "projects": 2,
+    "valuation": 764435.9,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "STIER CONSTRUCTION COMPANY INC",
+    "projects": 2,
+    "valuation": 1279253.71,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "LIBERTY COASTAL INC (GC) (LIC# 104875)",
+    "projects": 2,
+    "valuation": 590051.5,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SMITH DESIGNBUILD INC.",
+    "projects": 2,
+    "valuation": 1421473.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "KELLY C HODGES",
+    "projects": 2,
+    "valuation": 8086044.74,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "AIRLIE HOMES LLC (LIC# 75624)",
+    "projects": 2,
+    "valuation": 1177345.75,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Dixon/Kirby & Company, Inc.",
+    "projects": 2,
+    "valuation": 1874600.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "C HERMAN CONSTRUCTION, LLC",
+    "projects": 2,
+    "valuation": 13168184.82,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "EASTERN HOME AND PROPERTY LLC (LIC# 81476)",
+    "projects": 2,
+    "valuation": 595566.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "H.J. MORRIS CONSTRUCTION, INC.",
+    "projects": 2,
+    "valuation": 1472591.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "URBAN BUILDING & DEVELOPMENT LLC (B) (LIC# 81731)",
+    "projects": 2,
+    "valuation": 636081.76,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ROERS GENERAL CONTRACTING LLC",
+    "projects": 2,
+    "valuation": 35165338.56,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "J. D. Beam, Inc.",
+    "projects": 2,
+    "valuation": 10634085.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "NORTH STATE CUSTOM BUILDERS AKA NORTH STATE PARTNERS CONSTRUCTION LLC (LIC# 70046)",
+    "projects": 2,
+    "valuation": 1988859.57,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Haven Build, LLC AKA: Haven Design/Build Haven Bui",
+    "projects": 2,
+    "valuation": 336307.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "JACOBS REDEVELOPMENT LLC (B) (LIC# 88121)",
+    "projects": 2,
+    "valuation": 513289.66,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SWAN SONG PROPERTIES LLC (LIC# 75686)",
+    "projects": 2,
+    "valuation": 433880.86,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "AMERICAS HOME PLACE OF WILMINGTON LLC (LIC# 88113",
+    "projects": 2,
+    "valuation": 611227.18,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "DSW HOMES LLC (B) (LIC# 77881)",
+    "projects": 2,
+    "valuation": 275945.58,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HHHUNT HOMES RALEIGH-DURHAM LLC (B) (LIC# 66021)",
+    "projects": 2,
+    "valuation": 787250.02,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "KONRADY & SON CONSTRUCTION LLC (LIC# 69050)",
+    "projects": 2,
+    "valuation": 1825078.92,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "VENTURE CONSTRUCTION COMPANY (B) (LIC# 06934)",
+    "projects": 2,
+    "valuation": 1140637.1600000001,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Leo Construction and Development LLC (GC) (LIC#108263)",
+    "projects": 2,
+    "valuation": 550567.68,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "W3 BUILT LLC (B) (LIC# 84763)",
+    "projects": 2,
+    "valuation": 778867.98,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "MCKINLEY BUILDING CORP (B) (LIC# 30896)",
+    "projects": 2,
+    "valuation": 10352587.89,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "BELL CUSTOM HOMES LLC (LIC# 76096)",
+    "projects": 2,
+    "valuation": 1121318.43,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "DR HORTON INC T/A EMERALD HOMES (B) (LIC# 29676)",
+    "projects": 2,
+    "valuation": 578912.21,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "IVEY CUSTOM BUILDERS LLC (LIC# 77240)",
+    "projects": 2,
+    "valuation": 338369.72,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ALLURE HOMES, LLC",
+    "projects": 1,
+    "valuation": 774248.64,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Abode Contracting LLC",
+    "projects": 1,
+    "valuation": 1145499.63,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "CLEAR CONSTRUCTION GROUP LLC",
+    "projects": 1,
+    "valuation": 454860.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Consigli Construction",
+    "projects": 1,
+    "valuation": 115241263.5,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "ST. CLAIR CONSTRUCTION GROUP,",
+    "projects": 1,
+    "valuation": 1456129.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "East Coast Construction",
+    "projects": 1,
+    "valuation": 853923.51,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "URBAN BUILDING SOLUTIONS LLC",
+    "projects": 1,
+    "valuation": 1019591.76,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "TMA Enterprise, LLC",
+    "projects": 1,
+    "valuation": 452004.63,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Woda Construction",
+    "projects": 1,
+    "valuation": 19000.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "HJB CONSTRUCTION, INC",
+    "projects": 1,
+    "valuation": 1151419.61,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "CIVIL WORKS CONTRACTING LLC (B) (LIC# 71885)",
+    "projects": 1,
+    "valuation": 296380.8,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "JOHLCO",
+    "projects": 1,
+    "valuation": 477661.44,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Bliss homes",
+    "projects": 1,
+    "valuation": 800702.52,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Oakmere Development Group",
+    "projects": 1,
+    "valuation": 591474.18,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "McCrory Construction",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "VERICON CONSTRUCTION",
+    "projects": 1,
+    "valuation": 595790.54,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "JAMES R VANNOY & SONS CONST CO INC (LIC#03810)",
+    "projects": 1,
+    "valuation": 26813700.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "LIGHTNING LABOR CONSTRUCTION SERVICES LLC (LIC #100531)",
+    "projects": 1,
+    "valuation": 231609.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SEPTEMBER SIGNS & GRAPHICS LLC (LIC# 82749)",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "DRB Group - North Carolina, LLC",
+    "projects": 1,
+    "valuation": 1300057.92,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Eastwood Homes of Raleigh, LLC DBA IBEX HC",
+    "projects": 1,
+    "valuation": 369709.89,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "KING HOMES INC (LIC# 60541)",
+    "projects": 1,
+    "valuation": 154075.13,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "MONTEREY BAY CONSTRUCTION RALEIGH LLC",
+    "projects": 1,
+    "valuation": 705207.36,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "John C. Sanders & Company",
+    "projects": 1,
+    "valuation": 1101270.06,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Solid Rock Renovations LLC",
+    "projects": 1,
+    "valuation": 1258770.48,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "GRANDER CONSTRUCTION GROUP LLC(#105199)",
+    "projects": 1,
+    "valuation": 532149.25,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ROBERT HIGH DEVELOPMENT LLC (B) (LIC# 70647)",
+    "projects": 1,
+    "valuation": 3434560.75,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Speight Built LLC",
+    "projects": 1,
+    "valuation": 648211.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Good Neighbor Fence Co",
+    "projects": 1,
+    "valuation": 406919.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "K J CONSTRUCTION",
+    "projects": 1,
+    "valuation": 842981.7,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Sambrick",
+    "projects": 1,
+    "valuation": 4804521.96,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Irima General Contracting LLC",
+    "projects": 1,
+    "valuation": 243025.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "RONALD JAMES BARNELLO II (B) (LIC# 87739)",
+    "projects": 1,
+    "valuation": 552552.9,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SHIPSHAPE BUILDING LLC (LIC# 87646)",
+    "projects": 1,
+    "valuation": 97524.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Champion Custom Homes",
+    "projects": 1,
+    "valuation": 398544.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "OLD FORT LLC (GC) (LIC# 52105)",
+    "projects": 1,
+    "valuation": 923678.75,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "MITCHELL HOMES, INC. (LIC# 76127)",
+    "projects": 1,
+    "valuation": 247380.47,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Candito Construction",
+    "projects": 1,
+    "valuation": 696413.25,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Boney Building & Realty Company",
+    "projects": 1,
+    "valuation": 907399.68,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "16 POINTE PROPERTIES LLC (B) (LIC# 64649)",
+    "projects": 1,
+    "valuation": 739604.74,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "LANDMARK MANAGEMENT PARTNERS,",
+    "projects": 1,
+    "valuation": 646137.85,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "GUPTON BUILT LLC",
+    "projects": 1,
+    "valuation": 540200.4,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Capstone Builders, LLC",
+    "projects": 1,
+    "valuation": 928203.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Family Building Company II LLC",
+    "projects": 1,
+    "valuation": 175446.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "LYNNDALE, INC. ((GC) LIC # 11727)",
+    "projects": 1,
+    "valuation": 973632.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Murdock & Gannon Construction, Inc.",
+    "projects": 1,
+    "valuation": 446773.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Kearey Builders, Inc.",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "SHORELINE HOME BUILDERS LLC (LIC# 106052)",
+    "projects": 1,
+    "valuation": 547038.4,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Williams Realty and Building Company Inc.",
+    "projects": 1,
+    "valuation": 553629.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "B Elliott Enterprise Inc",
+    "projects": 1,
+    "valuation": 943942.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "DONE RIGHT THE FIRST TIME CONTRACTORS",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "BAER CONSTRUCTION GROUP LLC (LIC# 107384)",
+    "projects": 1,
+    "valuation": 506940.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "NCDP LLC",
+    "projects": 1,
+    "valuation": 256975.7,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "TURNER-DUNN CONSTRUCTION, LLC ((GC) LIC# 102411)",
+    "projects": 1,
+    "valuation": 110069.42,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "TIDAL WAVE HOMES LLC (B) (LIC # 79581)",
+    "projects": 1,
+    "valuation": 235665.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "THE CATAMOUNT GROUP LLC (LIC# 103860)",
+    "projects": 1,
+    "valuation": 343140.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "C4 BUILDERS LLC (LIC# 73522)",
+    "projects": 1,
+    "valuation": 470782.26,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ARCO Design/Build",
+    "projects": 1,
+    "valuation": 10000.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "HIGHLAND COMPANY OF EASTERN NORTH CAROLINA, LLC (LIC# 58057)",
+    "projects": 1,
+    "valuation": 344215.09,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "WALLICK CONSTRUCTION LLC (GC) (LIC #88330)",
+    "projects": 1,
+    "valuation": 5528805.64,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "CLAYTON HOMES OF RALEIGH",
+    "projects": 1,
+    "valuation": 351180.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "EXETER BUILDING COMPANY",
+    "projects": 1,
+    "valuation": 1182202.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Blanton Building, Inc.",
+    "projects": 1,
+    "valuation": 842725.89,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "KINGPOST DESIGN & CONSTRUCTION INC (LIC# 52564)",
+    "projects": 1,
+    "valuation": 974632.73,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "CAROLINA MOUNTAINS TO COAST HOMES, LLC (LIC# 100273)",
+    "projects": 1,
+    "valuation": 363736.42,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Holtsclaw Construction Company, LLC",
+    "projects": 1,
+    "valuation": 1115788.63,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "ANGE CONSTRUCTION COMPANY",
+    "projects": 1,
+    "valuation": 1198808.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "WILMINGTON BUILDING COMPANY LLC (LIC# 100834)",
+    "projects": 1,
+    "valuation": 333737.54,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HKJ",
+    "projects": 1,
+    "valuation": 3711461.9,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "CLANCY AND THEYS CONSTRUCTION Co.",
+    "projects": 1,
+    "valuation": 11395049.3,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Homes by Hatteras",
+    "projects": 1,
+    "valuation": 499046.4,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "NELLA CONSTRUCTORS INC",
+    "projects": 1,
+    "valuation": 75872.94,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "R. Stewart Homes, LLC",
+    "projects": 1,
+    "valuation": 1127764.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "LTB CONSTRUCTION LLC",
+    "projects": 1,
+    "valuation": 560560.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "JOHN CHARLES HYATT (B) (LIC # 68411)",
+    "projects": 1,
+    "valuation": 622366.47,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "PARAGON BUILDING GROUP",
+    "projects": 1,
+    "valuation": 961270.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "WILKS BUILDERS INC",
+    "projects": 1,
+    "valuation": 969646.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "NextGen Custom Builders LLC",
+    "projects": 1,
+    "valuation": 767919.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Essential Construction Maintenance Services, LLC",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "schumacher homes",
+    "projects": 1,
+    "valuation": 1208050.4,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "HAYES BARTON HOMES",
+    "projects": 1,
+    "valuation": 833043.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "L AND L OF RALEIGH INC",
+    "projects": 1,
+    "valuation": 873331.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "C Herman Construction",
+    "projects": 1,
+    "valuation": 9766110.06,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "BRASFIELD & GORRIE, L.L.C.",
+    "projects": 1,
+    "valuation": 308249031.38,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Mangum Design-Build, Inc.",
+    "projects": 1,
+    "valuation": 717812.4,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Woodard Builders of the Triangle, LLC",
+    "projects": 1,
+    "valuation": 684889.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "JBC MOBILE TRANSPORT",
+    "projects": 1,
+    "valuation": 6000.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Hamel Builders Inc",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "MIDTOWN CUSTOM HOMES LLC",
+    "projects": 1,
+    "valuation": 1285737.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "W. H. Bass, Inc.",
+    "projects": 1,
+    "valuation": 456019.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "WILSON-COVINGTON CONSTRUCTION",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "DREES HOME",
+    "projects": 1,
+    "valuation": 777449.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Charles W. Hughes Construction, LLC",
+    "projects": 1,
+    "valuation": 8438581.62,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "COASTAL CYPRESS BUILDERS LLC  (GC) (LIC # 108542)",
+    "projects": 1,
+    "valuation": 578360.76,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ASI Signage",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Coral Construction Com LLC",
+    "projects": 1,
+    "valuation": 8300.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "SNYDER-HANKINS CUSTOM HOMES",
+    "projects": 1,
+    "valuation": 1039968.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Williams Realty & Building Company",
+    "projects": 1,
+    "valuation": 485812.08,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "LIONS CONSTRUCTION INC",
+    "projects": 1,
+    "valuation": 1301990.51,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "LEGACY BUILDING GROUP, INC (L.104243)",
+    "projects": 1,
+    "valuation": 158817.6,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "JW2 BUILDING COMPANY",
+    "projects": 1,
+    "valuation": 787557.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Prewitt-Douglas Custom Homes",
+    "projects": 1,
+    "valuation": 501645.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "WELLS CONSTRUCTION CORP",
+    "projects": 1,
+    "valuation": 441490.87,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "PREMIER CONSTRUCTION GROUP, INC.(LIC# 102003)",
+    "projects": 1,
+    "valuation": 412690.2,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "DAE BUILDING INC (B) (LIC# 78264)",
+    "projects": 1,
+    "valuation": 1224840.96,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SCHMIDT CUSTOM BUILDERS, INC (LIC# 58046)",
+    "projects": 1,
+    "valuation": 546928.11,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Bridges Construction, LLC",
+    "projects": 1,
+    "valuation": 406630.4,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "BOSTIC BUILDING CORPORATION (B) (LIC# 55725)",
+    "projects": 1,
+    "valuation": 235910.31,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ROBUCK PARTNERS LLC",
+    "projects": 1,
+    "valuation": 583087.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Upton & Co., Inc.",
+    "projects": 1,
+    "valuation": 743948.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "FORTIFIED SOLUTIONS INC",
+    "projects": 1,
+    "valuation": 1646986.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "CMC BUILDING INC (LIC# 52920)",
+    "projects": 1,
+    "valuation": 1378771.5,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "BENNETT CONSTRUCTION GROUP NC, LLC (LIC# 88138)",
+    "projects": 1,
+    "valuation": 286312.84,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SIERRA STRUCTURES INC",
+    "projects": 1,
+    "valuation": 15161.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "LAZZARI CONSTRUCTION INC",
+    "projects": 1,
+    "valuation": 2963704.04,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Clancy & Theys Construction Company",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "ANNIS MANGRUM LLC  dba SUNDANCE SIGNATURE HOMES",
+    "projects": 1,
+    "valuation": 870587.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "PETERSON BUILDERS FRAMING CONTRACTORS LLC (GC) (LIC # 83382)",
+    "projects": 1,
+    "valuation": 353148.58,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "FIGURED SERVICES, LLC (LIC# 86065)",
+    "projects": 1,
+    "valuation": 947170.52,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "GITTO ENTERPRISES",
+    "projects": 1,
+    "valuation": 1388203.56,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Hoss Builders, Inc",
+    "projects": 1,
+    "valuation": 723732.8,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "HANK MORRIS - H.J. MORRIS CONSTR",
+    "projects": 1,
+    "valuation": 707560.0,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "TBD CONTRACTOR \u2013 DO NOT CHANGE THIS NAME!!",
+    "projects": 1,
+    "valuation": 5125315.3,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "FORREST CONSTRUCTION UNLIMITED LLC ((GC) LIC# 109008)",
+    "projects": 1,
+    "valuation": 357229.31,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "Arcadia Construction Company",
+    "projects": 1,
+    "valuation": 636515.2,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "Norsouth Construction Company of Georgia, Inc.",
+    "projects": 1,
+    "valuation": 7040185.74,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "HOMESTEAD BUILDING COMPANY",
+    "projects": 1,
+    "valuation": 1029427.6,
+    "jurisdictions": [
+      "Raleigh"
+    ]
+  },
+  {
+    "builder": "JESSIE HOWIE T/A (B) (LIC# 51630)",
+    "projects": 1,
+    "valuation": 149442.95,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "WILLIAM BRADLEY HAMILTON, T/A (LIC 81155)",
+    "projects": 1,
+    "valuation": 477224.83,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "INSEA MARINE LLC (B) (LIC# 105679)",
+    "projects": 1,
+    "valuation": 999011.95,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "TOO CONSTRUCTION COMPANY INC (B) (LIC# 83867)",
+    "projects": 1,
+    "valuation": 567111.18,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "BARKER AND CANADY CUSTOM HOMES, INC",
+    "projects": 1,
+    "valuation": 628873.58,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "BTM CONSTRUCTION, LLC (LIC# 80317)",
+    "projects": 1,
+    "valuation": 186610.68,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "LOGAN DEVELOPERS INC T/A LOGAN HOMES (B) (LIC# 34408)",
+    "projects": 1,
+    "valuation": 509980.96,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ATLANTIC BUILDING COMPANY NC LLC (B) (LIC# 102235)",
+    "projects": 1,
+    "valuation": 430903.03,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "JAMIE POLICZ, T/A (LIC# 63008)",
+    "projects": 1,
+    "valuation": 542516.51,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "WXZ CONSTRUCTION/SE, LLC (LIC# 68602)",
+    "projects": 1,
+    "valuation": 15311.7,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "MIDDLEBURG CONSTRUCTION LLC (B) (LIC# 81228)",
+    "projects": 1,
+    "valuation": 71478.85,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "VILERRA HOMES, LLC (LIC# 105621)",
+    "projects": 1,
+    "valuation": 240211.62,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "UNIQUE HOMES/BUILDER DESIGNER INC (B) (LIC# 51627)",
+    "projects": 1,
+    "valuation": 440718.84,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "EASTERN ADU LLC (B) (LIC #104507)",
+    "projects": 1,
+    "valuation": 162236.59,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "ASL SIGNS",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "SALT ROCK BUILDERS LLC (B) (LIC# 60508)",
+    "projects": 1,
+    "valuation": 461920.32,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "STEWART BUILDING COMPANY LLC",
+    "projects": 1,
+    "valuation": 186610.68,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "STRONGLAST BUILDERS LLC (LIC# 103610)",
+    "projects": 1,
+    "valuation": 789124.95,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HAPPINESS CONSTRUCTION SERVICES LLC (B) (LIC# 101641)",
+    "projects": 1,
+    "valuation": 266791.51,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HKS CONSTRUCTION INC (LIC# 76976)",
+    "projects": 1,
+    "valuation": 209109.84,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "UTILITY PARTNERS OF AMERICA LLC T/A (B) (LIC# 70752)",
+    "projects": 1,
+    "valuation": 16000.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "CJM CONTRACTING (LIC# 106554)",
+    "projects": 1,
+    "valuation": 206904.04,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "MAZZARONE CONSTRUCTION CO LLC (LIC# 85283)",
+    "projects": 1,
+    "valuation": 183522.56,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "VRL BUILDERS GROUP LLC (B) (LIC# 83014)",
+    "projects": 1,
+    "valuation": 609462.54,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "BLUEWATER CONSTRUCTION LLC (LIC#49996)",
+    "projects": 1,
+    "valuation": 417158.82,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HONEYCUTT CONSTRUCTION SERVICES INC (B) (LIC# 73372)",
+    "projects": 1,
+    "valuation": 683920.0,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "MILES E KATH (B) (LIC# 100796)",
+    "projects": 1,
+    "valuation": 248593.66,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "TEEITUP VENTURES LLC T/A LIBERTY HOMES",
+    "projects": 1,
+    "valuation": 557846.82,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "REDLINE CONSTRUCTION LLC TA REDLINE CONS OF COASTAL CAROLINA LLC (B) (LIC# 84222)",
+    "projects": 1,
+    "valuation": 703319.33,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  },
+  {
+    "builder": "HICKS CONSTRUCTION GROUP LLC (LIC# 103946)",
+    "projects": 1,
+    "valuation": 375316.87,
+    "jurisdictions": [
+      "New Hanover County"
+    ]
+  }
+]

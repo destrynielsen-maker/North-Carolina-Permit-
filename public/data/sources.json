@@ -1,45 +1,45 @@
 {
-  "last_checked_utc": null,
+  "last_checked_utc": "2026-11-12T18:22:58.948836+00:00",
   "live_verified": false,
   "coverage_note": "Partial market coverage; record-level verification pending",
   "sources": [
     {
       "name": "Raleigh",
       "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
-      "state": "mapped - live query pending",
-      "detail": "Published field schema mapped; sample validation pending",
-      "scanned": 0,
-      "qualified": 0
+      "state": "collected - sample verification pending",
+      "detail": "published field schema confirmed; record-level verification pending",
+      "scanned": 3005,
+      "qualified": 781
     },
     {
       "name": "New Hanover County",
       "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
-      "state": "mapped - live query pending",
-      "detail": "Published field schema mapped; monthly GIS refresh",
-      "scanned": 0,
-      "qualified": 0
+      "state": "collected - sample verification pending",
+      "detail": "published field schema confirmed; record-level verification pending; monthly refresh",
+      "scanned": 21445,
+      "qualified": 813
     },
     {
       "name": "Mecklenburg County / Charlotte",
       "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
-      "state": "mapped - live query pending",
-      "detail": "Published field schema mapped; selected layer lacks contractor",
-      "scanned": 0,
-      "qualified": 0
+      "state": "collected - sample verification pending",
+      "detail": "published field schema confirmed; builder not exposed in this layer; record-level verification pending",
+      "scanned": 1729,
+      "qualified": 7
     },
     {
       "name": "Wake County",
       "source_url": "https://maps.wake.gov/arcgis/rest/services/Inspections/Building_Permits/MapServer/0",
-      "state": "paused",
-      "detail": "Schema and Raleigh overlap not checked",
+      "state": "paused - not qualified for issued-lead collection",
+      "detail": "official dataset confirmed; field schema and overlap with Raleigh not yet tested",
       "scanned": 0,
       "qualified": 0
     },
     {
       "name": "Durham",
       "source_url": "https://webgis2.durhamnc.gov/server/rest/services/CartographicServices/Inspections/MapServer/20",
-      "state": "paused",
-      "detail": "Active permits source has no issue date",
+      "state": "paused - not qualified for issued-lead collection",
+      "detail": "active-permit layer has no issue-date field; source not suitable for issued-date leads",
       "scanned": 0,
       "qualified": 0
     }
