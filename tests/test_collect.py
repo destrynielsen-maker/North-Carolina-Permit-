@@ -48,6 +48,36 @@ class QualificationTests(unittest.TestCase):
         self.assertEqual(p['category'], 'Commercial')
         self.assertEqual(p['contractor'], '')
 
+    def test_mecklenburg_new_bldg_detached_qualifies(self):
+        p = nc.normalize(make(M, permittype='One/Two Family New Bldg',
+                              typeofbldg='R3 RESIDENTIAL - SINGLE FAMILY',
+                              usdcdesc='101 - One Family Detached', worktype='',
+                              constrtype='5B WOOD FRAME/UNPROTECTED',
+                              permitdesc='Build a new detached house'), M, TODAY)
+        self.assertEqual(p['category'], 'Single Family')
+
+    def test_mecklenburg_new_bldg_apartments_qualify(self):
+        p = nc.normalize(make(M, permittype='Commercial New Bldg',
+                              typeofbldg='R2 RESIDENTIAL - MULTIPLE FAMILY',
+                              usdcdesc='105 - 5 or More Family Apartments',
+                              worktype='', constrtype='5A WOOD FRAME/PROTECTED',
+                              permitdesc='New residential apartment building'), M, TODAY)
+        self.assertEqual(p['category'], 'Multifamily')
+
+    def test_mecklenburg_new_bldg_alteration_excluded(self):
+        p = nc.normalize(make(M, permittype='One/Two Family New Bldg',
+                              typeofbldg='R3 RESIDENTIAL',
+                              usdcdesc='434 - Res Dwelling (Alteration, Repair)',
+                              worktype='', permitdesc='Replace existing kitchen'), M, TODAY)
+        self.assertIsNone(p)
+
+    def test_mecklenburg_existing_bldg_does_not_qualify(self):
+        p = nc.normalize(make(M, permittype='One/Two Family Existing Bldg',
+                              typeofbldg='R3 RESIDENTIAL',
+                              usdcdesc='101 - One Family Detached',
+                              worktype='', permitdesc='Existing residence'), M, TODAY)
+        self.assertIsNone(p)
+
     def test_greensboro_new_single_family_with_contractor(self):
         p = nc.normalize(make(G, PermitNum=123456, IssuedDate='2026-11-10',
                               StatusCurrent='Issued', ApplicationType='New Construction',
