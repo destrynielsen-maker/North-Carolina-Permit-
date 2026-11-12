@@ -1,0 +1,47 @@
+{
+  "last_checked_utc": null,
+  "live_verified": false,
+  "coverage_note": "Partial market coverage; record-level verification pending",
+  "sources": [
+    {
+      "name": "Raleigh",
+      "source_url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Building_Permits_Issued_Past_180_Days/FeatureServer/0",
+      "state": "mapped - live query pending",
+      "detail": "Published field schema mapped; sample validation pending",
+      "scanned": 0,
+      "qualified": 0
+    },
+    {
+      "name": "New Hanover County",
+      "source_url": "https://gisport.nhcgov.com/server/rest/services/Thematic/BuildingPermits/FeatureServer/0",
+      "state": "mapped - live query pending",
+      "detail": "Published field schema mapped; monthly GIS refresh",
+      "scanned": 0,
+      "qualified": 0
+    },
+    {
+      "name": "Mecklenburg County / Charlotte",
+      "source_url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/BuildingPermits/FeatureServer/0",
+      "state": "mapped - live query pending",
+      "detail": "Published field schema mapped; selected layer lacks contractor",
+      "scanned": 0,
+      "qualified": 0
+    },
+    {
+      "name": "Wake County",
+      "source_url": "https://maps.wake.gov/arcgis/rest/services/Inspections/Building_Permits/MapServer/0",
+      "state": "paused",
+      "detail": "Schema and Raleigh overlap not checked",
+      "scanned": 0,
+      "qualified": 0
+    },
+    {
+      "name": "Durham",
+      "source_url": "https://webgis2.durhamnc.gov/server/rest/services/CartographicServices/Inspections/MapServer/20",
+      "state": "paused",
+      "detail": "Active permits source has no issue date",
+      "scanned": 0,
+      "qualified": 0
+    }
+  ]
+}
