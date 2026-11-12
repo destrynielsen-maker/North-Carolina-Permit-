@@ -46,3 +46,18 @@ The original invalid Accela ArcGIS contractor pilot was sourced to Anaheim, Cali
 - Avoid promoting property owners, applicants, or trade subcontractors to general contractors without explicit agency evidence.
 
 The next chunk should implement a local official-download importer and a controlled distribution process rather than attempting an automated county API integration.
+
+## Confirmed final refresh — 2026-11-12T22:51:12.030983+00:00
+
+The revised workflow passed **123 automated tests with 0 failures** (CI check time `2026-11-12T22:50:57.042011+00:00`). The last successfully generated source-status report contains:
+
+- **Current screened:** 2473 (Raleigh, New Hanover, Greensboro)
+- **Historic Mecklenburg:** 701 (frozen, collected November 12, 2026)
+- **Scheduled Mecklenburg live GIS queries:** disabled
+- **New Mecklenburg permits added automatically:** 0
+
+The historical archive is present at `public/data/mecklenburg_snapshot.json`. Current users see active collections by default; they can switch to **Historic Charlotte only** or **Include historic Charlotte** on the dashboard. The permit details explicitly warn that historical status has not been refreshed. Historic source buttons open the County's official open-data **download catalog**, rather than invoking the county's commercial-restricted GIS API through our application.
+
+Both dashboard scripts (`public/index.html` and `public/permit.html`) were separately syntax-checked after the changes; the latest GitHub Pages browser rendering was not independently verified. The collector test suite includes archiving, non-polling, RSS exclusion, snapshot immutability and historical display tests.
+
+**Release conclusion:** Commercial-use compliance safeguard implemented. Next implement the local downloadable Mecklenburg Accela Building Permits importer after an actual official dataset file is available. Do not revert to periodic live API polling.
