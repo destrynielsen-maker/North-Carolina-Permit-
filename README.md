@@ -71,6 +71,12 @@ The **Start verification** links in the County Research Queue open a prefilled G
 
 Details, limitations and release criteria are in [Chunk 15 validation](docs/CHUNK_15_VALIDATION.md). Wake and Brunswick remain research-only.
 
+## Chunk 17 — evidence-gated human review decisions
+
+The [manual decision ledger](reviews/decisions.json) starts with both issue-backed Wake and Brunswick records marked **pending**. Its [validation rules](src/compile_reviews.py) reject unsupported confirmation claims, including missing official record-specific evidence, issuing authority, licensed primary GC, reviewer attestations, or duplicate resolution.
+
+GitHub Actions generates `public/data/review_status.json`. The dashboard shows these curated review states separately from GIS consistency. **No review decision automatically enables a county or publishes leads**, including a human-marked `confirmed` decision. The workflow deliberately holds every reviewed record for a separate, future explicit release decision. Details: [Chunk 17 validation](docs/CHUNK_17_VALIDATION.md).
+
 ## Data quality rules
 
 - Authoritative **issued** date required; never substitute application date.
