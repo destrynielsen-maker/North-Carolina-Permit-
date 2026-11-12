@@ -31,7 +31,7 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 </div>
 <section class="panel">
 <h2>Construction opportunities</h2>
-<p class="muted">Results are screened public-record candidates, not independently verified leads. Only permits with authoritative issue dates are eligible. Confirm directly with the issuing office. Partial regional coverage; no invented permits.</p>
+<p class="muted">Click a permit number for a sales-friendly project page with builder details and contacts when provided by the agency. Original GIS sources and official city permit pages are in the next column. These are screened public-record opportunities, not independently verified leads.</p>
 <div class="filters">
 <input id="search" placeholder="Search builder, permit, address or project">
 <select id="type"><option value="">All types</option><option>Single Family</option><option>Multifamily</option><option>Commercial</option></select>
@@ -41,7 +41,7 @@ footer{text-align:center;padding:24px;color:#687b8b;font-size:12px}
 <button id="export">Export CSV</button>
 </div>
 <div class="scroller"><table><thead><tr>
-<th data-key="issued_date">Issued ↕</th><th data-key="score">Score ↕</th><th>Type</th><th>Jurisdiction</th><th>Address / Description</th><th>Builder</th><th data-key="valuation">Value ↕</th><th>Permit</th>
+<th data-key="issued_date">Issued ↕</th><th data-key="score">Score ↕</th><th>Type</th><th>Jurisdiction</th><th>Address / Description</th><th>Builder</th><th data-key="valuation">Value ↕</th><th>Permit details</th><th>Official source</th>
 </tr></thead><tbody id="rows"></tbody></table></div>
 <div id="empty" class="empty"></div>
 </section>
@@ -126,6 +126,7 @@ function permitUrl(p){
   return "https://bisched.greensboro-nc.gov/frmBuildingPermitView.aspx?bldgPermitNumber="+encodeURIComponent(p.permit_number);
  return p.source_url||"#";
 }
+function detailUrl(p){return "permit.html?id="+encodeURIComponent(String(p.id||""))}
 function textCell(row,text){var td=document.createElement("td");td.textContent=text||"";row.appendChild(td);return td}
 function filtered(){
  var q=el("search").value.toLowerCase(),kind=el("type").value,j=el("jur").value,days=Number(el("days").value),score=Number(el("score").value),now=Date.now();
@@ -145,13 +146,29 @@ function render(){
   var tr=document.createElement("tr");textCell(tr,p.issued_date);textCell(tr,String(p.score));textCell(tr,p.category);
   textCell(tr,p.jurisdiction);var description=textCell(tr,p.address);var small=document.createElement("div");small.className="muted";small.textContent=(p.description||"").slice(0,160);description.appendChild(small);
   textCell(tr,p.contractor||"Not listed");textCell(tr,money(p.valuation));
-  var cell=document.createElement("td"),a=document.createElement("a");a.textContent=p.permit_number;a.href=permitUrl(p);a.title=p.permit_detail_url?"Open individual permit details":"Open official source database";a.target="_blank";a.rel="noopener noreferrer";cell.appendChild(a);tr.appendChild(cell);tbody.appendChild(tr);
+  var cell=document.createElement("td"),a=document.createElement("a");
+  a.textContent=p.permit_number;a.href=detailUrl(p);a.title="View sales-friendly permit details";
+  cell.appendChild(a);tr.appendChild(cell);
+  var sourceCell=document.createElement("td"),sourceLink=document.createElement("a");
+  sourceLink.href=p.source_record_url||p.source_url||"#";
+  sourceLink.textContent=p.source_record_url?"Exact GIS record":"GIS source";
+  sourceLink.title="View original government source data";sourceLink.target="_blank";sourceLink.rel="noopener noreferrer";
+  sourceCell.appendChild(sourceLink);
+  var cityPermit=permitUrl(p);
+  if(cityPermit&&cityPermit!==p.source_url&&cityPermit!==p.source_record_url){
+   var line=document.createElement("div"),city=document.createElement("a");line.className="muted";
+   city.href=cityPermit;city.textContent="Official city permit";city.target="_blank";city.rel="noopener noreferrer";
+   line.appendChild(city);sourceCell.appendChild(line);
+  }
+  tr.appendChild(sourceCell);tbody.appendChild(tr);
  });
 }
 function exportCsv(){
- var cols=["issued_date","score","category","jurisdiction","address","contractor","valuation","permit_number","description","permit_detail_url","source_url"];
+ var cols=["issued_date","score","category","jurisdiction","address","contractor","valuation","permit_number","description","contractor_phone","contractor_email","contractor_license","sales_detail_url","permit_detail_url","source_record_url","source_url"];
  function quote(x){return '"'+String(x==null?"":x).replaceAll('"','""')+'"'}
- var lines=[cols.join(",")].concat(filtered().map(function(p){return cols.map(function(k){return quote(p[k])}).join(",")}));
+ var lines=[cols.join(",")].concat(filtered().map(function(p){return cols.map(function(k){
+  return quote(k==="sales_detail_url"?new URL(detailUrl(p),location.href).href:p[k]);
+ }).join(",")}));
  var a=document.createElement("a"),url=URL.createObjectURL(new Blob([lines.join("\r\n")],{type:"text/csv"}));
  a.href=url;a.download="north-carolina-permit-leads.csv";a.click();URL.revokeObjectURL(url);
 }
