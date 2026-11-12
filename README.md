@@ -59,6 +59,12 @@ Brunswick's mapped source exposes `SubContractor`, not a confirmed prime/general
 
 The [Chunk 12 validation report](docs/CHUNK_12_VALIDATION.md) describes the safeguards. A read-only `public/data/chunk12_validation.json` report will summarize Wake URL shapes (without permit IDs) and Brunswick GIS field evidence after a successful workflow refresh.
 
+## Chunk 13 — research-only permit review
+
+The dashboard includes a separate **County research queue — NOT published leads** table. It shows a bounded set of Wake and Brunswick candidate permit numbers with government GIS exact-permit queries plus the current official public search sites. It does not convert older Wake links into unverified new portal deep links or assign Brunswick subcontractors as primary homebuilders.
+
+The queue is created in `public/data/chunk13_review_queue.json` by `src/review_chunk13.py` when the workflow runs successfully. All rows have `included_in_sales_leads=false` and require separate manual issuer, date and prime-builder verification. The active dashboard and RSS continue to use the existing four verified-for-collection (not individually audited) GIS sources. See [Chunk 13 notes](docs/CHUNK_13_VALIDATION.md).
+
 ## Data quality rules
 
 - Authoritative **issued** date required; never substitute application date.
