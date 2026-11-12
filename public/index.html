@@ -191,8 +191,9 @@ function render(){
   a.textContent=p.permit_number;a.href=detailUrl(p);a.title="View sales-friendly permit details";
   cell.appendChild(a);tr.appendChild(cell);
   var sourceCell=document.createElement("td"),sourceLink=document.createElement("a");
-  sourceLink.href=p.source_record_url||p.source_url||"#";
-  sourceLink.textContent=p.collection_mode==="historic_snapshot"?"Original GIS source (manual research)":(p.source_record_url?"Exact GIS record":"GIS source");
+  var isHistoric=p.collection_mode==="historic_snapshot";
+  sourceLink.href=isHistoric?"https://maps.mecklenburgcountync.gov/openmapping/data.html":(p.source_record_url||p.source_url||"#");
+  sourceLink.textContent=isHistoric?"Official downloadable data":(p.source_record_url?"Exact GIS record":"GIS source");
   sourceLink.title="View original government source data";sourceLink.target="_blank";sourceLink.rel="noopener noreferrer";
   sourceCell.appendChild(sourceLink);
   var cityPermit=permitUrl(p);
@@ -366,7 +367,10 @@ Promise.all([
   var div=document.createElement("div");div.className="source";
   var b=document.createElement("strong");b.textContent=s.name+": ";div.appendChild(b);
   div.appendChild(document.createTextNode(s.state+" · "+(s.qualified||0)+" current screened"+(s.archived_count?" · "+s.archived_count+" historic as of "+String(s.snapshot_as_of_utc||"").slice(0,10):"")+" · "+(s.detail||"")));
-  var link=document.createElement("a");link.href=s.source_url;link.target="_blank";link.rel="noopener noreferrer";link.textContent=" official source";
+  var link=document.createElement("a");
+  link.href=s.collection_mode==="historic_snapshot"?"https://maps.mecklenburgcountync.gov/openmapping/data.html":s.source_url;
+  link.target="_blank";link.rel="noopener noreferrer";
+  link.textContent=s.collection_mode==="historic_snapshot"?" official download catalog":" official source";
   div.appendChild(link);el("sources").appendChild(div);
  });render();
 }).catch(function(e){el("empty").textContent="Collector has not provided data yet: "+e.message});
