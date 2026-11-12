@@ -25,7 +25,7 @@ python -m http.server --directory public 8000
 
 ## GitHub Actions / Pages
 
-The [permit refresh workflow](.github/workflows/permits.yml) runs on pushes to `main`, manual dispatch and every six hours at minute 17 UTC. It checks the offline test suite (27 tests as of Chunk 6), queries official services, commits the refreshed data and deploys the `public/` folder.
+The [permit refresh workflow](.github/workflows/permits.yml) runs on pushes to `main`, manual dispatch and every six hours at minute 17 UTC. It checks the offline test suite (35 tests as of Chunk 7), queries official collection services, probes disabled source metadata without adding permit records, commits the refreshed data and deploys the `public/` folder.
 
 **Enable Pages:** Repository → **Settings** → **Pages** → **Build and deployment** → **Source: GitHub Actions**. After enabling, use the **Actions** tab to run `North Carolina permit refresh and deploy` if the initial push didn't deploy.
 
@@ -35,7 +35,9 @@ Every successful refresh writes `public/data/diagnostics.json`, aggregated work 
 
 Chunk 6 also adds a **non-destructive** `public/data/overlap_audit.json` for exact cross-source permit-number collisions (no automatic merges), and safely consolidates contractor spelling, punctuation and license-label variants in builder rollups while retaining original aliases. Wake County remains disabled until its issuer and duplicate coverage are confirmed.
 
-See [source directory](docs/SOURCE_DIRECTORY.md) and [Chunk 6 checkpoint](docs/CHUNK_6_VALIDATION.md) for government data URLs, validation evidence, and coverage caveats.
+Chunk 7 generates **[time-window builder rankings](public/data/builder_rankings.json)** (ranked by screened issued permits in the last 90/30 days, with aliases, category mix and average valuation), a **[24-permit manual QA queue](public/data/qa_samples.json)** with source-level query links, and **[read-only source schema probes](public/data/source_probes.json)** for Wake, Brunswick and Cabarrus once the next workflow run completes. The QA samples are **not independently verified**. The dashboard includes a top-20 builder leaderboard.
+
+See [source directory](docs/SOURCE_DIRECTORY.md) and [Chunk 7 checkpoint](docs/CHUNK_7_VALIDATION.md) for government data URLs, verification evidence, and coverage caveats.
 
 ## Data quality rules
 
