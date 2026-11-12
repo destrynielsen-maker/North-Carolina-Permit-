@@ -99,16 +99,26 @@ def brunswick_date_sample(limit=MAX_SAMPLE):
         raise RuntimeError('Brunswick missing fields: '+','.join(absent))
     raw=query_page(url,"DateIssued IS NOT NULL",
                    ['PermitNumber','DateIssued','PermitStatus','PermitType','Jurisdiction'],
-                   limit=limit)
+                   limit=limit,order='DateIssued DESC')
     formats=Counter(date_format(value(a,'DateIssued')) for a in raw)
-    good=sum(issue_date(value(a,'DateIssued')) is not None for a in raw)
+    dates=[issue_date(value(a,'DateIssued')) for a in raw]
+    valid_dates=[d for d in dates if d is not None]
+    good=len(valid_dates)
+    current=TODAY()
+    recent=sum(0 <= (current-d).days <= 365 for d in valid_dates)
     statuses=Counter(str(value(a,'PermitStatus') or '(blank)').strip()[:70] for a in raw)
     jurisdictions=Counter(str(value(a,'Jurisdiction') or '(blank)').strip()[:70] for a in raw)
+    permit_types=Counter(str(value(a,'PermitType') or '(blank)').strip()[:70] for a in raw)
     return {
      'state':'sampled_no_promotion','sample_size':len(raw),
      'date_field_type':fields['dateissued'],
      'date_formats':dict(formats),
      'parseable_by_current_issued_date_parser':good,
+     'sample_order':'DateIssued DESC (lexical; assumes ISO-like strings)',
+     'sample_issued_date_min':min(valid_dates).isoformat() if valid_dates else None,
+     'sample_issued_date_max':max(valid_dates).isoformat() if valid_dates else None,
+     'sample_issued_in_last_365_days':recent,
+     'top_permit_types':dict(permit_types.most_common(10)),
      'top_statuses':dict(statuses.most_common(10)),
      'top_jurisdictions':dict(jurisdictions.most_common(10)),
      'limitation':'Issue-date strings, permit status and government scope require record verification before publishing; no prime contractor is inferred from SubContractor.',
