@@ -1,5 +1,5 @@
 {
-  "last_checked_utc": "2026-11-12T19:12:28.811723+00:00",
+  "last_checked_utc": "2026-11-12T19:14:56.730162+00:00",
   "live_verified": false,
   "coverage_note": "Partial market coverage; record-level verification pending",
   "sources": [
@@ -30,16 +30,16 @@
     {
       "name": "Greensboro",
       "source_url": "https://gis.greensboro-nc.gov/arcgis/rest/services/EngineeringInspections/BuildingPermits_MS/MapServer/6",
-      "state": "error - requires investigation",
-      "detail": "<urlopen error timed out>",
-      "scanned": 0,
-      "qualified": 0
+      "state": "collected - sample verification pending",
+      "detail": "official issued-date/contractor schema confirmed; live records and screening require review",
+      "scanned": 3594,
+      "qualified": 879
     },
     {
       "name": "Wake County",
       "source_url": "https://maps.wake.gov/arcgis/rest/services/Inspections/Building_Permits/MapServer/0",
       "state": "paused - not qualified for issued-lead collection",
-      "detail": "official dataset confirmed; field schema and overlap with Raleigh not yet tested",
+      "detail": "ISSUE_DATE, PERMIT_NUMBER, PERMIT_STATUS, WORK_CLASS and CONTRACTOR verified in schema; issuer jurisdiction and Raleigh overlap require testing",
       "scanned": 0,
       "qualified": 0
     },

@@ -157,6 +157,53 @@
         "excluded_work_or_trade": 907,
         "no_explicit_new_construction": 121
       }
+    },
+    {
+      "source": "Greensboro",
+      "scanned": 3594,
+      "qualified": 879,
+      "work_types": {
+        "Int/Ext Alteration": 1361,
+        "New Construction": 996,
+        "Miscellaneous": 354,
+        "Addition": 212,
+        "Int/Ext Demolition": 128,
+        "Deck": 106,
+        "Accessory Building - Residential": 103,
+        "Reroof": 94,
+        "Repair": 86,
+        "Total Demolish": 75,
+        "Retaining Wall": 53,
+        "Initial Up-Fit": 20,
+        "Sign": 3,
+        "Place on Lot": 3
+      },
+      "permit_types": {
+        "Int/Ext Alteration One Family Residence": 853,
+        "New Construction One Family Residence": 540,
+        "New Construction Townhouse": 251,
+        "Int/Ext Alteration Business": 198,
+        "Addition One Family Residence": 194,
+        "Miscellaneous Sign": 172,
+        "Miscellaneous ABC": 114,
+        "Deck One Family Residence": 105,
+        "Accessory Building - Residential One Family Residence": 89,
+        "Int/Ext Alteration Assembly": 58,
+        "Int/Ext Alteration Mercantile": 57,
+        "Int/Ext Demolition Business": 50,
+        "Repair One Family Residence": 49,
+        "Int/Ext Demolition Apartment-Individual Units": 48,
+        "New Construction Apartment Building - Shell": 43
+      },
+      "statuses": {
+        "Issued                                                      ": 1887,
+        "Final Inspection Made                                       ": 1707
+      },
+      "rejection_reasons": {
+        "excluded_work_or_trade": 2347,
+        "no_explicit_new_construction": 310,
+        "missing_building_category": 58
+      }
     }
   ]
 }
