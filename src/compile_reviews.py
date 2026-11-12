@@ -39,10 +39,10 @@ def official_record_evidence_url(url, source):
         return False
     try:
         u = urlsplit(url.strip())
+        if (u.scheme != 'https' or not u.hostname or u.port not in (None, 443)
+                or u.username or u.password or u.hostname.lower() not in PORTAL_HOSTS.get(source, ())):
+            return False
     except ValueError:
-        return False
-    if (u.scheme != 'https' or not u.hostname or u.port not in (None, 443)
-            or u.username or u.password or u.hostname.lower() not in PORTAL_HOSTS.get(source, ())):
         return False
     if u.fragment.lower().startswith(('/search', '/home', '/dashboard')):
         return False
