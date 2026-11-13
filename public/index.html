@@ -215,7 +215,9 @@ function exportCsv(){
   return '"'+s.replaceAll('"','""')+'"';
  }
  var rows=filtered(),historicOnly=rows.length>0&&rows.every(function(p){return p.collection_mode==="historic_snapshot"});
- if(!rows.length){el("empty").textContent="No matching permits to export. Adjust filters and try again.";return;}\n var lines=[cols.map(quote).join(",")].concat(rows.map(function(p){return cols.map(function(k){\n  if(k==="lead_verification_status")return quote(p.collection_mode==="historic_snapshot"?"HISTORIC SNAPSHOT - NOT A CURRENT LEAD":"SCREENED PUBLIC RECORD - NOT INDEPENDENTLY VERIFIED");
+ if(!rows.length){el("empty").textContent="No matching permits to export. Adjust filters and try again.";return;}
+ var lines=[cols.map(quote).join(",")].concat(rows.map(function(p){return cols.map(function(k){
+  if(k==="lead_verification_status")return quote(p.collection_mode==="historic_snapshot"?"HISTORIC SNAPSHOT - NOT A CURRENT LEAD":"SCREENED PUBLIC RECORD - NOT INDEPENDENTLY VERIFIED");
   if(k==="sales_detail_url")return quote(new URL(detailUrl(p),location.href).href);
   if(k==="official_source_navigation_url")return quote(p.collection_mode==="historic_snapshot"
    ?"https://maps.mecklenburgcountync.gov/openmapping/data.html"
