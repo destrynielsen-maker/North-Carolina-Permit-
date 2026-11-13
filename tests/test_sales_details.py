@@ -196,6 +196,11 @@ class SalesDetailTests(unittest.TestCase):
         self.assertIn('if(/^[',page)
         self.assertIn('s.replaceAll',page)
         self.assertIn('historicOnly',page)
+        self.assertIn('lead_verification_status',page)
+        self.assertIn('SCREENED PUBLIC RECORD - NOT INDEPENDENTLY VERIFIED',page)
+        self.assertIn('HISTORIC SNAPSHOT - NOT A CURRENT LEAD',page)
+        self.assertIn('north-carolina-MIXED-current-and-historic-permits.csv',page)
+        self.assertIn('No matching permits to export',page)
 
     def test_dashboard_primary_link_is_own_detail_page_and_csv_has_url(self):
         html=(ROOT/'public'/'index.html').read_text(encoding='utf-8')
