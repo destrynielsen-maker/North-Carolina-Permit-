@@ -182,6 +182,11 @@ class SalesDetailTests(unittest.TestCase):
         self.assertEqual(r['phone_or_email_available'],1)
         self.assertEqual(r['contractor_email_available'],1)
         self.assertEqual(r['source_record_url_available'],2)
+        self.assertEqual(r['stories_available'],0)
+        extra=nc.sales_field_coverage([{'jurisdiction':'Greensboro','stories':2,'square_feet':3200},
+                                       {'jurisdiction':'Greensboro','stories':None,'square_feet':None}])
+        self.assertEqual(extra[0]['stories_available'],1)
+        self.assertEqual(extra[0]['square_feet_available'],1)
         self.assertNotIn('sales@example.test',str(coverage))
         self.assertNotIn('9195550100',str(coverage))
 
