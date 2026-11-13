@@ -97,6 +97,20 @@ class SalesDetailTests(unittest.TestCase):
         self.assertIn('OBJECTID+%3D+181231',p['source_record_url'])
         self.assertEqual(p['source_url'],GREENSBORO['url'])
 
+    def test_greensboro_official_building_area_and_stories_are_preserved(self):
+        p=nc.normalize(row(GREENSBORO,PermitNum='202518414',OBJECTID=181231,
+                           BuildingSqFt=3480,NumStories=2,
+                           Contractor='Example Builder'),GREENSBORO,TODAY)
+        self.assertEqual(p['square_feet'],3480)
+        self.assertEqual(p['stories'],2)
+        self.assertEqual(p['contractor'],'Example Builder')
+        self.assertEqual(p['contractor_phone'],'')
+        self.assertEqual(p['contractor_email'],'')
+        q=nc.normalize(row(GREENSBORO,PermitNum='202518415',BuildingSqFt=0,
+                           NumStories='unknown'),GREENSBORO,TODAY)
+        self.assertIsNone(q['square_feet'])
+        self.assertIsNone(q['stories'])
+
     def test_mecklenburg_source_only_site_and_size_fields(self):
         p=nc.normalize(row(MECK,projadd='200 TEST ROAD',projname='Oaks East',
                            projnum='ACC-2026-12',subdiv='Oaks Estate',
