@@ -206,7 +206,7 @@ function render(){
  });
 }
 function exportCsv(){
- var cols=["issued_date","score","category","jurisdiction","address","contractor","valuation","permit_number","description","project_name","project_number","subdivision","parcel_number","square_feet","heated_square_feet","unheated_square_feet","contractor_phone","contractor_email","contractor_license","collection_mode","snapshot_as_of_utc","sales_detail_url","official_source_navigation_url","permit_detail_url","source_record_url","source_url"];
+ var cols=["issued_date","score","category","jurisdiction","address","contractor","valuation","permit_number","description","project_name","project_number","subdivision","parcel_number","square_feet","heated_square_feet","unheated_square_feet","contractor_phone","contractor_email","contractor_license","collection_mode","snapshot_as_of_utc","lead_verification_status","sales_detail_url","official_source_navigation_url","permit_detail_url","source_record_url","source_url"];
  // Government-supplied text may be interpreted as a formula by Excel or Sheets.
  // Prefix dangerous leading formula operators, including after whitespace.
  function quote(x){
@@ -215,7 +215,7 @@ function exportCsv(){
   return '"'+s.replaceAll('"','""')+'"';
  }
  var rows=filtered(),historicOnly=rows.length>0&&rows.every(function(p){return p.collection_mode==="historic_snapshot"});
- var lines=[cols.map(quote).join(",")].concat(rows.map(function(p){return cols.map(function(k){
+ if(!rows.length){el("empty").textContent="No matching permits to export. Adjust filters and try again.";return;}\n var lines=[cols.map(quote).join(",")].concat(rows.map(function(p){return cols.map(function(k){\n  if(k==="lead_verification_status")return quote(p.collection_mode==="historic_snapshot"?"HISTORIC SNAPSHOT - NOT A CURRENT LEAD":"SCREENED PUBLIC RECORD - NOT INDEPENDENTLY VERIFIED");
   if(k==="sales_detail_url")return quote(new URL(detailUrl(p),location.href).href);
   if(k==="official_source_navigation_url")return quote(p.collection_mode==="historic_snapshot"
    ?"https://maps.mecklenburgcountync.gov/openmapping/data.html"
@@ -223,7 +223,7 @@ function exportCsv(){
   return quote(p[k]);
  }).join(",")}));
  var a=document.createElement("a"),url=URL.createObjectURL(new Blob([lines.join("\r\n")],{type:"text/csv;charset=utf-8"}));
- a.href=url;a.download=historicOnly?"north-carolina-HISTORIC-snapshot-not-current-leads.csv":"north-carolina-permit-leads.csv";
+ a.href=url;a.download=historicOnly?"north-carolina-HISTORIC-snapshot-not-current-leads.csv":rows.some(function(p){return p.collection_mode==="historic_snapshot"})?"north-carolina-MIXED-current-and-historic-permits.csv":"north-carolina-permit-leads.csv";
  a.click();URL.revokeObjectURL(url);
 }
 ["search","type","jur","days","score","contact","builderStatus","freshness"].forEach(function(id){el(id).addEventListener("input",render)});
