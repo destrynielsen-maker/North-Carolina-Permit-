@@ -517,7 +517,7 @@ def sales_field_coverage(permits):
     keys = ('contractor', 'contractor_phone', 'contractor_email',
             'contractor_license', 'project_name', 'project_number',
             'project_contact', 'subdivision', 'parcel_number',
-            'project_phase', 'square_feet', 'heated_square_feet',
+            'project_phase', 'square_feet', 'stories', 'heated_square_feet',
             'unheated_square_feet', 'housing_units',
             'source_record_url', 'permit_detail_url')
     for p in permits:
