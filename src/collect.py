@@ -344,6 +344,7 @@ def normalize(a, source, today=None):
     is_raleigh = source.get('id') == 'raleigh'
     is_new_hanover = source.get('id') == 'new_hanover'
     is_mecklenburg = source.get('id') == 'mecklenburg'
+    is_greensboro = source.get('id') == 'greensboro'
     return {
         'id': source['id'] + ':' + number, 'jurisdiction': source['name'],
         'permit_number': number, 'issued_date': issued.isoformat(), 'category': kind,
@@ -374,11 +375,14 @@ def normalize(a, source, today=None):
             optional_number(value(a, 'totalsqft')) if is_raleigh
             else optional_number(value(a, 'SQUARE_FEET')) if is_new_hanover
             else optional_number(value(a, 'totalsqft')) if is_mecklenburg
+            else optional_number(value(a, 'BuildingSqFt')) if is_greensboro
             else None
         ),
         'heated_square_feet': optional_number(value(a, 'heatsqft')) if is_mecklenburg else None,
         'unheated_square_feet': optional_number(value(a, 'unheatsqft')) if is_mecklenburg else None,
-        'stories': optional_number(value(a, 'numberstories')) if is_raleigh else None,
+        'stories': (optional_number(value(a, 'numberstories')) if is_raleigh
+                    else optional_number(value(a, 'NumStories')) if is_greensboro
+                    else None),
         'housing_units': optional_number(value(a, source.get('units'))) if source.get('units') else None,
         'contractor_phone': source_contact(a, 'contractorphone') if is_raleigh else '',
         'contractor_email': source_contact(a, 'contractoremail') if is_raleigh else '',
