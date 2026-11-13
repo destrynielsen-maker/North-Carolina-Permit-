@@ -1,6 +1,6 @@
 {
   "method": "Ranked by issued permit candidates in last 90 days, then 30 days, then all screened permits; never unique projects",
-  "as_of_utc_date": "2026-11-12",
+  "as_of_utc_date": "2026-11-13",
   "builders": [
     {
       "builder": "CLAYTON PROPERTIES GROUP INC (LIC# 81396)",
@@ -48,20 +48,20 @@
       "aliases": [
         "D R HORTON, INC"
       ],
-      "permit_count": 188,
-      "valuation": 36270080.0,
+      "permit_count": 187,
+      "valuation": 36022055.0,
       "jurisdictions": [
         "Greensboro"
       ],
       "categories": {
         "Commercial": 1,
         "Multifamily": 45,
-        "Single Family": 142
+        "Single Family": 141
       },
       "last_issued_date": "2026-11-09",
       "issued_last_30_days": 24,
       "issued_last_90_days": 46,
-      "average_valuation": 192925.96,
+      "average_valuation": 192631.31,
       "rank": 3
     },
     {
@@ -302,26 +302,6 @@
       "rank": 15
     },
     {
-      "builder": "KEYSTONE GROUP, INC",
-      "aliases": [
-        "KEYSTONE GROUP, INC"
-      ],
-      "permit_count": 23,
-      "valuation": 35231075.0,
-      "jurisdictions": [
-        "Greensboro"
-      ],
-      "categories": {
-        "Multifamily": 7,
-        "Single Family": 16
-      },
-      "last_issued_date": "2026-10-12",
-      "issued_last_30_days": 0,
-      "issued_last_90_days": 13,
-      "average_valuation": 1531785.87,
-      "rank": 16
-    },
-    {
       "builder": "PULTE HOME CORP.",
       "aliases": [
         "PULTE HOME CORP."
@@ -340,7 +320,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 12,
       "average_valuation": 208350.81,
-      "rank": 17
+      "rank": 16
     },
     {
       "builder": "HALLMARK BUILDING CORPORATION, T/A (B) (LIC#67549)",
@@ -360,7 +340,7 @@
       "issued_last_30_days": 11,
       "issued_last_90_days": 11,
       "average_valuation": 290214.35,
-      "rank": 18
+      "rank": 17
     },
     {
       "builder": "BLUE RIDGE GENERAL CONTRACTORS",
@@ -379,7 +359,7 @@
       "issued_last_30_days": 10,
       "issued_last_90_days": 11,
       "average_valuation": 3374704.45,
-      "rank": 19
+      "rank": 18
     },
     {
       "builder": "NEW LEAF BUILDERS OF NC LLC (B) (LIC# 86840)",
@@ -396,9 +376,9 @@
       },
       "last_issued_date": "2026-11-09",
       "issued_last_30_days": 7,
-      "issued_last_90_days": 11,
+      "issued_last_90_days": 10,
       "average_valuation": 259892.26,
-      "rank": 20
+      "rank": 19
     },
     {
       "builder": "PULTE HOME COMPANY LLC (B) (LIC# 19311)",
@@ -419,7 +399,7 @@
       "issued_last_30_days": 3,
       "issued_last_90_days": 10,
       "average_valuation": 286046.05,
-      "rank": 21
+      "rank": 20
     },
     {
       "builder": "FACT Construction Company",
@@ -438,7 +418,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 10,
       "average_valuation": 549687.48,
-      "rank": 22
+      "rank": 21
     },
     {
       "builder": "WINDSOR CONTRACTING, LLC",
@@ -459,7 +439,7 @@
       "issued_last_30_days": 9,
       "issued_last_90_days": 9,
       "average_valuation": 2426618.1,
-      "rank": 23
+      "rank": 22
     },
     {
       "builder": "WILLIAMS REALTY & BUILDING COMPANY INC.",
@@ -479,7 +459,7 @@
       "issued_last_30_days": 6,
       "issued_last_90_days": 9,
       "average_valuation": 562553.52,
-      "rank": 24
+      "rank": 23
     },
     {
       "builder": "Concept 8, LLC",
@@ -498,7 +478,7 @@
       "issued_last_30_days": 8,
       "issued_last_90_days": 8,
       "average_valuation": 320501.22,
-      "rank": 25
+      "rank": 24
     },
     {
       "builder": "BEAZER HOMES CORP, T/A",
@@ -518,7 +498,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 8,
       "average_valuation": 375974.74,
-      "rank": 26
+      "rank": 25
     },
     {
       "builder": "EASTWOOD CONSTRUCTION CO, INC",
@@ -538,6 +518,26 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 8,
       "average_valuation": 222779.8,
+      "rank": 26
+    },
+    {
+      "builder": "KEYSTONE GROUP, INC",
+      "aliases": [
+        "KEYSTONE GROUP, INC"
+      ],
+      "permit_count": 23,
+      "valuation": 35231075.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 7,
+        "Single Family": 16
+      },
+      "last_issued_date": "2026-10-12",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 8,
+      "average_valuation": 1531785.87,
       "rank": 27
     },
     {
@@ -697,6 +697,26 @@
       "rank": 35
     },
     {
+      "builder": "D STONE BUILDERS, INC",
+      "aliases": [
+        "D STONE BUILDERS, INC"
+      ],
+      "permit_count": 11,
+      "valuation": 6212000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Multifamily": 9,
+        "Single Family": 2
+      },
+      "last_issued_date": "2026-11-12",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 5,
+      "average_valuation": 564727.27,
+      "rank": 36
+    },
+    {
       "builder": "ROYAL HOMES OF NC",
       "aliases": [
         "ROYAL HOMES OF NC"
@@ -713,7 +733,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 5,
       "average_valuation": 268630.37,
-      "rank": 36
+      "rank": 37
     },
     {
       "builder": "GARMAN HOMES, LLC",
@@ -732,7 +752,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 5,
       "average_valuation": 254629.41,
-      "rank": 37
+      "rank": 38
     },
     {
       "builder": "Taylor Morrison of Carolina",
@@ -751,7 +771,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 5,
       "average_valuation": 305077.37,
-      "rank": 38
+      "rank": 39
     },
     {
       "builder": "P4 CONSTRUCTION, LLC",
@@ -770,7 +790,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 5,
       "average_valuation": 131400.0,
-      "rank": 39
+      "rank": 40
     },
     {
       "builder": "MICHAEL CHRISTIAN HOMES LLC (B) (LIC# 85071)",
@@ -789,7 +809,7 @@
       "issued_last_30_days": 2,
       "issued_last_90_days": 4,
       "average_valuation": 541185.68,
-      "rank": 40
+      "rank": 41
     },
     {
       "builder": "HOMES BY DICKERSON INC",
@@ -808,7 +828,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 4,
       "average_valuation": 762810.07,
-      "rank": 41
+      "rank": 42
     },
     {
       "builder": "McMurphy Homes",
@@ -827,7 +847,7 @@
       "issued_last_30_days": 3,
       "issued_last_90_days": 3,
       "average_valuation": 208449.88,
-      "rank": 42
+      "rank": 43
     },
     {
       "builder": "*** OWNER ***",
@@ -847,7 +867,7 @@
       "issued_last_30_days": 2,
       "issued_last_90_days": 3,
       "average_valuation": 141137.0,
-      "rank": 43
+      "rank": 44
     },
     {
       "builder": "Blue Heel Construction",
@@ -866,7 +886,7 @@
       "issued_last_30_days": 2,
       "issued_last_90_days": 3,
       "average_valuation": 557669.04,
-      "rank": 44
+      "rank": 45
     },
     {
       "builder": "JOHNSON CUSTOM BUILDERS LLC (LIC#82124)",
@@ -885,26 +905,6 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 3,
       "average_valuation": 228785.58,
-      "rank": 45
-    },
-    {
-      "builder": "D STONE BUILDERS, INC",
-      "aliases": [
-        "D STONE BUILDERS, INC"
-      ],
-      "permit_count": 9,
-      "valuation": 5412000.0,
-      "jurisdictions": [
-        "Greensboro"
-      ],
-      "categories": {
-        "Multifamily": 7,
-        "Single Family": 2
-      },
-      "last_issued_date": "2026-10-06",
-      "issued_last_30_days": 0,
-      "issued_last_90_days": 3,
-      "average_valuation": 601333.33,
       "rank": 46
     },
     {
@@ -965,6 +965,25 @@
       "rank": 49
     },
     {
+      "builder": "JOHNSON CONSTRUCTION MGMT, INC",
+      "aliases": [
+        "JOHNSON CONSTRUCTION MGMT, INC"
+      ],
+      "permit_count": 5,
+      "valuation": 725000.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 5
+      },
+      "last_issued_date": "2026-11-12",
+      "issued_last_30_days": 2,
+      "issued_last_90_days": 2,
+      "average_valuation": 145000.0,
+      "rank": 50
+    },
+    {
       "builder": "KEN HARVEY HOMES, L.L.C.",
       "aliases": [
         "KEN HARVEY HOMES, L.L.C."
@@ -981,7 +1000,7 @@
       "issued_last_30_days": 2,
       "issued_last_90_days": 2,
       "average_valuation": 789351.42,
-      "rank": 50
+      "rank": 51
     },
     {
       "builder": "STEVE SYPHER DESIGNS INC",
@@ -1000,7 +1019,7 @@
       "issued_last_30_days": 2,
       "issued_last_90_days": 2,
       "average_valuation": 551463.6,
-      "rank": 51
+      "rank": 52
     },
     {
       "builder": "TRI Pointe Homes Holdings, Inc",
@@ -1019,7 +1038,7 @@
       "issued_last_30_days": 2,
       "issued_last_90_days": 2,
       "average_valuation": 447612.49,
-      "rank": 52
+      "rank": 53
     },
     {
       "builder": "ALARIS HOMES",
@@ -1038,7 +1057,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 2,
       "average_valuation": 235602.72,
-      "rank": 53
+      "rank": 54
     },
     {
       "builder": "HERRINGTON CLASSIC HOMES LLC T/A (B) (LIC# 68106)",
@@ -1058,7 +1077,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 2,
       "average_valuation": 232227.85,
-      "rank": 54
+      "rank": 55
     },
     {
       "builder": "PBC BUILDING CORPORATION (B) (LIC# 100860)",
@@ -1079,7 +1098,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 2,
       "average_valuation": 1002325.35,
-      "rank": 55
+      "rank": 56
     },
     {
       "builder": "COLLINS & GALYON GEN CONTRS",
@@ -1098,7 +1117,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 2,
       "average_valuation": 1320000.0,
-      "rank": 56
+      "rank": 57
     },
     {
       "builder": "DJF BUILDERS, INC.",
@@ -1117,7 +1136,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 2,
       "average_valuation": 1003414.77,
-      "rank": 57
+      "rank": 58
     },
     {
       "builder": "FEP CONSTRUCTION LLC",
@@ -1136,7 +1155,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 2,
       "average_valuation": 520417.6,
-      "rank": 58
+      "rank": 59
     },
     {
       "builder": "CAPE FEAR HABITAT FOR HUMANITY INC (B) (LIC# 46532)",
@@ -1155,7 +1174,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 2,
       "average_valuation": 154563.56,
-      "rank": 59
+      "rank": 60
     },
     {
       "builder": "H H HUNT OF NC, INC",
@@ -1174,7 +1193,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 2,
       "average_valuation": 2198555.0,
-      "rank": 60
+      "rank": 61
     },
     {
       "builder": "Annex Construction, LLC",
@@ -1194,7 +1213,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 2,
       "average_valuation": 1743444.83,
-      "rank": 61
+      "rank": 62
     },
     {
       "builder": "Hicaps",
@@ -1214,7 +1233,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 2,
       "average_valuation": 382217.95,
-      "rank": 62
+      "rank": 63
     },
     {
       "builder": "NEW SOUTH CONSTRUCTION LLC",
@@ -1233,7 +1252,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 2,
       "average_valuation": 23073173.5,
-      "rank": 63
+      "rank": 64
     },
     {
       "builder": "ROYALCREST BUILDERS, LLC",
@@ -1252,7 +1271,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 2,
       "average_valuation": 200000.0,
-      "rank": 64
+      "rank": 65
     },
     {
       "builder": "LAT BUILDERS",
@@ -1271,7 +1290,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 136923.08,
-      "rank": 65
+      "rank": 66
     },
     {
       "builder": "CLANCY & THEYS CONSTRUCTION CO (LIC# 02077)",
@@ -1291,7 +1310,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 3750080.37,
-      "rank": 66
+      "rank": 67
     },
     {
       "builder": "TILYOU HOMES LLC (B) (LIC# 86593)",
@@ -1310,7 +1329,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 547562.28,
-      "rank": 67
+      "rank": 68
     },
     {
       "builder": "ROLINA HOMES NC LLC (LIC# 86936)",
@@ -1329,7 +1348,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 228980.42,
-      "rank": 68
+      "rank": 69
     },
     {
       "builder": "CCH RDU, LLC",
@@ -1348,7 +1367,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 698973.36,
-      "rank": 69
+      "rank": 70
     },
     {
       "builder": "VENTURE HOMES CONSTRUCTION LLC (B) (LIC# 81685)",
@@ -1367,7 +1386,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 486268.61,
-      "rank": 70
+      "rank": 71
     },
     {
       "builder": "OakTowne Builders",
@@ -1387,7 +1406,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 910323.26,
-      "rank": 71
+      "rank": 72
     },
     {
       "builder": "RALEIGH CUSTOM HOMES",
@@ -1406,7 +1425,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 1039200.85,
-      "rank": 72
+      "rank": 73
     },
     {
       "builder": "CAMBRIDGE CLASSIC HOMES LLC",
@@ -1425,7 +1444,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 894630.2,
-      "rank": 73
+      "rank": 74
     },
     {
       "builder": "DELANEYS COASTAL CONSTRUCTION LLC (LIC# 86286)",
@@ -1444,7 +1463,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 366659.1,
-      "rank": 74
+      "rank": 75
     },
     {
       "builder": "DENNIS MOELLER CUSTOM HOMES INC (LIC# 42807)",
@@ -1463,7 +1482,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 556578.48,
-      "rank": 75
+      "rank": 76
     },
     {
       "builder": "ENVIRONMENTS UNLIMITED INC (B) (LIC# 68071)",
@@ -1482,7 +1501,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 1769727.75,
-      "rank": 76
+      "rank": 77
     },
     {
       "builder": "RHNC BUILDERS LLC",
@@ -1501,26 +1520,6 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 17075000.0,
-      "rank": 77
-    },
-    {
-      "builder": "SHELTER ROCK BUILDERS LLC (LIC# 87938)",
-      "aliases": [
-        "SHELTER ROCK BUILDERS LLC (LIC# 87938)"
-      ],
-      "permit_count": 2,
-      "valuation": 412705.18,
-      "jurisdictions": [
-        "New Hanover County"
-      ],
-      "categories": {
-        "Multifamily": 1,
-        "Single Family": 1
-      },
-      "last_issued_date": "2026-10-13",
-      "issued_last_30_days": 1,
-      "issued_last_90_days": 1,
-      "average_valuation": 206352.59,
       "rank": 78
     },
     {
@@ -1809,6 +1808,25 @@
       "rank": 93
     },
     {
+      "builder": "PIEDMONT HOME CONTRACTORS",
+      "aliases": [
+        "PIEDMONT HOME CONTRACTORS"
+      ],
+      "permit_count": 1,
+      "valuation": 0.0,
+      "jurisdictions": [
+        "Greensboro"
+      ],
+      "categories": {
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-11-12",
+      "issued_last_30_days": 1,
+      "issued_last_90_days": 1,
+      "average_valuation": 0.0,
+      "rank": 94
+    },
+    {
       "builder": "ST. CLAIR CONSTRUCTION GROUP,",
       "aliases": [
         "ST. CLAIR CONSTRUCTION GROUP,"
@@ -1825,7 +1843,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 1456129.6,
-      "rank": 94
+      "rank": 95
     },
     {
       "builder": "TMA Enterprise, LLC",
@@ -1844,7 +1862,7 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 452004.63,
-      "rank": 95
+      "rank": 96
     },
     {
       "builder": "URBAN BUILDING SOLUTIONS LLC",
@@ -1863,25 +1881,6 @@
       "issued_last_30_days": 1,
       "issued_last_90_days": 1,
       "average_valuation": 1019591.76,
-      "rank": 96
-    },
-    {
-      "builder": "VERICON CONSTRUCTION",
-      "aliases": [
-        "VERICON CONSTRUCTION"
-      ],
-      "permit_count": 1,
-      "valuation": 595790.54,
-      "jurisdictions": [
-        "Raleigh"
-      ],
-      "categories": {
-        "Commercial": 1
-      },
-      "last_issued_date": "2026-10-13",
-      "issued_last_30_days": 1,
-      "issued_last_90_days": 1,
-      "average_valuation": 595790.54,
       "rank": 97
     },
     {
@@ -2254,6 +2253,26 @@
       "rank": 116
     },
     {
+      "builder": "SHELTER ROCK BUILDERS LLC (LIC# 87938)",
+      "aliases": [
+        "SHELTER ROCK BUILDERS LLC (LIC# 87938)"
+      ],
+      "permit_count": 2,
+      "valuation": 412705.18,
+      "jurisdictions": [
+        "New Hanover County"
+      ],
+      "categories": {
+        "Multifamily": 1,
+        "Single Family": 1
+      },
+      "last_issued_date": "2026-10-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 206352.59,
+      "rank": 117
+    },
+    {
       "builder": "THE HASKELL COMPANY",
       "aliases": [
         "THE HASKELL COMPANY"
@@ -2270,7 +2289,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 4532000.0,
-      "rank": 117
+      "rank": 118
     },
     {
       "builder": "W.M. Jordan Company, Inc.",
@@ -2289,7 +2308,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 30032121.37,
-      "rank": 118
+      "rank": 119
     },
     {
       "builder": "16 POINTE PROPERTIES LLC (B) (LIC# 64649)",
@@ -2308,7 +2327,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 739604.74,
-      "rank": 119
+      "rank": 120
     },
     {
       "builder": "B Elliott Enterprise Inc",
@@ -2327,7 +2346,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 943942.8,
-      "rank": 120
+      "rank": 121
     },
     {
       "builder": "BAER CONSTRUCTION GROUP LLC (LIC# 107384)",
@@ -2346,7 +2365,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 506940.0,
-      "rank": 121
+      "rank": 122
     },
     {
       "builder": "BLACKSTONE RENOVATIONS, LLC",
@@ -2365,7 +2384,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 140000.0,
-      "rank": 122
+      "rank": 123
     },
     {
       "builder": "Boney Building & Realty Company",
@@ -2384,7 +2403,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 907399.68,
-      "rank": 123
+      "rank": 124
     },
     {
       "builder": "Candito Construction",
@@ -2403,7 +2422,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 696413.25,
-      "rank": 124
+      "rank": 125
     },
     {
       "builder": "Capstone Builders, LLC",
@@ -2422,7 +2441,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 928203.2,
-      "rank": 125
+      "rank": 126
     },
     {
       "builder": "CDI BUILDERS II, INC",
@@ -2441,7 +2460,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 530000.0,
-      "rank": 126
+      "rank": 127
     },
     {
       "builder": "Champion Custom Homes",
@@ -2460,7 +2479,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 398544.0,
-      "rank": 127
+      "rank": 128
     },
     {
       "builder": "COMER SHUFORD LLC",
@@ -2479,7 +2498,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 125000.0,
-      "rank": 128
+      "rank": 129
     },
     {
       "builder": "DONE RIGHT THE FIRST TIME CONTRACTORS",
@@ -2498,7 +2517,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 0.0,
-      "rank": 129
+      "rank": 130
     },
     {
       "builder": "DRB Group - North Carolina, LLC",
@@ -2517,7 +2536,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 1300057.92,
-      "rank": 130
+      "rank": 131
     },
     {
       "builder": "DUNBAR & SMITH, INC",
@@ -2536,7 +2555,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 2331500.0,
-      "rank": 131
+      "rank": 132
     },
     {
       "builder": "Eastwood Homes of Raleigh, LLC DBA IBEX HC",
@@ -2555,7 +2574,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 369709.89,
-      "rank": 132
+      "rank": 133
     },
     {
       "builder": "Family Building Company II LLC",
@@ -2574,7 +2593,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 175446.0,
-      "rank": 133
+      "rank": 134
     },
     {
       "builder": "FOGLEMAN & ASSOCIATES OF NC IN",
@@ -2593,7 +2612,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 615000.0,
-      "rank": 134
+      "rank": 135
     },
     {
       "builder": "Good Neighbor Fence Co",
@@ -2612,7 +2631,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 406919.2,
-      "rank": 135
+      "rank": 136
     },
     {
       "builder": "GRANDER CONSTRUCTION GROUP LLC(#105199)",
@@ -2631,7 +2650,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 532149.25,
-      "rank": 136
+      "rank": 137
     },
     {
       "builder": "GUPTON BUILT LLC",
@@ -2650,7 +2669,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 540200.4,
-      "rank": 137
+      "rank": 138
     },
     {
       "builder": "Irima General Contracting LLC",
@@ -2669,7 +2688,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 243025.2,
-      "rank": 138
+      "rank": 139
     },
     {
       "builder": "JAMES R VANNOY & SONS CONST CO INC (LIC#03810)",
@@ -2688,7 +2707,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 26813700.0,
-      "rank": 139
+      "rank": 140
     },
     {
       "builder": "John C. Sanders & Company",
@@ -2707,7 +2726,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 1101270.06,
-      "rank": 140
+      "rank": 141
     },
     {
       "builder": "K J CONSTRUCTION",
@@ -2726,7 +2745,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 842981.7,
-      "rank": 141
+      "rank": 142
     },
     {
       "builder": "KBY GROUP INC",
@@ -2745,7 +2764,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 131250.0,
-      "rank": 142
+      "rank": 143
     },
     {
       "builder": "Kearey Builders, Inc.",
@@ -2764,7 +2783,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 0.0,
-      "rank": 143
+      "rank": 144
     },
     {
       "builder": "KING HOMES INC (LIC# 60541)",
@@ -2783,7 +2802,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 154075.13,
-      "rank": 144
+      "rank": 145
     },
     {
       "builder": "LANDMARK MANAGEMENT PARTNERS,",
@@ -2802,7 +2821,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 646137.85,
-      "rank": 145
+      "rank": 146
     },
     {
       "builder": "LIGHTNING LABOR CONSTRUCTION SERVICES LLC (LIC #100531)",
@@ -2821,7 +2840,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 231609.0,
-      "rank": 146
+      "rank": 147
     },
     {
       "builder": "LYNNDALE, INC. ((GC) LIC # 11727)",
@@ -2840,7 +2859,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 973632.0,
-      "rank": 147
+      "rank": 148
     },
     {
       "builder": "MITCHELL HOMES, INC. (LIC# 76127)",
@@ -2859,7 +2878,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 247380.47,
-      "rank": 148
+      "rank": 149
     },
     {
       "builder": "MONTEREY BAY CONSTRUCTION RALEIGH LLC",
@@ -2878,7 +2897,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 705207.36,
-      "rank": 149
+      "rank": 150
     },
     {
       "builder": "Murdock & Gannon Construction, Inc.",
@@ -2897,7 +2916,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 446773.6,
-      "rank": 150
+      "rank": 151
     },
     {
       "builder": "N C A OF THE CAROLINAS",
@@ -2916,7 +2935,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 647649.0,
-      "rank": 151
+      "rank": 152
     },
     {
       "builder": "NCDP LLC",
@@ -2935,7 +2954,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 256975.7,
-      "rank": 152
+      "rank": 153
     },
     {
       "builder": "OLD FORT LLC (GC) (LIC# 52105)",
@@ -2954,7 +2973,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 923678.75,
-      "rank": 153
+      "rank": 154
     },
     {
       "builder": "RENLEY CONSTRUCTION LLC",
@@ -2973,7 +2992,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 5000000.0,
-      "rank": 154
+      "rank": 155
     },
     {
       "builder": "ROBERT HIGH DEVELOPMENT LLC (B) (LIC# 70647)",
@@ -2992,7 +3011,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 3434560.75,
-      "rank": 155
+      "rank": 156
     },
     {
       "builder": "RONALD JAMES BARNELLO II (B) (LIC# 87739)",
@@ -3011,7 +3030,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 552552.9,
-      "rank": 156
+      "rank": 157
     },
     {
       "builder": "Sambrick",
@@ -3030,7 +3049,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 4804521.96,
-      "rank": 157
+      "rank": 158
     },
     {
       "builder": "SEPTEMBER SIGNS & GRAPHICS LLC (LIC# 82749)",
@@ -3049,7 +3068,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 0.0,
-      "rank": 158
+      "rank": 159
     },
     {
       "builder": "SHIPSHAPE BUILDING LLC (LIC# 87646)",
@@ -3068,7 +3087,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 97524.0,
-      "rank": 159
+      "rank": 160
     },
     {
       "builder": "SHORELINE HOME BUILDERS LLC (LIC# 106052)",
@@ -3087,7 +3106,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 547038.4,
-      "rank": 160
+      "rank": 161
     },
     {
       "builder": "Solid Rock Renovations LLC",
@@ -3106,7 +3125,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 1258770.48,
-      "rank": 161
+      "rank": 162
     },
     {
       "builder": "Speight Built LLC",
@@ -3125,7 +3144,26 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 648211.6,
-      "rank": 162
+      "rank": 163
+    },
+    {
+      "builder": "VERICON CONSTRUCTION",
+      "aliases": [
+        "VERICON CONSTRUCTION"
+      ],
+      "permit_count": 1,
+      "valuation": 595790.54,
+      "jurisdictions": [
+        "Raleigh"
+      ],
+      "categories": {
+        "Commercial": 1
+      },
+      "last_issued_date": "2026-10-13",
+      "issued_last_30_days": 0,
+      "issued_last_90_days": 1,
+      "average_valuation": 595790.54,
+      "rank": 164
     },
     {
       "builder": "WALT CONSTRUCTION, INC",
@@ -3144,7 +3182,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 0.0,
-      "rank": 163
+      "rank": 165
     },
     {
       "builder": "Williams Realty and Building Company Inc.",
@@ -3163,7 +3201,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 1,
       "average_valuation": 553629.6,
-      "rank": 164
+      "rank": 166
     },
     {
       "builder": "WJH, LLC",
@@ -3182,7 +3220,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 141349.26,
-      "rank": 165
+      "rank": 167
     },
     {
       "builder": "ROBUCK HOMES TRIANGLE LLC",
@@ -3204,7 +3242,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 380097.7,
-      "rank": 166
+      "rank": 168
     },
     {
       "builder": "HARDISON HOMES LLC (LIC# 72498)",
@@ -3223,7 +3261,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 310674.68,
-      "rank": 167
+      "rank": 169
     },
     {
       "builder": "M I HOMES OF RALEIGH",
@@ -3242,7 +3280,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 303714.46,
-      "rank": 168
+      "rank": 170
     },
     {
       "builder": "RAM HOMES, INC",
@@ -3261,7 +3299,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 157416.92,
-      "rank": 169
+      "rank": 171
     },
     {
       "builder": "Smoot Custom Homes, LLC",
@@ -3280,7 +3318,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 172052.6,
-      "rank": 170
+      "rank": 172
     },
     {
       "builder": "LEGACY CUSTOM HOMES",
@@ -3300,7 +3338,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 361128.73,
-      "rank": 171
+      "rank": 173
     },
     {
       "builder": "PENN CONSTRUCTION LLC",
@@ -3320,7 +3358,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 505927.5,
-      "rank": 172
+      "rank": 174
     },
     {
       "builder": "CONTR - CHOATE CONSTRUCTION CO.",
@@ -3340,7 +3378,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 1570068.54,
-      "rank": 173
+      "rank": 175
     },
     {
       "builder": "Haven Build",
@@ -3359,7 +3397,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 169686.04,
-      "rank": 174
+      "rank": 176
     },
     {
       "builder": "LEWIS COASTAL HOMES AND RENOVATIONS LLC (B) (LIC# 87899)",
@@ -3378,7 +3416,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 273911.34,
-      "rank": 175
+      "rank": 177
     },
     {
       "builder": "MAWA, LLC",
@@ -3397,7 +3435,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 160000.0,
-      "rank": 176
+      "rank": 178
     },
     {
       "builder": "HABITAT FOR HUMANITY",
@@ -3416,7 +3454,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 187906.25,
-      "rank": 177
+      "rank": 179
     },
     {
       "builder": "HARDISON BUILDING INC (B) (LIC# 38799)",
@@ -3435,7 +3473,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 502156.74,
-      "rank": 178
+      "rank": 180
     },
     {
       "builder": "COMET BUILDERS, LLC",
@@ -3454,7 +3492,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 3071428.57,
-      "rank": 179
+      "rank": 181
     },
     {
       "builder": "GWATHMEY RESIDENTIAL GROUP LLC (B) (LIC# 77174)",
@@ -3473,7 +3511,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 128046.69,
-      "rank": 180
+      "rank": 182
     },
     {
       "builder": "SBM HOMES LLC",
@@ -3492,7 +3530,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 291110.4,
-      "rank": 181
+      "rank": 183
     },
     {
       "builder": "BRIDGEWATER BUILDERS, INC. (LIC# 106967)",
@@ -3512,7 +3550,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 329270.79,
-      "rank": 182
+      "rank": 184
     },
     {
       "builder": "TRUE HOME LLC AKA TRIBUTE HOMES TRUE HOMES LLC T/A (B) (LIC#67353)",
@@ -3532,7 +3570,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 220341.04,
-      "rank": 183
+      "rank": 185
     },
     {
       "builder": "GRANVILLE HOMES LLC",
@@ -3551,7 +3589,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 739220.0,
-      "rank": 184
+      "rank": 186
     },
     {
       "builder": "IRONWOOD LLC (B) (LIC# 79479)",
@@ -3571,7 +3609,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 283732.05,
-      "rank": 185
+      "rank": 187
     },
     {
       "builder": "RICHARD WALLACE BUILDER INC (B) (LIC# 29206)",
@@ -3590,7 +3628,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 469592.76,
-      "rank": 186
+      "rank": 188
     },
     {
       "builder": "STEVENS FINE HOMES  T/A STEVENS BUILDING COMPANY (B) (LIC# 31626)",
@@ -3609,7 +3647,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 299062.36,
-      "rank": 187
+      "rank": 189
     },
     {
       "builder": "TRINITY CONSTRUCTION & DEVELOP",
@@ -3629,7 +3667,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 392000.0,
-      "rank": 188
+      "rank": 190
     },
     {
       "builder": "A & M Ventures, Inc. T/A Habitech Builders",
@@ -3648,7 +3686,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 693481.0,
-      "rank": 189
+      "rank": 191
     },
     {
       "builder": "Cardinal Civil Contracting",
@@ -3667,7 +3705,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 3616983.17,
-      "rank": 190
+      "rank": 192
     },
     {
       "builder": "DANIEL KERR TOLLENS (B) (LIC# 104094)",
@@ -3686,7 +3724,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 406280.79,
-      "rank": 191
+      "rank": 193
     },
     {
       "builder": "Kaye House",
@@ -3705,7 +3743,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 346199.0,
-      "rank": 192
+      "rank": 194
     },
     {
       "builder": "LEWIS3JS LLC",
@@ -3725,7 +3763,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 122625.0,
-      "rank": 193
+      "rank": 195
     },
     {
       "builder": "WIMCO CORP (B) LIC# 03478)",
@@ -3744,7 +3782,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 435771.05,
-      "rank": 194
+      "rank": 196
     },
     {
       "builder": "BLUE OCEAN DEV LLC",
@@ -3764,7 +3802,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 160000.0,
-      "rank": 195
+      "rank": 197
     },
     {
       "builder": "COPPER BUILDERS LLC (LIC# 73657)",
@@ -3784,7 +3822,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 538068.15,
-      "rank": 196
+      "rank": 198
     },
     {
       "builder": "HOME LIFE INC (GC) (LIC # 38767)",
@@ -3803,26 +3841,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 345906.2,
-      "rank": 197
-    },
-    {
-      "builder": "JOHNSON CONSTRUCTION MGMT, INC",
-      "aliases": [
-        "JOHNSON CONSTRUCTION MGMT, INC"
-      ],
-      "permit_count": 3,
-      "valuation": 435000.0,
-      "jurisdictions": [
-        "Greensboro"
-      ],
-      "categories": {
-        "Single Family": 3
-      },
-      "last_issued_date": "2026-06-17",
-      "issued_last_30_days": 0,
-      "issued_last_90_days": 0,
-      "average_valuation": 145000.0,
-      "rank": 198
+      "rank": 199
     },
     {
       "builder": "MONTEITH CONSTRUCTION CORP (B) (LIC# 43319)",
@@ -3841,7 +3860,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 4412777.84,
-      "rank": 199
+      "rank": 200
     },
     {
       "builder": "NINTH CONSTRUCTION INC",
@@ -3860,7 +3879,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 130000.0,
-      "rank": 200
+      "rank": 201
     },
     {
       "builder": "RETE CONSTRUCTION INC (B) (LIC# 83556)",
@@ -3879,7 +3898,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 180985.89,
-      "rank": 201
+      "rank": 202
     },
     {
       "builder": "SPIRE BUILDERS LLC",
@@ -3898,7 +3917,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 294566.67,
-      "rank": 202
+      "rank": 203
     },
     {
       "builder": "TA SQUARED",
@@ -3917,7 +3936,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 166666.67,
-      "rank": 203
+      "rank": 204
     },
     {
       "builder": "W.C. CONSTRUCTION COMPANY, LLC",
@@ -3936,7 +3955,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 2078184.0,
-      "rank": 204
+      "rank": 205
     },
     {
       "builder": "ADRIAN BUILT HOMES LLC",
@@ -3955,7 +3974,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 139027.5,
-      "rank": 205
+      "rank": 206
     },
     {
       "builder": "AIRLIE HOMES LLC (LIC# 75624)",
@@ -3974,7 +3993,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 588672.88,
-      "rank": 206
+      "rank": 207
     },
     {
       "builder": "AMERICAS HOME PLACE OF WILMINGTON LLC (LIC# 88113",
@@ -3993,7 +4012,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 305613.59,
-      "rank": 207
+      "rank": 208
     },
     {
       "builder": "BELL CUSTOM HOMES LLC (LIC# 76096)",
@@ -4012,7 +4031,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 560659.21,
-      "rank": 208
+      "rank": 209
     },
     {
       "builder": "C HERMAN CONSTRUCTION, LLC",
@@ -4032,7 +4051,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 6584092.41,
-      "rank": 209
+      "rank": 210
     },
     {
       "builder": "DELTA DEVELOPMENT GROUP, LLC",
@@ -4051,7 +4070,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 140000.0,
-      "rank": 210
+      "rank": 211
     },
     {
       "builder": "Dixon/Kirby & Company, Inc.",
@@ -4070,7 +4089,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 937300.4,
-      "rank": 211
+      "rank": 212
     },
     {
       "builder": "DR HORTON INC T/A EMERALD HOMES (B) (LIC# 29676)",
@@ -4089,7 +4108,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 289456.1,
-      "rank": 212
+      "rank": 213
     },
     {
       "builder": "DSW HOMES LLC (B) (LIC# 77881)",
@@ -4108,7 +4127,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 137972.79,
-      "rank": 213
+      "rank": 214
     },
     {
       "builder": "EASTERN HOME AND PROPERTY LLC (LIC# 81476)",
@@ -4127,7 +4146,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 297783.0,
-      "rank": 214
+      "rank": 215
     },
     {
       "builder": "FOURTH ELM CONSTRUCTION, LLC",
@@ -4146,7 +4165,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 4753505.0,
-      "rank": 215
+      "rank": 216
     },
     {
       "builder": "H.J. MORRIS CONSTRUCTION, INC.",
@@ -4165,7 +4184,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 736295.6,
-      "rank": 216
+      "rank": 217
     },
     {
       "builder": "Haven Build, LLC AKA: Haven Design/Build Haven Bui",
@@ -4184,7 +4203,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 168153.8,
-      "rank": 217
+      "rank": 218
     },
     {
       "builder": "HHHUNT HOMES RALEIGH-DURHAM LLC (B) (LIC# 66021)",
@@ -4203,7 +4222,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 393625.01,
-      "rank": 218
+      "rank": 219
     },
     {
       "builder": "HUGH P LATHAM JR",
@@ -4222,7 +4241,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 202000.0,
-      "rank": 219
+      "rank": 220
     },
     {
       "builder": "IVEY CUSTOM BUILDERS LLC (LIC# 77240)",
@@ -4241,7 +4260,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 169184.86,
-      "rank": 220
+      "rank": 221
     },
     {
       "builder": "J. D. Beam, Inc.",
@@ -4261,7 +4280,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 5317042.6,
-      "rank": 221
+      "rank": 222
     },
     {
       "builder": "JACOBS REDEVELOPMENT LLC (B) (LIC# 88121)",
@@ -4280,7 +4299,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 256644.83,
-      "rank": 222
+      "rank": 223
     },
     {
       "builder": "KELLY C HODGES",
@@ -4299,7 +4318,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 4043022.37,
-      "rank": 223
+      "rank": 224
     },
     {
       "builder": "KONRADY & SON CONSTRUCTION LLC (LIC# 69050)",
@@ -4318,7 +4337,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 912539.46,
-      "rank": 224
+      "rank": 225
     },
     {
       "builder": "LANDMARK BUILDERS, INC",
@@ -4337,7 +4356,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 4093168.5,
-      "rank": 225
+      "rank": 226
     },
     {
       "builder": "LEGACY HOMES & CONST LLC",
@@ -4356,7 +4375,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 198500.0,
-      "rank": 226
+      "rank": 227
     },
     {
       "builder": "Leo Construction and Development LLC (GC) (LIC#108263)",
@@ -4376,7 +4395,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 275283.84,
-      "rank": 227
+      "rank": 228
     },
     {
       "builder": "LIBERTY COASTAL INC (GC) (LIC# 104875)",
@@ -4395,7 +4414,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 295025.75,
-      "rank": 228
+      "rank": 229
     },
     {
       "builder": "MCKINLEY BUILDING CORP (B) (LIC# 30896)",
@@ -4414,7 +4433,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 5176293.95,
-      "rank": 229
+      "rank": 230
     },
     {
       "builder": "NORTH STATE CUSTOM BUILDERS AKA NORTH STATE PARTNERS CONSTRUCTION LLC (LIC# 70046)",
@@ -4433,7 +4452,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 994429.79,
-      "rank": 230
+      "rank": 231
     },
     {
       "builder": "PANORAMA COMPANIES, LLC",
@@ -4452,7 +4471,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 231
+      "rank": 232
     },
     {
       "builder": "ROERS GENERAL CONTRACTING LLC",
@@ -4471,7 +4490,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 17582669.28,
-      "rank": 232
+      "rank": 233
     },
     {
       "builder": "SALVADOR SANCHEZ-MILIAN",
@@ -4490,7 +4509,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 225000.0,
-      "rank": 233
+      "rank": 234
     },
     {
       "builder": "SMITH DESIGNBUILD INC.",
@@ -4509,7 +4528,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 710736.8,
-      "rank": 234
+      "rank": 235
     },
     {
       "builder": "STIER CONSTRUCTION COMPANY INC",
@@ -4528,7 +4547,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 639626.85,
-      "rank": 235
+      "rank": 236
     },
     {
       "builder": "SWAN SONG PROPERTIES LLC (LIC# 75686)",
@@ -4547,7 +4566,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 216940.43,
-      "rank": 236
+      "rank": 237
     },
     {
       "builder": "URBAN BUILDING & DEVELOPMENT LLC (B) (LIC# 81731)",
@@ -4566,7 +4585,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 318040.88,
-      "rank": 237
+      "rank": 238
     },
     {
       "builder": "VENTURE CONSTRUCTION COMPANY (B) (LIC# 06934)",
@@ -4585,7 +4604,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 570318.58,
-      "rank": 238
+      "rank": 239
     },
     {
       "builder": "W3 BUILT LLC (B) (LIC# 84763)",
@@ -4605,7 +4624,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 389433.99,
-      "rank": 239
+      "rank": 240
     },
     {
       "builder": "3 PILLARS HOMES, LLC",
@@ -4624,7 +4643,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 160000.0,
-      "rank": 240
+      "rank": 241
     },
     {
       "builder": "A SANCHEZ CONSTRUCTION LLC",
@@ -4643,7 +4662,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 130000.0,
-      "rank": 241
+      "rank": 242
     },
     {
       "builder": "AMERICA'S HOME PLACE",
@@ -4662,7 +4681,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 637024.0,
-      "rank": 242
+      "rank": 243
     },
     {
       "builder": "ANGE CONSTRUCTION COMPANY",
@@ -4681,7 +4700,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 1198808.8,
-      "rank": 243
+      "rank": 244
     },
     {
       "builder": "ANNIS MANGRUM LLC  dba SUNDANCE SIGNATURE HOMES",
@@ -4700,7 +4719,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 870587.6,
-      "rank": 244
+      "rank": 245
     },
     {
       "builder": "Arcadia Construction Company",
@@ -4719,7 +4738,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 636515.2,
-      "rank": 245
+      "rank": 246
     },
     {
       "builder": "ARCO Design/Build",
@@ -4738,7 +4757,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 10000.0,
-      "rank": 246
+      "rank": 247
     },
     {
       "builder": "ASI Signage",
@@ -4757,7 +4776,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 247
+      "rank": 248
     },
     {
       "builder": "ASJ WILSON CONSTRUCTION",
@@ -4776,7 +4795,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 432791.0,
-      "rank": 248
+      "rank": 249
     },
     {
       "builder": "ASL SIGNS",
@@ -4795,7 +4814,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 249
+      "rank": 250
     },
     {
       "builder": "ATLANTIC BUILDING COMPANY NC LLC (B) (LIC# 102235)",
@@ -4814,7 +4833,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 430903.03,
-      "rank": 250
+      "rank": 251
     },
     {
       "builder": "B E VAUGHAN & SON, INC",
@@ -4833,7 +4852,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 251
+      "rank": 252
     },
     {
       "builder": "BARKER AND CANADY CUSTOM HOMES, INC",
@@ -4852,7 +4871,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 628873.58,
-      "rank": 252
+      "rank": 253
     },
     {
       "builder": "BENNETT CONSTRUCTION GROUP NC, LLC (LIC# 88138)",
@@ -4871,7 +4890,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 286312.84,
-      "rank": 253
+      "rank": 254
     },
     {
       "builder": "Blanton Building, Inc.",
@@ -4890,7 +4909,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 842725.89,
-      "rank": 254
+      "rank": 255
     },
     {
       "builder": "BLUEWATER CONSTRUCTION LLC (LIC#49996)",
@@ -4909,7 +4928,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 417158.82,
-      "rank": 255
+      "rank": 256
     },
     {
       "builder": "BOLENS HOME IMPROVEMENT",
@@ -4928,7 +4947,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 72000.0,
-      "rank": 256
+      "rank": 257
     },
     {
       "builder": "BOSTIC BUILDING CORPORATION (B) (LIC# 55725)",
@@ -4947,7 +4966,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 235910.31,
-      "rank": 257
+      "rank": 258
     },
     {
       "builder": "BRASFIELD & GORRIE, L.L.C.",
@@ -4966,7 +4985,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 308249031.38,
-      "rank": 258
+      "rank": 259
     },
     {
       "builder": "Bridges Construction, LLC",
@@ -4985,7 +5004,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 406630.4,
-      "rank": 259
+      "rank": 260
     },
     {
       "builder": "BTM CONSTRUCTION, LLC (LIC# 80317)",
@@ -5004,7 +5023,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 186610.68,
-      "rank": 260
+      "rank": 261
     },
     {
       "builder": "C Herman Construction",
@@ -5023,7 +5042,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 9766110.06,
-      "rank": 261
+      "rank": 262
     },
     {
       "builder": "C4 BUILDERS LLC (LIC# 73522)",
@@ -5042,7 +5061,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 470782.26,
-      "rank": 262
+      "rank": 263
     },
     {
       "builder": "CALDERON CONST & REMODEL INC",
@@ -5061,7 +5080,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 110000.0,
-      "rank": 263
+      "rank": 264
     },
     {
       "builder": "CAROLINA BUILDERS AND DESIGN",
@@ -5080,7 +5099,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 264
+      "rank": 265
     },
     {
       "builder": "CAROLINA MOUNTAINS TO COAST HOMES, LLC (LIC# 100273)",
@@ -5099,7 +5118,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 363736.42,
-      "rank": 265
+      "rank": 266
     },
     {
       "builder": "Charles W. Hughes Construction, LLC",
@@ -5118,7 +5137,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 8438581.62,
-      "rank": 266
+      "rank": 267
     },
     {
       "builder": "CJM CONTRACTING (LIC# 106554)",
@@ -5137,7 +5156,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 206904.04,
-      "rank": 267
+      "rank": 268
     },
     {
       "builder": "Clancy & Theys Construction Company",
@@ -5156,7 +5175,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 268
+      "rank": 269
     },
     {
       "builder": "CLANCY AND THEYS CONSTRUCTION Co.",
@@ -5175,7 +5194,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 11395049.3,
-      "rank": 269
+      "rank": 270
     },
     {
       "builder": "CLAYTON HOMES GREENSBORO",
@@ -5194,7 +5213,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 54157.0,
-      "rank": 270
+      "rank": 271
     },
     {
       "builder": "CLAYTON HOMES OF RALEIGH",
@@ -5213,7 +5232,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 351180.8,
-      "rank": 271
+      "rank": 272
     },
     {
       "builder": "CMC BUILDING INC (LIC# 52920)",
@@ -5232,7 +5251,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 1378771.5,
-      "rank": 272
+      "rank": 273
     },
     {
       "builder": "COASTAL CYPRESS BUILDERS LLC  (GC) (LIC # 108542)",
@@ -5251,7 +5270,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 578360.76,
-      "rank": 273
+      "rank": 274
     },
     {
       "builder": "COOKE CONTRACTING, INC",
@@ -5270,7 +5289,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 750000.0,
-      "rank": 274
+      "rank": 275
     },
     {
       "builder": "Coral Construction Com LLC",
@@ -5289,7 +5308,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 8300.0,
-      "rank": 275
+      "rank": 276
     },
     {
       "builder": "CRISTAL BUILD LLC",
@@ -5308,7 +5327,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 225000.0,
-      "rank": 276
+      "rank": 277
     },
     {
       "builder": "CROSSTOWER BUILDERS, LLC",
@@ -5327,7 +5346,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 110000.0,
-      "rank": 277
+      "rank": 278
     },
     {
       "builder": "DAE BUILDING INC (B) (LIC# 78264)",
@@ -5346,7 +5365,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 1224840.96,
-      "rank": 278
+      "rank": 279
     },
     {
       "builder": "DREES HOME",
@@ -5365,7 +5384,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 777449.6,
-      "rank": 279
+      "rank": 280
     },
     {
       "builder": "EASTERN ADU LLC (B) (LIC #104507)",
@@ -5384,7 +5403,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 162236.59,
-      "rank": 280
+      "rank": 281
     },
     {
       "builder": "EDWARD ALEXANDER REAVES",
@@ -5403,7 +5422,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 281
+      "rank": 282
     },
     {
       "builder": "ELITE QUALITY CONSTRUCTION INC",
@@ -5422,7 +5441,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 224840.0,
-      "rank": 282
+      "rank": 283
     },
     {
       "builder": "Essential Construction Maintenance Services, LLC",
@@ -5441,7 +5460,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 283
+      "rank": 284
     },
     {
       "builder": "EXETER BUILDING COMPANY",
@@ -5460,7 +5479,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 1182202.8,
-      "rank": 284
+      "rank": 285
     },
     {
       "builder": "F2 CONSTRUCTION & DEV LLC",
@@ -5479,7 +5498,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 165000.0,
-      "rank": 285
+      "rank": 286
     },
     {
       "builder": "FIGURED SERVICES, LLC (LIC# 86065)",
@@ -5498,7 +5517,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 947170.52,
-      "rank": 286
+      "rank": 287
     },
     {
       "builder": "FORREST CONSTRUCTION UNLIMITED LLC ((GC) LIC# 109008)",
@@ -5517,7 +5536,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 357229.31,
-      "rank": 287
+      "rank": 288
     },
     {
       "builder": "FORTIFIED SOLUTIONS INC",
@@ -5536,7 +5555,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 1646986.0,
-      "rank": 288
+      "rank": 289
     },
     {
       "builder": "GFD BUILDERS LLC",
@@ -5555,7 +5574,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 128800.0,
-      "rank": 289
+      "rank": 290
     },
     {
       "builder": "GITTO ENTERPRISES",
@@ -5574,7 +5593,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 1388203.56,
-      "rank": 290
+      "rank": 291
     },
     {
       "builder": "GREGORY A GUNTHER",
@@ -5593,7 +5612,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 291
+      "rank": 292
     },
     {
       "builder": "GURU CONSTRUCTION, LLC",
@@ -5612,7 +5631,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 900000.0,
-      "rank": 292
+      "rank": 293
     },
     {
       "builder": "HANK MORRIS - H.J. MORRIS CONSTR",
@@ -5631,7 +5650,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 707560.0,
-      "rank": 293
+      "rank": 294
     },
     {
       "builder": "HAPPINESS CONSTRUCTION SERVICES LLC (B) (LIC# 101641)",
@@ -5650,7 +5669,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 266791.51,
-      "rank": 294
+      "rank": 295
     },
     {
       "builder": "HAYES BARTON HOMES",
@@ -5669,25 +5688,6 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 833043.6,
-      "rank": 295
-    },
-    {
-      "builder": "HICKS CONSTRUCTION GROUP LLC (LIC# 103946)",
-      "aliases": [
-        "HICKS CONSTRUCTION GROUP LLC (LIC# 103946)"
-      ],
-      "permit_count": 1,
-      "valuation": 375316.87,
-      "jurisdictions": [
-        "New Hanover County"
-      ],
-      "categories": {
-        "Single Family": 1
-      },
-      "last_issued_date": "2025-11-12",
-      "issued_last_30_days": 0,
-      "issued_last_90_days": 0,
-      "average_valuation": 375316.87,
       "rank": 296
     },
     {
@@ -6489,25 +6489,6 @@
       "rank": 338
     },
     {
-      "builder": "REDLINE CONSTRUCTION LLC TA REDLINE CONS OF COASTAL CAROLINA LLC (B) (LIC# 84222)",
-      "aliases": [
-        "REDLINE CONSTRUCTION LLC TA REDLINE CONS OF COASTAL CAROLINA LLC (B) (LIC# 84222)"
-      ],
-      "permit_count": 1,
-      "valuation": 703319.33,
-      "jurisdictions": [
-        "New Hanover County"
-      ],
-      "categories": {
-        "Single Family": 1
-      },
-      "last_issued_date": "2025-11-12",
-      "issued_last_30_days": 0,
-      "issued_last_90_days": 0,
-      "average_valuation": 703319.33,
-      "rank": 339
-    },
-    {
       "builder": "ROBUCK PARTNERS LLC",
       "aliases": [
         "ROBUCK PARTNERS LLC"
@@ -6524,7 +6505,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 583087.2,
-      "rank": 340
+      "rank": 339
     },
     {
       "builder": "ROUTH CONSTRUCTION, CO",
@@ -6543,7 +6524,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 100500.0,
-      "rank": 341
+      "rank": 340
     },
     {
       "builder": "SALT ROCK BUILDERS LLC (B) (LIC# 60508)",
@@ -6562,7 +6543,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 461920.32,
-      "rank": 342
+      "rank": 341
     },
     {
       "builder": "SAMET CORPORATION",
@@ -6581,7 +6562,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 25605694.0,
-      "rank": 343
+      "rank": 342
     },
     {
       "builder": "SCHMIDT CUSTOM BUILDERS, INC (LIC# 58046)",
@@ -6600,7 +6581,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 546928.11,
-      "rank": 344
+      "rank": 343
     },
     {
       "builder": "schumacher homes",
@@ -6619,7 +6600,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 1208050.4,
-      "rank": 345
+      "rank": 344
     },
     {
       "builder": "SCHUMACHER HOMES OF NC",
@@ -6638,7 +6619,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 597117.0,
-      "rank": 346
+      "rank": 345
     },
     {
       "builder": "SIERRA STRUCTURES INC",
@@ -6657,7 +6638,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 15161.0,
-      "rank": 347
+      "rank": 346
     },
     {
       "builder": "SNYDER-HANKINS CUSTOM HOMES",
@@ -6676,7 +6657,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 1039968.8,
-      "rank": 348
+      "rank": 347
     },
     {
       "builder": "SOSA DEVELOPMENTS LLC",
@@ -6695,7 +6676,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 220000.0,
-      "rank": 349
+      "rank": 348
     },
     {
       "builder": "STEWART BUILDING COMPANY LLC",
@@ -6714,7 +6695,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 186610.68,
-      "rank": 350
+      "rank": 349
     },
     {
       "builder": "STONEWOOD HOMES",
@@ -6733,7 +6714,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 950000.0,
-      "rank": 351
+      "rank": 350
     },
     {
       "builder": "STRONGLAST BUILDERS LLC (LIC# 103610)",
@@ -6752,7 +6733,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 789124.95,
-      "rank": 352
+      "rank": 351
     },
     {
       "builder": "TBD CONTRACTOR \u2013 DO NOT CHANGE THIS NAME!!",
@@ -6771,7 +6752,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 5125315.3,
-      "rank": 353
+      "rank": 352
     },
     {
       "builder": "TEEITUP VENTURES LLC T/A LIBERTY HOMES",
@@ -6790,7 +6771,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 557846.82,
-      "rank": 354
+      "rank": 353
     },
     {
       "builder": "THE CATAMOUNT GROUP LLC (LIC# 103860)",
@@ -6809,7 +6790,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 343140.0,
-      "rank": 355
+      "rank": 354
     },
     {
       "builder": "THE CHRISTMAN COMPANY",
@@ -6828,7 +6809,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 68270181.0,
-      "rank": 356
+      "rank": 355
     },
     {
       "builder": "THOMAS HOBSON BUILDER, INC",
@@ -6847,7 +6828,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 357
+      "rank": 356
     },
     {
       "builder": "THOMAS JAMES CONSTRUCTION",
@@ -6866,7 +6847,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 385000.0,
-      "rank": 358
+      "rank": 357
     },
     {
       "builder": "TIDAL WAVE HOMES LLC (B) (LIC # 79581)",
@@ -6885,7 +6866,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 235665.0,
-      "rank": 359
+      "rank": 358
     },
     {
       "builder": "TOO CONSTRUCTION COMPANY INC (B) (LIC# 83867)",
@@ -6904,7 +6885,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 567111.18,
-      "rank": 360
+      "rank": 359
     },
     {
       "builder": "TURNER-DUNN CONSTRUCTION, LLC ((GC) LIC# 102411)",
@@ -6923,7 +6904,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 110069.42,
-      "rank": 361
+      "rank": 360
     },
     {
       "builder": "UNIQUE HOMES/BUILDER DESIGNER INC (B) (LIC# 51627)",
@@ -6942,7 +6923,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 440718.84,
-      "rank": 362
+      "rank": 361
     },
     {
       "builder": "Upton & Co., Inc.",
@@ -6961,7 +6942,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 743948.8,
-      "rank": 363
+      "rank": 362
     },
     {
       "builder": "UTILITY PARTNERS OF AMERICA LLC T/A (B) (LIC# 70752)",
@@ -6980,7 +6961,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 16000.0,
-      "rank": 364
+      "rank": 363
     },
     {
       "builder": "VILERRA HOMES, LLC (LIC# 105621)",
@@ -6999,7 +6980,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 240211.62,
-      "rank": 365
+      "rank": 364
     },
     {
       "builder": "VRL BUILDERS GROUP LLC (B) (LIC# 83014)",
@@ -7018,7 +6999,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 609462.54,
-      "rank": 366
+      "rank": 365
     },
     {
       "builder": "W. H. Bass, Inc.",
@@ -7037,7 +7018,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 456019.2,
-      "rank": 367
+      "rank": 366
     },
     {
       "builder": "WALLICK CONSTRUCTION LLC (GC) (LIC #88330)",
@@ -7056,7 +7037,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 5528805.64,
-      "rank": 368
+      "rank": 367
     },
     {
       "builder": "WD CUSTOM HOMES",
@@ -7075,7 +7056,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 150000.0,
-      "rank": 369
+      "rank": 368
     },
     {
       "builder": "WENCO HOMES, INC",
@@ -7094,7 +7075,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 830000.0,
-      "rank": 370
+      "rank": 369
     },
     {
       "builder": "WILKS BUILDERS INC",
@@ -7113,7 +7094,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 969646.0,
-      "rank": 371
+      "rank": 370
     },
     {
       "builder": "WILLIAM BRADLEY HAMILTON, T/A (LIC 81155)",
@@ -7132,7 +7113,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 477224.83,
-      "rank": 372
+      "rank": 371
     },
     {
       "builder": "Williams Realty & Building Company",
@@ -7151,7 +7132,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 485812.08,
-      "rank": 373
+      "rank": 372
     },
     {
       "builder": "WILMINGTON BUILDING COMPANY LLC (LIC# 100834)",
@@ -7170,7 +7151,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 333737.54,
-      "rank": 374
+      "rank": 373
     },
     {
       "builder": "WILSON-COVINGTON CONSTRUCTION",
@@ -7189,7 +7170,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 375
+      "rank": 374
     },
     {
       "builder": "Woodard Builders of the Triangle, LLC",
@@ -7208,7 +7189,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 684889.2,
-      "rank": 376
+      "rank": 375
     },
     {
       "builder": "WXZ CONSTRUCTION/SE, LLC (LIC# 68602)",
@@ -7227,7 +7208,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 15311.7,
-      "rank": 377
+      "rank": 376
     },
     {
       "builder": "WYNNEFIELD PROPERTIES, INC",
@@ -7246,7 +7227,7 @@
       "issued_last_30_days": 0,
       "issued_last_90_days": 0,
       "average_valuation": 0.0,
-      "rank": 378
+      "rank": 377
     }
   ]
 }

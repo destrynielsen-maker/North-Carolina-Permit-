@@ -12,8 +12,8 @@
   },
   {
     "builder": "D R HORTON, INC",
-    "projects": 188,
-    "valuation": 36270080.0,
+    "projects": 187,
+    "valuation": 36022055.0,
     "jurisdictions": [
       "Greensboro"
     ],
@@ -434,6 +434,17 @@
     ]
   },
   {
+    "builder": "D STONE BUILDERS, INC",
+    "projects": 11,
+    "valuation": 6212000.0,
+    "jurisdictions": [
+      "Greensboro"
+    ],
+    "aliases": [
+      "D STONE BUILDERS, INC"
+    ]
+  },
+  {
     "builder": "FACT Construction Company",
     "projects": 10,
     "valuation": 5496874.8,
@@ -552,17 +563,6 @@
     ],
     "aliases": [
       "CONTR - CHOATE CONSTRUCTION CO."
-    ]
-  },
-  {
-    "builder": "D STONE BUILDERS, INC",
-    "projects": 9,
-    "valuation": 5412000.0,
-    "jurisdictions": [
-      "Greensboro"
-    ],
-    "aliases": [
-      "D STONE BUILDERS, INC"
     ]
   },
   {
@@ -874,6 +874,17 @@
     ]
   },
   {
+    "builder": "JOHNSON CONSTRUCTION MGMT, INC",
+    "projects": 5,
+    "valuation": 725000.0,
+    "jurisdictions": [
+      "Greensboro"
+    ],
+    "aliases": [
+      "JOHNSON CONSTRUCTION MGMT, INC"
+    ]
+  },
+  {
     "builder": "JOHNSON CUSTOM BUILDERS LLC (LIC#82124)",
     "projects": 5,
     "valuation": 1143927.88,
@@ -1157,17 +1168,6 @@
     ],
     "aliases": [
       "HOME LIFE INC (GC) (LIC # 38767)"
-    ]
-  },
-  {
-    "builder": "JOHNSON CONSTRUCTION MGMT, INC",
-    "projects": 3,
-    "valuation": 435000.0,
-    "jurisdictions": [
-      "Greensboro"
-    ],
-    "aliases": [
-      "JOHNSON CONSTRUCTION MGMT, INC"
     ]
   },
   {
@@ -2846,17 +2846,6 @@
     ]
   },
   {
-    "builder": "HICKS CONSTRUCTION GROUP LLC (LIC# 103946)",
-    "projects": 1,
-    "valuation": 375316.87,
-    "jurisdictions": [
-      "New Hanover County"
-    ],
-    "aliases": [
-      "HICKS CONSTRUCTION GROUP LLC (LIC# 103946)"
-    ]
-  },
-  {
     "builder": "HIGHLAND COMPANY OF EASTERN NORTH CAROLINA, LLC (LIC# 58057)",
     "projects": 1,
     "valuation": 344215.09,
@@ -3506,6 +3495,17 @@
     ]
   },
   {
+    "builder": "PIEDMONT HOME CONTRACTORS",
+    "projects": 1,
+    "valuation": 0.0,
+    "jurisdictions": [
+      "Greensboro"
+    ],
+    "aliases": [
+      "PIEDMONT HOME CONTRACTORS"
+    ]
+  },
+  {
     "builder": "PRAYLOR CONSTRUCTION CO",
     "projects": 1,
     "valuation": 300000.0,
@@ -3547,17 +3547,6 @@
     ],
     "aliases": [
       "R. Stewart Homes, LLC"
-    ]
-  },
-  {
-    "builder": "REDLINE CONSTRUCTION LLC TA REDLINE CONS OF COASTAL CAROLINA LLC (B) (LIC# 84222)",
-    "projects": 1,
-    "valuation": 703319.33,
-    "jurisdictions": [
-      "New Hanover County"
-    ],
-    "aliases": [
-      "REDLINE CONSTRUCTION LLC TA REDLINE CONS OF COASTAL CAROLINA LLC (B) (LIC# 84222)"
     ]
   },
   {

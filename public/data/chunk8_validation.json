@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-12T22:52:52.327740+00:00",
+  "checked_at_utc": "2026-11-13T06:45:38.618377+00:00",
   "policy": "Read-only sample and consistency checks. No disabled-source records enter the published leads.",
   "independently_verified": false,
   "pilot_sources": {
@@ -76,9 +76,9 @@
   },
   "source_record_rechecks": [
     {
-      "id": "greensboro:202620733",
+      "id": "greensboro:202620405",
       "jurisdiction": "Greensboro",
-      "permit_number": "202620733",
+      "permit_number": "202620405",
       "review_kind": "official_source_requery_not_independent_portal",
       "independently_verified": false,
       "checks": {
@@ -91,9 +91,9 @@
       "state": "source_requery_consistent"
     },
     {
-      "id": "greensboro:202620920",
+      "id": "greensboro:202620912",
       "jurisdiction": "Greensboro",
-      "permit_number": "202620920",
+      "permit_number": "202620912",
       "review_kind": "official_source_requery_not_independent_portal",
       "independently_verified": false,
       "checks": {
